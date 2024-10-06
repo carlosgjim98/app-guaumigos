@@ -1,0 +1,16 @@
+ion-content {
+    --custom-color
+
+    .splash-content {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100vh; 
+        text-align: center;
+    }
+
+    .splash-image {
+        max-width: 80%; 
+        height: auto; 
+    }
+}

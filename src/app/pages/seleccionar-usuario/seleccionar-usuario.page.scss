@@ -1,0 +1,58 @@
+ion-content {
+    --background: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png") no-repeat center / cover;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40%;
+        
+        h2{
+            margin-right: 35%;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .apartado-eleccion-custom,
+        .apartado-eleccion {
+            display: flex; 
+            flex-direction: row;
+            align-items: center; 
+            justify-content: flex-start;
+            border-radius: 10px;
+            margin: 19px;
+            margin-bottom: 2px;
+            color: black;
+            width: 90%;
+            padding: 15px;
+
+            img {
+                width: 13%;
+                height: auto; 
+                margin-right: 20px;
+                margin-left: 10px;
+            }
+    
+            p {
+                margin-top: 10px; 
+                font-size: 14px;
+            }
+        }
+
+        .apartado-eleccion-custom {
+            background-color: var(--custom-color);
+        }
+    
+        .apartado-eleccion {
+            background-color: white;
+            border: 1px solid #ACAAA5;
+        }
+
+        .btn-custom{
+            --background: var(--custom-color);;
+            color: black;
+        }
+
+
+    }
+}
