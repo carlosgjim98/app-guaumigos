@@ -1,53 +1,45 @@
-<ion-header class="ion-no-border" *ngIf="!showError">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button text="" icon="arrow-back-outline"></ion-back-button>
-    </ion-buttons>
-    <ion-title>{{'LOGIN.HEADER' | translate }}</ion-title>
-    <ion-buttons slot="end" routerLink="/idiomas">
-      <ion-icon *ngIf="this.translate.currentLang == 'es'" src="assets/icons/spain.svg"></ion-icon>
-      <ion-icon *ngIf="this.translate.currentLang == 'en'" src="assets/icons/ingles.svg"></ion-icon>
-      <ion-icon *ngIf="this.translate.currentLang == 'fr'" src="assets/icons/frances.svg"></ion-icon>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
-<app-error-view 
-  *ngIf="showError" 
-  [errorCode]="errorCode" 
-  [errorMessage]="errorMessage"
-  (retryFunction)="submitForm()"
-  (backPage)="backPage()"
-  >
-</app-error-view>
-
-<ion-content *ngIf="!showError"  class="ion-padding ion-text-center">
-  <div class="logo ion-text-center">
-    <img src="assets/imgs/logo.png" alt="">
+<ion-content>
+  <div class="fondo-login">
+    <img src="assets/imgs/backgrounds/PATTERN-LOGIN.png" alt="fondo-login">
   </div>
+
+  <div class="container-form">
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="title">{{'LOGIN.TITLE' | translate }}</p>
-      <ion-item>
-        <ion-input clearInput type="text" placeholder="{{'LOGIN.USER' | translate }}" formControlName="email">
-          <ion-icon slot="start" name="person-outline"></ion-icon>
-        </ion-input>
-      </ion-item>
+      <p class="title">LOGIN</p>
+      <div class="container-input-activated">
+        <ion-item>
+          <ion-input clearInput type="text" placeholder="Email" formControlName="email"
+            class="custom-input">
+            <img slot="start" src="assets/icons/email.svg" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="container-input">
+        <ion-item>
+          <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}"
+            formControlName="password" class="custom-input">
+            <img slot="start" src="assets/icons/password.svg" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="container-a">
+        <a class="forgot-password" routerLink="/forgot-password"><b>He olvidado mi contraseña</b></a>
+      </div>
 
-      <ion-item>
-        <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}" formControlName="password">
-          <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-          <ion-input-password-toggle slot="end" color="dark"></ion-input-password-toggle>
-        </ion-input>
-      </ion-item>
-
-      <ion-button expand="block" type="submit" [disabled]="!form.valid" color="tertiary">{{'LOGIN.LOGIN' | translate }}</ion-button>
-      <ion-button expand="block" type="button" routerLink="/register">{{'LOGIN.SIGNUP' | translate }}</ion-button>
-      <p class="title ion-text-center" routerLink="/forgot-password">{{'LOGIN.FORGOT_PASSWORD' | translate }}</p>
+      <div class="container-btn">
+        <ion-button type="submit" [disabled]="!form.valid" class="btn-custom">Entrar</ion-button>
+      </div>
     </form>
-
-    <div id="socialLinks">
-      <ion-button id="facebook" expand="block" type="button" (click)="loginFacebook()"><ion-icon name="logo-facebook"></ion-icon></ion-button>
-      <ion-button id="google" expand="block" type="button" (click)="loginGoogle()"><ion-icon src="assets/icons/icon-google.svg"></ion-icon></ion-button>
-      <ion-button *ngIf="platform.is('ios')" id="apple" (click)="loginApple()"><ion-icon style="margin-bottom: 4px;" name="logo-apple"></ion-icon></ion-button> 
-    </div>
+  </div>
 </ion-content>
+
+<ion-footer>
+  <div>
+    <div>
+      <p>¿Aún no tienes una cuenta? <b><a routerLink="/register">Regístrate</a></b></p>
+    </div>
+    <div>
+      <p class="custom-p">Contacta con nosotros en <b>info&#64;guaumigo.com</b></p>
+    </div>
+  </div>
+</ion-footer>

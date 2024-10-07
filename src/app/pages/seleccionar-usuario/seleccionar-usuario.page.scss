@@ -1,16 +1,31 @@
 ion-content {
-    --background: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png") no-repeat center / cover;
+    --background: url("../../../assets/imgs/backgrounds/SELECCIONAR-USUARIO.png") no-repeat center / cover;
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40%;
+        margin-top: 20%;
         
+        .container-back-btn{
+
+            width: 90%;
+            
+            .return-btn {
+                background-color: var(--custom-color);
+                color: black;
+                padding: 6px;
+                border-radius: 5px;
+                margin-bottom: 16px;
+                font-size: 18px;
+            }
+        }
+
         h2{
-            margin-right: 35%;
+            margin-right: 28%;
             color: black;
             margin-bottom: 10px;
+            font-size: 30px;
         }
 
         .apartado-eleccion-custom,
@@ -21,15 +36,14 @@ ion-content {
             justify-content: flex-start;
             border-radius: 10px;
             margin: 19px;
-            margin-bottom: 2px;
-            color: black;
+            margin-bottom: 8px;
             width: 90%;
             padding: 15px;
 
             img {
-                width: 13%;
+                width: 15%;
                 height: auto; 
-                margin-right: 20px;
+                margin-right: 30px;
                 margin-left: 10px;
             }
     
@@ -41,18 +55,27 @@ ion-content {
 
         .apartado-eleccion-custom {
             background-color: var(--custom-color);
+            color: black;
         }
     
         .apartado-eleccion {
             background-color: white;
             border: 1px solid #ACAAA5;
+            color: #ACAAA5;
         }
 
-        .btn-custom{
-            --background: var(--custom-color);;
-            color: black;
+        .container-btn{
+
+            margin-top: 30px;
+            width: 90%;
+
+            .btn-custom{
+                --background: var(--custom-color);
+                color: black;
+                width: 100%;
+                
+            }
         }
-
-
+        
     }
 }
