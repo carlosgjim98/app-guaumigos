@@ -1,6 +1,8 @@
 ion-content{
     --background: url('../../../assets/imgs/backgrounds/BIENVENIDA.png') no-repeat center / cover; 
 
+    font-family: Lexend, sans-serif;
+
     .logo-container {
         display: flex;
         flex-direction: column;
@@ -13,10 +15,10 @@ ion-content{
             height: auto;
         }
     
-        h2 {
+        p {
             text-align: center;
             margin-top: 10px; 
-            font-size: 1.5rem; 
+            font-size: 25px; 
             color: black;
         }
     }
@@ -27,8 +29,9 @@ ion-content{
         left: 50%;  
         transform: translateX(-50%);
         width: 80%; 
-        max-width: 250px; 
+        max-width: 280px; 
         --background: black;
         --border-radius: 5px;
+        font-size: 16px;
     }
 }

@@ -5,7 +5,7 @@
 
   <div class="container-form">
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="title">LOGIN</p>
+      <h2 class="title">Login</h2>
       <div class="container-input-activated">
         <ion-item>
           <ion-input clearInput type="text" placeholder="Email" formControlName="email"
@@ -27,19 +27,15 @@
       </div>
 
       <div class="container-btn">
-        <ion-button type="submit" [disabled]="!form.valid" class="btn-custom">Entrar</ion-button>
+        <ion-button type="submit" class="btn-custom"><b>Entrar</b></ion-button>
       </div>
     </form>
   </div>
 </ion-content>
 
-<ion-footer>
+<ion-footer class="ion-no-border">
   <div>
-    <div>
-      <p>¿Aún no tienes una cuenta? <b><a routerLink="/register">Regístrate</a></b></p>
-    </div>
-    <div>
+      <p>¿Aún no tienes una cuenta? <a routerLink="/register"><b>Regístrate</b></a></p>
       <p class="custom-p">Contacta con nosotros en <b>info&#64;guaumigo.com</b></p>
-    </div>
   </div>
 </ion-footer>

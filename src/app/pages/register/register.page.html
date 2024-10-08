@@ -5,7 +5,7 @@
 
   <div class="container-form">
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
-      <p class="title">REGISTRO</p>
+      <p class="title">Registro</p>
       <div class="container-input-activated">
         <ion-item>
           <ion-input clearInput type="text" placeholder="Nombre" formControlName="email" class="custom-input">
@@ -40,22 +40,22 @@
       <div class="container-a">
         <ion-checkbox></ion-checkbox>
         <p class="politicas">
-          He leído y acepto <a class="politicas" routerLink="/"><b>la Política de Privacidad</b></a>
-          y <a class="politicas" routerLink="/"><b>los Términos y Condiciones de Venta</b></a>
+          He leído y acepto <a class="politicas" routerLink="/privacy-policy"><b>la Política de Privacidad</b></a>
+          y <a class="politicas" routerLink="/condiciones-venta"><b>los Términos y Condiciones de Venta</b></a>
         </p>
       </div>
 
       <div class="container-btn">
-        <ion-button type="submit" class="btn-custom">Registrarme</ion-button>
+        <ion-button type="submit" class="btn-custom" routerLink="/listado-paseadores"><b>Registrarme</b></ion-button>
       </div>
     </form>
   </div>
 </ion-content>
 
-<ion-footer>
+<ion-footer class="ion-no-border">
   <div>
     <div>
-      <p>¿Ya tienes una cuenta? <b><a routerLink="/login">Acceder</a></b></p>
+      <p>¿Ya tienes una cuenta? <a routerLink="/login"><b>Acceder</b></a></p>
     </div>
     <div>
       <p class="custom-p">Contacta con nosotros en <b>info&#64;guaumigo.com</b></p>

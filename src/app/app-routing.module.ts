@@ -3,8 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./pages/cover-page/cover-page.module').then( m => m.CoverPagePageModule)
+    path: '', redirectTo: 'bienvenida', pathMatch: 'full' 
   },
   {
     path: 'tabs',
@@ -101,10 +100,19 @@ const routes: Routes = [
   {
     path: 'bienvenida',
     loadChildren: () => import('./pages/bienvenida/bienvenida.module').then( m => m.BienvenidaPageModule)
-  },  {
+  },
+  {
     path: 'seleccionar-usuario',
     loadChildren: () => import('./pages/seleccionar-usuario/seleccionar-usuario.module').then( m => m.SeleccionarUsuarioPageModule)
+  },  {
+    path: 'condiciones-venta',
+    loadChildren: () => import('./pages/condiciones-venta/condiciones-venta.module').then( m => m.CondicionesVentaPageModule)
+  },
+  {
+    path: 'listado-paseadores',
+    loadChildren: () => import('./pages/listado-paseadores/listado-paseadores.module').then( m => m.ListadoPaseadoresPageModule)
   }
+
 
 
 
