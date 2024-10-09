@@ -5,23 +5,39 @@
     </div>
   </ion-button>
   <div class="container">
-    <h2><b>Selecciona el tipo <br>de usuario</b></h2>
+    <div class="enum">
+      <h2>Selecciona el tipo de usuario</h2>
+    </div>
     <form id="tipoUsuarioForm">
-      <div class="apartado-eleccion-custom" onclick="">
+      <div [ngClass]="{'seleccionado': esSeleccionada('dueño')}" class="apartado-eleccion"
+        (click)="seleccionarOpcion('dueño')">
         <img src="assets/icons/acceso-cliente.svg" alt="icono-cliente">
-        <p>Quiero acceder <br>como <b>dueño de una mascota</b></p>
+        <p>
+          <span class="texto-normal">Quiero acceder <br></span>
+          <span class="texto-destacado">como dueño de una mascota</span>
+        </p>
       </div>
-      <div class="apartado-eleccion" onclick="">
+      <div [ngClass]="{'seleccionado': esSeleccionada('paseador')}" class="apartado-eleccion"
+        (click)="seleccionarOpcion('paseador')">
         <img src="assets/icons/acceso-paseador.svg" alt="icono-cliente">
-        <p>Quiero acceder <br>como <b>paseador de perros</b></p>
+        <p>
+          <span class="texto-normal">Quiero acceder<br></span>
+          <span class="texto-destacado">como paseador de perros</span>
+        </p>
       </div>
-      <div class="apartado-eleccion" onclick="">
+      <div [ngClass]="{'seleccionado': esSeleccionada('empresa')}" class="apartado-eleccion"
+        (click)="seleccionarOpcion('empresa')">
         <img src="assets/icons/acceso-empresa.svg" alt="icono-cliente">
-        <p>Quiero acceder <br>como <b>veterinaria, peluquería...</b></p>
+        <p>
+          <span class="texto-normal">Quiero acceder<br></span>
+          <span class="texto-destacado">como veterinaria, peluquería...</span>
+        </p>
       </div>
       <div class="container-btn">
         <ion-button class="btn-custom" type="submit" routerLink="/login">Aceptar y continuar</ion-button>
       </div>
     </form>
   </div>
+
+
 </ion-content>

@@ -16,7 +16,7 @@
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
-@import '@ionic/angular/css/display.css';
+@import "@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
@@ -24,7 +24,6 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
-
 
 /**
  * Ionic Dark Mode
@@ -39,7 +38,7 @@
 
 //ESTILOS PARA LOS TIPOS
 
-P{
+P {
     font-family: LexendMedium;
     font-size: 16px;
 }
@@ -57,7 +56,6 @@ P{
         width: 100%;
         margin-left: 10px;
     }
-
 }
 
 .container-input-activated {
@@ -70,41 +68,37 @@ P{
     color: #acaaa5;
 }
 
-
 .container-form {
-        position: relative;
+    position: relative;
+    justify-content: center;
+    top: -45px;
+    background-color: white;
+    border-radius: 50px 50px 0px 0px;
+    width: 100%;
+    padding-top: 22px;
+    margin-right: 15px;
+
+    .title {
+        font-family: ChewyRegular;
+        display: flex;
         justify-content: center;
-        top: -45px;
-        background-color: white;
-        border-radius: 50px 50px 0px 0px;
+        align-items: center;
+        text-align: center;
         width: 100%;
-        padding-top: 22px;
-        margin-right: 15px;
-        
-        .title {
-            font-family: ChewyRegular;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            width: 100%;
-            font-size: 40px;
-            margin: 0;
-            margin-bottom: 28px;
-        }
-
+        font-size: 40px;
+        margin: 0;
+        margin-bottom: 28px;
     }
+}
 
-.container-btn{
+.container-btn {
     margin-right: 15px;
     margin-left: 15px;
 }
 
-
-
 //ESTILOS PARA LOS ION FOOTER
 
-ion-footer{
+ion-footer {
     --box-shadow: none;
     --border: none;
     display: flex;
@@ -125,10 +119,9 @@ ion-footer div {
     }
 }
 
-
 // ESTILOS PARA TODOS LOS ION TOOLBAR
 
-ion-toolbar{
+ion-toolbar {
     --border-width: 0;
     --border-color: transparent;
     --background: transparent;
@@ -138,14 +131,14 @@ ion-toolbar{
     --padding-bottom: 16px;
     --background: white;
 
-    ion-buttons{
-        ion-icon{
+    ion-buttons {
+        ion-icon {
             font-size: 32px;
         }
     }
 
-    ion-title{
-        font-size: 16px; 
+    ion-title {
+        font-size: 16px;
         padding: 0;
         font-family: var(--ion-font-family-headers);
     }
@@ -181,10 +174,9 @@ ion-header {
     }
 }
 
-
 // ESTILOS PARA TODOS LOS BOTONES "EN PRINCIPIO" -- PARA CAMBIAR ESTILOS, CAMBIARLO EN UNO EN CONCRETO CON ALGUNA CLASE
 
-ion-button{
+ion-button {
     --border-radius: var(--app-border-radius);
     height: 48px;
     text-transform: none;
@@ -192,45 +184,39 @@ ion-button{
     font-family: LexendMedium;
     color: black;
     --background: var(--custom-color);
-    --box-shadow: none; 
+    --box-shadow: none;
     width: 100%;
     height: 58px;
 }
 
 // ESTILOS PARA ITEMS Y INPUTS
 
-ion-item{
+ion-item {
     --padding-start: 8px;
     --padding-end: 8px;
     --border-color: transparent;
     --box-shadow: none;
 }
 
-ion-input{
-    
-    font-family: LexendRegular !important; 
+ion-input {
+    font-family: LexendRegular !important;
     font-size: 15px !important;
 
-    ion-input-password-toggle{
+    ion-input-password-toggle {
         margin: 0 !important;
     }
 }
 
-
-
-
 // ESTILOS FULLCALENDAR
 
-
-full-calendar{
+full-calendar {
     padding: 16px !important;
     margin: 0px !important;
     border-radius: 12px !important;
     background: var(--fc-page-bg-color);
 }
 
-
-.fc .fc-daygrid-day-top{
+.fc .fc-daygrid-day-top {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -242,26 +228,26 @@ full-calendar{
     z-index: 999999;
 }
 
-.fc-theme-standard td, .fc-theme-standard th{
+.fc-theme-standard td,
+.fc-theme-standard th {
     border: none;
     border-radius: 100px;
-    &.selected{
+    &.selected {
         background: var(--fc-highlight-color) !important;
     }
 }
 
-.fc .fc-col-header-cell-cushion{
+.fc .fc-col-header-cell-cushion {
     text-transform: uppercase;
     //color:  var(--ion-color-calendar-contrast)
 }
 
-.fc .fc-button-primary{
+.fc .fc-button-primary {
     //background: transparent;
     border: none;
 }
 
-  
-.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
+.fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events {
     display: flex !important;
     flex-flow: row !important;
     justify-content: center !important;
@@ -274,8 +260,9 @@ full-calendar{
     bottom: 2px;
     width: 100%;
 }
-   
-.fc-direction-ltr .fc-daygrid-event.fc-event-end, .fc-direction-rtl .fc-daygrid-event.fc-event-start{
+
+.fc-direction-ltr .fc-daygrid-event.fc-event-end,
+.fc-direction-rtl .fc-daygrid-event.fc-event-start {
     margin: 0;
     display: flex;
     flex-flow: row;
@@ -288,24 +275,24 @@ full-calendar{
     border-radius: 100px;
     margin: 1px !important;
 }
-  
-.fc .fc-scrollgrid-liquid{
+
+.fc .fc-scrollgrid-liquid {
     border: none;
 }
 
-.fc .fc-today-button{
+.fc .fc-today-button {
     display: none;
 }
 
-.fc .fc-daygrid-day.fc-day-today{
+.fc .fc-daygrid-day.fc-day-today {
     background-color: var(--ion-color-primary-shade);
 }
-  
-.fc .fc-toolbar-title{
+
+.fc .fc-toolbar-title {
     font-size: 1.5em !important;
 }
-  
-.fc .fc-daygrid-day-number{
+
+.fc .fc-daygrid-day-number {
     //color: var(--ion-color-calendar-contrast);
     width: 100%;
     display: flex;
@@ -315,11 +302,13 @@ full-calendar{
 
 // LIST CALENDAR
 
-.fc .fc-list-table tbody > tr:first-child th , .fc-theme-standard .fc-list-day-cushion, .fc .fc-list-sticky .fc-list-day > *{
+.fc .fc-list-table tbody > tr:first-child th,
+.fc-theme-standard .fc-list-day-cushion,
+.fc .fc-list-sticky .fc-list-day > * {
     //background: #404040 !important;
     border-radius: 12px;
 }
 
-.fc-theme-standard .fc-list{
+.fc-theme-standard .fc-list {
     border: none;
 }

@@ -1,13 +1,13 @@
 ion-content {
     --background: url("../../../assets/imgs/backgrounds/SELECCIONAR-USUARIO.png") no-repeat center / cover;
-    
+
     .return-btn {
         margin-top: 70px;
         padding: 0;
         width: 0;
-        margin-left: 15px;
-        --box-shadow: none; 
-        --outline: none; 
+        margin-left: 20px;
+        --box-shadow: none;
+        --outline: none;
         --background: transparent;
 
         .container-icon {
@@ -26,37 +26,46 @@ ion-content {
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: flex-start;
         font-family: LexendBold;
         margin-top: 20px;
         padding-bottom: 0;
+        width: 90%;
+        margin-left: 20px;
 
-        h2 {
-            margin-right: 28%;
-            color: black;
-            margin-bottom: 35px;
-            font-size: 30px;
-            text-align: start;
+        .enum {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0;
+
+            h2 {
+                margin: 0;
+                color: black;
+                font-size: 30px;
+                text-align: left;
+            }
         }
 
         form {
             display: flex;
             flex-direction: column;
-            align-items: center; 
-            width: 90%;
+            align-items: flex-start;
+            width: 100%;
         }
 
-        .apartado-eleccion-custom,
         .apartado-eleccion {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
             border-radius: 10px;
-            margin: 10px 0; 
-            width: 100%; 
+            margin: 10px 0;
+            width: 100%;
             padding: 20px;
             margin-bottom: 20px;
+            transition:
+                background-color 0.3s ease,
+                border 0.3s ease;
 
             img {
                 width: 15%;
@@ -65,14 +74,15 @@ ion-content {
                 margin-left: 10px;
             }
 
-            p {
-                margin-top: 10px;
+            .texto-normal {
+                font-family: LexendLight;
+                font-size: 16px;
             }
-        }
 
-        .apartado-eleccion-custom {
-            background-color: var(--custom-color);
-            color: black;
+            .texto-destacado {
+                font-family: LexendMedium;
+                font-size: 16px;
+            }
         }
 
         .apartado-eleccion {
@@ -81,9 +91,18 @@ ion-content {
             color: #acaaa5;
         }
 
+        .seleccionado {
+            background-color: var(--custom-color);
+            color: black;
+            border: none;
+            fill: #ffa500;
+        }
+
         .container-btn {
             width: 100%;
             margin-top: 5px;
+            padding: 0;
+            margin-left: 0;
         }
     }
 }
