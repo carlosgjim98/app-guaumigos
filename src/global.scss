@@ -37,6 +37,94 @@
 @import "@ionic/angular/css/palettes/dark.class.css";*/
 @import "@ionic/angular/css/palettes/dark.system.css";
 
+//ESTILOS PARA LOS TIPOS
+
+P{
+    font-family: LexendMedium;
+    font-size: 16px;
+}
+
+.container-input,
+.container-input-activated {
+    margin-bottom: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 3px;
+    border-radius: 10px;
+
+    .custom-input {
+        font-size: 15px;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+}
+
+.container-input-activated {
+    border: 1px solid black;
+    color: black;
+}
+
+.container-input {
+    border: 1px solid #acaaa5;
+    color: #acaaa5;
+}
+
+
+.container-form {
+        position: relative;
+        justify-content: center;
+        top: -45px;
+        background-color: white;
+        border-radius: 50px 50px 0px 0px;
+        width: 100%;
+        padding-top: 22px;
+        margin-right: 15px;
+        
+        .title {
+            font-family: ChewyRegular;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            font-size: 40px;
+            margin: 0;
+            margin-bottom: 28px;
+        }
+
+    }
+
+.container-btn{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+
+//ESTILOS PARA LOS ION FOOTER
+
+ion-footer{
+    --box-shadow: none;
+    --border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-footer div {
+    text-align: center;
+    margin-bottom: 60px;
+
+    p a {
+        color: black;
+    }
+
+    .custom-p {
+        color: #acaaa5;
+    }
+}
+
 
 // ESTILOS PARA TODOS LOS ION TOOLBAR
 
@@ -63,6 +151,36 @@ ion-toolbar{
     }
 }
 
+//ESTILOS HEADER
+
+ion-header {
+    ion-toolbar {
+        --background: var(--custom-color-2);
+        --padding-start: 0;
+        --padding-bottom: 5px;
+
+        .return-btn {
+            font-family: LexendBold;
+            color: black;
+            font-size: 16px;
+            margin-top: 45px;
+            margin-left: 5px;
+
+            .container-icon {
+                background-color: var(--custom-color);
+                border-radius: 8px;
+                padding: 8px;
+                margin-right: 4px;
+
+                ion-icon {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
 
 // ESTILOS PARA TODOS LOS BOTONES "EN PRINCIPIO" -- PARA CAMBIAR ESTILOS, CAMBIARLO EN UNO EN CONCRETO CON ALGUNA CLASE
 
@@ -70,6 +188,13 @@ ion-button{
     --border-radius: var(--app-border-radius);
     height: 48px;
     text-transform: none;
+    font-size: 16px;
+    font-family: LexendMedium;
+    color: black;
+    --background: var(--custom-color);
+    --box-shadow: none; 
+    width: 100%;
+    height: 58px;
 }
 
 // ESTILOS PARA ITEMS Y INPUTS
@@ -77,10 +202,15 @@ ion-button{
 ion-item{
     --padding-start: 8px;
     --padding-end: 8px;
+    --border-color: transparent;
+    --box-shadow: none;
 }
 
 ion-input{
     
+    font-family: LexendRegular !important; 
+    font-size: 15px !important;
+
     ion-input-password-toggle{
         margin: 0 !important;
     }

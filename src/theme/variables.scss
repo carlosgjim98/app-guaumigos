@@ -1,77 +1,81 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 @font-face {
-  font-family: 'Lato';
+  font-family: 'LexendBlack';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/Lato-Regular.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Black.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'DMSans-Bold';
+  font-family: 'LexendBold';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Bold.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Bold.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraBold';
+  font-family: 'LexendExtraBold';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraBold.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-ExtraBold.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'DMSans-ExtraLight';
+  font-family: 'LexendExtraLight';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-ExtraLight.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-ExtraLight.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'DMSans-Light';
+  font-family: 'LexendLight';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Light.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Light.ttf') format('truetype'); 
 }
 
 @font-face {
-  font-family: 'DMSans-Medium';
+  font-family: 'LexendMedium';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Medium.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Medium.ttf') format('truetype'); 
 }
 
-
 @font-face {
-  font-family: 'DMSans-Regular';
+  font-family: 'LexendRegular';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Regular.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Regular.ttf') format('truetype'); 
 }
 
-
 @font-face {
-  font-family: 'DMSans-SemiBold';
+  font-family: 'LexendThin';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-SemiBold.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-Thin.ttf') format('truetype'); 
 }
 
+@font-face {
+  font-family: 'LexendSemiBold';
+  font-style: normal;
+  font-weight: normal; 
+  src: url('/assets/fonts/Lexend-SemiBold.ttf') format('truetype'); 
+}
 
 @font-face {
-  font-family: 'DMSans-Thin';
+  font-family: 'ChewyRegular';
   font-style: normal;
-  font-weight: normal;
-  src: url('/assets/fonts/DMSans-Thin.ttf');
+  font-weight: normal; 
+  src: url('/assets/fonts/Chewy-Regular.ttf') format('truetype'); 
 }
 
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #0054e9 !important;
+  --ion-color-primary: #FFD954 !important;
   --ion-color-primary-rgb: 56, 128, 255 !important;
-  --ion-color-primary-contrast: #ffffff !important;
+  --ion-color-primary-contrast: #FFCA3C !important;
   --ion-color-primary-contrast-rgb: 255, 255, 255 !important;
   --ion-color-primary-shade: #3171e01f !important;
   --ion-color-primary-tint: #4c8eff34 !important;

@@ -1,25 +1,32 @@
 ion-content{
     --background: url('../../../assets/imgs/backgrounds/BIENVENIDA.png') no-repeat center / cover; 
 
-    font-family: Lexend, sans-serif;
-
     .logo-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 30%; 
-        
+        width: 100%;
+
         img {
             width: 80%;
             height: auto;
         }
     
-        p {
+        .span1, .span2 {
             text-align: center;
             margin-top: 10px; 
             font-size: 25px; 
             color: black;
+        }
+
+        .span1{
+            font-family: LexendLight;
+        }
+
+        .span2{
+            font-family: LexendBold;
         }
     }
 
@@ -30,8 +37,9 @@ ion-content{
         transform: translateX(-50%);
         width: 80%; 
         max-width: 280px; 
+        height: 55px;
+        color: white;
         --background: black;
         --border-radius: 5px;
-        font-size: 16px;
     }
 }

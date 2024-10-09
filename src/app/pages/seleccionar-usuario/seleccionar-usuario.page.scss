@@ -1,10 +1,11 @@
 ion-content {
     --background: url("../../../assets/imgs/backgrounds/SELECCIONAR-USUARIO.png") no-repeat center / cover;
-
+    
     .return-btn {
         margin-top: 70px;
-        margin-left: 5px;
         padding: 0;
+        width: 0;
+        margin-left: 15px;
         --box-shadow: none; 
         --outline: none; 
         --background: transparent;
@@ -26,15 +27,14 @@ ion-content {
         display: flex;
         flex-direction: column;
         align-items: center; 
-        justify-content: flex-start; 
-        height: 100vh; 
-        font-family: Lexend, sans-serif;
+        font-family: LexendBold;
         margin-top: 20px;
+        padding-bottom: 0;
 
         h2 {
             margin-right: 28%;
             color: black;
-            margin-bottom:35px;
+            margin-bottom: 35px;
             font-size: 30px;
             text-align: start;
         }
@@ -43,7 +43,7 @@ ion-content {
             display: flex;
             flex-direction: column;
             align-items: center; 
-            width: 90%; 
+            width: 90%;
         }
 
         .apartado-eleccion-custom,
@@ -67,7 +67,6 @@ ion-content {
 
             p {
                 margin-top: 10px;
-                font-size: 16px;
             }
         }
 
@@ -83,17 +82,8 @@ ion-content {
         }
 
         .container-btn {
-            margin-top: 15px;
             width: 100%;
-
-            .btn-custom {
-                --background: var(--custom-color);
-                --box-shadow: none; 
-                color: black;
-                width: 100%;
-                font-size: 16px;
-                height: 58px;
-            }
+            margin-top: 5px;
         }
     }
 }

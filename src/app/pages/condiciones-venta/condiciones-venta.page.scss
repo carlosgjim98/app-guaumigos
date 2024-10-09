@@ -1,35 +1,6 @@
-ion-header {
-    ion-toolbar {
-        --background: var(--custom-color-2);
-        --padding-start: 0;
-        --padding-bottom: 5px;
-
-        .return-btn {
-            font-family: Lexend, sans-serif;
-            color: black;
-            font-size: 16px;
-            margin-top: 45px;
-            margin-left: 5px;
-
-            .container-icon {
-                background-color: var(--custom-color);
-                border-radius: 8px;
-                padding: 8px;
-                margin-right: 4px;
-
-                ion-icon {
-                    width: 16px;
-                    height: 16px;
-                }
-            }
-        }
-    }
-}
-
 ion-content {
-    font-family: Lexend, sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 16px;
+    p{
+        font-family: LexendLight;
+    }
+    
 }
