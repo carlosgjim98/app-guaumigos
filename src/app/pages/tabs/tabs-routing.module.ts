@@ -8,24 +8,24 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'home',
-        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+        path: 'paseadores',
+        loadChildren: () => import('../listado-paseadores/listado-paseadores.module').then(m => m.ListadoPaseadoresPageModule)
       },
       {
-        path: 'profile',
+        path: 'deInteres',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
-        path: 'chats',
+        path: 'servicios',
         loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
       },
       {
-        path: 'calendar',
+        path: 'mensajes',
         loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
       },
 
       {
-        path: 'test-plugins',
+        path: 'perfil',
         loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
       },
       {
@@ -45,4 +45,4 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

@@ -1,5 +1,4 @@
 ion-content {
-
     .container-a {
         margin-top: 23px;
         margin-bottom: 23px;
@@ -7,8 +6,9 @@ ion-content {
             display: flex;
             justify-content: center;
             margin: 10px 0;
-            color: black;
+            color: #141411;
             font-size: 15px;
+            font-family: LexendSemiBold;
         }
     }
 
@@ -18,7 +18,34 @@ ion-content {
     }
 }
 
-a{
+a {
     font-family: LexendBold;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-p, .custom-p2 {
+    font-family: LexendRegular;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #1B1B1B;
+}
+
+.custom-p2{
+    color: #919191;
+}
+
+.enlace-registro {
+    color: #141411;
+}
+
+.correo {
+    font-family: LexendSemiBold;
 }
 

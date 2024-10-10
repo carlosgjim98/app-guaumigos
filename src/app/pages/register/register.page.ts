@@ -23,6 +23,16 @@ export class RegisterPage implements OnInit {
     public translate: TranslateService
   ) { }
 
+  focusedInputs: boolean[] = [false, false, false, false];
+
+  onFocus(index: number) {
+    this.focusedInputs[index] = true;
+  }
+
+  onBlur(index: number) {
+    this.focusedInputs[index] = false;
+  }
+
   public ngOnInit(): void {
 
 

@@ -18,6 +18,7 @@ const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
   templateUrl: './login.page.html',
   styleUrls: ['./login.page.scss'],
 })
+
 export class LoginPage implements OnInit {
 
   public isUpdating: boolean;
@@ -38,17 +39,26 @@ export class LoginPage implements OnInit {
     public translate: TranslateService,
   ) { }
 
+  focusedInputs: boolean[] = [false, false];
+
+  onFocus(index: number) {
+    this.focusedInputs[index] = true;
+  }
+
+  onBlur(index: number) {
+    this.focusedInputs[index] = false;
+  }
+
   ngOnInit() {
 
     this.form = new FormGroup({
-      email: new FormControl('info@xerintel.es', 
+      email: new FormControl('', 
         {validators: [Validators.required, Validators.email]}
       ),
-      password: new FormControl('xeripassword', 
+      password: new FormControl('', 
         {validators: [Validators.required, Validators.minLength(8)]}
       ),
     });
-
 
     PushNotifications.createChannel({
       id: 'hola',

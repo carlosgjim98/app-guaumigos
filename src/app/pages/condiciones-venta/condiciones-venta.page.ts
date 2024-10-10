@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CondicionesVentaPage implements OnInit {
 
+  dynamicHeaderText: string = 'Condiciones de Venta';
+  returnLink: string = '/register';
+
   constructor() { }
 
   ngOnInit() {

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PrivacyPolicyPage implements OnInit {
 
+  dynamicHeaderText: string = 'Política de Privacidad';
+  returnLink: string = '/register';
+  
   constructor() { }
 
   ngOnInit() {

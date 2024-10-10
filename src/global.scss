@@ -106,19 +106,6 @@ ion-footer {
     align-items: center;
 }
 
-ion-footer div {
-    text-align: center;
-    margin-bottom: 60px;
-
-    p a {
-        color: black;
-    }
-
-    .custom-p {
-        color: #acaaa5;
-    }
-}
-
 // ESTILOS PARA TODOS LOS ION TOOLBAR
 
 ion-toolbar {
@@ -141,36 +128,6 @@ ion-toolbar {
         font-size: 16px;
         padding: 0;
         font-family: var(--ion-font-family-headers);
-    }
-}
-
-//ESTILOS HEADER
-
-ion-header {
-    ion-toolbar {
-        --background: var(--custom-color-2);
-        --padding-start: 0;
-        --padding-bottom: 5px;
-
-        .return-btn {
-            font-family: LexendBold;
-            color: black;
-            font-size: 16px;
-            margin-top: 45px;
-            margin-left: 5px;
-
-            .container-icon {
-                background-color: var(--custom-color);
-                border-radius: 8px;
-                padding: 8px;
-                margin-right: 4px;
-
-                ion-icon {
-                    width: 16px;
-                    height: 16px;
-                }
-            }
-        }
     }
 }
 

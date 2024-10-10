@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
 export class TabsPage {
 
   public pages = [
-    { tab: 'test-plugins', name: 'Ejemplos', icon: 'logo-ionic' },
-    { tab: 'home', name: 'Inicio', icon: 'home' },
-    { tab: 'chats', name: 'Chats', icon: 'chatbubbles' },
-    { tab: 'calendar', name: 'Calendario', icon: 'calendar' },
-    { tab: 'profile', name: 'Perfil', icon: 'person' }
+    { tab: 'paseadores', name: 'Paseadores', icon: 'assets/icons/toolbarFooter/tab-paseadores.svg' },
+    { tab: 'deInteres', name: 'De Interés', icon: 'assets/icons/toolbarFooter/tab-interes.svg' },
+    { tab: 'servicios', name: 'Servicios', icon: 'assets/icons/toolbarFooter/tab-servicios.svg' },
+    { tab: 'mensajes', name: 'Mensajes', icon: 'assets/icons/toolbarFooter/tab-mensajes.svg' },
+    { tab: 'perfil', name: 'Mi Perfil', icon: 'assets/icons/toolbarFooter/tab-perfil.svg' }
   ];
   constructor() {}
 

@@ -6,19 +6,18 @@
   <div class="container-form">
     <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
       <h2 class="title">Login</h2>
-      <div class="container-input-activated">
+      <div [ngClass]="{'container-input-activated': focusedInputs[0], 'container-input': !focusedInputs[0]}">
         <ion-item>
-          <ion-input clearInput type="text" placeholder="Email" formControlName="email"
-            class="custom-input">
-            <img slot="start" src="assets/icons/email.svg" alt="icono-personalizado" class="custom-icon" />
+          <ion-input clearInput type="text" placeholder="Email" formControlName="email" class="custom-input" (ionFocus)="onFocus(0)" (ionBlur)="onBlur(0)">
+            <img slot="start" [src]="focusedInputs[0] ? 'assets/icons/email-negro.svg' : 'assets/icons/email.svg'" alt="icono-personalizado" class="custom-icon" />
           </ion-input>
         </ion-item>
       </div>
-      <div class="container-input">
+      <div [ngClass]="{'container-input-activated': focusedInputs[1], 'container-input': !focusedInputs[1]}">
         <ion-item>
           <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}"
-            formControlName="password" class="custom-input">
-            <img slot="start" src="assets/icons/password.svg" alt="icono-personalizado" class="custom-icon" />
+            formControlName="password" class="custom-input" (ionFocus)="onFocus(1)" (ionBlur)="onBlur(1)">
+            <img slot="start" [src]="focusedInputs[1] ? 'assets/icons/password-negro.svg' : 'assets/icons/password.svg'" alt="icono-personalizado" class="custom-icon" />
           </ion-input>
         </ion-item>
       </div>
@@ -27,15 +26,12 @@
       </div>
 
       <div class="container-btn">
-        <ion-button type="submit" class="btn-custom"><b>Entrar</b></ion-button>
+        <ion-button type="submit" class="btn-custom">Entrar</ion-button>
       </div>
     </form>
   </div>
-</ion-content>
-
-<ion-footer class="ion-no-border">
-  <div>
-      <p>¿Aún no tienes una cuenta? <a routerLink="/register"><b>Regístrate</b></a></p>
-      <p class="custom-p">Contacta con nosotros en <b>info&#64;guaumigo.com</b></p>
+  <div class="footer-content">
+    <p class="custom-p">¿Aún no tienes una cuenta? <a routerLink="/register" class="enlace-registro">Regístrate</a></p>
+    <p class="custom-p2">Contacta con nosotros en <span class="correo">info&#64;guaumigo.com</span></p>
   </div>
-</ion-footer>
+</ion-content>

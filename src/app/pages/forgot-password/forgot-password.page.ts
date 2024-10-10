@@ -13,6 +13,7 @@ export class ForgotPasswordPage implements OnInit {
 
   form: FormGroup;
   email: any;
+  dynamicHeaderText: string = 'Recordar contraseña';
 
   constructor(
     private modalCtrl: ModalController,
