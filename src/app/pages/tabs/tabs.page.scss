@@ -1,11 +1,16 @@
 ion-tabs {
-
+    
     ion-tab-bar {
-        --ion-color-primary: #ffffff;
+        --ion-color-primary: #000000;
         --ion-color-primary-contrast: #151414;
+        --background: #ffff;
         font-family: LexendMedium;
         font-size: 11px;
+        padding-bottom: 22px;
+        padding-top: 5px;
+        box-shadow: 0 -1px 8px #EAE9E5;
 
+        border: none;
         ion-tab-button {
             display: flex;
             flex-direction: column;

@@ -1,12 +1,44 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
-    <p>Hola Marta,<br>¿necesitas un paseador?</p>
+    <p class="titular">
+      Hola <span class="nombre">Marta</span>,<br>¿necesitas un paseador?
+    </p>
     <div class="barra-busqueda-container">
       <ion-searchbar placeholder="Buscar"></ion-searchbar>
-      <ion-icon src="assets/icons/filtros.svg" class="filtro"></ion-icon>
+      <div class="filtro-container"><ion-icon src="assets/icons/filtros.svg" class="filtro"></ion-icon></div>
     </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div *ngFor="let paseador of paseadores" class="container-paseador">
+
+    <div class="container-fotoperro">
+      <img [src]="paseador.imgPerro" alt="Imagen del perro de {{ paseador.nombre }}">
+    </div>
+
+    <div class="container-datos">
+
+      <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+
+      <div class="container-fotousuario">
+        <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
+      </div>
+
+      <div class="container-info">
+
+        <p class="nombre">{{ paseador.nombre }}</p>
+
+        <p class="distancia">{{ paseador.distancia }}</p>
+
+        <p class="precio">
+          {{ paseador.precio }} / {{ paseador.duracion }}
+          <span class="valoracion">
+            <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            <span class="nota">{{ paseador.valoracion }}</span>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>
 </ion-content>
