@@ -1,1 +1,32 @@
+ion-tabs {
 
+    ion-tab-bar {
+        --ion-color-primary: #ffffff;
+        --ion-color-primary-contrast: #151414;
+        font-family: LexendMedium;
+        font-size: 11px;
+
+        ion-tab-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            --color: #C1BBBB;
+            flex: 1;
+            padding: 4px 0;
+
+            ion-icon {
+                font-size: 25px;
+            }
+
+            ion-label {
+                font-size: 11px;
+                margin-top: 4px;
+            }
+
+            &.tab-selected {
+                --color: #000000;
+            }
+        }
+    }
+}

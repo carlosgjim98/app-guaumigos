@@ -8,11 +8,11 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'paseadores',
+        path: 'listadopaseadores',
         loadChildren: () => import('../listado-paseadores/listado-paseadores.module').then(m => m.ListadoPaseadoresPageModule)
       },
       {
-        path: 'deInteres',
+        path: 'deinteres',
         loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
       },
       {
@@ -30,14 +30,14 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/tabs/home',
+        redirectTo: '/tabs/listadopaseadores',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
+    redirectTo: '/tabs/listadopaseadores',
     pathMatch: 'full'
   }
 ];

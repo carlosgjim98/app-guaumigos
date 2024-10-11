@@ -14,6 +14,7 @@ export class ForgotPasswordPage implements OnInit {
   form: FormGroup;
   email: any;
   dynamicHeaderText: string = 'Recordar contraseña';
+  returnLink: string = '/login';
 
   constructor(
     private modalCtrl: ModalController,
