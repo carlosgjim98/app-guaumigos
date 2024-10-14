@@ -24,7 +24,7 @@ ion-header {
             display: flex;
             align-items: center;
             width: 100%;
-            height: 35px;
+            height: 40px !important;
             margin-bottom: 10px;
             margin-top: auto;
 
@@ -33,6 +33,8 @@ ion-header {
                 --box-shadow: 0;
                 --icon-color: #110f0f;
                 --background: #ffffff;
+                --padding-start: 16px;
+                --padding-end: 16px;
 
                 font-family: LexendRegular;
                 color: #a5a5a5;
@@ -40,9 +42,12 @@ ion-header {
                 height: 100%;
                 padding: 0 10px;
                 padding-left: 0;
+                height: 40px !important;
 
                 input {
                     height: 100%;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                 }
 
                 input::placeholder {
@@ -51,29 +56,31 @@ ion-header {
                 }
             }
 
-            .filtro-container {
-                margin-left: 2px;
-                width: 45px;
-                height: 100%;
-                background-color: #000000;
-                border-radius: 8px;
+            .filtro-button {
+                width: 45px !important;
+                height: 40px !important;
+                border-radius: 4px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-            }
+                --background: #000000;
+                --box-shadow: none;
+                all: unset;
 
-            .filtro-container ion-icon {
-                width: 20px;
-                height: 20px;
+                ion-icon {
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                }
             }
         }
     }
 }
+
 ion-content {
     .container-paseador {
         display: flex;
         flex-direction: column;
-        background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 2px 8px #cececd;
         margin: 10px;
@@ -84,6 +91,10 @@ ion-content {
         .container-fotoperro {
             width: 100%;
             height: 110px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            overflow: hidden;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -94,6 +105,7 @@ ion-content {
         .container-datos {
             display: flex;
             padding: 10px;
+            padding-top: 13px;
             align-items: center;
             margin-bottom: 5px;
 

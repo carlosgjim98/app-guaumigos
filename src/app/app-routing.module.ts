@@ -104,22 +104,19 @@ const routes: Routes = [
   {
     path: 'seleccionar-usuario',
     loadChildren: () => import('./pages/seleccionar-usuario/seleccionar-usuario.module').then( m => m.SeleccionarUsuarioPageModule)
-  },  {
+  },
+  {
     path: 'condiciones-venta',
     loadChildren: () => import('./pages/condiciones-venta/condiciones-venta.module').then( m => m.CondicionesVentaPageModule)
   },
   {
     path: 'listado-paseadores',
     loadChildren: () => import('./pages/listado-paseadores/listado-paseadores.module').then( m => m.ListadoPaseadoresPageModule)
+  },  {
+    path: 'filtros-paseadores',
+    loadChildren: () => import('./pages/filtros-paseadores/filtros-paseadores.module').then( m => m.FiltrosPaseadoresPageModule)
   }
 
-
-
-
-
-
-
-  
 
 ];
 @NgModule({

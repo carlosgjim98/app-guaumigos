@@ -1,0 +1,145 @@
+ion-content {
+    padding: 15px;
+
+    h2 {
+        font-family: LexendMedium;
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .container-filtros {
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #d9d9d9;
+            margin: 7px 0;
+            opacity: 1;
+        }
+
+        .container-tipo,
+        .form-actions {
+            padding: 5px 0;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-bottom: 5px;
+
+            .container-check {
+                display: flex;
+                align-items: center;
+                margin-bottom: 7px;
+                padding: 0;
+
+                p {
+                    margin: 0;
+                    font-family: LexendRegular;
+                    font-size: 16px;
+                }
+
+                input {
+                    border-radius: 8px;
+                    border: 1px solid #919191;
+                    width: 32px;
+                    height: 32px;
+                    margin-right: 7px;
+                    appearance: none;
+                    position: relative;
+                }
+
+                input:checked {
+                    background: var(--custom-color);
+                    border: none;
+                }
+
+                input:checked::after {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 15px;
+                    height: 15px;
+                    background: url("../../../assets/icons/Trazado 47840.svg") no-repeat center center;
+                    background-size: contain;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .container-range {
+                margin-bottom: 15px;
+
+                p {
+                    font-family: LexendRegular;
+                    font-size: 14px;
+                    color: #919191;
+                }
+
+                input {
+                    appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    background: var(--custom-color);
+                    border-radius: 5px;
+                    outline: none;
+                    transition: background 0.3s ease;
+                }
+
+                input::-webkit-slider-thumb {
+                    appearance: none;
+                    width: 27px;
+                    height: 27px;
+                    background-color: var(--custom-color);
+                    border-radius: 50%;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+            }
+
+            .container-tamano {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                margin-top: 5px;
+
+                .tamano,
+                .tamano-dif {
+                    text-align: center;
+                    border: 1px solid #919191;
+                    border-radius: 10px;
+                    width: 100px;
+                    color: #919191;
+
+                    p {
+                        font-family: LexendRegular;
+                        font-size: 15px;
+                    }
+                }
+
+                .tamano {
+                    margin-right: 10px;
+                }
+
+                .tamano-seleccionado {
+                    background-color: #100f0f;
+                    color: #ffffff;
+                    border: none;
+                }
+            }
+
+            .container-calendario {
+                .calendario-custom {
+                    border: 1px solid #919191;
+                    border-radius: 10px;
+
+                    ion-datetime {
+                        font-family: LexendRegular;
+                        font-size: 14px;
+                        color: #2b2828;
+                        background-color: transparent;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}

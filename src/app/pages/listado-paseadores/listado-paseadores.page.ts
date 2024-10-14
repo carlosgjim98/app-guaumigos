@@ -29,10 +29,19 @@ export class ListadoPaseadoresPage implements OnInit {
       {
         nombre: 'Marcos L.',
         distancia: 'A 0,1 km de ti · Jerez de la Frontera…',
-        precio: '15€/ 1 horas',
-        duracion: '2 horas',
+        precio: '15€',
+        duracion: '1 horas',
         valoracion: 4.8,
         imgPerro: 'assets/imgs/perros/shared image-1.png',
+        imgUsuario: 'assets/imgs/usuarios/Rectángulo 19646.png',
+      },
+      {
+        nombre: 'Marcos L.',
+        distancia: 'A 0,1 km de ti · Jerez de la Frontera…',
+        precio: '15€',
+        duracion: '1 horas',
+        valoracion: 4.8,
+        imgPerro: 'assets/imgs/perros/shared image-2.png',
         imgUsuario: 'assets/imgs/usuarios/Rectángulo 19646.png',
       },
     ];
