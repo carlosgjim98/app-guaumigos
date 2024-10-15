@@ -126,18 +126,47 @@ ion-content {
             }
 
             .container-calendario {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                
                 .calendario-custom {
+                    justify-content: center;
                     border: 1px solid #919191;
                     border-radius: 10px;
+                    width: 100%;
 
                     ion-datetime {
                         font-family: LexendRegular;
-                        font-size: 14px;
                         color: #2b2828;
                         background-color: transparent;
+                        --ion-font-family: "LexendRegular";
+                        border-radius: 16px;
+                        --today-color: black !important;
+                        width: 100%;
+                        height: 100%;
                     }
 
-                    
+                    ion-datetime::part(calendar-day):focus {
+                        background-color: var(--custom-color-2);
+                        box-shadow: none;
+                        color: #d59c05;
+                    }
+
+                    ion-datetime::part(calendar-day) {
+                        color: #919191;
+                        font-size: 15px;
+                    }
+
+                    ion-datetime::part(calendar-weekday) {
+                        font-size: 13px;
+                        font-family: "LexendRegular";
+                        color: #919191;
+                    }
+
                 }
             }
         }

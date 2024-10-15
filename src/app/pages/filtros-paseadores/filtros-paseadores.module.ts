@@ -8,6 +8,7 @@ import { FiltrosPaseadoresPageRoutingModule } from './filtros-paseadores-routing
 
 import { FiltrosPaseadoresPage } from './filtros-paseadores.page';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     FiltrosPaseadoresPageRoutingModule,
     ComponentsModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    FullCalendarModule
   ],
   declarations: [FiltrosPaseadoresPage]
 })

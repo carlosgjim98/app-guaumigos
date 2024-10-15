@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-filtros-paseadores',
   templateUrl: './filtros-paseadores.page.html',
   styleUrls: ['./filtros-paseadores.page.scss'],
 })
+
 export class FiltrosPaseadoresPage implements OnInit {
 
   dynamicHeaderText: string = 'Filtros';
@@ -58,3 +59,4 @@ export class FiltrosPaseadoresPage implements OnInit {
     }
   }
 }
+

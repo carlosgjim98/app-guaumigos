@@ -1,0 +1,133 @@
+ion-content {
+    .container-fotoperro {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .container-datos {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+
+        .container-fotousuario {
+            width: 70px;
+            height: auto;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .container-info {
+            margin-left: 10px;
+
+            .nombre,
+            .localizacion,
+            .opinion {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+
+            .nombre {
+                font-family: LexendSemibold;
+                font-size: 18px;
+            }
+
+            .localizacion {
+                font-family: LexendLight;
+                font-size: 15px;
+                color: #110f0f;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 10px;
+                    height: auto;
+                }
+
+                .nombreLugar {
+                    margin-left: 5px;
+                }
+            }
+
+            .opinion {
+                display: flex;
+                align-items: center;
+
+                .opiniones {
+                    font-family: LexendRegular;
+                    font-size: 13px;
+                    margin-left: 8px;
+                    color: #100f0f;
+                }
+                .valoracion {
+                    display: flex;
+                    align-items: center;
+
+                    ion-icon {
+                        font-size: 14px;
+                    }
+
+                    .nota {
+                        font-family: LexendMedium;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-detalles {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        h2 {
+            font-family: LexendLight;
+            font-size: 14px;
+            color: #919191;
+        }
+
+        .detalles {
+            
+            list-style-position: inside;
+            margin-bottom: 5px;
+
+            li {
+                font-family: LexendLight;
+                font-size: 15px;
+                color: #100f0f;
+                list-style: none;
+                display: flex;
+                align-items: center;
+            }
+
+            li::before {
+                content: "\2022";  
+                color: var(--custom-color); 
+                display: inline-block; 
+                font-size: 25px;
+                line-height: 0;
+                width: 15px;
+            }
+        }
+    }
+
+    hr {
+        border: 0;
+        height: 1px;
+        background-color: #d9d9d9;
+        margin: 7px 0;
+        opacity: 1;
+    }
+}

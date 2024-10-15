@@ -50,7 +50,7 @@
             (click)="seleccionarOpcionTamano('35a55')">
             <p>35-55 cm</p>
           </div>
-          <div [ngClass]="{'tamano-seleccionado': esSeleccionadaTamano('mas55')}" class="tamano"
+          <div [ngClass]="{'tamano-seleccionado': esSeleccionadaTamano('mas55')}" class="tamano-dif"
             (click)="seleccionarOpcionTamano('mas55')">
             <p>+ 55 cm</p>
           </div>
@@ -74,7 +74,7 @@
             (click)="seleccionarOpcionPeso('10a30')">
             <p>10-30 kg</p>
           </div>
-          <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('mas30')}" class="tamano"
+          <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('mas30')}" class="tamano-dif"
             (click)="seleccionarOpcionPeso('mas30')">
             <p>+ 30 kg</p>
           </div>
@@ -99,13 +99,12 @@
         <h2>Fechas disponibles</h2>
         <div class="container-calendario">
           <div class="calendario-custom">
-            <ion-datetime ></ion-datetime>
+            <ion-datetime presentation="date" display-format="YYYY-MM-DD" [multiple]="true" [firstDayOfWeek]="1" ></ion-datetime>
           </div>
         </div>
       </div>
 
       <div class="form-actions">
-        <!-- Botón de envío -->
         <ion-button type="submit" [disabled]="!form.valid">Aplicar Filtros</ion-button>
       </div>
     </form>

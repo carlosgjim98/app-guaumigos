@@ -115,6 +115,10 @@ const routes: Routes = [
   },  {
     path: 'filtros-paseadores',
     loadChildren: () => import('./pages/filtros-paseadores/filtros-paseadores.module').then( m => m.FiltrosPaseadoresPageModule)
+  },
+  {
+    path: 'detalle-paseo',
+    loadChildren: () => import('./pages/detalle-paseo/detalle-paseo.module').then( m => m.DetallePaseoPageModule)
   }
 
 
