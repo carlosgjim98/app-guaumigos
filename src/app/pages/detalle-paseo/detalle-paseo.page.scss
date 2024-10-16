@@ -2,7 +2,42 @@ ion-content {
     .container-fotoperro {
         width: 100%;
         height: 100%;
-        overflow: hidden;
+        position: relative;
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: absolute;
+            z-index: 1000;
+            left: 10px;
+            top: 65px;
+        }
+
+        ion-buttons {
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent;
+                padding: 0;
+                margin: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px;
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
+        }
+
+        swiper-container {
+            --swiper-pagination-color: var(--custom-color);
+        }
 
         img {
             width: 100%;
@@ -55,6 +90,7 @@ ion-content {
                 img {
                     width: 10px;
                     height: auto;
+                    margin-left: 3px;
                 }
 
                 .nombreLugar {
@@ -78,6 +114,7 @@ ion-content {
 
                     ion-icon {
                         font-size: 14px;
+                        margin-right: 2px;
                     }
 
                     .nota {
@@ -91,6 +128,7 @@ ion-content {
     .container-detalles {
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 15px;
 
         h2 {
             font-family: LexendLight;
@@ -99,9 +137,8 @@ ion-content {
         }
 
         .detalles {
-            
             list-style-position: inside;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
 
             li {
                 font-family: LexendLight;
@@ -109,25 +146,91 @@ ion-content {
                 color: #100f0f;
                 list-style: none;
                 display: flex;
-                align-items: center;
+                align-items: flex-start;
+                line-height: 1.5;
             }
 
             li::before {
-                content: "\2022";  
-                color: var(--custom-color); 
-                display: inline-block; 
-                font-size: 25px;
-                line-height: 0;
-                width: 15px;
+                content: "";
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                background-color: var(--custom-color);
+                border-radius: 50%;
+                margin-right: 7px;
+                transform: translateY(8px);
+                flex-shrink: 0;
             }
         }
     }
+}
 
-    hr {
-        border: 0;
-        height: 1px;
-        background-color: #d9d9d9;
-        margin: 7px 0;
-        opacity: 1;
+ion-footer {
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    .container-footer {
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0px -2px 5px #f4f0f0;
+        padding: 15px;
+        z-index: 1000;
+
+        .container-acciones-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .btn-custom-2 {
+                --background: #ffffff !important;
+                border: 1px solid #100f0f;
+                border-radius: 10px;
+                margin-right: 10px;
+            }
+        }
     }
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #d9d9d9;
+    margin: 7px 0;
+    opacity: 1;
+}
+
+//CALENDARIO
+
+.calendario-custom {
+    justify-content: center;
+    width: 100%;
+
+    ion-datetime {
+        font-family: LexendRegular;
+        color: #2b2828;
+        background-color: transparent;
+        --ion-font-family: "LexendRegular";
+        border-radius: 16px;
+        --today-color: black !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    ion-datetime::part(calendar-day):focus {
+        background-color: #110F0F;
+        box-shadow: none;
+        color: #FFFFFF;
+    }
+
+    ion-datetime::part(calendar-day) {
+        color: #919191;
+        font-size: 15px;
+    }
+
+    ion-datetime::part(calendar-weekday) {
+        font-size: 13px;
+        font-family: "LexendRegular";
+        color: #919191;
+    }
+
 }

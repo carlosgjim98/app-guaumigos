@@ -119,6 +119,10 @@ const routes: Routes = [
   {
     path: 'detalle-paseo',
     loadChildren: () => import('./pages/detalle-paseo/detalle-paseo.module').then( m => m.DetallePaseoPageModule)
+  },
+  {
+    path: 'modal-solicitud-paseo',
+    loadChildren: () => import('./pages/modal-solicitud-paseo/modal-solicitud-paseo.module').then( m => m.ModalSolicitudPaseoPageModule)
   }
 
 

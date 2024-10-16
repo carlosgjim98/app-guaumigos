@@ -1,7 +1,20 @@
 <ion-content [fullscreen]="true">
   <div *ngFor="let paseador of paseadores" class="container-paseador">
     <div class="container-fotoperro">
-      <img [src]="paseador.imgPerro" alt="Imagen del perro de {{ paseador.nombre }}">
+      <div class="button-container">
+        <ion-buttons slot="start">
+          <ion-button class="return-btn" routerLink="/tabs/listado-paseadores">
+            <div class="container-icon">
+              <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+            </div>
+          </ion-button>
+        </ion-buttons>
+      </div>
+      <swiper-container [pagination]="true">
+        <swiper-slide *ngFor="let imagen of paseador.imagenes">
+          <img [src]="imagen" alt="Imagen del perro de {{ paseador.nombre }}">
+        </swiper-slide>
+      </swiper-container>
     </div>
     <div class="container-datos">
       <div class="container-fotousuario">
@@ -51,12 +64,11 @@
     </div>
   </div>
 </ion-content>
-
 <ion-footer>
-  <ion-toolbar>
+  <div class="container-footer">
     <div class="container-acciones-btn">
-        <ion-button  class="btn-custom" routerLink="">Ver perfil</ion-button>
-      <ion-button type="submit" >Enviar solicitud</ion-button>
+      <ion-button class="btn-custom-2" routerLink="/das">Ver perfil</ion-button>
+      <ion-button (click)="presentModal()" >Enviar solicitud</ion-button>
     </div>
-  </ion-toolbar>
+  </div>
 </ion-footer>

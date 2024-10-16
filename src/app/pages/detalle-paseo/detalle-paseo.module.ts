@@ -8,13 +8,17 @@ import { DetallePaseoPageRoutingModule } from './detalle-paseo-routing.module';
 
 import { DetallePaseoPage } from './detalle-paseo.page';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 @NgModule({
+  
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     DetallePaseoPageRoutingModule
   ],
-  declarations: [DetallePaseoPage]
+  declarations: [DetallePaseoPage],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class DetallePaseoPageModule {}

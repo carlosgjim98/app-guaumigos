@@ -19,7 +19,9 @@ import { App, URLOpenListenerEvent } from '@capacitor/app';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Device } from '@capacitor/device';
+import { register } from 'swiper/element/bundle';
 
+register();
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',

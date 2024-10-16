@@ -1,0 +1,41 @@
+<ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+  <ng-template>
+    <div class="container-modal">
+      <h2 class="tittle">Solicitud de paseo</h2>
+    </div>
+    <hr>
+    <div *ngFor="let paseador of paseadores" class="container-paseador">
+      <div class="container-datos">
+        <div class="container-fotousuario">
+          <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
+        </div>
+
+        <div class="container-info" routerLink="/detalle-paseo">
+
+          <p class="nombre">{{ paseador.nombre }}</p>
+
+          <p class="precio">
+            <span class="valoracion">
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <span class="nota">{{ paseador.valoracion }}</span>
+            </span>
+            &nbsp;· {{ paseador.precio }} / {{ paseador.duracion }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-modal">
+      <div class="calendario-custom">
+        <ion-datetime presentation="date" display-format="YYYY-MM-DD" [firstDayOfWeek]="1"></ion-datetime>
+      </div>
+    </div>
+    <hr>
+    <div class="container-modal">
+
+    </div>
+    <div class="container-modal">
+      <ion-button type="submit">Continuar</ion-button>
+    </div>
+  </ng-template>
+</ion-modal>
