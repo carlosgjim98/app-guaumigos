@@ -9,6 +9,7 @@ export class SeleccionarUsuarioPage {
 
   opcionSeleccionada: string = '';
 
+  //ESO SI LOS TIPOS SON FIJOS
   iconos = {
     dueño: {
       normal: 'assets/icons/acceso-cliente.svg',

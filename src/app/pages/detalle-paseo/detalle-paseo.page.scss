@@ -168,6 +168,7 @@ ion-content {
 ion-footer {
     padding-bottom: 30px;
     background-color: #ffffff;
+
     .container-footer {
         width: 100%;
         background-color: #ffffff;
@@ -180,13 +181,6 @@ ion-footer {
             justify-content: center;
             align-items: center;
             width: 100%;
-
-            .btn-custom-2 {
-                --background: #ffffff !important;
-                border: 1px solid #100f0f;
-                border-radius: 10px;
-                margin-right: 10px;
-            }
         }
     }
 }
@@ -199,38 +193,217 @@ hr {
     opacity: 1;
 }
 
-//CALENDARIO
+//MODAL
 
-.calendario-custom {
-    justify-content: center;
-    width: 100%;
+.modal-principal {
+    --border-radius: 25px;
+    --height: 90%;
 
-    ion-datetime {
-        font-family: LexendRegular;
-        color: #2b2828;
-        background-color: transparent;
-        --ion-font-family: "LexendRegular";
-        border-radius: 16px;
-        --today-color: black !important;
-        width: 100%;
-        height: 100%;
+    .container-modal {
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .tittle {
+            font-family: LexendSemiBold;
+            font-size: 20px;
+            color: #110f0f;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .container-datos {
+            display: flex;
+            align-items: stretch;
+            margin-left: 0px;
+            margin-bottom: 15px;
+
+            .container-fotousuario {
+                width: 50px;
+                height: 50px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .container-info {
+                margin-left: 10px;
+                justify-content: center;
+
+                .nombre,
+                .precio {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .nombre {
+                    font-family: LexendMedium;
+                    font-size: 18px;
+                }
+
+                .precio {
+                    font-family: LexendLight;
+                    font-size: 16px;
+                    color: #100f0f;
+                    display: flex;
+                    align-items: center;
+
+                    .valoracion {
+                        display: flex;
+                        align-items: center;
+
+                        ion-icon {
+                            font-size: 14px;
+                        }
+
+                        .nota {
+                            font-family: LexendMedium;
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+        //CALENDARIO
+
+        .calendario-custom {
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 0;
+
+            ion-datetime {
+                font-family: LexendRegular;
+                color: #2b2828;
+                background-color: transparent;
+                --ion-font-family: "LexendRegular";
+                border-radius: 16px;
+                --today-color: black !important;
+                width: 100%;
+                height: 100%;
+            }
+
+            ion-datetime::part(calendar-day):focus {
+                background-color: #110f0f;
+                box-shadow: none;
+                color: #ffffff;
+            }
+
+            ion-datetime::part(calendar-day) {
+                color: #919191;
+                font-size: 15px;
+            }
+
+            ion-datetime::part(calendar-weekday) {
+                font-size: 13px;
+                font-family: "LexendRegular";
+                color: #919191;
+            }
+        }
+
+        //FECHAS DISPONIBLES
+
+        h2 {
+            font-family: LexendRegular;
+            font-size: 14px;
+            margin-top: 7px;
+            color: #919191;
+        }
+
+        .container-hora {
+            display: flex;
+            align-items: center;
+            border: 1px solid #100f0f;
+            border-radius: 10px;
+            margin-top: 15px;
+            padding: 10px;
+            gap: 10px;
+            background-color: transparent;
+
+            ion-icon {
+                font-size: 18px;
+                color: #000;
+            }
+
+            ion-datetime-button {
+                font-family: LexendMedium;
+                font-size: 14px;
+                color: #141411;
+                background: white;
+            }
+
+            ion-datetime {
+                --background: #fff1f2;
+            }
+        }
+
+        //2-MODAL
+
+        .container-mascota-eleccion {
+            border: 1px solid #100f0f;
+            border-radius: 10px;
+            margin-top: 15px;
+
+            ion-select {
+                font-family: LexendMedium;
+                font-size: 14px;
+                color: #141411;
+                margin-left: 15px;
+            }
+        }
+
+        .container-check {
+            border: 1px solid #919191;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            padding: 10px;
+            padding-right: 5px;
+
+            p {
+                margin: 0;
+                font-family: LexendRegular;
+                font-size: 16px;
+            }
+
+            .precio {
+                font-family: LexendLight;
+                font-size: 14px;
+                color: #919191;
+            }
+
+            input {
+                border-radius: 8px;
+                border: 1px solid #919191;
+                width: 32px;
+                height: 32px;
+                margin-right: 7px;
+                appearance: none;
+                position: relative;
+                margin-left: auto;
+            }
+
+            input:checked {
+                background: var(--custom-color);
+                border: none;
+            }
+
+            input:checked::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 15px;
+                height: 15px;
+                background: url("../../../assets/icons/Trazado 47840.svg") no-repeat center center;
+                background-size: contain;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
-
-    ion-datetime::part(calendar-day):focus {
-        background-color: #110F0F;
-        box-shadow: none;
-        color: #FFFFFF;
-    }
-
-    ion-datetime::part(calendar-day) {
-        color: #919191;
-        font-size: 15px;
-    }
-
-    ion-datetime::part(calendar-weekday) {
-        font-size: 13px;
-        font-family: "LexendRegular";
-        color: #919191;
-    }
-
 }

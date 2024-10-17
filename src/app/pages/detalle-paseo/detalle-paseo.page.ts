@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ModalController } from '@ionic/angular'
-
-import { ModalSolicitudPaseoPage } from '../modal-solicitud-paseo/modal-solicitud-paseo.page'
-
 @Component({
   selector: 'app-detalle-paseo',
   templateUrl: './detalle-paseo.page.html',
@@ -18,7 +14,16 @@ export class DetallePaseoPage implements OnInit {
     'Edad: entre 2 y 11 años', 'Tamaño: menos de 35 cm', 'Peso: entre 10 y 30 kg', 'Hembra, Macho', 'La mascota no puede estar en celo'];
   serviciosExtra: string[] = ['Visita al veterinario', 'Administración de medicamentos', 'Corrección de malos hábitos', 'Socialización'];
 
-  constructor(private modalCtrl: ModalController) { }
+  modal: number = 1;
+
+  serviciosExtraPrecio: { nombre: string, precio: string}[] = [
+    { nombre: 'Visita al veterinario', precio: '(+25€)'},
+    { nombre: 'Administración de medicamentos', precio: '(+5€)'},
+    { nombre: 'Corrección de malos hábitos', precio: '(+5€)'},
+    { nombre: 'Socialización', precio: '(+5€)'}
+  ];
+
+  constructor() { }
 
   ngOnInit() {
     this.cargarPaseadores();
@@ -39,22 +44,7 @@ export class DetallePaseoPage implements OnInit {
     ];
   }
 
-  async presentModal() {
-
-    const modal = await this.modalCtrl.create({
-
-      component: ModalSolicitudPaseoPage,
-
-      mode: 'ios',
-      // enterAnimation: myEnterAnimation,
-
-      // leaveAnimation: myLeaveAnimation,
-
-      cssClass: 'modal-date',
-
-    });
-
-    return await modal.present();
-
+  siguientePaso() {
+    this.modal = 2; 
   }
 }

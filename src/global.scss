@@ -96,6 +96,13 @@ P {
     margin-left: 15px;
 }
 
+.btn-custom-2 {
+    --background: #ffffff !important;
+    border: 1px solid #100f0f;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
 //ESTILOS PARA LOS ION FOOTER
 
 ion-footer {
@@ -269,3 +276,5 @@ full-calendar {
 .fc-theme-standard .fc-list {
     border: none;
 }
+
+//CALENDARIO IONIC
