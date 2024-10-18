@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-detalle-paseo',
@@ -16,14 +17,14 @@ export class DetallePaseoPage implements OnInit {
 
   modal: number = 1;
 
-  serviciosExtraPrecio: { nombre: string, precio: string}[] = [
-    { nombre: 'Visita al veterinario', precio: '(+25€)'},
-    { nombre: 'Administración de medicamentos', precio: '(+5€)'},
-    { nombre: 'Corrección de malos hábitos', precio: '(+5€)'},
-    { nombre: 'Socialización', precio: '(+5€)'}
+  serviciosExtraPrecio: { nombre: string, precio: string }[] = [
+    { nombre: 'Visita al veterinario', precio: '(+25€)' },
+    { nombre: 'Administración de medicamentos', precio: '(+5€)' },
+    { nombre: 'Corrección de malos hábitos', precio: '(+5€)' },
+    { nombre: 'Socialización', precio: '(+5€)' }
   ];
 
-  constructor() { }
+  constructor(private modalCtrl: ModalController) {}
 
   ngOnInit() {
     this.cargarPaseadores();
@@ -45,6 +46,11 @@ export class DetallePaseoPage implements OnInit {
   }
 
   siguientePaso() {
-    this.modal = 2; 
+    this.modal = 2;
   }
+
+  cerrarModal() {
+    this.modalCtrl.dismiss();
+  }
+
 }

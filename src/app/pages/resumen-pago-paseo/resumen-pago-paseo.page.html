@@ -1,0 +1,37 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let paseador of paseadores" class="container-paseador">
+    <h2>Datos del paseador</h2>
+    <div class="container-datos">
+      <div class="container-fotousuario">
+        <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
+      </div>
+
+      <div class="container-info" routerLink="/detalle-paseo">
+
+        <p class="nombre">{{ paseador.nombre }}</p>
+
+        <p class="precio">
+          <span class="valoracion">
+            <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            <span class="nota">{{ paseador.valoracion }}</span>
+          </span>
+          &nbsp;· {{ paseador.precio }} / {{ paseador.duracion }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container-paseo">
+    <div>
+
+    </div>
+  </div>
+  <div class="container-informacio-pago">
+
+  </div>
+  <div class="container-subscripcion">
+
+  </div>
+</ion-content>

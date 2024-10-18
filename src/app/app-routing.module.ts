@@ -112,7 +112,8 @@ const routes: Routes = [
   {
     path: 'listado-paseadores',
     loadChildren: () => import('./pages/listado-paseadores/listado-paseadores.module').then( m => m.ListadoPaseadoresPageModule)
-  },  {
+  },
+  {
     path: 'filtros-paseadores',
     loadChildren: () => import('./pages/filtros-paseadores/filtros-paseadores.module').then( m => m.FiltrosPaseadoresPageModule)
   },
@@ -123,8 +124,10 @@ const routes: Routes = [
   {
     path: 'modal-solicitud-paseo',
     loadChildren: () => import('./pages/modal-solicitud-paseo/modal-solicitud-paseo.module').then( m => m.ModalSolicitudPaseoPageModule)
+  },  {
+    path: 'resumen-pago-paseo',
+    loadChildren: () => import('./pages/resumen-pago-paseo/resumen-pago-paseo.module').then( m => m.ResumenPagoPaseoPageModule)
   }
-
 
 ];
 @NgModule({
