@@ -1,9 +1,9 @@
 <app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 
-<ion-content [fullscreen]="true">
-  <div *ngFor="let paseador of paseadores" class="container-paseador">
-    <h2>Datos del paseador</h2>
+<ion-content [fullscreen]="true" *ngFor="let paseador of paseadores" class="container-paseador">
+  <div>
+    <h2 class="title">Datos del paseador</h2>
     <div class="container-datos">
       <div class="container-fotousuario">
         <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
@@ -13,25 +13,100 @@
 
         <p class="nombre">{{ paseador.nombre }}</p>
 
-        <p class="precio">
+        <p class="localizacion">
           <span class="valoracion">
             <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
             <span class="nota">{{ paseador.valoracion }}</span>
           </span>
-          &nbsp;· {{ paseador.precio }} / {{ paseador.duracion }}
+          &nbsp;· {{ paseador.localizacion }}
         </p>
       </div>
     </div>
   </div>
+  <hr>
+  <h2 class="title">Datos del paseo</h2>
   <div class="container-paseo">
-    <div>
-
+    <div class="container-fechaHora">
+      <p class="fecha">
+        <img src="assets/icons/calendarEvent.png">
+        <span>{{ paseador.fecha }}</span>
+      </p>
+      <p class="hora">
+        <img src="assets/icons/calendarEvent.png">
+        <span>{{ paseador.hora }}</span>
+      </p>
+    </div>
+    <h3>Mascota que participará</h3>
+    <div class="container-perro">
+      <div class="container-fotoPerro">
+        <img [src]="paseador.imgPerro" alt="Foto de {{ paseador.nombrePerro }}">
+      </div>
+      <div class="container-info" routerLink="/detalle-paseo">
+        <p class="nombrePerro">{{ paseador.nombrePerro }}</p>
+        <p class="datos-perro">
+          <span class="raza">{{ paseador.raza }}</span>
+          &nbsp;· {{ paseador.edadPerro }} años
+        </p>
+      </div>
+    </div>
+    <h3>Servicio extra</h3>
+    <div class="container-servicios">
+      <p class="servicio">Corrección de malos hábitos</p>
     </div>
   </div>
-  <div class="container-informacio-pago">
-
+  <hr>
+  <div class="container-informacion-pago">
+    <h2>Información de pago</h2>
+    <p>Paseo<span>30$</span></p>
+    <hr>
+    <p>Servicios extra<span>5$</span></p>
+    <hr>
+    <p>Comisión<span>3$</span></p>
+    <hr>
+    <p class="total">Total<span>38$</span></p>
   </div>
-  <div class="container-subscripcion">
 
+  <div class="container-suscripcion">
+    <p><span>Ahorra los gastos de comisión</span> seleccionando uno de <span>nuestros planes de suscripción</span></p>
+
+    <div class="suscripcion-tipo">
+      <div class="datos">
+        <h3>Suscripción mensual</h3>
+        <p>20€</p>
+        <span>Ahorras los gastos de gestión</span>
+      </div>
+      <input type="radio" class="radio-round" name="suscripcion" value="mensual">
+    </div>
+
+    <div class="suscripcion-tipo">
+      <div class="datos">
+        <h3>Suscripción trimestral</h3>
+        <p>45€</p>
+        <span>Ahorras los gastos de gestión + 5€ cada mes</span>
+      </div>
+      <input type="radio" class="radio-round" name="suscripcion" value="trimestral">
+    </div>
+
+    <div class="suscripcion-tipo">
+      <div class="datos">
+        <h3>Suscripción anual</h3>
+        <p>89,90€</p>
+        <span>Ahorras los gastos de gestión + 12,5€ cada mes</span>
+      </div>
+      <input type="radio" class="radio-round" name="suscripcion" value="anual">
+    </div>
   </div>
+
+  <div class="container-advertencia">
+    <p>Tu pago del servicio quedará retenido hasta que el paseador apruebe tu solicitud</p>
+  </div>
+
+  <div class="container-btn">
+    <ion-button type="submit" >Continuar al pago total de<span>&nbsp;80€</span></ion-button>
+  </div>
+
+  <div class="container-btn-sinsuscripcion">
+    <ion-button type="submit" >Continuar sin la suscripción</ion-button>
+  </div>
+
 </ion-content>
