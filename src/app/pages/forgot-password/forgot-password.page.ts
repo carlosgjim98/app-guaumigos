@@ -22,6 +22,16 @@ export class ForgotPasswordPage implements OnInit {
     private api: ApiService) {
   }
 
+  focusedInputs: boolean[] = [false];
+
+  onFocus(index: number) {
+    this.focusedInputs[index] = true;
+  }
+
+  onBlur(index: number) {
+    this.focusedInputs[index] = false;
+  }
+
 
   /**
    * Inicializamos el formulario

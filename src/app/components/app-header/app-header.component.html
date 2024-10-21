@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar [ngClass]="{'header-default': !esEspecial, 'header-especial': esEspecial}">
     <div class="button-container">
       <ion-buttons slot="start">
         <ion-button class="return-btn" [routerLink]="returnLink">
@@ -8,7 +8,7 @@
           </div>
         </ion-button>
       </ion-buttons>
-      <p>{{ headerText }}</p>
+      <p *ngIf="headerText">{{ headerText }}</p>
     </div>
   </ion-toolbar>
 </ion-header>

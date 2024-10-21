@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-resumen-pago-paseo',
@@ -10,9 +11,11 @@ export class ResumenPagoPaseoPage implements OnInit {
   dynamicHeaderText: string = '';
   returnLink: string = '/detalle-paseo';
 
+  isModalQuestionOpen: boolean = false;
+  
   paseadores: any[] = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.cargarPaseadores();
@@ -37,5 +40,18 @@ export class ResumenPagoPaseoPage implements OnInit {
         edadPerro: '2'
       }
     ];
+  }
+
+  openModal() {
+    this.isModalQuestionOpen = true;
+  }
+
+  closeModal() {
+    this.isModalQuestionOpen = false;
+  }
+
+  closeModalAceptado(){
+    this.isModalQuestionOpen = false;
+    this.router.navigate(['/listado-paseadores']);
   }
 }

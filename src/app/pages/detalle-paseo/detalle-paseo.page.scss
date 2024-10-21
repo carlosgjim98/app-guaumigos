@@ -78,6 +78,7 @@ ion-content {
             .nombre {
                 font-family: LexendSemibold;
                 font-size: 18px;
+                color: #110F0F;
             }
 
             .localizacion {
@@ -119,6 +120,7 @@ ion-content {
 
                     .nota {
                         font-family: LexendMedium;
+                        color: #110F0F;
                     }
                 }
             }
@@ -162,6 +164,12 @@ ion-content {
                 flex-shrink: 0;
             }
         }
+
+        .ver-mas {
+            font-family: LexendSemiBold;
+            display: inline;
+        }
+        
     }
 }
 
@@ -368,7 +376,8 @@ hr {
             p {
                 margin: 0;
                 font-family: LexendRegular;
-                font-size: 16px;
+                font-size: 14px;
+                color: #141411;
             }
 
             .precio {
@@ -407,3 +416,4 @@ hr {
         }
     }
 }
+

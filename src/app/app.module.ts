@@ -11,8 +11,6 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
-import { ModalSolicitudPaseoPageModule } from './pages/modal-solicitud-paseo/modal-solicitud-paseo.module'
-
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -36,8 +34,7 @@ export function createTranslateLoader(http: HttpClient) {
 
     }),
     PinchZoomModule,
-    FullCalendarModule,
-    ModalSolicitudPaseoPageModule
+    FullCalendarModule
   ], 
     
     providers: [

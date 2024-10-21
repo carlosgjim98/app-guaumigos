@@ -1,0 +1,164 @@
+ion-content {
+    .container-contenido {
+        margin: 15px;
+
+        .container-datos {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .container-fotousuario {
+                width: 75px;
+                height: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .container-info {
+                margin-left: 10px;
+
+                .nombre,
+                .localizacion,
+                .opinion {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .nombre {
+                    font-family: LexendSemibold;
+                    font-size: 20px;
+                    color: #110f0f;
+                }
+
+                .localizacion {
+                    font-family: LexendLight;
+                    font-size: 15px;
+                    color: #110f0f;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        width: 10px;
+                        height: auto;
+                        margin-left: 3px;
+                    }
+
+                    .nombreLugar {
+                        margin-left: 5px;
+                    }
+                }
+
+                .opinion {
+                    display: flex;
+                    align-items: center;
+
+                    .opiniones {
+                        font-family: LexendRegular;
+                        font-size: 13px;
+                        margin-left: 8px;
+                        color: #100f0f;
+                    }
+                    .valoracion {
+                        display: flex;
+                        align-items: center;
+
+                        ion-icon {
+                            font-size: 14px;
+                            margin-right: 2px;
+                        }
+
+                        .nota {
+                            font-family: LexendMedium;
+                            color: #110f0f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container-info {
+        .info {
+            font-family: LexendLight;
+            font-size: 16px;
+            color: #100f0f;
+        }
+    }
+
+    .container-informacion {
+        margin-top: 15px;
+        background-image: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 15px;
+        border-radius: 10px;
+
+        h2 {
+            font-family: LexendSemiBold;
+            font-size: 18px;
+            color: #100f0f;
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 13px;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-family: LexendLight;
+                font-size: 13px;
+                color: #110f0f;
+            }
+
+            p {
+                font-family: LexendBold;
+                font-size: 15px;
+                color: #110f0f;
+            }
+        }
+    }
+
+    ion-segment {
+        --background: none;
+
+        ion-segment-button {
+            font-family: LexendRegular;
+            font-size: 14px;
+            color: #919191;
+            padding-right: 5px;
+            padding-left: 5px;
+
+            &.segment-button-checked {
+                font-family: LexendMedium;
+                color: #100f0f;
+                border-bottom: 2px solid var(--custom-color-2);
+                border-radius: 0;
+            }
+        }
+    }
+
+    .container-galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 7px; 
+        padding: 0;  
+        margin-top: 15px;
+    }
+    
+    .section img {
+        width: 100%;  
+        height: 100%; 
+        object-fit: cover;  
+        border-radius: 10px;  
+        box-shadow: none; 
+    }
+}

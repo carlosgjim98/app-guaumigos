@@ -1,7 +1,8 @@
-<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
-
 
 <ion-content [fullscreen]="true" *ngFor="let paseador of paseadores" class="container-paseador">
+  <div class="container-header">
+    <app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+  </div>
   <div>
     <h2 class="title">Datos del paseador</h2>
     <div class="container-datos">
@@ -102,11 +103,30 @@
   </div>
 
   <div class="container-btn">
-    <ion-button type="submit" >Continuar al pago total de<span>&nbsp;80€</span></ion-button>
+    <ion-button type="submit" (click)="openModal()">Continuar al pago total
+      de<span>&nbsp;80€</span></ion-button>
   </div>
 
   <div class="container-btn-sinsuscripcion">
-    <ion-button type="submit" >Continuar sin la suscripción</ion-button>
+    <ion-button type="submit" (click)="openModal()">Continuar sin la suscripción</ion-button>
+  </div>
+
+  <div class="modal-background" *ngIf="isModalQuestionOpen">
+    <div class="modal-content">
+      <ion-icon src="assets/icons/Trazado 47885.svg" class="close-icon" (click)="closeModal()"></ion-icon>
+      <div class="contenido">
+        <img src="assets/imgs/Grupo 12179.svg" alt="">
+        <h1 class="title">¡Solicitud enviada!</h1>
+        <h2 class="solicitud">Tu solicitud ha sido registrada</h2>
+        <div class="container-info">
+          <p class="pago">El pago quedará retenido hasta la confirmación del paseador.</p>
+          <p class="info">En caso de rechazo, se te reembolsará en un máximo de 72 horas.</p>
+        </div>
+      </div>
+      <div class="container-btn">
+        <ion-button type="submit" (click)="closeModalAceptado()">Aceptar y continuar</ion-button>
+      </div>
+    </div>
   </div>
 
 </ion-content>

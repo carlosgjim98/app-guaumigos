@@ -122,11 +122,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/detalle-paseo/detalle-paseo.module').then( m => m.DetallePaseoPageModule)
   },
   {
-    path: 'modal-solicitud-paseo',
-    loadChildren: () => import('./pages/modal-solicitud-paseo/modal-solicitud-paseo.module').then( m => m.ModalSolicitudPaseoPageModule)
-  },  {
     path: 'resumen-pago-paseo',
     loadChildren: () => import('./pages/resumen-pago-paseo/resumen-pago-paseo.module').then( m => m.ResumenPagoPaseoPageModule)
+  },
+  {
+    path: 'perfil-paseador',
+    loadChildren: () => import('./pages/perfil-paseador/perfil-paseador.module').then( m => m.PerfilPaseadorPageModule)
   }
 
 ];

@@ -1,6 +1,5 @@
 ion-header {
     ion-toolbar {
-        --background: var(--custom-color-2);
         --padding-start: 7px;
         padding: 30px 0 0;
         
@@ -9,6 +8,7 @@ ion-header {
             flex-direction: row; 
             align-items: center;
             transform: translateY(15px);
+            color: #1B1B1B;
         }
 
         ion-buttons { 
@@ -32,6 +32,15 @@ ion-header {
             }
         }
     }
+}
+
+
+.header-default{
+    --background: var(--custom-color-2);
+}
+
+.header-especial{
+    --background: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png'); 
 }
 
 

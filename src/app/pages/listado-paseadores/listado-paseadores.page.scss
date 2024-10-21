@@ -140,6 +140,11 @@ ion-content {
                     font-family: LexendLight;
                     font-size: 14px;
                     color: #919191;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 242px; 
+                    display: inline-block;
                 }
 
                 .precio {

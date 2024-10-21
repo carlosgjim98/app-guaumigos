@@ -1,0 +1,92 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink" [esEspecial]="esEspecial"></app-app-header>
+
+<ion-content [fullscreen]="true">
+    <div class="container-contenido">
+        <div *ngFor="let paseador of paseadores" class="container-paseador">
+            <div class="container-datos">
+                <div class="container-fotousuario">
+                    <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
+                </div>
+                <div class="container-info" routerLink="/detalle-paseo">
+                    <p class="nombre">{{ paseador.nombre }}</p>
+                    <p class="localizacion">
+                        <img src="assets\icons\Trazado 47654.png">
+                        <span class="nombreLugar">{{ paseador.localizacion }}</span>
+                    </p>
+                    <p class="opinion">
+                        <span class="valoracion">
+                            <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+                            <span class="nota">{{ paseador.valoracion }}</span>
+                        </span>
+                        <a href="/opiniones" class="opiniones">{{ paseador.opiniones }} opiniones</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-info">
+            <p class="info">¡Hola! Soy Ana, amante de los perros y apasionada por los paseos al aire libre. Tu mejor
+                amigo tendrá una compañera de juegos y aventuras. <br><br>¡Conmigo, los paseos serán su parte favorita!
+                🐶</p>
+        </div>
+        <ion-segment [(ngModel)]="segmentValue" (ionChange)="segmentChanged($event)">
+            <ion-segment-button value="informacion">
+                <ion-label>Información</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="galeria">
+                <ion-label>Galería</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="paseos">
+                <ion-label>Paseos</ion-label>
+            </ion-segment-button>
+        </ion-segment>
+
+        <ng-container *ngIf="segmentValue === 'informacion'">
+            <div class="container-informacion">
+                <h2>Mascotas Aceptadas</h2>
+                <div class="section">
+                    <h3>Razas</h3>
+                    <p>{{ razas.join(', ') }}</p>
+                </div>
+                <div class="section">
+                    <h3>Edad</h3>
+                    <p>Entre {{ edad[0] }} y {{ edad[1] }} años</p>
+                </div>
+                <div class="section">
+                    <h3>Tamaño</h3>
+                    <p>{{ tamano[0] }}</p>
+                </div>
+                <div class="section">
+                    <h3>Peso</h3>
+                    <p>Entre {{ peso[0] }} y {{ peso[1] }} kg</p>
+                </div>
+                <div class="section">
+                    <h3>Hembra/Macho</h3>
+                    <p>{{ sexo.join(', ') }}</p>
+                </div>
+                <div class="section">
+                    <h3>¿Celo?</h3>
+                    <p>{{ celo[0] }}</p>
+                </div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="segmentValue === 'galeria'">
+            <div class="container-galeria">
+                <div *ngFor="let foto of galeriaFotos" class="section">
+                    <img [src]="foto" alt="Galería de imágenes">
+                </div>
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="segmentValue === 'paseos'">
+            <div class="container-paseos">
+                <h2>Paseos</h2>
+            </div>
+        </ng-container>
+
+    </div>
+    <div class="container-btn">
+        <ion-button type="submit">Enviar solicitud</ion-button>
+    </div>
+
+</ion-content>

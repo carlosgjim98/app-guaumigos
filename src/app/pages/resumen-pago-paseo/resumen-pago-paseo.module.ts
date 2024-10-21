@@ -8,7 +8,7 @@ import { ResumenPagoPaseoPageRoutingModule } from './resumen-pago-paseo-routing.
 
 import { ResumenPagoPaseoPage } from './resumen-pago-paseo.page';
 import { ComponentsModule } from 'src/app/components/components.module';
-
+  
 @NgModule({
   imports: [
     CommonModule,
@@ -17,7 +17,7 @@ import { ComponentsModule } from 'src/app/components/components.module';
     ResumenPagoPaseoPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [ResumenPagoPaseoPage]
+  declarations: [ResumenPagoPaseoPage],
 })
 
 export class ResumenPagoPaseoPageModule {}

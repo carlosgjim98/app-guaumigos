@@ -19,7 +19,7 @@ export class ListadoPaseadoresPage implements OnInit {
     this.paseadores = [
       {
         nombre: 'Ana V.',
-        distancia: 'A 0,1 km de ti · Jerez de la Frontera…..........',
+        distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
         precio: '30€',
         duracion: '2 horas',
         valoracion: '4,8',
@@ -28,7 +28,7 @@ export class ListadoPaseadoresPage implements OnInit {
       },
       {
         nombre: 'Marcos L.',
-        distancia: 'A 0,1 km de ti · Jerez de la Frontera…........',
+        distancia: 'A 0,1 km de ti · Jerez de la Frontera',
         precio: '15€',
         duracion: '1 horas',
         valoracion: '4,8',
@@ -37,7 +37,7 @@ export class ListadoPaseadoresPage implements OnInit {
       },
       {
         nombre: 'Marcos L.',
-        distancia: 'A 0,1 km de ti · Jerez de la Frontera….........',
+        distancia: 'A 0,1 km de ti · Jerez de la Frontera',
         precio: '15€',
         duracion: '1 horas',
         valoracion: '4,8',

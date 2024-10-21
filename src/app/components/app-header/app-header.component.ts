@@ -9,6 +9,7 @@ export class AppHeaderComponent  implements OnInit {
 
   @Input() headerText: string = '';
   @Input() returnLink: string = '';
+  @Input() esEspecial: boolean = false;
   
   constructor() { }
 

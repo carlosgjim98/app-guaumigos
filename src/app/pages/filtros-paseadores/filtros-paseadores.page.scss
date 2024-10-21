@@ -151,21 +151,15 @@ ion-content {
                     }
 
                     ion-datetime::part(calendar-day):focus {
-                        background-color: var(--custom-color-2);
+                        background-color: none;
                         box-shadow: none;
-                        color: #d59c05;
                     }
 
                     ion-datetime::part(calendar-day) {
                         color: #919191;
                         font-size: 15px;
                     }
-
-                    ion-datetime::part(calendar-weekday) {
-                        font-size: 13px;
-                        font-family: "LexendRegular";
-                        color: #919191;
-                    }
+                    
                 }
             }
         }
