@@ -1,0 +1,34 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngFor="let valoracion of valoraciones" class="container-paseador">
+    <div class="container-opinion">
+      <div class="container-datos">
+        <div class="container-fotousuario">
+          <img [src]="valoracion.imgUsuario" alt="Foto de {{ valoracion.nombre }}">
+        </div>
+
+        <div class="container-info">
+
+          <p class="nombre">{{ valoracion.nombre }}<span class="tiempo">{{ valoracion.tiempo }}</span></p>
+
+          <p class="precio">
+            <span class="valoracion">
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            </span>
+          </p>
+        </div>
+      </div>
+      <div class="container-texto">
+        <p>{{ valoracion.texto }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-btn">
+    <ion-button type="submit" routerLink="/anadir-valoracion">Añadir valoración</ion-button>
+  </div>
+</ion-content>

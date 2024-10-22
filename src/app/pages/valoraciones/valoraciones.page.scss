@@ -1,0 +1,102 @@
+ion-content{
+    --background: #F8F8F8;
+}
+
+.container-paseador {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cececd;
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-color: white;
+
+    .container-opinion {
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        min-height: 160px;
+
+        .container-datos {
+            display: flex;
+            align-items: center;
+
+            .container-fotousuario {
+                width: 48px;
+                height: auto;
+                border-radius: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .container-info {
+                margin-left: 10px;
+                width: 100%;
+
+                .nombre,
+                .distancia,
+                .precio {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .nombre {
+                    font-family: LexendRegular;
+                    font-size: 16px;
+                    color: #110f0f;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .tiempo {
+                        font-family: LexendLight;
+                        font-size: 14px;
+                        color: #919191;
+                    }
+                }
+
+                .precio {
+                    .valoracion {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 7px;
+
+                        ion-icon {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .container-texto {
+            p {
+                font-family: LexendLight;
+                font-size: 15px;
+                color: #110f0f;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//BOTÓN
+.container-btn {
+    width: auto;
+    padding-bottom: 32px;
+    position: sticky; 
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-top: 25px;
+    margin-left: 12px;
+    margin-right: 15px;
+}

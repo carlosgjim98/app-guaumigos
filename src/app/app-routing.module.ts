@@ -128,7 +128,15 @@ const routes: Routes = [
   {
     path: 'perfil-paseador',
     loadChildren: () => import('./pages/perfil-paseador/perfil-paseador.module').then( m => m.PerfilPaseadorPageModule)
+  },  {
+    path: 'valoraciones',
+    loadChildren: () => import('./pages/valoraciones/valoraciones.module').then( m => m.ValoracionesPageModule)
+  },
+  {
+    path: 'anadir-valoracion',
+    loadChildren: () => import('./pages/anadir-valoracion/anadir-valoracion.module').then( m => m.AnadirValoracionPageModule)
   }
+
 
 ];
 @NgModule({

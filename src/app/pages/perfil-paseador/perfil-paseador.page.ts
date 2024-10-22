@@ -12,23 +12,26 @@ export class PerfilPaseadorPage implements OnInit {
   esEspecial: boolean = true;
 
   paseadores: any[] = [];
+  paseos: any[] = [];
 
   segmentValue: string = 'informacion';
 
-  mostrarTextoCompleto: boolean[] = [];
+  mostrarTextoCompleto: boolean = false;
 
   razas: string[] = [
     'Pastor Alemán', 'Bulldog', 'Labrador', 'Beagle', 'Caniche',
     'Chihuahua', 'Dachshund', 'Pastor Belga', 'Golden Retriever'
   ];
 
-  edad: string[] = ['2','11'];
+  razasConcatenadas: string = '';
+
+  edad: string[] = ['2', '11'];
 
   tamano: string[] = [
     'Menos de 35 cm'
   ];
 
-  peso: string[] = ['10','30']
+  peso: string[] = ['10', '30']
 
   sexo: string[] = [
     'Hembra', 'Macho'
@@ -53,10 +56,14 @@ export class PerfilPaseadorPage implements OnInit {
     'assets/imgs/perrosPerfil/shared image-11.png',
   ];
 
-  constructor() { }
+  constructor() {
+    this.razasConcatenadas = this.razas.join(', ');
+  }
 
   ngOnInit() {
     this.cargarPaseadores();
+    this.cargarPaseos();
+    this.razasConcatenadas = this.razas.join(', ');
   }
 
   cargarPaseadores() {
@@ -70,12 +77,37 @@ export class PerfilPaseadorPage implements OnInit {
         imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
         precio: '15€',
         duracion: '1 horas',
+
       }
+    ];
+  }
+
+  cargarPaseos() {
+    this.paseos = [{
+      nombre: 'Paseo de dia',
+      valoracion: '4,8',
+      distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
+      imgPerro: 'assets/imgs/perros/shared image.png',
+      precio: '15€',
+      duracion: '1 horas',
+    },
+    {
+      nombre: 'Paseo de dia',
+      valoracion: '4,8',
+      distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
+      imgPerro: 'assets/imgs/perros/shared image-3.png',
+      precio: '15€',
+      duracion: '1 horas',
+    }
     ];
   }
 
   segmentChanged(event: any) {
     this.segmentValue = event.detail.value;
+  }
+
+  alternarVerMas(): void {
+    this.mostrarTextoCompleto = !this.mostrarTextoCompleto;
   }
 
 }
