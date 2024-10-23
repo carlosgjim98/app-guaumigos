@@ -99,9 +99,18 @@ ion-content {
             background-color: #ffffff;
 
             .container-fotoperro {
+                position: relative;
                 width: 100%;
                 height: 110px;
                 overflow: hidden;
+
+                .tipoIcon {
+                    position: absolute; 
+                    top: 15px;
+                    right: 11px; 
+                    width: 35px;
+                    height: 35px; 
+                }
 
                 img {
                     width: 100%;
@@ -179,7 +188,6 @@ ion-content {
                     right: 30px;
                     transform: translateY(-20%) rotate(-90deg);
                     width: 13px;
-                    height: 13;
                 }
             }
         }
