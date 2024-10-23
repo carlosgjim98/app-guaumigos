@@ -52,6 +52,6 @@ export class ResumenPagoPaseoPage implements OnInit {
 
   closeModalAceptado(){
     this.isModalQuestionOpen = false;
-    this.router.navigate(['/listado-paseadores']);
+    this.router.navigate(['/tabs/listado-paseadores']);
   }
 }
