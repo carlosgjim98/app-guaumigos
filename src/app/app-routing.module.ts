@@ -135,6 +135,10 @@ const routes: Routes = [
   {
     path: 'anadir-valoracion',
     loadChildren: () => import('./pages/anadir-valoracion/anadir-valoracion.module').then( m => m.AnadirValoracionPageModule)
+  },
+  {
+    path: 'puntos-de-interes',
+    loadChildren: () => import('./pages/puntos-de-interes/puntos-de-interes.module').then( m => m.PuntosDeInteresPageModule)
   }
 
 

@@ -1,0 +1,40 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="barra-busqueda-container">
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </div>
+    <div class="container-btn-search">
+      <ion-button routerLink="/filtros-paseadores" class="filtro-btn">
+        <ion-icon src="assets/icons/filter-edit-svgrepo-com.svg" class="icono-filtro"></ion-icon>
+        <span>Filtros</span>
+      </ion-button>
+      <ion-button routerLink="/filtros-paseadores" class="mapa-btn">
+        Ver en el mapa
+      </ion-button>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container-contenido">
+    <div *ngFor="let paseo of paseos" class="container-paseos">
+      <div class="container-fotoperro">
+        <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
+      </div>
+      <div class="container-datos">
+        <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+        <div class="container-info" routerLink="/detalle-paseo">
+
+          <p class="nombre">{{ paseo.nombre }}</p>
+
+          <p class="distancia">{{ paseo.distancia }}</p>
+
+          <p class="usuario-publicador">
+            <img [src]="paseo.imgUsuario" alt="Foto de {{ paseo.nombre }}" class="fotoUsuario">
+            <span class="publicado-nombreUsuario">Publicado por <span class="nombreUsuario">{{ paseo.nombreUsuario }}</span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

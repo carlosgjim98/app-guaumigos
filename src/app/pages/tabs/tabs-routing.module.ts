@@ -12,8 +12,8 @@ const routes: Routes = [
         loadChildren: () => import('../listado-paseadores/listado-paseadores.module').then(m => m.ListadoPaseadoresPageModule)
       },
       {
-        path: 'deinteres',
-        loadChildren: () => import('../profile/profile.module').then(m => m.ProfilePageModule)
+        path: 'puntos-de-interes',
+        loadChildren: () => import('../puntos-de-interes/puntos-de-interes.module').then(m => m.PuntosDeInteresPageModule)
       },
       {
         path: 'servicios',
@@ -23,7 +23,6 @@ const routes: Routes = [
         path: 'mensajes',
         loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
       },
-
       {
         path: 'perfil',
         loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
