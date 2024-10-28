@@ -1,0 +1,79 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+ <div class="add-image-container">
+
+  
+
+  <ion-grid>
+    <h1>Añade hasta 6 imágenes</h1>
+    <ion-row>
+        <!-- Genera 6 columnas para tener 3 en cada fila -->
+        <ion-col size="4" *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+            <div class="image-container">
+                <img src="assets/icons/add-image.svg" class="image-icon" alt="Add Image">
+            </div>
+        </ion-col>
+    </ion-row>
+    <p>0/6 imágenes subidas</p>
+</ion-grid>
+
+
+ </div>
+
+ <div class="info-container">
+  <ion-item >
+    <ion-label position="stacked">Nombre</ion-label>
+    <ion-input class="custom-input" placeholder="Escribe tu nombre"></ion-input>
+  </ion-item>
+
+  <ion-item >
+    <ion-label position="stacked">Ubicación</ion-label>
+    <ion-input class="custom-input" placeholder="Escribe aquí..."></ion-input>
+  </ion-item>
+</div>
+
+<h2>Categoría</h2>
+<div class="category-container">
+  <ion-button class="category-button" (click)="selectCategory(category)" [ngClass]="{'selected': selectedCategory === category.name}" *ngFor="let category of categories">
+    <ion-icon src="{{ category.icon }}" class="category-icon"  [ngClass]="{'selected-icon': selectedCategory === category.name}"></ion-icon>
+    {{ category.name }}
+  </ion-button>
+</div>
+
+
+
+
+<div class="container-modal">
+  <h2>Subcategoría</h2>
+  <div class="container-subcategory-eleccion">
+    <ion-select label-placement="floating" interface="action-sheet" value="">
+      <ion-select-option value="">Parques funcionales</ion-select-option>
+      <ion-select-option value="">Parques de agility</ion-select-option>
+      <ion-select-option value="">Parques sociales</ion-select-option>
+      <ion-select-option value="">Tiendas de alimentación</ion-select-option>
+      <ion-select-option value="">Adopción por protectora</ion-select-option>
+    </ion-select>
+  </div>
+</div>
+
+<div class="description-container">
+  <h2>Descripción</h2>
+  <ion-item>
+    
+    <ion-textarea placeholder="Escribe aquí..." maxlength="1000" [(ngModel)]="description"></ion-textarea>
+    <p>{{ description?.length || 0 }}/1000 caracteres</p>
+  </ion-item>
+</div>
+
+<div class="submit-button-container">
+
+  <ion-button expand="block"  routerLink="/punto-de-interes-detalle">Subir</ion-button>
+</div>
+
+
+ 
+
+
+</ion-content>

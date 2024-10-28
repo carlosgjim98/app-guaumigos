@@ -1,0 +1,64 @@
+.container-fotoperro {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        z-index: 1000;
+        left: 10px;
+        top: 65px;
+    }
+
+    ion-buttons {
+        .return-btn {
+            --box-shadow: none;
+            --outline: none;
+            --background: transparent;
+            padding: 0;
+            margin: 0;
+
+            .container-icon {
+                display: flex; // Asegura que los iconos estén alineados en una fila
+                background-color: var(--custom-color);
+                border-radius: 8px;
+                padding: 9px;
+                align-items: center; // Alinea verticalmente al centro
+                width: 100%; // Asegúrate de que ocupe todo el ancho disponible
+                justify-content: space-between; // Distribuye el espacio entre los iconos
+            
+                ion-icon {
+                    width: 14px;
+                    height: 14px;
+                    
+                }
+                .right-icon{
+
+                    margin-left: 100px;
+                }
+                
+            }
+            
+            
+                
+            }
+            
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+
+
+        .swiper-wrapper {
+            display: flex; 
+            align-items: center; 
+        }
+
+      
+    }
+

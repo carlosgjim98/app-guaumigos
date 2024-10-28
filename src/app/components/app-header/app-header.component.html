@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar [ngClass]="{'header-default': !esEspecial, 'header-especial': esEspecial}">
     <div class="button-container">
+      
       <ion-buttons slot="start">
         <ion-button class="return-btn" [routerLink]="returnLink">
           <div class="container-icon">
@@ -8,7 +9,14 @@
           </div>
         </ion-button>
       </ion-buttons>
+
+      
       <p *ngIf="headerText">{{ headerText }}</p>
     </div>
+
+    
+    <ion-buttons slot="end">
+      <ng-content></ng-content>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>

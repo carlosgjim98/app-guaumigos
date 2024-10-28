@@ -21,21 +21,24 @@ export class PuntosDeInteresPage implements OnInit {
       distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/interes/shared image.png',
       imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-      nombreUsuario: 'Ana V.'
+      nombreUsuario: 'Ana V.',
+      iconoUsuario: 'assets/icons/park-icon.svg'
     },
     {
       nombre: 'Hotel Spa donde se permite entrar…',
       distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/interes/02.png',
       imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-      nombreUsuario: 'Ana V.'
+      nombreUsuario: 'Ana V.',
+       iconoUsuario: 'assets/icons/hotel-icon.svg'
     },
     {
       nombre: 'Playa de Cádiz apta para todas las…',
       distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/interes/01.png',
       imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-      nombreUsuario: 'Ana V.'
+      nombreUsuario: 'Ana V.',
+       iconoUsuario: 'assets/icons/beach-icon.svg'
     }
     ];
   }

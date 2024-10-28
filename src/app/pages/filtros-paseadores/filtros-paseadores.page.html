@@ -1,4 +1,10 @@
-<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink">
+
+  <ion-buttons class="brush" slot="end">
+    <ion-icon class="brush-icon" src="/assets/icons/brush2.svg"></ion-icon>
+  </ion-buttons>
+
+</app-app-header>
 
 <ion-content [fullscreen]="true">
   <div class="container-filtros">
@@ -86,11 +92,20 @@
 
       <div class="container-tipo">
         <h2>Horas disponibles</h2>
-        <div class="container-tamano">
-        </div>
-        <div class="input-hora">
+        <div class="container-horas">
+          <div class="input-hora">
+            <span class="label-hora">Desde</span>
+            <input type="time" id="hasta" name="hasta" class="hora">
+          </div>
+          <div class="input-hora">
+            <span class="label-hora">Hasta</span>
+            <input type="time" id="hasta" name="hasta" class="hora">
+          </div>
         </div>
       </div>
+      
+      
+      
 
 
       <hr>
@@ -99,7 +114,7 @@
         <h2>Fechas disponibles</h2>
         <div class="container-calendario">
           <div class="calendario-custom">
-            <ion-datetime presentation="date" display-format="YYYY-MM-DD" [multiple]="true" [firstDayOfWeek]="1" ></ion-datetime>
+            <ion-datetime presentation="date"  id="calendar" display-format="YYYY-MM-DD" [multiple]="true" [firstDayOfWeek]="1" ></ion-datetime>
           </div>
         </div>
       </div>
