@@ -17,7 +17,7 @@ const routes: Routes = [
       },
       {
         path: 'servicios',
-        loadChildren: () => import('../chats/chats.module').then(m => m.ChatsPageModule)
+        loadChildren: () => import('../services/services.module').then(m => m.ServicesPageModule)
       },
       {
         path: 'mensajes',
