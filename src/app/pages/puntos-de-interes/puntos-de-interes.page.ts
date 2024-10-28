@@ -12,36 +12,8 @@ export class PuntosDeInteresPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.cargarPaseos()
-  }
-
-  cargarPaseos() {
-    this.paseos = [
-      {
-        nombre: 'Parque para perros',
-        distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
-        imgPerro: 'assets/imgs/interes/shared image.png',
-        imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-        nombreUsuario: 'Ana V.',
-        icono: 'assets/icons/Grupo 11702.svg' 
-      },
-      {
-        nombre: 'Hotel Spa donde se permite entrar…',
-        distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
-        imgPerro: 'assets/imgs/interes/02.png',
-        imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-        nombreUsuario: 'Ana V.',
-        icono: 'assets/icons/Grupo 11703.svg'
-      },
-      {
-        nombre: 'Playa de Cádiz apta para todas las…',
-        distancia: 'A 0,3 km de ti · Jerez de la Frontera, Cádiz',
-        imgPerro: 'assets/imgs/interes/01.png',
-        imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
-        nombreUsuario: 'Ana V.',
-        icono: 'assets/icons/Grupo 12180.svg'
-      }
-    ];
+    
   }
 
 }
+

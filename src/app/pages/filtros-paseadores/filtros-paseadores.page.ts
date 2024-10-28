@@ -18,7 +18,7 @@ export class FiltrosPaseadoresPage implements OnInit {
 
   opcionSeleccionadaTamano: string = '';
   opcionSeleccionadaPeso: string = '';
-
+  
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {

@@ -128,7 +128,8 @@ const routes: Routes = [
   {
     path: 'perfil-paseador',
     loadChildren: () => import('./pages/perfil-paseador/perfil-paseador.module').then( m => m.PerfilPaseadorPageModule)
-  },  {
+  },
+  {
     path: 'valoraciones',
     loadChildren: () => import('./pages/valoraciones/valoraciones.module').then( m => m.ValoracionesPageModule)
   },
@@ -139,14 +140,6 @@ const routes: Routes = [
   {
     path: 'puntos-de-interes',
     loadChildren: () => import('./pages/puntos-de-interes/puntos-de-interes.module').then( m => m.PuntosDeInteresPageModule)
-  },
-  {
-    path: 'services',
-    loadChildren: () => import('./pages/services/services.module').then( m => m.ServicesPageModule)
-  },
-  {
-    path: 'services-filters',
-    loadChildren: () => import('./pages/services-filters/services-filters.module').then( m => m.ServicesFiltersPageModule)
   }
 
 

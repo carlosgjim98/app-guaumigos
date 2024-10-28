@@ -43,6 +43,8 @@ P {
     font-size: 16px;
 }
 
+
+
 .container-input,
 .container-input-activated {
     margin-bottom: 18px;
@@ -153,6 +155,10 @@ ion-button {
     height: 58px;
 }
 
+
+   
+
+
 // ESTILOS PARA ITEMS Y INPUTS
 
 ion-item {
@@ -160,6 +166,7 @@ ion-item {
     --padding-end: 8px;
     --border-color: transparent;
     --box-shadow: none;
+    font-family: LexendRegular !important;
 }
 
 ion-input {
@@ -170,6 +177,7 @@ ion-input {
         margin: 0 !important;
     }
 }
+
 
 // ESTILOS FULLCALENDAR
 

@@ -16,12 +16,12 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  
   <div class="container-contenido">
     <ion-icon class="anadir-interes-icon" slot="start" src="assets/icons/Grupo 12181.svg"></ion-icon>
     <div *ngFor="let paseo of paseos" class="container-paseos">
       <div class="container-fotoperro">
-          <ion-icon class="tipoIcon" slot="start" [src]="paseo.icono"></ion-icon>
-          <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
+        <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
       </div>
       <div class="container-datos">
           <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
@@ -34,6 +34,13 @@
               </p>
           </div>
       </div>
+    </div>
   </div>
-  </div>
+ 
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" routerLink="/nuevo-punto-de-interes">
+    <ion-button class="add-button">
+      <ion-icon src="assets/icons/add-outline.svg" class="add-icon"></ion-icon> 
+    </ion-button>
+  </ion-fab>
+  
 </ion-content>
