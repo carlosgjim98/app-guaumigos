@@ -21,7 +21,7 @@
         <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
       </div>
 
-      <div class="container-info" routerLink="/detalle-paseo">
+      <div class="container-info">
 
         <p class="nombre">{{ paseador.nombre }}</p>
 
@@ -35,7 +35,7 @@
             <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
             <span class="nota">{{ paseador.valoracion }}</span>
           </span>
-          <a href="/opiniones" class="opiniones">{{ paseador.opiniones }} opiniones</a>
+          <a routerLink="/valoraciones" class="opiniones">{{ paseador.opiniones }} opiniones</a>
         </p>
       </div>
     </div>

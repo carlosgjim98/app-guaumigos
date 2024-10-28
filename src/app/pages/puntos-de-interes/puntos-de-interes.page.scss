@@ -85,6 +85,16 @@ ion-header {
 ion-content {
     .container-contenido {
         padding: 15px;
+        position: relative;
+
+        .anadir-interes-icon {
+            position: fixed;
+            width: 92px; 
+            height: 92px; 
+            bottom: 4px; 
+            right: 7px; 
+            z-index: 10;
+        }
 
         //PASEOS
         .container-paseos {
@@ -99,10 +109,19 @@ ion-content {
             background-color: #ffffff;
 
             .container-fotoperro {
+                position: relative;
                 width: 100%;
                 height: 110px;
                 overflow: hidden;
                 position: relative;
+
+                .tipoIcon {
+                    position: absolute;
+                    top: 15px;
+                    right: 11px;
+                    width: 35px;
+                    height: 35px;
+                }
 
                 img {
                     width: 100%;
@@ -127,7 +146,6 @@ ion-content {
                 margin-bottom: 5px;
 
                 .container-info {
-
                     .nombre,
                     .distancia,
                     .precio {
@@ -168,15 +186,16 @@ ion-content {
                             margin-right: 5px;
                         }
 
-                        .publicado-nombreUsuario, .nombreUsuario{
+                        .publicado-nombreUsuario,
+                        .nombreUsuario {
                             font-size: 13px;
-                            color: #110F0F;
+                            color: #110f0f;
                         }
 
                         .publicado-nombreUsuario {
                             font-family: LexendLight;
-                    
-                            .nombreUsuario{
+
+                            .nombreUsuario {
                                 font-family: LexendSemiBold;
                             }
                         }
@@ -188,7 +207,6 @@ ion-content {
                     right: 30px;
                     transform: translateY(-20%) rotate(-90deg);
                     width: 13px;
-                    height: 13;
                 }
             }
         }
