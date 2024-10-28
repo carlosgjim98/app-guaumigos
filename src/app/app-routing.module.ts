@@ -139,6 +139,14 @@ const routes: Routes = [
   {
     path: 'puntos-de-interes',
     loadChildren: () => import('./pages/puntos-de-interes/puntos-de-interes.module').then( m => m.PuntosDeInteresPageModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./pages/services/services.module').then( m => m.ServicesPageModule)
+  },
+  {
+    path: 'services-filters',
+    loadChildren: () => import('./pages/services-filters/services-filters.module').then( m => m.ServicesFiltersPageModule)
   }
 
 
