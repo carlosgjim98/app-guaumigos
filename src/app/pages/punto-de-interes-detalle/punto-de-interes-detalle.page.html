@@ -1,28 +1,18 @@
-<ion-content [fullscreen]="true">
-  <div class="container-fotoperro">
-    <div class="button-container">
-      <ion-buttons slot="start">
-        <ion-button class="return-btn" routerLink="/tabs/puntos-de-interes">
-          <div class="container-icon">
-            <ion-icon src="assets/icons/union-2.svg"></ion-icon>
-            <ion-icon class="right-icon" src="assets/icons/Trazado-47467.svg"></ion-icon>
-          </div>
-          
-        </ion-button>
-      </ion-buttons>
-    </div>
 
     <ion-content [fullscreen]="true">
       <div class="container-fotoperro">
         <div class="button-container">
-          <ion-buttons slot="start">
-            <ion-button class="return-btn" routerLink="/tabs/listado-paseadores">
-              <div class="container-icon">
-                <ion-icon src="assets/icons/union-2.svg"></ion-icon>
-              </div>
+          <ion-buttons>
+            <ion-button class="return-btn" slot="start" routerLink="/nuevo-punto-de-interes">
+              <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+            </ion-button>
+            
+            <ion-button class="return-btn" slot="end">
+              <ion-icon src="assets/icons/Trazado-47467.svg"></ion-icon>
             </ion-button>
           </ion-buttons>
         </div>
+        
     
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -30,10 +20,29 @@
               <img [src]="image" alt="Imagen del punto de interés">
             </div>
           </div>
+          <div class="nombre-punto-de-interes"> 
+
+            <h1> titulo</h1>
+            <p> ubicación</p>
+      
+           </div>
+      
+           <div class="username">
+            <p> publicado por</p> <span> Ana V.</span>
+      
+           </div>
+      
+           <div class="description">
+      
+            <p> ...</p>
+      
+           </div>
          
         </div>
       </div>
+
+
+    
     </ion-content>
     
-  </div>
-</ion-content>
+  
