@@ -25,12 +25,12 @@
  <div class="info-container">
   <ion-item >
     <ion-label position="stacked">Nombre</ion-label>
-    <ion-input class="custom-input" placeholder="Escribe tu nombre"></ion-input>
+    <ion-input class="custom-input" placeholder="Escribe tu nombre" [(ngModel)]="nombre"></ion-input>
   </ion-item>
 
   <ion-item >
     <ion-label position="stacked">Ubicación</ion-label>
-    <ion-input class="custom-input" placeholder="Escribe aquí..."></ion-input>
+    <ion-input class="custom-input" placeholder="Escribe aquí..." [(ngModel)]="ubicacion"></ion-input>
   </ion-item>
 </div>
 
@@ -69,7 +69,7 @@
 
 <div class="submit-button-container">
 
-  <ion-button expand="block"  routerLink="/punto-de-interes-detalle">Subir</ion-button>
+  <ion-button expand="block" (click)="enviarDatos()" routerLink="/punto-de-interes-publicado-cliente">Subir</ion-button>
 </div>
 
 

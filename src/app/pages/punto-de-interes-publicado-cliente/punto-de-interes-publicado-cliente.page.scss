@@ -21,15 +21,15 @@
         --background: #FFD954;
         padding: 0;
         margin: 0;
-        border-radius: 8px;
+        --border-radius: 8px;
   
         // Ajuste de tamaño
-        width: 30px; // Ancho del botón
-        height: 30px; // Alto del botón
+        width: 35px; // Ancho del botón
+        height: 35px; // Alto del botón
   
         ion-icon {
-          width: 12px;
-          height: 12px;
+          width: 18px;
+          height: 18px;
         }
       }
     }
@@ -60,30 +60,21 @@
   }
 }
 .category-button{
-    --background:#259518;
+    --background:#F0941A;
     color:#FFFFFF;
     font-size: 12px;
     height: auto;
-    width: 80px;
+    width: 190px;
     
     ion-icon{
         margin-right: 5px;
         height: 14px;
         width: 14px;
+        color: white !important;
     }
 
 }
 
-.subcategory-button{
-    --background:#FFD954;
-    color:#100F0F;
-    font-size: 12px;
-    height: auto;
-    width: 150px;
-    
-  
-
-}
 
 .username{
 

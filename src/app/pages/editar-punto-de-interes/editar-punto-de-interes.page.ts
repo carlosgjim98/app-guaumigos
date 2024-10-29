@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
+//import { NavController } from '@ionic/angular';
+
 @Component({
-  selector: 'app-nuevo-punto-de-interes',
-  templateUrl: './nuevo-punto-de-interes.page.html',
-  styleUrls: ['./nuevo-punto-de-interes.page.scss'],
+  selector: 'app-editar-punto-de-interes',
+  templateUrl: './editar-punto-de-interes.page.html',
+  styleUrls: ['./editar-punto-de-interes.page.scss'],
+  
 })
-export class NuevoPuntoDeInteresPage implements OnInit {
-  dynamicHeaderText: string = 'Nuevo punto de interés';
-  returnLink: string = '/tabs/puntos-de-interes';
+export class EditarPuntoDeInteresPage implements OnInit {
+
+  dynamicHeaderText: string = '';
+  returnLink: string = '/punto-de-interes-publicado-cliente';
   selectedCategory: string | null = null;
   description: string = '';
   nombre: string = '';
@@ -27,25 +30,17 @@ export class NuevoPuntoDeInteresPage implements OnInit {
     // Agrega las demás categorías
   ];
 
+
+
   subcategories = ['Parques funcionales', 'Parques de agility','Parques funcionales','Parques sociales','Tiendas de alimentación','Adopción por protectora' ]; 
   
   selectCategory(category: { name: string; icon: string }) {
     this.selectedCategory = category.name; // Almacena el nombre de la categoría seleccionada
 }
 
-  constructor(private navCtrl: NavController) { }
+  constructor() { }
 
-  enviarDatos() {
-    // Asegúrate de que el nombre y la ubicación no estén vacíos
-  
-      this.navCtrl.navigateForward('/punto-de-interes-publicado-cliente', {
-        state: {
-          nombre: this.nombre,
-          ubicacion: this.ubicacion,
-        }
-      });
-   
-  }
+
 
   ngOnInit() {
   }

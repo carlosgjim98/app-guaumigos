@@ -1,0 +1,126 @@
+ion-header {
+   
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+    
+        
+        
+        
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+        }
+
+        ion-buttons { 
+
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+.header-default{
+    --background: var(--custom-color-2);
+}
+
+.header-especial{
+    --background: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png') no-repeat center / cover; 
+}
+
+
+
+
+.filtro-btn {
+    --color: #000000;
+    --background: #ffffff;
+    width: auto;
+    height: 42px;
+    font-size: 15px;
+    font-family: LexendRegular;
+    --border-radius: 10px !important;
+    margin-left: 10px;
+    margin-top: 25px;
+
+    .icono-filtro {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+}
+
+.fondo{
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+    filter: grayscale(100%);
+    
+}
+
+.puntero{
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    margin-top: 100%;
+    margin-left: 35%;
+    }
+
+    .puntero2{
+        position: absolute;
+        margin-top: 83%;
+        margin-left: 15%;
+        height: 46px;
+        width: 46px;
+        
+        }
+
+    .puntero3{
+        position: absolute;
+        margin-top: 80%;
+        margin-left: 80%;
+        height: 46px;
+        width: 46px;
+       
+        }
+    
+    .puntero4{
+        position: absolute;
+        margin-top: 40%;
+        margin-left: 80%;
+        height: 46px;
+    width: 46px;
+        }
+
+        .puntero5{
+            position: absolute;
+            margin-top:20%;
+            margin-left: 5%;
+            height: 46px;
+            width: 46px;
+           
+            }
+
+
+  
+
+
+

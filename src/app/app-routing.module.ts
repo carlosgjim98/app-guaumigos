@@ -160,7 +160,23 @@ const routes: Routes = [
   {
     path: 'services-filters',
     loadChildren: () => import('./pages/services-filters/services-filters.module').then( m => m.ServicesFiltersPageModule)
+  },  {
+    path: 'punto-de-interes-publicado-cliente',
+    loadChildren: () => import('./pages/punto-de-interes-publicado-cliente/punto-de-interes-publicado-cliente.module').then( m => m.PuntoDeInteresPublicadoClientePageModule)
   },
+  {
+    path: 'editar-punto-de-interes',
+    loadChildren: () => import('./pages/editar-punto-de-interes/editar-punto-de-interes.module').then( m => m.EditarPuntoDeInteresPageModule)
+  },
+  {
+    path: 'mapa-punto-de-interes',
+    loadChildren: () => import('./pages/mapa-punto-de-interes/mapa-punto-de-interes.module').then( m => m.MapaPuntoDeInteresPageModule)
+  },
+  {
+    path: 'filtro-punto-de-interes',
+    loadChildren: () => import('./pages/filtro-punto-de-interes/filtro-punto-de-interes.module').then( m => m.FiltroPuntoDeInteresPageModule)
+  },
+
 
 
 
