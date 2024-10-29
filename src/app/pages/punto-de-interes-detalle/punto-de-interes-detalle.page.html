@@ -1,48 +1,49 @@
+<ion-content [fullscreen]="true">
+  <div class="container-fotoperro">
+    <div class="button-container">
+      <ion-buttons>
+        <ion-button class="return-btn" slot="start" routerLink="/tabs/puntos-de-interes">
+          <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </div>
 
-    <ion-content [fullscreen]="true">
-      <div class="container-fotoperro">
-        <div class="button-container">
-          <ion-buttons>
-            <ion-button class="return-btn" slot="start" routerLink="/nuevo-punto-de-interes">
-              <ion-icon src="assets/icons/union-2.svg"></ion-icon>
-            </ion-button>
-            
-            <ion-button class="return-btn" slot="end">
-              <ion-icon src="assets/icons/Trazado-47467.svg"></ion-icon>
-            </ion-button>
-          </ion-buttons>
-        </div>
-        
-    
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let image of images">
-              <img [src]="image" alt="Imagen del punto de interés">
-            </div>
-          </div>
-          <div class="nombre-punto-de-interes"> 
-
-            <h1> titulo</h1>
-            <p> ubicación</p>
-      
-           </div>
-      
-           <div class="username">
-            <p> publicado por</p> <span> Ana V.</span>
-      
-           </div>
-      
-           <div class="description">
-      
-            <p> ...</p>
-      
-           </div>
-         
-        </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img [src]="img" alt="Imagen del punto de interés">
       </div>
+    </div>
+
+    <div class="ion-padding">
+      <div class="nombre-punto-de-interes"> 
+        <h1>{{ nombre }}</h1>
+        <p>{{ ubicacion }}</p>
+      </div>
+    
 
 
-    
-    </ion-content>
-    
-  
+  <div class="button-container2">
+    <ion-button class="category-button"> 
+      <ion-icon src="assets/icons/tree-alt12088685.svg"></ion-icon>
+      Parque
+    </ion-button>
+
+    <ion-button class="subcategory-button"> 
+      Parques funcionales
+    </ion-button>
+  </div>
+
+  <div class="username">
+    <img src="assets/imgs/avatar@2x.png" alt="Avatar" class="avatar-icon">
+    <p style="display: inline;">Publicado por</p>
+    <span><b>Ana V.</b></span>
+  </div>
+
+  <div class="description">
+    <p>¡Qué descubrimiento tan increíble he hecho hoy! Nos hemos topado con un parque para perros que es simplemente perfecto. El césped está tan verde y suave que mi Bimbo no ha podido resistirse a revolcarse. Y los árboles... ¡qué sombra tan agradable para los días calurosos! Lo mejor de todo es que hay un montón de espacio para que mi Bimbo corra sin parar. Y no solo eso, sino que también hay unos obstáculos superdivertidos para que se entretenga. ¡Ha pasado un rato genial saltando y explorando! Me encantó ver a otros perros jugando y socializando. Se nota que es un lugar donde los dueños somos bienvenidos y podemos charlar mientras nuestros peludos hacen amigos. Y lo más importante, el parque está súper limpio y cuidado. ¡Se nota que lo quieren mucho! Sin duda, volveremos muy pronto. ¡Es el lugar ideal para que mi Bimbo descargue toda su energía y para que yo pueda relajarme y disfrutar de un poco de aire fresco!</p>
+  </div>
+</div>
+</div>
+</ion-content>

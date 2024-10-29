@@ -1,0 +1,63 @@
+
+<ion-content [fullscreen]="true" >
+      
+  <div class="container-fotoperro">
+    <div class="button-container">
+      <ion-buttons>
+        <ion-button class="return-btn" slot="start" routerLink="/nuevo-punto-de-interes">
+          <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+        </ion-button>
+        
+        <ion-button class="return-btn" slot="end" routerLink="/editar-punto-de-interes">
+          <ion-icon src="assets/icons/Trazado-47467.svg" ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </div>
+  
+    
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let image of images">
+          <img [src]="image" alt="Imagen del punto de interés">
+        </div>
+      </div>
+
+    <div class="ion-padding">
+      <div class="nombre-punto-de-interes" > 
+
+        <h1>{{ nombre }}</h1>
+        <p>{{ ubicacion }}</p>
+  
+       </div>
+
+       <div class=" button-container2" >
+       <ion-button class="category-button"> 
+       <ion-icon src="assets/icons/building_3914425.svg"></ion-icon>
+       Hotel apto para perros
+      </ion-button>
+
+    
+      </div>
+
+     
+      
+    
+       <div class="description">
+  
+        <p> Moka y yo acabamos de vivir una aventura increíble en el hotel GUAU HOTEL! Desde el momento en que llegamos, nos sentimos como en casa.</p>  
+        <p> La habitación era súper cómoda y tenían todo lo necesario para que mi peludo estuviera feliz: cama blandita, juguetes y hasta un bebedero personalizado. El personal fue súper amable y atento en todo momento. Además, el hotel cuenta con un amplio jardín donde Moka pudo correr y jugar sin parar. Y lo mejor de todo, ¡nos permitieron llevarlo a todas partes!</p>
+        <p> Hemos explorado la zona, hemos dado largos paseos y hemos disfrutado de unas vistas increíbles. Sin duda, este hotel se ha convertido en nuestro favorito. ¡Si buscas un lugar donde viajar con tu mascota, te lo recomiendo al 100%!</p>
+  
+       </div>
+     
+    </div>
+  </div>
+  
+
+
+
+</ion-content>
+
+

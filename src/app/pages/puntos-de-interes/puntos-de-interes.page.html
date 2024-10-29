@@ -4,11 +4,11 @@
       <ion-searchbar placeholder="Buscar"></ion-searchbar>
     </div>
     <div class="container-btn-search">
-      <ion-button routerLink="/" class="filtro-btn">
+      <ion-button routerLink="/filtro-punto-de-interes" class="filtro-btn">
         <ion-icon src="assets/icons/filter-edit-svgrepo-com.svg" class="icono-filtro"></ion-icon>
         <span>Filtros</span>
       </ion-button>
-      <ion-button routerLink="/" class="mapa-btn">
+      <ion-button routerLink="/mapa-punto-de-interes" class="mapa-btn">
         Ver en el mapa
       </ion-button>
     </div>
@@ -19,28 +19,28 @@
   
   <div class="container-contenido">
     <ion-icon class="anadir-interes-icon" slot="start" src="assets/icons/Grupo 12181.svg"></ion-icon>
-    <div *ngFor="let paseo of paseos" class="container-paseos">
-      <div class="container-fotoperro">
-
-        <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
-        <ion-icon src={{paseo.iconoUsuario}} class="category-icon"></ion-icon>
+    <div *ngFor="let paseo of paseos" class="container-paseos" [routerLink]="['/punto-de-interes-detalle']" [state]="{ 
+      img: paseo.imgPerro, 
+      nombre: paseo.nombre, 
+      ubicacion: paseo.distancia 
+    }">
+    <div class="container-fotoperro">
+      <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
+      <ion-icon src="{{ paseo.iconoUsuario }}" class="category-icon"></ion-icon>
     </div>
-    
-
-
-      <div class="container-datos">
-          <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
-          <div class="container-info" routerLink="/detalle-paseo">
-              <p class="nombre">{{ paseo.nombre }}</p>
-              <p class="distancia">{{ paseo.distancia }}</p>
-              <p class="usuario-publicador">
-                  <img [src]="paseo.imgUsuario" alt="Foto de {{ paseo.nombre }}" class="fotoUsuario">
-                  <span class="publicado-nombreUsuario">Publicado por <span class="nombreUsuario">{{ paseo.nombreUsuario }}</span></span>
-              </p>
-          </div>
+    <div class="container-datos">
+      <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+      <div class="container-info">
+        <p class="nombre">{{ paseo.nombre }}</p>
+        <p class="distancia">{{ paseo.distancia }}</p>
+        <p class="usuario-publicador">
+          <img [src]="paseo.imgUsuario" alt="Foto de {{ paseo.nombre }}" class="fotoUsuario">
+          <span class="publicado-nombreUsuario">Publicado por <span class="nombreUsuario">{{ paseo.nombreUsuario }}</span></span>
+        </p>
       </div>
-
     </div>
+  </div>
+  
     
 
   </div>
