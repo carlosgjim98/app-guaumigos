@@ -1,0 +1,34 @@
+app-app-header{
+    background-color: #FFCA3C;
+}
+
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.company{
+    color: #110F0F;
+    font-family: "LexendMedium";
+    font-size: 12pt;
+}
+
+.dog{
+    height: 40px;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.points{
+    font-size: 14px;
+}
+
+.opinions{
+    font-family: "LexendRegular";
+    font-size: 11px;
+}

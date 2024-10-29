@@ -37,7 +37,7 @@
       </div>
 
     </div>
-    <p class="service">Tipor de servicio</p>
+    <p class="service">Tipo de servicio</p>
     <p class="tratamientos"><ion-icon slot="start" src="../../../assets/icons/Elipse1.svg" class="point"></ion-icon>Peluquería canina</p>
   </div>
   <hr>
@@ -52,10 +52,10 @@
 
 
   <div class="bottom">
-    <ion-button class="button-1">
+    <ion-button class="button-1" >
       Ver perfil
     </ion-button>
-    <ion-button>
+    <ion-button id="open-modal" expand="block">
       Enviar solicitud
     </ion-button>
   </div>
@@ -69,3 +69,81 @@
 
 
 </ion-content>
+
+<ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]" class="ion-padding">
+  <ng-template>
+    <p class="title-modal">Solicitud de servicio </p>
+    
+    <hr class="hr-1">
+    <div class="modal-container">
+      <img class="dog-modal" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
+
+      <div>
+        <p class="guau-modal">Peluquería Guau! </p>
+        <div class="stars-modal">
+          <img src="../../../assets/imgs/interes/star.png" alt="">
+          <p class="points-modal">4,9 <span class="opinions-modal">· 25€</span></p>
+
+        </div>
+        
+
+      </div>
+
+    </div>
+    <hr class="hr-2">
+    <div class="calendario-custom">
+    <ion-datetime presentation="date"></ion-datetime>
+  </div>
+    <hr>
+    <div class="container-modal">
+      <h2>Selecciona una hora disponible</h2>
+      <div class="container-hora">
+        <ion-icon slot="start" name="time-outline"></ion-icon>
+        <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+        <ion-modal [keepContentsMounted]="true">
+          <ng-template>
+
+            <ion-datetime id="datetime" presentation="time" value="2023-11-02T01:22:00"
+              [formatOptions]="{ hour: '2-digit', minute: '2-digit', hour12: true }"> </ion-datetime>
+
+          </ng-template>
+        </ion-modal>
+      </div>
+
+    </div>
+
+    <div class="modal-button">
+      <ion-button class="continue" id="open-modal-2" expand="block"  >Continuar</ion-button>
+    </div>
+
+    
+
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="open-modal-2" [initialBreakpoint]="1" [breakpoints]="[0, 1]"  class="ion-padding">
+  <ng-template>
+    <p class="title-modal">Solicitud de servicio </p>
+    
+    <hr class="hr-1">
+    <div class="modal-container">
+      <img class="dog-modal" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
+
+      <div>
+        <p class="guau-modal">Peluquería Guau! </p>
+        <div class="stars-modal">
+          <img src="../../../assets/imgs/interes/star.png" alt="">
+          <p class="points-modal">4,9 <span class="opinions-modal">· 25€</span></p>
+
+        </div>
+        
+
+      </div>
+
+    </div>
+    
+    
+    </ng-template>
+</ion-modal>
+      

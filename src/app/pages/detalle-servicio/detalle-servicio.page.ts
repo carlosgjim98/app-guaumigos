@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-detalle-servicio',
@@ -7,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleServicioPage implements OnInit {
 
-  constructor() { }
+  constructor(private modalController: ModalController, ) { }
+
+  closeModal() {
+    this.modalController.getTop().then(modal => {
+      if (modal) {
+        modal.dismiss(); // Cierra el modal
+      }
+    });
+  }
 
   ngOnInit() {
   }

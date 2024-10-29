@@ -160,9 +160,14 @@ const routes: Routes = [
   {
     path: 'services-filters',
     loadChildren: () => import('./pages/services-filters/services-filters.module').then( m => m.ServicesFiltersPageModule)
-  },  {
+  },
+  {
     path: 'detalle-servicio',
     loadChildren: () => import('./pages/detalle-servicio/detalle-servicio.module').then( m => m.DetalleServicioPageModule)
+  },
+  {
+    path: 'resumen-pago-servicio',
+    loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
   },
 
 
