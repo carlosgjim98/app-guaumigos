@@ -1,18 +1,29 @@
-<ion-header no-border="no-border">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ng-content></ng-content>
+<ion-header>
+  <ion-toolbar [ngClass]="{'header-default': !esEspecial, 'header-especial': esEspecial}">
+    <div class="button-container">
+      <ion-buttons slot="start">
+        <ion-button class="return-btn" [routerLink]="returnLink">
+          <div class="container-icon">
+            <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+          </div>
+        </ion-button>
+      </ion-buttons>
+      
+      <ion-item lines="none" class="user-info">
+        <ion-avatar slot="start">
+          <img src="assets/imgs/Elipse 304@2x.png" alt="Foto de Marta A.">
+        </ion-avatar>
+        <ion-label class="message-label">
+          <div class="name-time-container">
+            <h2>{{ userName }}</h2>
+            <p class="time">{{ userStatus }}</p>
+          </div>
+        </ion-label>
+      </ion-item>
+    </div>
+    
+    <ion-buttons class= " end-button" slot="end">
+      <img src="assets/imgs/Grupo 12185.png" alt="Foto de Marta A.">
     </ion-buttons>
-
-    <ion-buttons slot="end">
-      <ion-button></ion-button>
-    </ion-buttons>
-
-    <ion-title class="ion-text-center">
-      <p class="chatName">{{chatName}}</p>
-      <p class="lastMessage">
-        Último mensaje {{lastMessage | date:'h:mm a'}}
-      </p>
-    </ion-title>
   </ion-toolbar>
 </ion-header>

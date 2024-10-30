@@ -1,10 +1,67 @@
-p{
-    margin:0;
+ion-header {
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+        }
+
+        ion-buttons { 
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                }
+            }
+        }
+    }
 }
-.lastMessage{
-    font-size: 10px;
+
+ion-avatar {
+    height: 46px;
+    width: 46px;
 }
-.chatName{
+
+.message-label {
+    display: flex;
+    flex-direction: column; /* Asegura que el nombre y el tiempo estén uno debajo del otro */
+    white-space: nowrap;
+}
+
+.name-time-container {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para que el nombre esté arriba y el tiempo abajo */
+    margin-bottom: 5px; 
+}
+
+h2 {
+    font-family: LexendMedium;
     font-size: 16px;
-    font-weight: bold;
+    color: #100F0F;
+}
+
+.time {
+    font-family: LexendLight;
+    font-size: 14px; 
+    color: #919191; 
+}
+
+.end-button{
+    margin-top: 25px;
 }

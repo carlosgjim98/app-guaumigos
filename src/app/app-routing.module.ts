@@ -182,7 +182,15 @@ const routes: Routes = [
     path: 'detalle-servicio',
     loadChildren: () => import('./pages/detalle-servicio/detalle-servicio.module').then( m => m.DetalleServicioPageModule)
 
+  },  {
+    path: 'mensajes',
+    loadChildren: () => import('./pages/mensajes/mensajes.module').then( m => m.MensajesPageModule)
   },
+  {
+    path: 'mensajes-chat',
+    loadChildren: () => import('./pages/mensajes-chat/mensajes-chat.module').then( m => m.MensajesChatPageModule)
+  },
+
 
 
 

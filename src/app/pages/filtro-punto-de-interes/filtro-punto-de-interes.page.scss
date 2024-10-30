@@ -1,0 +1,150 @@
+ion-header {
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+        
+        
+        
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+            
+        }
+        .brush-button{
+            margin-left: auto;
+
+            
+        }
+
+
+        ion-buttons { 
+
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                    .brush-icon{
+
+                        color: #1B1B1B;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+          
+        }
+        
+    }
+}
+
+
+.header-default{
+    --background: var(--custom-color-2);
+}
+
+.header-especial{
+    --background: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png') no-repeat center / cover; 
+}
+
+h2 {
+    font-family: LexendMedium !important;
+    font-size: 16px;
+    margin-top: 7px;
+}
+
+.container-range {
+    margin-bottom: 15px;
+    
+
+    p {
+        font-family: LexendRegular;
+        font-size: 14px;
+        color: #919191;
+    }
+
+    input {
+        appearance: none;
+        width: 100%;
+        height: 5px;
+        background: var(--custom-color);
+        border-radius: 5px;
+        outline: none;
+        transition: background 0.3s ease;
+    }
+
+    input::-webkit-slider-thumb {
+        appearance: none;
+        width: 27px;
+        height: 27px;
+        background-color: var(--custom-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+
+.category-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap:1px;
+    --padding-start: 8px;
+    --padding-end: 8px;
+   margin-top: 65px;
+   
+}
+.category-button {
+    display: inline-flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+    --background: transparent;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    font-size: 15px;
+    color: #100F0F;
+    white-space: nowrap; 
+    width: auto;
+    gap:0px;
+    --padding-start: 8px;
+    --padding-end: 8px;
+}
+
+.category-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    color: #100F0F !important;
+}
+
+.category-button.selected {
+  background-color: #FFD954; 
+  color: #100F0F; 
+}
+.category-icon.selected-icon {
+  color: #100F0F !important; 
+}
+
+
+.subcategory-container{
+
+    margin-top: 20px !important;
+  }
+
+  .apply-button{
+
+    margin-top:40px;
+  }
