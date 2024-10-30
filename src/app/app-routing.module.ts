@@ -184,9 +184,60 @@ const routes: Routes = [
 
   },
   {
+    path: 'mensajes',
+    loadChildren: () => import('./pages/mensajes/mensajes.module').then( m => m.MensajesPageModule)
+  },
+  {
+    path: 'mensajes-chat',
+    loadChildren: () => import('./pages/mensajes-chat/mensajes-chat.module').then( m => m.MensajesChatPageModule)
+  },
+
+  {
+    path: 'nuevo-punto-de-interes',
+    loadChildren: () => import('./pages/nuevo-punto-de-interes/nuevo-punto-de-interes.module').then( m => m.NuevoPuntoDeInteresPageModule)
+  },
+
+  {
+    path: 'punto-de-interes-detalle',
+    loadChildren: () => import('./pages/punto-de-interes-detalle/punto-de-interes-detalle.module').then( m => m.PuntoDeInteresDetallePageModule)
+  },
+
+  {
+    path: 'services',
+    loadChildren: () => import('./pages/services/services.module').then( m => m.ServicesPageModule)
+  },
+
+  {
+    path: 'services-filters',
+    loadChildren: () => import('./pages/services-filters/services-filters.module').then( m => m.ServicesFiltersPageModule)
+  },
+  {
+
+    path: 'punto-de-interes-publicado-cliente',
+    loadChildren: () => import('./pages/punto-de-interes-publicado-cliente/punto-de-interes-publicado-cliente.module').then( m => m.PuntoDeInteresPublicadoClientePageModule)
+  },
+  {
+    path: 'editar-punto-de-interes',
+    loadChildren: () => import('./pages/editar-punto-de-interes/editar-punto-de-interes.module').then( m => m.EditarPuntoDeInteresPageModule)
+  },
+  {
+    path: 'mapa-punto-de-interes',
+    loadChildren: () => import('./pages/mapa-punto-de-interes/mapa-punto-de-interes.module').then( m => m.MapaPuntoDeInteresPageModule)
+  },
+  {
+    path: 'filtro-punto-de-interes',
+    loadChildren: () => import('./pages/filtro-punto-de-interes/filtro-punto-de-interes.module').then( m => m.FiltroPuntoDeInteresPageModule)},
+  {
+
+    path: 'detalle-servicio',
+    loadChildren: () => import('./pages/detalle-servicio/detalle-servicio.module').then( m => m.DetalleServicioPageModule)
+
+  },
+  {
     path: 'resumen-pago-servicio',
     loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
   },
+
 
 
 
@@ -199,3 +250,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
+

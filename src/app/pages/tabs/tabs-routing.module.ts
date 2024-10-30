@@ -21,7 +21,7 @@ const routes: Routes = [
       },
       {
         path: 'mensajes',
-        loadChildren: () => import('../calendar/calendar.module').then(m => m.CalendarPageModule)
+        loadChildren: () => import('../mensajes/mensajes.module').then(m => m.MensajesPageModule)
       },
       {
         path: 'perfil',

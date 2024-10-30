@@ -1,0 +1,90 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="barra-busqueda-container">
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+
+  
+  <ion-list>
+    <!-- Mensaje 1 -->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/imgs/img-perfil-usuario@2x.png" alt="Foto de Alberto P.">
+      </ion-avatar>
+      <ion-label class="message-label">
+        <div class="name-time-container">
+          <h2>Alberto P.</h2>
+          <p class="time">10 minutos</p>
+        </div>
+        <div class="new-message-container">
+          <p class="new-message">(3) mensajes nuevos</p>
+          <ion-badge class="custom-badge" color="danger">3</ion-badge>
+        </div>
+      </ion-label>
+    </ion-item>
+    
+  
+    <!-- Mensaje 2 -->
+    <ion-item >
+      <ion-avatar slot="start">
+        <img src="assets/imgs/Elipse 304@2x.png" alt="Foto de Marta A.">
+      </ion-avatar>
+      <ion-label class="message-label">
+        <div class="name-time-container" routerLink="/mensajes-chat">
+          <h2>Marta A.</h2>
+          <p class="time">Hace 2 días</p>
+        </div>
+        <p>Tú: has enviado 1 imagen</p>
+      </ion-label>
+    </ion-item>
+  
+    <!-- Mensaje 3 -->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/imgs/Elipse 407@2x.png" alt="Foto de Mario H.">
+      </ion-avatar>
+      <ion-label class="message-label">
+        <div class="name-time-container">
+          <h2>Mario H.</h2>
+          <p class="time">Hace 1 semana</p>
+        </div>
+        <p>Mario: ¡Hola! ¿Qué tal?</p>
+      </ion-label>
+    </ion-item>
+  
+    <!-- Mensaje 4 -->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/imgs/Elipse 562@2x.png" alt="Foto de Marta S.">
+      </ion-avatar>
+      <ion-label class="message-label">
+        <div class="name-time-container">
+          <h2>Marta S.</h2>
+          <p class="time">Hace 2 semanas</p>
+        </div>
+        <p>Tú: has enviado 1 imagen</p>
+      </ion-label>
+    </ion-item>
+  
+    <!-- Mensaje 5 -->
+    <ion-item class= "last-item" lines="none">
+      <ion-avatar slot="start">
+        <img src="assets/imgs/Elipse 412@2x.png" alt="Foto de Carlos E.">
+      </ion-avatar>
+      <ion-label lines="none" class="message-label">
+        <div class="name-time-container">
+          <h2>Carlos E.</h2>
+          <p class="time">Hace 2 semanas</p>
+        </div>
+        <p>Mario: ¡Hola! ¿Qué tal?</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  
+ 
+</ion-content>
