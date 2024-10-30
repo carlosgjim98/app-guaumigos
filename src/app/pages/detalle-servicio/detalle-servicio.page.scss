@@ -107,7 +107,8 @@ hr{
 
 .bottom{
     display: flex;
-
+    box-shadow: 0 -2px 5px #f4f0f0;
+    margin-top: 40%;
 
     
 }
@@ -120,4 +121,138 @@ ion-button{
     --background: white;
     border: 1px solid;
     border-radius: 10pt;
+}
+
+//MODAL
+
+ion-modal {
+    --height: 90%;
+    --border-radius: 20pt;
+
+  }
+  .title-modal{
+    margin-left: 5%;
+    font-size: 19px;
+    margin-top: 5%;
+  }
+  .modal-container{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+  .dog-modal{
+    height: 40px;
+  }
+  .guau-modal{
+    margin-bottom: -7%;
+  }
+  .stars-modal{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+  }
+  .points-modal{
+    font-size: 14px;
+
+  }
+  .opinions-modal{
+    font-family: "LexendLight";
+    font-size: 14px;
+  }
+
+  //CALENDARIO
+   
+  .calendario-custom {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: 8%;
+
+    ion-datetime {
+        font-family: LexendRegular;
+        font-size: 15px;
+        color: #2b2828;
+        background-color: transparent;
+        --ion-font-family: "LexendRegular";
+        border-radius: 16px;
+        --today-color: black !important;
+        width: 100%;
+        height: 100%;
+        --ion-color-base: #2B2828!important;
+    }
+
+    ion-datetime::part(calendar-day):focus {
+        background-color: #110f0f;
+        box-shadow: none;
+        color: #ffffff;
+    }
+
+    ion-datetime::part(calendar-day) {
+        color: #919191;
+        font-size: 15px;
+    }
+
+    ion-datetime::part(calendar-weekday) {
+        font-size: 13px;
+        font-family: "LexendRegular";
+        color: #919191;
+    }
+}
+
+//FECHAS DISPONIBLES
+
+h2 {
+    font-family: LexendRegular;
+    font-size: 14px;
+    margin-top: 7px;
+    color: #919191;
+    margin-left: 5%;
+}
+
+.container-hora {
+    display: flex;
+    align-items: center;
+    border: 1px solid #100f0f;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    gap: 10px;
+    background-color: transparent;
+    width: 90%;
+    margin-left: 5%;
+
+    ion-icon {
+        font-size: 18px;
+        color: #000;
+    }
+
+    ion-datetime-button {
+        font-family: LexendMedium;
+        font-size: 14px;
+        color: #141411;
+        background: white;
+    }
+
+    ion-datetime {
+        --background: #fff1f2;
+    }
+}
+
+.modal-button{
+    width: 90%;
+    margin-left: 2.5%;
+    margin-bottom: 15%;
+}
+.continue{
+    width: 100%;
+}
+.hr-1{
+    margin-bottom: -6%;
+}
+.hr-2{
+    margin-top: -6%;
+    margin-bottom: -4%;
 }
