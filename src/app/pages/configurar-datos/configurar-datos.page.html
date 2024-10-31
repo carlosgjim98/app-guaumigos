@@ -1,0 +1,40 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+
+
+
+<div class="description-container">
+  
+  <h1>Email</h1>
+  <ion-item class="nombre" >
+    
+    <p>nombre_usuario&#64;correo.es</p>
+    
+  </ion-item>
+
+  <h2>Contraseña</h2>
+  <ion-item class="password">
+    
+    <p>password-prueba</p>
+    
+  </ion-item>
+
+
+
+  <h2> Repetir Contraseña</h2>
+<ion-item class="password">
+  
+  <p>password-prueba</p>
+  
+</ion-item>
+</div>
+
+<ion-button class="save-btn" routerLink="/ajustes"> Guardar cambios</ion-button>
+<ion-button class="delete-btn"> Eliminar cuenta</ion-button>
+
+
+
+</ion-content>
+

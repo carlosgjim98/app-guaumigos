@@ -1,0 +1,92 @@
+<ion-header>
+
+  <ion-toolbar>
+    <div class="button-container">
+
+        <ion-button class="notification-btn" slot="end" routerLink="/notificaciones">
+            <ion-icon   slot= "icon-only" class="notification-icon" src="assets/icons/Trazado 48466.svg"></ion-icon>
+            <div class="notification-badge">+99</div>
+        </ion-button>
+
+        <ion-button class="settings-btn"  slot="end" routerLink="/ajustes">
+          <ion-icon slot= "icon-only" class="settings-icon" src="assets/icons/Trazado 47469.svg"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+  
+  <ion-avatar class="avatar">
+    <img src="assets/imgs/usuarios/Rectángulo 19665@3x.png" alt="User Avatar">
+    <ion-icon src="assets/icons/Trazado-47467.svg" class="edit-icon" routerLink="/editar-perfil"></ion-icon>
+  </ion-avatar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="profile-content">
+    
+    
+    <h2 class="name">Marta Rodriguez</h2>
+    <p class="location">
+      <ion-icon name="location-outline"></ion-icon> Jerez de la Frontera, España
+    </p>
+    
+    <div class="ratings" routerLink="/valoraciones">
+      <ion-icon name="star" color="warning"></ion-icon>
+      <span>4.8</span>
+      <a href="#">1635 valoraciones</a>
+    </div>
+    
+    <p class="description">
+      Mi perrita Moka lo es todo para mí. Le encanta jugar a la pelota, salir a explorar y hacer nuevos amigos. ¡Solo lo mejor para ella!
+    </p>
+  </div>
+
+  <div class="gallery-container">
+    <div class="header-container">
+    <h2>Galería</h2>
+    <ion-button fill="outline" shape="round"  >Ver todo</ion-button>
+  </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image1@2x.png" alt="Mascota 1" class="gallery-img"/>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image2@2x.png" alt="Mascota 2" class="gallery-img highlight"/>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image3@2x.png" alt="Mascota 3" class="gallery-img"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="pets-container">
+    <h2>Mascotas</h2>
+    <div class="pets-grid">
+      
+      <!-- Tarjeta de mascota -->
+      <div class="pet-card">
+        <img src="assets/imgs/perros/shared image4@2x.png"  alt="Foto de Moka" class="pet-img"/>
+        <div class="pet-info">
+          <h3>Moka</h3>
+          <p>Pug · 2 años</p>
+          <ion-button class="profile-button" routerLink="/galeria" >Ver perfil</ion-button>
+        </div>
+      </div>
+      
+      <!-- Tarjeta para agregar nueva mascota -->
+      <div class="add-pet-card">
+        <ion-button shape=" round"class="add-btn">
+        <ion-icon slot= "icon-only" class="add-icon" src="assets/icons/add.svg"></ion-icon>
+      </ion-button>
+        <p>Agregar nueva mascota</p>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+</ion-content>

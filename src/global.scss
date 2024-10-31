@@ -143,16 +143,16 @@ ion-toolbar {
 // ESTILOS PARA TODOS LOS BOTONES "EN PRINCIPIO" -- PARA CAMBIAR ESTILOS, CAMBIARLO EN UNO EN CONCRETO CON ALGUNA CLASE
 
 ion-button {
-    --border-radius: var(--app-border-radius);
-    height: 48px;
-    text-transform: none;
-    font-size: 16px;
-    font-family: LexendMedium;
-    color: #141411;
-    --background: var(--custom-color);
-    --box-shadow: none;
-    width: 100%;
-    height: 58px;
+     --border-radius: var(--app-border-radius);
+     height: 48px;
+     text-transform: none;
+     font-size: 16px;
+     font-family: LexendMedium;
+     color: #000000;
+     --background: var(--custom-color);
+     --box-shadow: none;
+     width: 100%;
+     height: 58px;
 }
 
 

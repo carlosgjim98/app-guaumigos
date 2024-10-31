@@ -1,0 +1,76 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="image-container">
+
+    <ion-avatar slot="start">
+      <img src="assets/imgs/Rectángulo 19665@3x.png" alt="Foto de Marta A.">
+    </ion-avatar>
+    <ion-button> Editar imagen</ion-button>
+
+  </div>
+
+  
+<div class="description-container">
+  
+  <h1>Nombre</h1>
+  <ion-item class="nombre" >
+    
+    <p>Moka</p>
+    
+  </ion-item>
+
+  <h2>Raza</h2>
+  <ion-item class="raza" lines="none" >
+    <ion-select class=" text-select "  toggleIcon="none"label="Pug" >
+      <ion-icon slot="end" name="chevron-down"></ion-icon>
+    </ion-select>
+   
+  </ion-item>
+
+
+
+  <h2>Edad</h2>
+<ion-item class="edad">
+  
+  <p>2 años</p>
+  
+</ion-item>
+
+<h2>Tamño</h2>
+<ion-item class="edad">
+  
+  <p>34,5</p>
+  
+</ion-item>
+
+<h2>Peso</h2>
+<ion-item class="edad">
+  
+  <p>3 </p>
+  
+</ion-item>
+
+<h2>Hembra/macho</h2>
+  <ion-item class="raza" lines="none" >
+    <ion-select class=" text-select "  toggleIcon="none"label="Hembra" >
+      <ion-icon slot="end" name="chevron-down"></ion-icon>
+    </ion-select>
+   
+  </ion-item>
+
+  <h2>¿Está en celo?</h2>
+  <ion-item class="raza" lines="none" >
+    <ion-select class=" text-select "  toggleIcon="none"label="No" >
+      <ion-icon slot="end" name="chevron-down"></ion-icon>
+    </ion-select>
+   
+  </ion-item>
+
+</div>
+
+<ion-button class="save-btn" routerLink="/ajustes"> Guardar cambios</ion-button>
+<ion-button class="delete-btn"> Borrar mascota</ion-button>
+
+
+</ion-content>

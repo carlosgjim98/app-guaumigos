@@ -236,7 +236,35 @@ const routes: Routes = [
   {
     path: 'resumen-pago-servicio',
     loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
+  },  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'notificaciones',
+    loadChildren: () => import('./pages/notificaciones/notificaciones.module').then( m => m.NotificacionesPageModule)
+  },
+  {
+    path: 'editar-perfil',
+    loadChildren: () => import('./pages/editar-perfil/editar-perfil.module').then( m => m.EditarPerfilPageModule)
+  },
+  {
+    path: 'ajustes',
+    loadChildren: () => import('./pages/ajustes/ajustes.module').then( m => m.AjustesPageModule)
+  },
+  {
+    path: 'configurar-datos',
+    loadChildren: () => import('./pages/configurar-datos/configurar-datos.module').then( m => m.ConfigurarDatosPageModule)
+  },
+  {
+    path: 'galeria',
+    loadChildren: () => import('./pages/galeria/galeria.module').then( m => m.GaleriaPageModule)
+  },
+  {
+    path: 'editar-mascota',
+    loadChildren: () => import('./pages/editar-mascota/editar-mascota.module').then( m => m.EditarMascotaPageModule)
+  },
+
 
 
 
