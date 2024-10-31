@@ -17,6 +17,47 @@ export class ServicesFiltersPage implements OnInit {
 
   opcionSeleccionadaTamano: string = '';
   opcionSeleccionadaPeso: string = '';
+
+  buttons=[
+    {
+      id : 1,
+      text : 'Guarderías caninas',
+      checked : false,
+    },
+    
+    {
+      id : 2,
+      text : 'Hoteles para mascotas',
+      checked : false,
+    },
+    {
+      id : 3,
+      text : 'Servicios de rehabilitación',
+      checked : false,
+    },
+    {
+      id : 4,
+      text : 'Peluquería canina',
+      checked : false,
+    },
+    {
+      id : 5,
+      text : 'Comida para perros',
+      checked : false,
+    },
+    {
+      id : 6,
+      text : 'Juguetes para perros',
+      checked : false,
+    },
+    {
+      id : 7,
+      text : 'Accesorios (correas, collares, camas)',
+      checked : false,
+    },
+  ]
+
+  
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
@@ -24,6 +65,11 @@ export class ServicesFiltersPage implements OnInit {
 
   onRangoChange(event: any) {
     this.rangoSeleccionado = event.target.value;
+  }
+
+  color(id){
+    let index = this.buttons.findIndex(item => item.id === id);
+    this.buttons[index].checked = !this.buttons[index].checked
   }
 
   

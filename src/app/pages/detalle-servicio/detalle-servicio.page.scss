@@ -240,19 +240,141 @@ h2 {
         --background: #fff1f2;
     }
 }
-
-.modal-button{
-    width: 90%;
-    margin-left: 2.5%;
-    margin-bottom: 15%;
-}
 .continue{
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
 }
-.hr-1{
-    margin-bottom: -6%;
+
+//MODAL 2
+
+
+
+ion-modal {
+    --height: 90%;
+    --border-radius: 20pt;
+
+  }
+  .title-modal{
+    margin-left: 5%;
+    font-size: 19px;
+    margin-top: 5%;
+  }
+  .hr-1{
+    margin-bottom: -5%;
+    margin-top: -5%;
+  }
+  .modal-container{
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+  .dog-modal{
+    height: 40px;
+  }
+  .guau-modal{
+    margin-bottom: -7%;
+    font-family: 10px;
+  }
+  .stars-modal{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+  }
+  .points-modal{
+    font-size: 14px;
+
+  }
+  .opinions-modal{
+    font-family: "LexendLight";
+    font-size: 14px;
+  }
+  .hr-2{
+    margin-top: -5%;
+  }
+
+  .dog-selection{
+    border: 2px solid;
+    border-radius: 8px;
+    margin-left: 3%;
+    border-color: #919191;
+    
+  }
+  .bottom-content{
+    margin-bottom: 50%;
+  }
+  
+
+.checkbox_1{
+    border: 2px solid;
+    border-radius: 8pt;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    width: 90%;
+    padding: 2%;
+    margin-left: 5%;
+    height: 50px;
+    border-color: #919191;
+    margin-bottom: 3%;
+
 }
-.hr-2{
-    margin-top: -6%;
-    margin-bottom: -4%;
+.checkbox_2{
+    border: 2px solid;
+    border-radius: 8pt;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+    width: 90%;
+    padding: 2%;
+    margin-left: 5%;
+    height: 50px;
+    border-color: #919191;
+    margin-bottom: 3%;
+
+}
+.checkbox_3{
+    border: 2px solid;
+    border-radius: 8pt;
+    display: flex;
+    align-items: center;
+    gap: 98px;
+    width: 90%;
+    padding: 2%;
+    margin-left: 5%;
+    height: 50px;
+    border-color: #919191;
+
+}
+.titles-selection{
+    color: #919191;
+    margin-left: 5%;
+    margin-bottom: -3%;
+}
+
+.dog-selection{
+    margin-left: 5%;
+}
+
+.titles-selection-2{
+    color: #919191;
+    margin-left: 5%;
+    
+}
+p{
+    font-size: 12px;
+}
+span{
+    color: #919191;
+}
+ion-checkbox{
+    --border-radius: 5pt;
+    --checkmark-color: black;
+}
+.continue-button{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }

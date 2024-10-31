@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonModal, ModalController } from '@ionic/angular';
 
 
 @Component({
@@ -10,13 +10,19 @@ import { ModalController } from '@ionic/angular';
 export class DetalleServicioPage implements OnInit {
 
   constructor(private modalController: ModalController, ) { }
+  @ViewChild('open_modal', { static: true }) open_modal!: IonModal;
+ 
 
+  @ViewChild('open_modal_2', { static: true }) open_modal_2!: IonModal;
+ 
   closeModal() {
-    this.modalController.getTop().then(modal => {
-      if (modal) {
-        modal.dismiss(); // Cierra el modal
-      }
-    });
+    this.open_modal.dismiss()
+        this.open_modal_2.present();
+  }
+
+  openModal() {
+    this.open_modal.present();
+
   }
 
   ngOnInit() {
