@@ -10,14 +10,12 @@
   <div class="profile-container">
     <img class="dog" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
 
-    <div>
-      <p class="guau">Peluquería Guau!</p>
+    <div >
+      <p class="company-name">Peluquería Guau!</p>
       
-      
-      <!-- <p class="points"><ion-icon class="star" src="../../../assets/icons/star.svg"></ion-icon>4,9 <u class="opinions"> 1635 opiniones</u></p> -->
       <div class="stars">
         <img src="../../../assets/imgs/interes/star.png" alt="">
-        <p class="points">4,9 <span class="opinions"> · 25€</span></p>
+        <p class="points">4,9 <span class="opinions">· Jerez de la Frontera, Cádiz</span></p>
 
       </div>
 
@@ -26,92 +24,100 @@
   </div>
 
   <hr>
-
-  <p>Datos del servicio <br>
-  Nombre del servicio <br>
-  Corte de pelo a tu mascota <br>
-<ion-icon>18/09/2024</ion-icon><br>
-<ion-icon>10:00 A.M</ion-icon></p>
-
-<p>Mascota que participará</p>
-<div>
-  <img src="" alt="">
+  <div class="services-head">
+  <p class="title">Datos del servicio </p>
+  <p class="service-name">Nombre del servicio</p>
+  <p class="hair-cut">Corte de pelo a tu mascota</p> 
+  <div class="date-time">
+  <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+  <p class="icons">18/09/2024</p>
+  </div>
+  <div class="date-time">
+    <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+  <p class="icons">10:00 A.M</p>
+</div>
+</div>
+<p class="pet">Mascota que participará</p>
+<div class="moka">
+  <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="">
   <div>
-    <p>Moka <br>
-    Pug· 2 años</p>
+    <p class="dog-name">Moka</p>
+    <p class="age">Pug· 2 años</p>
   </div>
 </div>
-<p>Servicio extra <br>
-Tratamiento antiparasitorio <br>
-Administración de medicamentos</p>
+<p class="extra-service">Servicio extra </p>
+<p class="medicine">Tratamiento antiparasitorio</p>
+
+<p class="medicine-1">Administración de medicamentos</p>
 
 <hr>
 
-<div>
+<div class="target">
   <p>Información de pago</p>
-  <ion-list [inset]="true">
-    <ion-item>
-      <ion-label>Servicio</ion-label>
-      <ion-label>25€</ion-label>
+
+  
+
+  
+    <ion-item lines="full">
+      <ion-label class="label-1">Servicio</ion-label>
+      <ion-label class="label-2">25€</ion-label>
     </ion-item>
+    <hr>
     <ion-item>
-      <ion-label>Servicios extra</ion-label>
-      <ion-label>23€</ion-label>
+      <ion-label class="label-1">Servicios extra</ion-label>
+      <ion-label class="label-2">23€</ion-label>
     </ion-item>
+    <hr>
     <ion-item>
-      <ion-label>Comisión</ion-label>
-      <ion-label>3€</ion-label>
+      <ion-label class="label-1">Comisión</ion-label>
+      <ion-label class="label-2">3€</ion-label>
     </ion-item>
-    <ion-item>
-      <ion-label>Total</ion-label>
-      <ion-label>51€</ion-label>
+    <hr>
+    <ion-item class="last-item">
+      <ion-label class="label-3">Total</ion-label>
+      <ion-label class="label-4">51€</ion-label>
     </ion-item>
-    
-  </ion-list>
+  
+  
 </div>
 
-<p>Ahorra los gfastos de comisión <span>seleccionando</span><br>
+<p class="save-expenses">Ahorra los gastos de comisión <span>seleccionando</span><br>
 <span>uno de </span> nuestros planes de suscripción</p>
 
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>20€</ion-card-title>
-    <ion-card-subtitle>Suscripción mensual</ion-card-subtitle>
-  </ion-card-header>
+<div class="cards">
+  <p class="susbcription">Suscripción mensual</p>
+  <div class="checkboxes">
+    <p>20€</p>
+    <ion-checkbox class="checkboss_1" slot="end"></ion-checkbox>
+  </div>
+  <p class="save-expenses-2">Ahorras los gastos de gestión</p>
+</div>
 
-  <ion-card-content>
-    Ahorras los gastos de gestión
-  </ion-card-content>
-</ion-card>
+<div class="cards">
+  <p class="susbcription">Suscripción trimestral</p>
+  <div class="checkboxes">
+    <p>45€</p>
+    <ion-checkbox class="checkboss_1" slot="end"></ion-checkbox>
+  </div>
+  <p class="save-expenses-2">Ahorras los gastos de gestión +5€ cada mes</p>
+</div>
 
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>20€</ion-card-title>
-    <ion-card-subtitle>Suscripción mensual</ion-card-subtitle>
-  </ion-card-header>
+<div class="cards">
+  <p class="susbcription">Suscripción anual</p>
+  <div class="checkboxes">
+    <p>89,90€</p>
+    <ion-checkbox class="checkboss" slot="end"></ion-checkbox>
+  </div>
+  <p class="save-expenses-2">Ahorras los gastos de gestión +12,5€ cada mes</p>
+</div>
 
-  <ion-card-content>
-    Ahorras los gastos de gestión
-  </ion-card-content>
-</ion-card>
 
-<ion-card>
-  <ion-card-header>
-    <ion-card-title>20€</ion-card-title>
-    <ion-card-subtitle>Suscripción mensual</ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Ahorras los gastos de gestión
-  </ion-card-content>
-</ion-card>
-
-<p>Tu pago del servicio queará retenido <br>
+<p class="withheld-payment">Tu pago del servicio quedará retenido <br>
 hasta que el paseador apruebe tu solicitud</p>
 
-<ion-button>Continuar al pago total de 96€</ion-button>
+<ion-button class="pay-continue">Continuar al pago total de 96€</ion-button>
 
-<p><u>Continuar sin la suscripción</u></p>
+<p class="text-bottom"><u>Continuar sin la suscripción</u></p>
 
 
 
