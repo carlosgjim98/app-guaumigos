@@ -240,3 +240,65 @@ app-app-header{
 .text-bottom{
     text-align: center;
 }
+
+// MODAL
+
+
+
+ion-modal{
+    --background: transparent;
+}
+
+.person{
+    height: 200px;
+    margin-left: 22%;
+}
+
+  .block{
+    width: 90%;
+    margin-left: 5%;
+    height: 60%;
+    background-color: white;
+    border-radius: 20pt;
+    align-items: center;
+    margin-top: 40%;
+    p{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+  }
+
+  .final-button{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+  .last-1{
+    font-size: 24px;
+    font-family: LexendSemiBold;
+  }
+
+  .last-2{
+    font-size:18px ;
+  }
+
+  .last-3{
+    font-family: LexendLight;
+    font-size: 14px;
+  }
+
+  .last-4{
+    color: #6C6C6C;
+    font-size: 12px;
+    font-family: LexendLight;
+  }
+  .last-div{
+    display: flex;
+  }
+  .cross{
+    height: 20px;
+  margin-left: 13%;
+  margin-top: 7%;
+  }
