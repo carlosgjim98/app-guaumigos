@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { DetalleSolicitudAceptadaPageRoutingModule } from './detalle-solicitud-aceptada-routing.module';
-
+import { ComponentsModule } from 'src/app/components/components.module';
 import { DetalleSolicitudAceptadaPage } from './detalle-solicitud-aceptada.page';
 
 @NgModule({
@@ -13,7 +13,8 @@ import { DetalleSolicitudAceptadaPage } from './detalle-solicitud-aceptada.page'
     CommonModule,
     FormsModule,
     IonicModule,
-    DetalleSolicitudAceptadaPageRoutingModule
+    DetalleSolicitudAceptadaPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [DetalleSolicitudAceptadaPage]
 })

@@ -284,6 +284,10 @@ const routes: Routes = [
     path: 'anadir-valoracion-desde-detalle-de-solicitud',
     loadChildren: () => import('./pages/anadir-valoracion-desde-detalle-de-solicitud/anadir-valoracion-desde-detalle-de-solicitud.module').then( m => m.AnadirValoracionDesdeDetalleDeSolicitudPageModule)
   },
+  {
+    path: 'seguimiento-de-paseos',
+    loadChildren: () => import('./pages/seguimiento-de-paseos/seguimiento-de-paseos.module').then( m => m.SeguimientoDePaseosPageModule)
+  },
 
 
 

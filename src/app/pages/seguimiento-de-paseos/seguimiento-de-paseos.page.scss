@@ -1,9 +1,18 @@
 
+.map{
+    height: 70%;
+    width: 100%;
+    //filter: grayscale(3);
+}
 
-
-
+.container-tipo{
+    margin-left: 5%;
+    width: 90%;
+}
 .container-range {
     margin-bottom: 15px;
+    
+    
 
     p {
         font-family: LexendRegular;
@@ -30,4 +39,7 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
+}
+.range{
+    font-family: LexendMedium;
 }
