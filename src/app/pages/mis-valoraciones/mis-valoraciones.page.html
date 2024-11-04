@@ -1,0 +1,39 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>Paseos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Servicios</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div  class="container-paseador">
+    <div class="container-opinion">
+      <div class="container-datos" routerLink="/detalle-valoracion">
+        <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+        <div class="container-info">
+          <p class="precio">
+            <span class="valoracion">
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+              <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            </span>
+          </p>
+
+          <p class="nombre">Paseo de día con Ana Velázquez</p>
+          <p class="tiempo">18/09/2024</p>
+
+         
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+</ion-content>

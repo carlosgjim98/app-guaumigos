@@ -236,7 +236,8 @@ const routes: Routes = [
   {
     path: 'resumen-pago-servicio',
     loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
-  },  {
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
@@ -265,6 +266,69 @@ const routes: Routes = [
     loadChildren: () => import('./pages/editar-mascota/editar-mascota.module').then( m => m.EditarMascotaPageModule)
   },
   {
+    path: 'mis-servicios-reservados',
+    loadChildren: () => import('./pages/mis-servicios-reservados/mis-servicios-reservados.module').then( m => m.MisServiciosReservadosPageModule)
+  },
+  {
+    path: 'detalle-resrva-de-servicio',
+    loadChildren: () => import('./pages/detalle-resrva-de-servicio/detalle-resrva-de-servicio.module').then( m => m.DetalleResrvaDeServicioPageModule)
+  },
+  {
+    path: 'seguimiento-de-paseo',
+    loadChildren: () => import('./pages/seguimiento-de-paseo/seguimiento-de-paseo.module').then( m => m.SeguimientoDePaseoPageModule)
+  },
+  {
+    path: 'detalle-solicitud-aceptada',
+    loadChildren: () => import('./pages/detalle-solicitud-aceptada/detalle-solicitud-aceptada.module').then( m => m.DetalleSolicitudAceptadaPageModule)
+  },
+  {
+    path: 'anadir-valoracion-desde-detalle-de-solicitud',
+    loadChildren: () => import('./pages/anadir-valoracion-desde-detalle-de-solicitud/anadir-valoracion-desde-detalle-de-solicitud.module').then( m => m.AnadirValoracionDesdeDetalleDeSolicitudPageModule)
+  },
+  {
+    path: 'perfil-mascota',
+    loadChildren: () => import('./pages/perfil-mascota/perfil-mascota.module').then( m => m.PerfilMascotaPageModule)
+  },
+  {
+    path: 'editar-galeria',
+    loadChildren: () => import('./pages/editar-galeria/editar-galeria.module').then( m => m.EditarGaleriaPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes',
+    loadChildren: () => import('./pages/mis-puntos-de-interes/mis-puntos-de-interes.module').then( m => m.MisPuntosDeInteresPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes-detalle',
+    loadChildren: () => import('./pages/mis-puntos-de-interes-detalle/mis-puntos-de-interes-detalle.module').then( m => m.MisPuntosDeInteresDetallePageModule)
+  },
+  {
+    path: 'mis-valoraciones',
+    loadChildren: () => import('./pages/mis-valoraciones/mis-valoraciones.module').then( m => m.MisValoracionesPageModule)
+  },  {
+    path: 'detalle-valoracion',
+    loadChildren: () => import('./pages/detalle-valoracion/detalle-valoracion.module').then( m => m.DetalleValoracionPageModule)
+  },
+  {
+    path: 'seguimiento-de-paseos',
+    loadChildren: () => import('./pages/seguimiento-de-paseos/seguimiento-de-paseos.module').then( m => m.SeguimientoDePaseosPageModule)
+  },
+  {
+    path: 'rgpd-desde-ajustes',
+    loadChildren: () => import('./pages/rgpd-desde-ajustes/rgpd-desde-ajustes.module').then( m => m.RgpdDesdeAjustesPageModule)
+  },
+  {
+    path: 'condiciones-de-venta-desde-ajustes',
+    loadChildren: () => import('./pages/condiciones-de-venta-desde-ajustes/condiciones-de-venta-desde-ajustes.module').then( m => m.CondicionesDeVentaDesdeAjustesPageModule)
+  },
+  {
+    path: 'eula-desde-ajustes',
+    loadChildren: () => import('./pages/eula-desde-ajustes/eula-desde-ajustes.module').then( m => m.EulaDesdeAjustesPageModule)
+  },
+  {
+    path: 'mi-suscripcion',
+    loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
+  },
+  {
     path: 'mis-solicitudes-de-paseo',
     loadChildren: () => import('./pages/mis-solicitudes-de-paseo/mis-solicitudes-de-paseo.module').then( m => m.MisSolicitudesDePaseoPageModule)
   },
@@ -272,6 +336,7 @@ const routes: Routes = [
     path: 'detalle-solicitud-en-curso',
     loadChildren: () => import('./pages/detalle-solicitud-en-curso/detalle-solicitud-en-curso.module').then( m => m.DetalleSolicitudEnCursoPageModule)
   },
+
 
 
 

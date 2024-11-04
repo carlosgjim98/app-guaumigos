@@ -1,0 +1,139 @@
+<ion-header>
+  <ion-toolbar [ngClass]="{'header-default': !esEspecial, 'header-especial': esEspecial}">
+    <div class="button-container">
+      <ion-buttons slot="start">
+        <ion-button class="return-btn" [routerLink]="returnLink">
+          <div class="container-icon">
+            <ion-icon src="assets/icons/union-2.svg" ></ion-icon>
+          </div>
+        </ion-button>
+      </ion-buttons>
+      
+      <p *ngIf="headerText">{{ headerText }}</p>
+
+      <ion-buttons class="brush-button" slot="end">
+        <ion-button class="return-btn">
+          <div class="container-icon">
+            <ion-icon class="brush-icon" src="assets/icons/Trazado-47467.svg" routerLink="/editar-galeria"></ion-icon>
+          </div>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-grid>
+   
+    <ion-row>
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image@3x.png" class="img" alt="Image 1">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+          
+       
+        </div>
+        
+      </ion-col>
+      
+      <ion-col size="4">
+        <div class="image-container">
+          <img src= "assets/imgs/shared image-1@3x.png" class="img" alt="Image 2">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+      
+      <ion-col size="4">
+        <div class="image-container">
+          <img src= "assets/imgs/shared image-2@3x.png"class="img" alt="Image 3">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+    
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-3@3x.png" class="img" alt="Image 4">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+      
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-4@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-5@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-6@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-7@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-8@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      <ion-col size="4">
+        <div class="image-container">
+          <img src="assets/imgs/shared image-9@3x.png" class="img" alt="Image 5">
+          <ion-button shape="round" class="round-button"> 
+            <ion-icon slot="icon-only" src="assets/icons/delete bin.svg"></ion-icon>
+          </ion-button>
+        </div>
+      </ion-col>
+
+      
+      
+      <ion-col size="4">
+        <div class="image-container2">
+          <img src="assets/icons/add-image.svg" class="image-icon" alt="Add Image">
+      </div>
+      </ion-col>
+    </ion-row>
+    
+
+</ion-grid>
+
+<ion-button class="save-btn" routerLink="/galeria"> Guardar cambios</ion-button>
+
+ 
+</ion-content>
+

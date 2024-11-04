@@ -1,0 +1,120 @@
+ion-header {
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+        
+        
+        
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+            
+        }
+        .brush-button{
+            margin-left: auto;
+
+            
+        }
+
+
+        ion-buttons { 
+
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                    .brush-icon{
+
+                        color: #1B1B1B;
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+          
+        }
+        
+    }
+    .header-default{
+        --background: var(--custom-color-2);
+    }
+    
+    .header-especial{
+        --background: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png') no-repeat center / cover; 
+    }
+    
+}
+
+
+.pet-info {
+    background-image: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 25px;
+    border-radius: 10px;
+   height: 70%;
+
+    .image-container{
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       align-items: center;
+
+
+       h1{
+
+        font-family: LexendMedium;
+        font-size: 25px;
+        
+       }
+       ion-avatar{
+
+        height: 130px;
+        width: 130px;
+       }
+    }
+
+   
+
+    p {
+        font-family: LexendRegular;
+        font-size: 15px;
+        color: #110f0f;
+        margin: 0;
+        margin-bottom: 3px;
+        display: flex;
+        justify-content: space-between;
+    }
+    span{
+
+        font-family: LexendMedium;
+
+    }
+
+    hr {
+        background-color: #110f0f;
+        margin-bottom: 16px;
+    }
+
+   
+}

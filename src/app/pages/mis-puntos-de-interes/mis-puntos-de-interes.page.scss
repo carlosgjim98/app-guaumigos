@@ -1,0 +1,128 @@
+.container-contenido {
+    padding: 15px;
+    position: relative;
+
+    .anadir-interes-icon {
+        position: fixed;
+        width: 92px; 
+        height: 92px; 
+        bottom: 4px; 
+        right: 7px; 
+        z-index: 10;
+    }
+
+    //PASEOS
+    .container-paseos {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px #cececd;
+        margin-bottom: 15px;
+        margin-right: 0;
+        margin-left: 0;
+        overflow: hidden;
+        background-color: #ffffff;
+
+        .container-fotoperro {
+            position: relative;
+            width: 100%;
+            height: 110px;
+            overflow: hidden;
+            position: relative;
+
+            .tipoIcon {
+                position: absolute;
+                top: 15px;
+                right: 11px;
+                width: 35px;
+                height: 35px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .category-icon {
+                position: absolute;
+                top: 10px; /* Ajusta según sea necesario */
+                right: 10px; /* Ajusta según sea necesario */
+                width: 36px; /* Ajusta el tamaño del ícono según sea necesario */
+                height: 36px; /* Ajusta el tamaño del ícono según sea necesario */
+                z-index: 1; /* Asegura que el ícono esté por encima de la imagen */
+            }
+        }
+
+        .container-datos {
+            display: flex;
+            padding: 10px 0px 10px 15px;
+            padding-top: 13px;
+            align-items: center;
+            margin-bottom: 5px;
+
+            .container-info {
+                .nombre,
+                .distancia,
+                .precio {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .nombre {
+                    font-family: LexendRegular;
+                    font-size: 16px;
+                    color: #110f0f;
+                }
+
+                .distancia {
+                    font-family: LexendLight;
+                    font-size: 13px;
+                    color: #808080;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 242px;
+                    display: inline-block;
+                }
+
+                .usuario-publicador {
+                    display: flex;
+                    align-items: center;
+                    font-family: LexendRegular;
+                    font-size: 14px;
+                    color: #555;
+                    margin: 0;
+
+                    .fotoUsuario {
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        margin-right: 5px;
+                    }
+
+                    .publicado-nombreUsuario,
+                    .nombreUsuario {
+                        font-size: 13px;
+                        color: #110f0f;
+                    }
+
+                    .publicado-nombreUsuario {
+                        font-family: LexendLight;
+
+                        .nombreUsuario {
+                            font-family: LexendSemiBold;
+                        }
+                    }
+                }
+            }
+
+            .signoDirigir {
+                position: absolute;
+                right: 30px;
+                transform: translateY(-20%) rotate(-90deg);
+                width: 13px;
+            }
+        }
+    }
+}

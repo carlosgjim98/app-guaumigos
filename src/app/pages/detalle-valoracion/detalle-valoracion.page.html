@@ -1,0 +1,52 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  <div class="bottom-border">
+    <h2 class="title">Datos del paseador</h2>
+    <div class="container-datos">
+      <div class="container-fotousuario">
+        <img [src]="paseador.imgUsuario" alt="Foto de {{ paseador.nombre }}">
+      </div>
+
+      <div class="container-info" routerLink="/detalle-paseo">
+
+        <p class="nombre">{{ paseador.nombre }}</p>
+
+        <p class="localizacion">
+          <span class="valoracion">
+            <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            <span class="nota">{{ paseador.valoracion }}</span>
+          </span>
+          &nbsp;· {{ paseador.localizacion }}
+        </p>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="valoracion-container">
+  <p> ¿Cómo fue el paseo?</p>
+  <p class="precio">
+    <span class="valoracion">
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+    </span>
+  </p>
+
+  <p> ¿Quieres dejar algún comentario?</p>
+
+  <p class="comentario">¡Totalmente recomendada! Ana cuida de mi mascota como si fuera de su familia. Súper confiable.</p>
+
+  <p class="date">18/09/2024 </p>
+
+
+</div>
+
+<ion-button class=" delete-btn"> Eliminar valoración</ion-button>
+
+</ion-content>

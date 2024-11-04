@@ -1,0 +1,117 @@
+ion-content{
+   --background: #F8F8F8;
+
+   ion-segment{
+    display: flex;
+    justify-content: center; 
+    gap:8px;
+    --background:transparent;
+   }
+
+ .segment-button-checked{
+
+
+    --ion-color-step-350:transparent !important;
+    color:#141411;
+ }
+ion-segment-button{
+   --border-radius: var(--app-border-radius);
+
+   text-transform: none;
+   font-size: 16px;
+   font-family: LexendMedium;
+   color: #919191;
+   --background: #FFFFFF;
+   
+   --background-checked:#FFD954;
+   --box-shadow: none !important;
+   width: 195px;
+   height: 58px;
+   margin-top: 20px;
+   
+
+   
+}
+
+.container-paseador {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #cececd;
+    margin-top: 17px;
+    margin-left: 15px;
+    margin-right: 15px;
+    overflow: hidden;
+    background-color: white;
+
+    .container-opinion {
+        padding-top: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+       
+
+        .container-datos {
+            display: flex;
+            align-items: center;
+
+          
+
+            .container-info {
+                margin-left: 10px;
+                width: 100%;
+
+                .nombre,
+                .distancia,
+                .precio {
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+
+                .nombre {
+                    font-family: LexendRegular;
+                    font-size: 16px;
+                    color: #110f0f;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 10px;
+
+                   
+                }
+                .tiempo {
+                    margin-top: 10px;
+                    font-family: LexendLight;
+                    font-size: 14px;
+                    color: #919191;
+                    margin-bottom: 15px;
+                }
+
+                .precio {
+                    .valoracion {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 7px;
+
+                        ion-icon {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+      
+    }
+}
+
+
+
+.signoDirigir {
+    position: absolute;
+    right: 30px;
+    transform: translateY(-20%) rotate(-90deg);
+    width: 13px;
+    height: 13;
+}
+
+}

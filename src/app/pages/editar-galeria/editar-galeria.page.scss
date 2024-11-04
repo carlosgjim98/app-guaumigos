@@ -1,0 +1,127 @@
+ion-header {
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+        
+        
+        
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+            
+        }
+        .brush-button{
+            margin-left: auto;
+
+            
+        }
+
+
+        ion-buttons { 
+
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                    .brush-icon{
+
+                        color: #1B1B1B;
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+          
+        }
+        
+    }
+    .header-default{
+        --background: var(--custom-color-2);
+    }
+    
+    .header-especial{
+        --background: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png') no-repeat center / cover; 
+    }
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100%; /* Mantiene un aspecto cuadrado */
+    position: relative;
+    
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    
+  
+}
+
+.image-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.round-button {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 5px; /* Ajusta según sea necesario */
+    right: 5px; /* Ajusta según sea necesario */
+    --border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 10px; /* Ajusta el tamaño del botón */
+    height: 10px; /* Ajusta el tamaño del botón */
+    --padding-start: 0; /* Elimina padding adicional para iconos */
+    --padding-end: 0; /* Elimina padding adicional para iconos */
+    ion-icon{
+        height: 18px;
+        width: 22px;
+    }
+  }
+
+  .save-btn{
+
+    margin-top: 50px;
+  }
+
+  .image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100%; /* Mantiene un aspecto cuadrado */
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    
+    
+  
+}
