@@ -324,6 +324,10 @@ const routes: Routes = [
     path: 'eula-desde-ajustes',
     loadChildren: () => import('./pages/eula-desde-ajustes/eula-desde-ajustes.module').then( m => m.EulaDesdeAjustesPageModule)
   },
+  {
+    path: 'mi-suscripcion',
+    loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
+  },
 
 
 
