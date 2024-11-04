@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarMascotaPage implements OnInit {
   dynamicHeaderText: string = 'Moka';
-  returnLink: string = '/galeria';
+  returnLink: string = '/perfil-mascota';
   constructor() { }
 
   ngOnInit() {

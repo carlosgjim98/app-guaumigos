@@ -65,6 +65,24 @@
        
        
     }
+    ion-item.medida {
+        display: flex;
+        align-items: center;
+    }
+    
+    .valor {
+        margin: 0;
+        
+        
+    }
+    
+    .unidad {
+        margin-left: auto; 
+        color: #919191;
+
+      
+    }
+    
     
     .nombre{
         border:  solid 1px #100F0F;

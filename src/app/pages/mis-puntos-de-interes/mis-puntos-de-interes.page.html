@@ -1,0 +1,25 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true" >
+  
+  <div class="container-contenido">
+    <div  class="container-paseos" >
+    <div class="container-fotoperro">
+      <img src="assets/imgs/resting-by-pool-french-bulldog-enjoys-breeze-comfortably-settled.png" alt="Imagen del perro">
+      <ion-icon src="assets/icons/hotel-icon.svg" class="category-icon"></ion-icon>
+    </div>
+    <div class="container-datos" routerLink="/punto-de-interes-publicado-cliente">
+      <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg" ></ion-icon>
+      <div class="container-info">
+        <p class="nombre">Hotel adaptado para mascotas</p>
+        <p class="distancia">Jerez de la Frontera, Cádiz</p>
+        <p class="distancia"> 19/09/2024</p>
+      </div>
+    </div>
+  
+  </div>
+    
+
+  </div>
+
+</ion-content>

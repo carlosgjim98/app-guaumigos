@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-punto-de-interes-publicado-cliente',
@@ -16,7 +17,7 @@ export class PuntoDeInteresPublicadoClientePage implements OnInit {
     // Agrega más imágenes según sea necesario
   ];
 
-  constructor(private router: Router) {
+  constructor(private router: Router,private navCtrl: NavController ) {
     const navigation = this.router.getCurrentNavigation();
     interface NavigationState {
       nombre?: string;
@@ -31,6 +32,10 @@ export class PuntoDeInteresPublicadoClientePage implements OnInit {
     }
   }
 
+  goBack() {
+    this.navCtrl.back();
+  }
+  
   ngOnInit() {
     // Lógica adicional si es necesario
   }

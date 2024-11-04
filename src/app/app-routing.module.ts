@@ -236,7 +236,8 @@ const routes: Routes = [
   {
     path: 'resumen-pago-servicio',
     loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
-  },  {
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
@@ -285,9 +286,33 @@ const routes: Routes = [
     loadChildren: () => import('./pages/anadir-valoracion-desde-detalle-de-solicitud/anadir-valoracion-desde-detalle-de-solicitud.module').then( m => m.AnadirValoracionDesdeDetalleDeSolicitudPageModule)
   },
   {
+    path: 'perfil-mascota',
+    loadChildren: () => import('./pages/perfil-mascota/perfil-mascota.module').then( m => m.PerfilMascotaPageModule)
+  },
+  {
+    path: 'editar-galeria',
+    loadChildren: () => import('./pages/editar-galeria/editar-galeria.module').then( m => m.EditarGaleriaPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes',
+    loadChildren: () => import('./pages/mis-puntos-de-interes/mis-puntos-de-interes.module').then( m => m.MisPuntosDeInteresPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes-detalle',
+    loadChildren: () => import('./pages/mis-puntos-de-interes-detalle/mis-puntos-de-interes-detalle.module').then( m => m.MisPuntosDeInteresDetallePageModule)
+  },
+  {
+    path: 'mis-valoraciones',
+    loadChildren: () => import('./pages/mis-valoraciones/mis-valoraciones.module').then( m => m.MisValoracionesPageModule)
+  },  {
+    path: 'detalle-valoracion',
+    loadChildren: () => import('./pages/detalle-valoracion/detalle-valoracion.module').then( m => m.DetalleValoracionPageModule)
+  },
+  {
     path: 'seguimiento-de-paseos',
     loadChildren: () => import('./pages/seguimiento-de-paseos/seguimiento-de-paseos.module').then( m => m.SeguimientoDePaseosPageModule)
   },
+
 
 
 
