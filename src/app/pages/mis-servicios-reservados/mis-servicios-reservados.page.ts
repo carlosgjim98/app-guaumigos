@@ -9,7 +9,7 @@ import { FormBuilder } from '@angular/forms';
 export class MisServiciosReservadosPage implements OnInit {
 
   dynamicHeaderText: string = 'Mis servicios reservados';
-  returnLink: string = '/valoraciones';
+  returnLink: string = '/ajustes';
 
   buttons=[
     {

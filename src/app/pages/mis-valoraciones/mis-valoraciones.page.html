@@ -2,9 +2,18 @@
 
 <ion-content [fullscreen]="true">
  
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>Paseos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Servicios</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
   <div  class="container-paseador">
     <div class="container-opinion">
-      <div class="container-datos">
+      <div class="container-datos" routerLink="/detalle-valoracion">
         <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
         <div class="container-info">
           <p class="precio">

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MisValoracionesPage implements OnInit {
   dynamicHeaderText: string = 'Mis valoraciones';
   returnLink: string = '/ajustes';
+  
   constructor() { }
 
   ngOnInit() {
