@@ -8,12 +8,15 @@ import { DetalleSolicitudEnCursoPageRoutingModule } from './detalle-solicitud-en
 
 import { DetalleSolicitudEnCursoPage } from './detalle-solicitud-en-curso.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DetalleSolicitudEnCursoPageRoutingModule
+    DetalleSolicitudEnCursoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [DetalleSolicitudEnCursoPage]
 })

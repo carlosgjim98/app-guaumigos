@@ -2,42 +2,48 @@ ion-content{
     --background: #F8F8F8;
 }
 
-.buttons{
+ion-segment{
     display: flex;
-    width: 90%;
-    margin-left: 5%;
-    gap: 5px;
-    margin-top: 5%;
-}
+    justify-content: center; 
+    gap:8px;
+    --background:transparent;
+   }
 
-.button_1{
-    --background:#FFFFFF;
-    //border: 2px solid;
-    border-radius: 10px;
-    color: #919191;
-    font-family: LexendRegular;
-    font-size: 14px;
-    border-color: #919191;
-    
-    
-}
-.amarillo{
-    --background: #FFD954;
-    border: none;
-    color: black;
-    font-family: LexendRegular;
-    font-size: 14px;
+ .segment-button-checked{
+
+
+    --ion-color-step-350:transparent !important;
+    color:#141411;
+ }
+ion-segment-button{
+   --border-radius: var(--app-border-radius);
+
+   text-transform: none;
+   font-size: 16px;
+   font-family: LexendMedium;
+   color: #919191;
+   --background: #FFFFFF;
+   
+   --background-checked:#FFD954;
+   --box-shadow: none !important;
+   width: 195px;
+   height: 58px;
+   margin-top: 20px;
+   
+
+   
 }
 .content{
     display: flex;
     width: 90%;
     margin-left: 5%;
-    border: 2px solid#CECECD;
+    //border: 2px solid#CECECD;
     border-radius: 10pt;
     align-items: center;
-    gap: 170px;
+    gap: 200px;
     margin-top: 5%;
-    --background: #FFFFFF;
+    background: #FFFFFF;
+    padding-left: 3%;
 
 }
 .icons{
@@ -48,8 +54,8 @@ ion-content{
     margin-bottom: -5%;
     
     p{
-        font-size: 12pt;
-        font-family: LexndLight;
+        font-size: 10pt;
+        font-family: LexendLight;
     }
 
 }
@@ -61,26 +67,29 @@ ion-content{
     margin-top: -10%;
     
     p{
-        font-size: 12pt;
-        font-family: LexndLight;
+        font-size: 10pt;
+        font-family: LexendLight;
     }
 
-}
-.span-1{
-    color: green;
 }
 
 .text-1{
     margin-left: 5%;
     font-family: LexendRegular;
-    font-size: 12pt;
+    font-size: 10pt;
     margin-bottom: 0;
     width: 100%;
 }
+
+.span-1{
+    color: green;
+}
+
+
 .text-2{
     margin-left: 5%;
     font-family: LexendRegular;
-    font-size: 12pt;
+    font-size: 10pt;
     margin-top: 0;
 }
 .span-2{

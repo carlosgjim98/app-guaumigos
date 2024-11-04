@@ -2,20 +2,23 @@
 
 <ion-content [fullscreen]="true">
 
-  <div class="buttons" >
-    <ion-button class="button_1" *ngFor="let button of buttons" (click)="color(button.id)" [ngClass]="{'amarillo':button.checked}">
-      {{button.text}}
-    </ion-button>
-  </div>
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>Paseos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Servicios</ion-label>
+    </ion-segment-button>
+  </ion-segment>
 
   <div class="content" routerLink="/detalle-resrva-de-servicio">
     <div>
       <p class="text-1">Paseo durante el día</p>
       <div class="icons">
-      <ion-icon slot="start" src="../../../assets/icons/brush2.svg"></ion-icon><p>18/09/2024</p>
+      <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon><p>18/09/2024</p>
       </div>
       <div class="icons-2">
-        <ion-icon slot="start" src="../../../assets/icons/brush2.svg"></ion-icon><p>10:00 A.M.</p>
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon><p>10:00 A.M.</p>
         </div>
       <p class="text-2">Estado: <span class="span-1">Aceptada</span></p>
   </div>
@@ -26,10 +29,10 @@
     <div>
       <p class="text-1">Paseo durante el día</p>
       <div class="icons">
-      <ion-icon slot="start" src="../../../assets/icons/brush2.svg"></ion-icon><p>15/09/2024</p>
+      <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon><p>15/09/2024</p>
       </div>
       <div class="icons-2">
-        <ion-icon slot="start" src="../../../assets/icons/brush2.svg"></ion-icon><p>10:00 A.M.</p>
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon><p>10:00 A.M.</p>
         </div>
       <p class="text-2">Estado: <span class="span-2">Rechazada</span></p>
   </div>

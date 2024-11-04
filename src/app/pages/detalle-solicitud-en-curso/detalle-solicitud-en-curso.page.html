@@ -1,13 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>detalle-solicitud-en-curso</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle-solicitud-en-curso</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+    <p class="company">Datos del paseador</p>
+
+    <div class="profile-container">
+      <img class="dog" src="../../../assets/imgs/avatar@3x.png" alt="">
+  
+      <div >
+        <p class="company-name">Ana Velazquez</p>
+        
+        <div class="stars">
+          <img src="../../../assets/imgs/interes/star.png" alt="">
+          <p class="points">4,9 <span class="opinions">· Jerez de la Frontera, Cádiz</span></p>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    
+    <ion-button class="little-button">Añadir valoración</ion-button>
+
+    <hr>
+    <div class="services-head">
+    <p class="title">Datos del paseo </p>
+    
+    <div class="date-time">
+    <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+    <p class="icons">18/09/2024</p>
+    </div>
+    <div class="date-time">
+      <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+    <p class="icons">10:00 A.M</p>
+  </div>
+  </div>
+  <p class="pet">Mascota que participará</p>
+  <div class="moka">
+    <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="">
+    <div>
+      <p class="dog-name">Moka</p>
+      <p class="age">Pug· 2 años</p>
+    </div>
+  </div>
+  <p class="extra-service">Servicio extra </p>
+  <p class="medicine">Corrección de malos hábitos</p>
+  
+  
+  
+  <hr>
+  
+  <div class="target" routerLink="/detalle-solicitud-aceptada">
+    <p>Información de pago</p>
+  
+    
+  
+    
+      <ion-item lines="full">
+        <ion-label class="label-1">Servicio</ion-label>
+        <ion-label class="label-2">30€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label class="label-1">Servicios extra</ion-label>
+        <ion-label class="label-2">5€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label class="label-1">Pago de suscripción</ion-label>
+        <ion-label class="label-2">45€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item class="last-item">
+        <ion-label class="label-3">Total</ion-label>
+        <ion-label class="label-4">80€</ion-label>
+      </ion-item>
+    
+    
+  </div>
+
+
+
+
+<ion-button class="final-button">Cancelar reserva</ion-button>
+
+
+
+
+
+
+  
 </ion-content>
