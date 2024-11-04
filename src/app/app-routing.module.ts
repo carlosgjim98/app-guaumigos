@@ -236,7 +236,8 @@ const routes: Routes = [
   {
     path: 'resumen-pago-servicio',
     loadChildren: () => import('./pages/resumen-pago-servicio/resumen-pago-servicio.module').then( m => m.ResumenPagoServicioPageModule)
-  },  {
+  },
+  {
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
@@ -263,6 +264,26 @@ const routes: Routes = [
   {
     path: 'editar-mascota',
     loadChildren: () => import('./pages/editar-mascota/editar-mascota.module').then( m => m.EditarMascotaPageModule)
+  },
+  {
+    path: 'mis-servicios-reservados',
+    loadChildren: () => import('./pages/mis-servicios-reservados/mis-servicios-reservados.module').then( m => m.MisServiciosReservadosPageModule)
+  },
+  {
+    path: 'detalle-resrva-de-servicio',
+    loadChildren: () => import('./pages/detalle-resrva-de-servicio/detalle-resrva-de-servicio.module').then( m => m.DetalleResrvaDeServicioPageModule)
+  },
+  {
+    path: 'seguimiento-de-paseo',
+    loadChildren: () => import('./pages/seguimiento-de-paseo/seguimiento-de-paseo.module').then( m => m.SeguimientoDePaseoPageModule)
+  },
+  {
+    path: 'detalle-solicitud-aceptada',
+    loadChildren: () => import('./pages/detalle-solicitud-aceptada/detalle-solicitud-aceptada.module').then( m => m.DetalleSolicitudAceptadaPageModule)
+  },
+  {
+    path: 'anadir-valoracion-desde-detalle-de-solicitud',
+    loadChildren: () => import('./pages/anadir-valoracion-desde-detalle-de-solicitud/anadir-valoracion-desde-detalle-de-solicitud.module').then( m => m.AnadirValoracionDesdeDetalleDeSolicitudPageModule)
   },
   {
     path: 'perfil-mascota',
