@@ -1,0 +1,37 @@
+.content{
+    --background: #F8F8F8;
+}
+
+.button-content{
+    display: flex;
+    width: 90%;
+    gap: 5px;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.button_1{
+    --background:white;
+    //border: 2px solid;
+    border-radius: 10px;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 14px;
+    width: max-content;
+    flex: 1;
+    min-width: max-content;
+    border-color: #919191;
+    
+    
+}
+
+.amarillo{
+    --background: #FFD954;
+    border: none;
+    color: black;
+    font-family: LexendRegular;
+    font-size: 14px;
+    width: max-content;
+    //flex: 1;
+    min-width: max-content;
+}

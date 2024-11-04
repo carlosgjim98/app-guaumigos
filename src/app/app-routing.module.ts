@@ -264,6 +264,14 @@ const routes: Routes = [
     path: 'editar-mascota',
     loadChildren: () => import('./pages/editar-mascota/editar-mascota.module').then( m => m.EditarMascotaPageModule)
   },
+  {
+    path: 'mis-solicitudes-de-paseo',
+    loadChildren: () => import('./pages/mis-solicitudes-de-paseo/mis-solicitudes-de-paseo.module').then( m => m.MisSolicitudesDePaseoPageModule)
+  },
+  {
+    path: 'detalle-solicitud-en-curso',
+    loadChildren: () => import('./pages/detalle-solicitud-en-curso/detalle-solicitud-en-curso.module').then( m => m.DetalleSolicitudEnCursoPageModule)
+  },
 
 
 

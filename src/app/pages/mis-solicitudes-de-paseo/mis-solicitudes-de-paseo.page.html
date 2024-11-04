@@ -1,0 +1,30 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content class="content" [fullscreen]="true">
+  
+  <div class="button-content">
+    <ion-button class="button_1" *ngFor="let button of buttons" (click)="color(button.id)" [ngClass]="{'amarillo':button.checked}">
+      {{button.text}}
+    </ion-button>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</ion-content>
