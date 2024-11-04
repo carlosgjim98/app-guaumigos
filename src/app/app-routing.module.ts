@@ -264,6 +264,26 @@ const routes: Routes = [
     path: 'editar-mascota',
     loadChildren: () => import('./pages/editar-mascota/editar-mascota.module').then( m => m.EditarMascotaPageModule)
   },
+  {
+    path: 'perfil-mascota',
+    loadChildren: () => import('./pages/perfil-mascota/perfil-mascota.module').then( m => m.PerfilMascotaPageModule)
+  },
+  {
+    path: 'editar-galeria',
+    loadChildren: () => import('./pages/editar-galeria/editar-galeria.module').then( m => m.EditarGaleriaPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes',
+    loadChildren: () => import('./pages/mis-puntos-de-interes/mis-puntos-de-interes.module').then( m => m.MisPuntosDeInteresPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes-detalle',
+    loadChildren: () => import('./pages/mis-puntos-de-interes-detalle/mis-puntos-de-interes-detalle.module').then( m => m.MisPuntosDeInteresDetallePageModule)
+  },
+  {
+    path: 'mis-valoraciones',
+    loadChildren: () => import('./pages/mis-valoraciones/mis-valoraciones.module').then( m => m.MisValoracionesPageModule)
+  },
 
 
 

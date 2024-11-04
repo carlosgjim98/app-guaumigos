@@ -91,3 +91,37 @@ ion-header {
 
 }
 
+
+.round-button {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 5px; /* Ajusta según sea necesario */
+    right: 5px; /* Ajusta según sea necesario */
+    --border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 10px; /* Ajusta el tamaño del botón */
+    height: 10px; /* Ajusta el tamaño del botón */
+    --padding-start: 0; /* Elimina padding adicional para iconos */
+    --padding-end: 0; /* Elimina padding adicional para iconos */
+    ion-icon{
+        height: 18px;
+        width: 22px;
+    }
+  }
+
+  .save-btn{
+
+    margin-top: 50px;
+  }
+
+  .image-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100%; /* Mantiene un aspecto cuadrado */
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    
+    
+  
+}
