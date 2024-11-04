@@ -6,35 +6,191 @@ app-app-header{
 .profile-container{
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
+    margin-left: 5%;
+
 }
 
 .company{
     color: #110F0F;
     font-family: "LexendMedium";
     font-size: 12pt;
+    margin-left: 5%;
+    margin-bottom: 0;
 }
 
 .dog{
-    height: 40px;
+    height: 50px;
+}
+.company-name{
+    margin-bottom: 4.5%;
 }
 
 .stars{
     display: flex;
     align-items: center;
     gap: 2px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 1.5%;
 }
 .points{
     font-size: 14px;
 }
 
 .opinions{
-    font-family: "LexendRegular";
-    font-size: 11px;
+    font-family: LexendLight;
+    font-size: 14px;
 }
 
 
+.services-head{
+    margin-left: 5%;
+    .title{
+        font-family: LexendMedium;
+    }
+    .service-name{
+        font-size: 12px;
+        margin-bottom: 1.5%;
 
-.services{
-    background-image:url(../../../assets/imgs/backgroundyellow.png);
+    }
+    .hair-cut{
+        font-size: 13px;
+        font-family: LexendLight;
+        margin-top: 1.5%;
+    }
+    .date-time{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-family: LexendLight;
+        height: 10px;
+        margin-bottom: 5%;
+
+    }
+    .icons{
+        font-size: 13px;
+        font-family: LexendLight;
+    }
+
+}
+
+.pet{
+    margin-left: 5%;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 12px;
+}
+
+.moka{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    gap: 15px;
+
+    img{
+        height: 50px;
+    }
+    .dog-name{
+        margin-bottom: 5%;
+    }
+    .age{
+        font-family: LexendLight;
+        margin-top: 5%;
+    }
+
+}
+.extra-service{
+    margin-left: 5%;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 12px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    
+}
+.medicine{
+    margin-left: 5%;
+    font-family: LexendLight;
+    font-size: 13px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.medicine-1{
+    margin-left: 5%;
+    font-family: LexendLight;
+    font-size: 13px;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+.target{
+    background-image: url(../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas-1.png);
+    background-size: cover;
+    width: 90%;
+    margin-left: 5%;
+    p{
+        margin-left: 5%;
+        padding-top: 5%;
+        margin-bottom: 0;
+
+    }
+    .label-1{
+        margin-left: 3%;
+        font-family: LexendRegular;
+        font-size: 13px;
+    }
+    .label-2{
+        text-align-last: end;
+        font-family: LexendRegular;
+        font-size: 13px;
+    }
+    .label-3{
+        font-family: LexendSemiBold;
+        font-size: 13px;
+        margin-left: 3%;
+    }
+    .label-4{
+        text-align-last: end;
+        font-family: LexendSemiBold;
+        font-size: 13px;
+    }
+    hr{
+        margin-top: 0;
+    margin-bottom: 0;
+    width: 90%;
+    margin-left: 5%;
+    height: 2px;
+    color: #110F0F;
+    }
+    
+    ion-item{
+        --background: transparent;
+    }
+    ion-label{
+        background: transparent;
+    }
+}
+
+.save-expenses{
+    font-size: 11pt;
+    margin-left: 5%;
+    span{
+        font-family: LexendLight;
+    }
+}
+
+.cards{
+    border: 1px solid;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-bottom: 3%;
+
+}
+.susbcription{
+    margin-bottom: 0;
+    font-size: 11px;
 }

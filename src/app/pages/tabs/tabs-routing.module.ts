@@ -25,7 +25,7 @@ const routes: Routes = [
       },
       {
         path: 'perfil',
-        loadChildren: () => import('../test-plugins/test-plugins.module').then(m => m.TestPluginsPageModule)
+        loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
       },
       {
         path: '',
