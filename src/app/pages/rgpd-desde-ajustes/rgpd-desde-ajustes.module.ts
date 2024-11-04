@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EulasPageRoutingModule } from './eulas-routing.module';
+import { RgpdDesdeAjustesPageRoutingModule } from './rgpd-desde-ajustes-routing.module';
 
-import { EulasPage } from './eulas.page';
-
+import { RgpdDesdeAjustesPage } from './rgpd-desde-ajustes.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -15,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    EulasPageRoutingModule,
+    RgpdDesdeAjustesPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [EulasPage]
+  declarations: [RgpdDesdeAjustesPage]
 })
-export class EulasPageModule {}
+export class RgpdDesdeAjustesPageModule {}

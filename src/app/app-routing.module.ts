@@ -312,6 +312,18 @@ const routes: Routes = [
     path: 'seguimiento-de-paseos',
     loadChildren: () => import('./pages/seguimiento-de-paseos/seguimiento-de-paseos.module').then( m => m.SeguimientoDePaseosPageModule)
   },
+  {
+    path: 'rgpd-desde-ajustes',
+    loadChildren: () => import('./pages/rgpd-desde-ajustes/rgpd-desde-ajustes.module').then( m => m.RgpdDesdeAjustesPageModule)
+  },
+  {
+    path: 'condiciones-de-venta-desde-ajustes',
+    loadChildren: () => import('./pages/condiciones-de-venta-desde-ajustes/condiciones-de-venta-desde-ajustes.module').then( m => m.CondicionesDeVentaDesdeAjustesPageModule)
+  },
+  {
+    path: 'eula-desde-ajustes',
+    loadChildren: () => import('./pages/eula-desde-ajustes/eula-desde-ajustes.module').then( m => m.EulaDesdeAjustesPageModule)
+  },
 
 
 

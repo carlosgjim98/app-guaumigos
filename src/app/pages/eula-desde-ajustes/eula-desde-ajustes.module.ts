@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EulasPageRoutingModule } from './eulas-routing.module';
+import { EulaDesdeAjustesPageRoutingModule } from './eula-desde-ajustes-routing.module';
 
-import { EulasPage } from './eulas.page';
+import { EulaDesdeAjustesPage } from './eula-desde-ajustes.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
 
@@ -15,9 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    EulasPageRoutingModule,
+    EulaDesdeAjustesPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [EulasPage]
+  declarations: [EulaDesdeAjustesPage]
 })
-export class EulasPageModule {}
+export class EulaDesdeAjustesPageModule {}

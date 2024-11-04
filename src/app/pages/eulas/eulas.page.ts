@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EulasPage implements OnInit {
 
+  dynamicHeaderText: string = 'EULA';
+  returnLink: string = '/register';
+
   constructor() { }
 
   ngOnInit() {
