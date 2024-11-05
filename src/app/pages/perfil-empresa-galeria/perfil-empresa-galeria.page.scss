@@ -1,0 +1,195 @@
+ion-header{
+    min-height: 0;
+    height: 15%;
+}
+
+.back-header{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.head-buttons{
+    display: flex;
+    padding-top: 20%;
+    width: 95%;
+    margin-left: 5%;
+
+}
+
+.back{
+    height: 30pt;
+    width: 30pt;
+    color: #FFD954;
+    max-width: 50pt;
+    min-width: none;
+    min-height: 25pt;
+    max-height: 50pt;
+    --padding: 0;
+}
+
+.arrow-icon{
+    color: black;
+    height: 12pt;
+    width: 12pt;
+    padding: 0;
+    min-width: 12pt;
+}
+
+.haircut-pet{
+    font-size: 18pt;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .profile-container{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-left: 5%;
+  }
+  
+  .dog{
+      height: 65px;
+  }
+  .guau{
+      margin-bottom: -4%;
+  }
+  
+  .location{
+      display: flex;
+      align-items: center;
+      width: 153%;
+      margin-bottom: -4%;
+      
+  }
+  
+  .location-icon{
+      height: 100%;
+  }
+  .city{
+      font-size: 10px;
+      font-family: "LexendLight";
+      padding-left: 2%;
+  }
+  .stars{
+      display: flex;
+      align-items: center;
+      margin-top: -14%;
+      gap: 2px;
+  }
+  .points{
+     // margin-top: 0%;
+      font-size: 14px;
+  }
+  
+  .opinions{
+      font-family: "LexendRegular";
+      font-size: 11px;
+  }
+
+  .texts-container{
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .texts{
+    font-family: LexendLight;
+    color: #100F0F;
+    font-size: 10pt;
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+
+  .segment{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  ion-segment-button{
+    
+    --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    ion-label{
+        font-family: LexendRegular;
+        --color-checked: black !important;
+        text-transform: none !important;
+    }
+}
+
+  .photos{
+    background:#F8F8F8;
+    width: 100%;
+    padding-top: 3%;
+  }
+
+  .photos-content-1{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    gap: 9px;
+    margin-top: 9px;
+
+    img{
+        height: 122px;
+        width: 122px;
+    }
+  }
+
+  .send{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  /*<ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+  <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
+    Opción 1
+  </ion-segment-button>
+  <ion-segment-button value="option2" [ngClass]="{'active': selectedSegment === 'option2'}">
+    Opción 2
+  </ion-segment-button>
+  <ion-segment-button value="option3" [ngClass]="{'active': selectedSegment === 'option3'}">
+    Opción 3
+  </ion-segment-button>
+</ion-segment>
+
+
+typescript
+
+export class MyComponent {
+  selectedSegment: string = 'option1';
+
+  segmentChanged(event: any) {
+    console.log('Segment changed:', event.detail.value);
+    this.selectedSegment = event.detail.value;
+  }
+}
+
+css
+
+ion-segment-button.active {
+  font-weight: bold;  …..Negrita …..
+  --indicator-color: #488aff;  …. Color de la barra bajo el botón …..
+}
+
+ion-segment-button {
+  font-weight: normal;  ……... Negrita solo cuando el botón esté activo ……….
+}
+
+ion-segment-button::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+ion-segment-button.active::after {
+  background-color: #488aff; ......….Barra colorida...………...
+}
+
+Explicación:
+
+    El [(ngModel)] se usa para enlazar el valor seleccionado en el segmento con la variable selectedSegment en TypeScript.
+    El atributo ngClass se utiliza para añadir la clase active al botón que está seleccionado, lo que cambia su estilo.
+    La clase .active en el CSS hace que el texto se ponga en negrita y cambia el color de la barra bajo el botón a un color específico (en este caso, #488aff).
+    El ::after se usa para crear la barra debajo de cada botón, y se cambia su color cuando el botón tiene la clase active.*/

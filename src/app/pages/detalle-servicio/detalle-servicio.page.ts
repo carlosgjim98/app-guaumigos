@@ -15,9 +15,15 @@ export class DetalleServicioPage implements OnInit {
 
   @ViewChild('open_modal_2', { static: true }) open_modal_2!: IonModal;
  
-  closeModal() {
-    this.open_modal.dismiss()
+  closeModal(num) {
+    if (num == 1){
+      this.open_modal_2.dismiss();
+
+    }else{
+      this.open_modal.dismiss()
         this.open_modal_2.present();
+    } 
+    
   }
 
   openModal() {

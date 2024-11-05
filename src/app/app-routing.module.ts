@@ -336,6 +336,10 @@ const routes: Routes = [
     path: 'detalle-solicitud-en-curso',
     loadChildren: () => import('./pages/detalle-solicitud-en-curso/detalle-solicitud-en-curso.module').then( m => m.DetalleSolicitudEnCursoPageModule)
   },
+  {
+    path: 'perfil-empresa-galeria',
+    loadChildren: () => import('./pages/perfil-empresa-galeria/perfil-empresa-galeria.module').then( m => m.PerfilEmpresaGaleriaPageModule)
+  },
 
 
 
