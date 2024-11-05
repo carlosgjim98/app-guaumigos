@@ -136,6 +136,7 @@
     background-size: cover;
     width: 90%;
     margin-left: 5%;
+    border-radius: 10pt;
     p{
         margin-left: 5%;
         padding-top: 5%;
@@ -186,4 +187,71 @@
     margin-top: 5%;
     color: white;
     margin-bottom: 5%;
+}
+
+//MODAL//////////////////////////////
+
+.modal-content{
+    --background: transparent;
+}
+.modal-box{
+    height: 50%;
+    width: 90%;
+    margin-left: 5%;
+    background: white ;
+}
+
+.block{
+    background: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 50%;
+    margin-top: 36%;
+    border-radius: 20pt;
+    align-content: center;
+}
+
+.cross{
+    margin-left: 82%;
+    position: absolute;
+    margin-top: -7%;
+}
+
+.modal-text{
+    align-items: center;
+    text-align: center;
+}
+
+.last-1{
+    font-family: LexendSemibold;
+    font-size: 18pt;
+}
+
+.last-2{
+    font-family: LexendRegular;
+    color: #141411;
+}
+
+.last-3{
+    font-family: LexendLight;
+    color: #6C6C6C;
+    font-size: 10pt;
+}
+
+.last-4{
+    font-family: LexendLight;
+    color: #141411;
+}
+
+.modal-button{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.final-modal-button{
+    width: 90%;
+    margin-left: 5%;
+    --background: #110F0F;
+    color: white;
+    margin-top: 2%;
 }

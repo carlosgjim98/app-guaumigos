@@ -161,7 +161,7 @@ app-app-header{
     margin-bottom: 0;
     width: 90%;
     margin-left: 5%;
-    height: 2px;
+    height: 1px;
     background: #110F0F;
     }
     
@@ -193,4 +193,114 @@ app-app-header{
 .susbcription{
     margin-bottom: 0;
     font-size: 11px;
+    margin-top: 5%;
+}
+
+.checkboxes{
+    display: flex;
+  align-items: center;
+  gap: 290px;
+}
+
+.checkboxes-2{
+    display: flex;
+  align-items: center;
+  gap: 260px;
+}
+
+.checkboss{
+    --checkbox-background-checked: transparent;
+    --border-color-checked: black;
+    --checkmark-color: transparent;
+    --border-width-checked: 4px;
+}
+
+.save-expenses-2{
+    color: #919191;
+    margin-top: 0;
+    margin-bottom: 7%;
+    font-size: 13px;
+}
+
+
+
+.price{
+    font-size: 16pt;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.payment-text{
+    text-align: center;
+}
+
+.pay-continue{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.last-text{
+    text-align: center;
+}
+
+
+///////////MODAL/////////////////////////////////////
+
+.modal-content{
+    --background: transparent;
+}
+
+.cross{
+    margin-left: 82%;
+    position: absolute;
+    margin-top: 1%;
+}
+
+.person{
+    
+    height: 200px;
+    margin-left: 23%;
+}
+
+
+
+.block{
+    width: 90%;
+    margin-left: 5%;
+    background: white;
+    height: 60%;
+    margin-top: 36%;
+    border-radius: 20px;
+    align-content: center;
+    padding-bottom: 10%;
+}
+
+.modal-text{
+    text-align: center;
+}
+
+.last-1{
+    font-family: LexendSemibold;
+    font-size: 18pt;
+    margin-top: 0;
+}
+
+.last-2{
+    font-family: LexendRegular;
+    font-size: 14pt;
+}
+
+.last-3{
+    font-family: LexendLight;
+    font-size: 12pt;
+}
+
+.last-4{
+    font-family: LexendLight;
+    font-size: 10pt;
+}
+
+.final-button{
+    width: 90%;
+    margin-left: 5%;
 }

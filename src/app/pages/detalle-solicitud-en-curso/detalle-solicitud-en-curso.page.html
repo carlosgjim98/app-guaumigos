@@ -82,7 +82,7 @@
 
 
 
-<ion-button class="final-button">Cancelar reserva</ion-button>
+<ion-button class="final-button" id="open-modal" expand="block">Cancelar reserva</ion-button>
 
 
 
@@ -91,3 +91,35 @@
 
   
 </ion-content>
+
+<ion-modal class="modal-content" trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+  <ng-template class="modal-box">
+
+    
+    <div class="block">
+    
+      <img class="cross" src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal()">
+    
+      <div class="modal-text">
+      <p class="last-1">Cancelación de reserva</p>
+
+      <p class="last-2">¡Atención! Vas a cancelar tu servicio</p>
+
+      <p class="last-3">Si confirmas esta acción y el servicio <br>
+      está programado para las próximas 24 horas, <br>
+      se te cobrará una tarifa de cancelación de 2,80€.</p>
+
+      <p class="last-4">¿Deseas continuar?</p>
+    </div>
+      <ion-button class="modal-button">
+       Confirmar cancelación
+      </ion-button>
+      <ion-button class="final-modal-button">
+        Mantener mi reserva
+       </ion-button>
+
+
+
+    </div>
+  </ng-template>
+</ion-modal>
