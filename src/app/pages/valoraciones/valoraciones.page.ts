@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-valoraciones',
@@ -9,11 +10,14 @@ export class ValoracionesPage implements OnInit {
 
 
   dynamicHeaderText: string = 'Valoraciones';
-  returnLink: string = '/perfil-paseador';
+ 
 
   valoraciones: any[] = [];
 
-  constructor() { }
+  constructor( private location: Location) { }
+  goBack() {
+    this.location.back(); // Vuelve a la página anterior en el historial
+  }
 
   ngOnInit() {
     this.cargarValoraciones();

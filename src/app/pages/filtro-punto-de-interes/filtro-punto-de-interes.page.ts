@@ -6,13 +6,14 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./filtro-punto-de-interes.page.scss'],
 })
 export class FiltroPuntoDeInteresPage implements OnInit {
-  @Input() headerText: string = 'Filtros';
-  @Input() returnLink: string = '/tabs/puntos-de-interes';
-  @Input() esEspecial: boolean = false;
+
+  dynamicHeaderText: string = 'Filtros';
+  returnLink: string = '/tabs/puntos-de-interes';
 
   rangoSeleccionado: number = 5;  
-  selectedCategory: string | null = null;  
-  selectedSubcategory: string | null = null; 
+  selectedCategories: string[] = [];  
+  selectedSubcategories: string[] = []; 
+  
 
   categories = [
     { name: 'Parque', icon: 'assets/icons/tree-alt12088685.svg' }, 
@@ -46,10 +47,25 @@ export class FiltroPuntoDeInteresPage implements OnInit {
   }
 
   selectCategory(category: { name: string; icon: string }) {
-    this.selectedCategory = category.name; 
+    const index = this.selectedCategories.indexOf(category.name);
+    if (index > -1) {
+     
+      this.selectedCategories.splice(index, 1);
+    } else {
+     
+      this.selectedCategories.push(category.name);
+    }
   }
-
+  
   selectSubcategory(subcategory: { name: string }) {
-    this.selectedSubcategory = subcategory.name; 
+    const index = this.selectedSubcategories.indexOf(subcategory.name);
+    if (index > -1) {
+      
+      this.selectedSubcategories.splice(index, 1);
+    } else {
+     
+      this.selectedSubcategories.push(subcategory.name);
+    }
   }
+  
 }

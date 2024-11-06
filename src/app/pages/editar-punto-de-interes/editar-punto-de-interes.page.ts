@@ -11,7 +11,7 @@ export class EditarPuntoDeInteresPage implements OnInit {
 
   dynamicHeaderText: string = '';
   returnLink: string = '/punto-de-interes-publicado-cliente';
-  selectedCategory: string | null = null;
+  selectedCategories: string[] = [];
   description: string = '';
   nombre: string = '';
   ubicacion: string = '';
@@ -34,9 +34,16 @@ export class EditarPuntoDeInteresPage implements OnInit {
 
   subcategories = ['Parques funcionales', 'Parques de agility','Parques funcionales','Parques sociales','Tiendas de alimentación','Adopción por protectora' ]; 
   
-  selectCategory(category: { name: string; icon: string }) {
-    this.selectedCategory = category.name; // Almacena el nombre de la categoría seleccionada
-}
+  selectCategory(category: any) {
+    const index = this.selectedCategories.indexOf(category.name);
+    if (index > -1) {
+      // Si la categoría ya está seleccionada, la quitamos
+      this.selectedCategories.splice(index, 1);
+    } else {
+      // Si no está seleccionada, la agregamos
+      this.selectedCategories.push(category.name);
+    }
+  }
 
   constructor() { }
 

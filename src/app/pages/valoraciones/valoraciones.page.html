@@ -1,4 +1,4 @@
-<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+<app-app-header [headerText]="dynamicHeaderText" (goBack)="goBack()"></app-app-header>
 
 <ion-content [fullscreen]="true">
   <div *ngFor="let valoracion of valoraciones" class="container-paseador">

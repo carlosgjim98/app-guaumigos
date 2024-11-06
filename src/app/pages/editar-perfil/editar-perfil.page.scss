@@ -42,6 +42,14 @@ ion-item{
   
   }
 
+  ion-input {
+    width: 100%;
+    min-height: 50px; 
+    padding: 10px; 
+    white-space: normal; 
+    
+  }
+
 ion-label{
     font-family: LexendRegular !important;
     font-size: 14px !important;
@@ -74,19 +82,11 @@ h2{
    
 }
 
-.nombre{
-    border:  solid 1px #100F0F;
-  
-    p{
-      font-family: LexendRegular;
-      font-size: 15px;
-      color: #100F0F;
-      padding: 5px;
-      
-  
-    
-    }
-  }
+.nombre:focus-within, .ubicacion:focus-within, .descripcion:focus-within {
+ 
+  border: 1px solid #100F0F; /* Aplica el borde a todos los lados */
+
+}
 
 
     ion-item{
@@ -109,16 +109,16 @@ h2{
   }
 
   .descripcion{
-    p{
+   
+    ion-textarea {
+      width: 100%;
+      min-height: 100px; 
+      padding: 10px; 
+      white-space: normal; 
+      overflow-wrap: break-word;
       font-family: LexendRegular;
-      font-size: 15px;
-      color: #D0D0D0;
-      padding: 5px;
-      margin-bottom: 40px;
-  
-    
+      
     }
-    
   }
 
 

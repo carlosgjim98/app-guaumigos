@@ -1,26 +1,10 @@
-<ion-header>
-  <ion-toolbar [ngClass]="{'header-default': !esEspecial, 'header-especial': esEspecial}">
-    <div class="button-container">
-      <ion-buttons slot="start">
-        <ion-button class="return-btn" [routerLink]="returnLink">
-          <div class="container-icon">
-            <ion-icon src="assets/icons/union-2.svg"></ion-icon>
-          </div>
-        </ion-button>
-      </ion-buttons>
-      
-      <p *ngIf="headerText">{{ headerText }}</p>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink">
 
-      <ion-buttons class="brush-button" slot="end">
-        <ion-button class="return-btn">
-          <div class="container-icon">
-            <ion-icon class="brush-icon" src="assets/icons/brush2.svg"></ion-icon>
-          </div>
-        </ion-button>
-      </ion-buttons>
-    </div>
-  </ion-toolbar>
-</ion-header>
+  <ion-buttons class="brush" slot="end">
+    <ion-icon class="brush-icon" src="/assets/icons/brush2.svg"></ion-icon>
+  </ion-buttons>
+
+</app-app-header>
 
 
 
@@ -39,25 +23,24 @@
     <h2>Selecciona la categoría o categorías por las que deseas filtrar</h2>
     <ion-button class="category-button" 
                 (click)="selectCategory(category)" 
-                [ngClass]="{'selected': selectedCategory === category.name}" 
+                [ngClass]="{'selected': selectedCategories.includes(category.name)}" 
                 *ngFor="let category of categories">
       <ion-icon src="{{ category.icon }}" class="category-icon"  
-                [ngClass]="{'selected-icon': selectedCategory === category.name}"></ion-icon>
+                [ngClass]="{'selected-icon': selectedCategories.includes(category.name)}"></ion-icon>
       {{ category.name }}
     </ion-button>
   </div>
   
   <div class="subcategory-container">
     <h2>Subcategorías</h2>
-  
-    <ion-button  class="category-button " 
-                *ngFor="let subcategory of subcategories" 
+    <ion-button class="category-button" 
                 (click)="selectSubcategory(subcategory)" 
-                [ngClass]="{'selected': selectedSubcategory === subcategory.name}">
+                [ngClass]="{'selected': selectedSubcategories.includes(subcategory.name)}" 
+                *ngFor="let subcategory of subcategories">
       {{ subcategory.name }}
     </ion-button>
   </div>
   
-  <ion-button class="apply-button"> Aplicar filtros</ion-button>
+  <ion-button class="apply-button" routerLink="/mapa-punto-de-interes"> Aplicar filtros</ion-button>
 
 </ion-content>

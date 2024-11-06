@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-app-header',
@@ -11,8 +12,11 @@ export class AppHeaderComponent  implements OnInit {
   @Input() returnLink: string = '';
   @Input() esEspecial: boolean = false;
   
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
+  goBack() {
+    this.navCtrl.back(); // Usando Ionic NavController para hacer "go back"
+  }
   ngOnInit() {}
 
 }

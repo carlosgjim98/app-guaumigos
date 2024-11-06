@@ -9,6 +9,7 @@ export class NuevoPuntoDeInteresPage implements OnInit {
   dynamicHeaderText: string = 'Nuevo punto de interés';
   returnLink: string = '/tabs/puntos-de-interes';
   selectedCategory: string | null = null;
+  selectedSubcategory: string = ''; 
   description: string = '';
   nombre: string = '';
   ubicacion: string = '';
@@ -31,6 +32,10 @@ export class NuevoPuntoDeInteresPage implements OnInit {
   
   selectCategory(category: { name: string; icon: string }) {
     this.selectedCategory = category.name; // Almacena el nombre de la categoría seleccionada
+}
+onSubcategoryChange(event: any) {
+  console.log('Subcategoría seleccionada:', event.detail.value);
+  this.selectedSubcategory = event.detail.value;  // Guarda el valor seleccionado
 }
 
   constructor(private navCtrl: NavController) { }

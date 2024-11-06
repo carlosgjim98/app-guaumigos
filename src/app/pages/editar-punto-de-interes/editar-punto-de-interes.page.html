@@ -73,19 +73,23 @@
  <div class="info-container">
   <ion-item >
     <ion-label position="stacked">Nombre</ion-label>
-    <ion-input class="custom-input" placeholder="Escribe tu nombre" [(ngModel)]="nombre"></ion-input>
+    <ion-input class="custom-input" placeholder="Hotel adaptado para mascotas" [(ngModel)]="nombre"></ion-input>
   </ion-item>
 
   <ion-item >
     <ion-label position="stacked">Ubicación</ion-label>
-    <ion-input class="custom-input" placeholder="Escribe aquí..." [(ngModel)]="ubicacion"></ion-input>
+    <ion-input class="custom-input" placeholder="Jerez de la Frontera, Cádiz" [(ngModel)]="ubicacion"></ion-input>
   </ion-item>
 </div>
 
 <h2>Categoría</h2>
 <div class="category-container">
-  <ion-button class="category-button" (click)="selectCategory(category)" [ngClass]="{'selected': selectedCategory === category.name}" *ngFor="let category of categories">
-    <ion-icon src="{{ category.icon }}" class="category-icon"  [ngClass]="{'selected-icon': selectedCategory === category.name}"></ion-icon>
+  <ion-button class="category-button" 
+              (click)="selectCategory(category)" 
+              [ngClass]="{'selected': selectedCategories.includes(category.name)}" 
+              *ngFor="let category of categories">
+    <ion-icon src="{{ category.icon }}" class="category-icon"  
+              [ngClass]="{'selected-icon': selectedCategories.includes(category.name)}"></ion-icon>
     {{ category.name }}
   </ion-button>
 </div>
@@ -117,7 +121,7 @@
 
 <div class="submit-button-container">
 
-  <ion-button expand="block" routerLink="/punto-de-interes-publicado-cliente">Guardar cambio</ion-button>
+  <ion-button expand="block" >Guardar cambios</ion-button>
   <ion-button expand="block" class="delete-button" >Eliminar punto de interés</ion-button>
 </div>
 

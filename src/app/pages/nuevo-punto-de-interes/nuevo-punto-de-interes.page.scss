@@ -106,6 +106,7 @@ h2{
     gap:0px;
     --padding-start: 8px;
     --padding-end: 8px;
+    font-family: LexendRegular ;
 }
 
 .category-icon {
@@ -128,6 +129,8 @@ h2{
   border: 1px solid #919191;
   border-radius: 10px;
   margin-top: 15px;
+  
+
 
   ion-select {
       font-family: LexendRegular;
@@ -140,8 +143,16 @@ h2{
   ion-select::part(icon) {
       display: none !important;
      }
+
+   
+   
+     ion-action-sheet::part(button) {
+      font-size: 14px !important;  /* Ajusta el tamaño de la fuente */
+   }
   
+    
 }
+
 
 .description-container{
 
@@ -159,6 +170,8 @@ ion-textarea{
   color: #919191;
   margin-left: 10px;
   margin-top: 10px;
+  resize: none;
+   max-height: 100%;
 }
 
 p{

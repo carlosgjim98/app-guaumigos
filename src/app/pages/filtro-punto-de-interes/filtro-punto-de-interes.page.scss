@@ -1,55 +1,15 @@
-ion-header {
-    ion-toolbar {
-        --padding-start: 7px;
-        padding: 30px 0 0;
-        
-        
-        
-        .button-container {
+app-app-header {
+    .brush-icon{
+    
+            height: 22px;
+            width: 22px;
+        }
+        .brush {
+            margin-top: 25px;
             display: flex;
-            flex-direction: row; 
             align-items: center;
-            transform: translateY(15px);
-            color: #1B1B1B;
-            
-        }
-        .brush-button{
-            margin-left: auto;
-
-            
-        }
-
-
-        ion-buttons { 
-
-            .return-btn {
-                --box-shadow: none;
-                --outline: none;
-                --background: transparent; 
-                padding: 0;
-
-                .container-icon {
-                    background-color: var(--custom-color);
-                    border-radius: 8px;
-                    padding: 9px; 
-
-                    ion-icon {
-                        width: 14px;
-                        height: 14px; 
-                    }
-                    .brush-icon{
-
-                        color: #1B1B1B;
-                        height: 16px;
-                        width: 16px;
-                    }
-                }
-            }
-          
-        }
-        
+          }
     }
-}
 
 
 .header-default{

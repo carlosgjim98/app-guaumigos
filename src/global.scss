@@ -155,8 +155,30 @@ ion-button {
      height: 58px;
 }
 
+// ESTILOS PARA ACTION-SHEET
 
-   
+ion-action-sheet {
+    --ion-font-family: LexendRegular !important;
+    --button-color-selected:#919191 !important;
+    --button-color: #FFD954 !important;
+    --button-font-size: 10px !important;
+    --button-font-weight: lighter !important;
+   // para quitar lineas poner none --button-background:
+
+   .action-sheet-button.sc-ion-action-sheet-ios {
+
+    font-size: 16px !important; 
+    font-weight: normal;
+    
+}
+
+ }
+
+ // FONDO TRANSPARENTE PARA EL MODAL, CAMBIAR SI ES NECESARIO.
+ 
+ ion-modal::part(backdrop) {
+    background-color: transparent; /* Esto eliminaría el fondo detrás del modal */
+  }
 
 
 // ESTILOS PARA ITEMS Y INPUTS
