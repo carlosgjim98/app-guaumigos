@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DetalleResrvaDeServicioPage implements OnInit {
 
   dynamicHeaderText: string = '';
-  returnLink: string = '/valoraciones';
+  returnLink: string = '/mis-servicios-reservados';
 
   constructor() { }
 

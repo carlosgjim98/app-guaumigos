@@ -308,6 +308,38 @@ const routes: Routes = [
     path: 'detalle-valoracion',
     loadChildren: () => import('./pages/detalle-valoracion/detalle-valoracion.module').then( m => m.DetalleValoracionPageModule)
   },
+  {
+    path: 'seguimiento-de-paseos',
+    loadChildren: () => import('./pages/seguimiento-de-paseos/seguimiento-de-paseos.module').then( m => m.SeguimientoDePaseosPageModule)
+  },
+  {
+    path: 'rgpd-desde-ajustes',
+    loadChildren: () => import('./pages/rgpd-desde-ajustes/rgpd-desde-ajustes.module').then( m => m.RgpdDesdeAjustesPageModule)
+  },
+  {
+    path: 'condiciones-de-venta-desde-ajustes',
+    loadChildren: () => import('./pages/condiciones-de-venta-desde-ajustes/condiciones-de-venta-desde-ajustes.module').then( m => m.CondicionesDeVentaDesdeAjustesPageModule)
+  },
+  {
+    path: 'eula-desde-ajustes',
+    loadChildren: () => import('./pages/eula-desde-ajustes/eula-desde-ajustes.module').then( m => m.EulaDesdeAjustesPageModule)
+  },
+  {
+    path: 'mi-suscripcion',
+    loadChildren: () => import('./pages/mi-suscripcion/mi-suscripcion.module').then( m => m.MiSuscripcionPageModule)
+  },
+  {
+    path: 'mis-solicitudes-de-paseo',
+    loadChildren: () => import('./pages/mis-solicitudes-de-paseo/mis-solicitudes-de-paseo.module').then( m => m.MisSolicitudesDePaseoPageModule)
+  },
+  {
+    path: 'detalle-solicitud-en-curso',
+    loadChildren: () => import('./pages/detalle-solicitud-en-curso/detalle-solicitud-en-curso.module').then( m => m.DetalleSolicitudEnCursoPageModule)
+  },
+  {
+    path: 'perfil-empresa-galeria',
+    loadChildren: () => import('./pages/perfil-empresa-galeria/perfil-empresa-galeria.module').then( m => m.PerfilEmpresaGaleriaPageModule)
+  },
 
 
 

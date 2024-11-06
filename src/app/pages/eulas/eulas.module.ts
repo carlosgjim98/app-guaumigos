@@ -8,12 +8,15 @@ import { EulasPageRoutingModule } from './eulas-routing.module';
 
 import { EulasPage } from './eulas.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    EulasPageRoutingModule
+    EulasPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [EulasPage]
 })

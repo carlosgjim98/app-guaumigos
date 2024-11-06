@@ -1,0 +1,125 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+  
+    <p class="company">Datos del paseador</p>
+
+    <div class="profile-container">
+      <img class="dog" src="../../../assets/imgs/avatar@3x.png" alt="">
+  
+      <div >
+        <p class="company-name">Ana Velazquez</p>
+        
+        <div class="stars">
+          <img src="../../../assets/imgs/interes/star.png" alt="">
+          <p class="points">4,9 <span class="opinions">· Jerez de la Frontera, Cádiz</span></p>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    
+    <ion-button class="little-button">Añadir valoración</ion-button>
+
+    <hr>
+    <div class="services-head">
+    <p class="title">Datos del paseo </p>
+    
+    <div class="date-time">
+    <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+    <p class="icons">18/09/2024</p>
+    </div>
+    <div class="date-time">
+      <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+    <p class="icons">10:00 A.M</p>
+  </div>
+  </div>
+  <p class="pet">Mascota que participará</p>
+  <div class="moka">
+    <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="">
+    <div>
+      <p class="dog-name">Moka</p>
+      <p class="age">Pug· 2 años</p>
+    </div>
+  </div>
+  <p class="extra-service">Servicio extra </p>
+  <p class="medicine">Corrección de malos hábitos</p>
+  
+  
+  
+  <hr>
+  
+  <div class="target" routerLink="/detalle-solicitud-aceptada">
+    <p>Información de pago</p>
+  
+    
+  
+    
+      <ion-item lines="full">
+        <ion-label class="label-1">Servicio</ion-label>
+        <ion-label class="label-2">30€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label class="label-1">Servicios extra</ion-label>
+        <ion-label class="label-2">5€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item>
+        <ion-label class="label-1">Pago de suscripción</ion-label>
+        <ion-label class="label-2">45€</ion-label>
+      </ion-item>
+      <hr>
+      <ion-item class="last-item">
+        <ion-label class="label-3">Total</ion-label>
+        <ion-label class="label-4">80€</ion-label>
+      </ion-item>
+    
+    
+  </div>
+
+
+
+
+<ion-button class="final-button" id="open-modal" expand="block">Cancelar reserva</ion-button>
+
+
+
+
+
+
+  
+</ion-content>
+
+<ion-modal class="modal-content" trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+  <ng-template class="modal-box">
+
+    
+    <div class="block">
+    
+      <img class="cross" src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal()">
+    
+      <div class="modal-text">
+      <p class="last-1">Cancelación de reserva</p>
+
+      <p class="last-2">¡Atención! Vas a cancelar tu servicio</p>
+
+      <p class="last-3">Si confirmas esta acción y el servicio <br>
+      está programado para las próximas 24 horas, <br>
+      se te cobrará una tarifa de cancelación de 2,80€.</p>
+
+      <p class="last-4">¿Deseas continuar?</p>
+    </div>
+      <ion-button class="modal-button">
+       Confirmar cancelación
+      </ion-button>
+      <ion-button class="final-modal-button">
+        Mantener mi reserva
+       </ion-button>
+
+
+
+    </div>
+  </ng-template>
+</ion-modal>

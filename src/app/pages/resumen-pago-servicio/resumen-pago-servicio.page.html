@@ -52,7 +52,7 @@
 
 <hr>
 
-<div>
+<div class="target">
   <p>Información de pago</p>
 
   
@@ -84,11 +84,13 @@
 <p class="save-expenses">Ahorra los gastos de comisión <span>seleccionando</span><br>
 <span>uno de </span> nuestros planes de suscripción</p>
 
+<ion-radio-group>
 <div class="cards">
   <p class="susbcription">Suscripción mensual</p>
   <div class="checkboxes">
-    <p>20€</p>
-    <ion-checkbox class="checkboss_1" slot="end"></ion-checkbox>
+    <p class="price">20€</p>
+    <ion-radio mode="md" class="button-radio"></ion-radio>
+    
   </div>
   <p class="save-expenses-2">Ahorras los gastos de gestión</p>
 </div>
@@ -96,29 +98,31 @@
 <div class="cards">
   <p class="susbcription">Suscripción trimestral</p>
   <div class="checkboxes">
-    <p>45€</p>
-    <ion-checkbox class="checkboss_1" slot="end"></ion-checkbox>
+    <p class="price">45€</p>
+    <ion-radio mode="md" class="button-radio"></ion-radio>
+    
   </div>
   <p class="save-expenses-2">Ahorras los gastos de gestión +5€ cada mes</p>
 </div>
 
 <div class="cards">
   <p class="susbcription">Suscripción anual</p>
-  <div class="checkboxes">
-    <p>89,90€</p>
-    <ion-checkbox class="checkboss" slot="end"></ion-checkbox>
+  <div class="checkboxes-2">
+    <p class="price">89,90€</p>
+    
+    <ion-radio mode="md" class="button-radio"></ion-radio>
   </div>
   <p class="save-expenses-2">Ahorras los gastos de gestión +12,5€ cada mes</p>
 </div>
-
-
+</ion-radio-group>
+<div class="payment-text">
 <p class="withheld-payment">Tu pago del servicio quedará retenido <br>
 hasta que el paseador apruebe tu solicitud</p>
-
+</div>
 <ion-button class="pay-continue" id="open-modal" expand="block">Continuar al pago total de 96€</ion-button>
-
+<div class="last-text">
 <p class="text-bottom" ><u>Continuar sin la suscripción</u></p>
-
+</div>
 
 
   
@@ -129,11 +133,11 @@ hasta que el paseador apruebe tu solicitud</p>
 
     
     <div class="block">
-      <div class="last-div">
-        <img class="person" src="../../../assets/imgs/Grupo12184@3x.png" alt="">
-        <img class="cross" src="../../../assets/imgs/Trazado47885.png" alt="">
-    
-      </div>
+      
+      <img class="cross" src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal()">
+      <img class="person" src="../../../assets/imgs/Grupo12184@3x.png" alt="">
+        
+      <div class="modal-text">
       <p class="last-1">¡Solicitud enviada!</p>
 
       <p class="last-2">Tu solicitud ha sido registrada</p>
@@ -143,6 +147,8 @@ hasta que el paseador apruebe tu solicitud</p>
 
       <p class="last-4">En caso de rechazo, se te reembolsará <br>
       en un máximo de 72 horas.</p>
+
+    </div>
 
       <ion-button class="final-button">
         Aceptar y continuar

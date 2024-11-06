@@ -1,0 +1,45 @@
+
+.map{
+    height: 70%;
+    width: 100%;
+    //filter: grayscale(3);
+}
+
+.container-tipo{
+    margin-left: 5%;
+    width: 90%;
+}
+.container-range {
+    margin-bottom: 15px;
+    
+    
+
+    p {
+        font-family: LexendRegular;
+        font-size: 14px;
+        color: #919191;
+    }
+
+    input {
+        appearance: none;
+        width: 100%;
+        height: 5px;
+        background: var(--custom-color);
+        border-radius: 5px;
+        outline: none;
+        transition: background 0.3s ease;
+    }
+
+    input::-webkit-slider-thumb {
+        appearance: none;
+        width: 27px;
+        height: 27px;
+        background-color: var(--custom-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+}
+.range{
+    font-family: LexendMedium;
+}

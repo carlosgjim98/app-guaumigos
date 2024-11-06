@@ -36,6 +36,12 @@ img{
 }
 }
 
+.haircut-pet{
+  font-size: 18pt;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .profile-container{
     display: flex;
     align-items: center;
@@ -104,11 +110,22 @@ hr{
   color: #D9D9D9;
 }
 
+.final-hr{
+  width: 110%;
+margin-left: -5%;
+height: 2px;
+color: #D9D9D9;
+margin-top: 40%;
+box-shadow: 0 -2px 5px #f4f0f0;
+}
+
 
 .bottom{
     display: flex;
-    box-shadow: 0 -2px 5px #f4f0f0;
-    margin-top: 40%;
+    //box-shadow: 0 -2px 5px #f4f0f0;
+    //margin-top: 40%;
+    //width: 100%;
+    //background: #F4F0F0;
 
     
 }
@@ -121,6 +138,11 @@ ion-button{
     --background: white;
     border: 1px solid;
     border-radius: 10pt;
+    font-size: 12pt;
+}
+
+.send-button{
+  font-size: 12pt;
 }
 
 //MODAL
@@ -233,16 +255,29 @@ h2 {
         font-family: LexendMedium;
         font-size: 14px;
         color: #141411;
-        background: white;
+        --background: white;
     }
+
+    // ion-modal::part(content: var(--height);){
+    //   height: 20%;
+    // }
 
     ion-datetime {
         --background: #fff1f2;
+        
     }
+
+    
+  ion-datetime::part(native-button) {
+    // --background: var(--ion-background-color white);
+    --background: white;
+  }
+
 }
 .continue{
     width: 90%;
     margin-left: 5%;
+    margin-bottom: 5%;
 }
 
 //MODAL 2
@@ -254,11 +289,19 @@ ion-modal {
     --border-radius: 20pt;
 
   }
+
+.title-icon-modal{
+  display: flex;
+  align-items: center;
+  gap: 170px;
+}
+
   .title-modal{
     margin-left: 5%;
     font-size: 19px;
     margin-top: 5%;
   }
+
   .hr-1{
     margin-bottom: -5%;
     margin-top: -5%;
@@ -298,8 +341,11 @@ ion-modal {
   .dog-selection{
     border: 2px solid;
     border-radius: 8px;
-    margin-left: 3%;
+    margin-left: 5%;
     border-color: #919191;
+    font-family: LexendMedium;
+    padding-left: 3%;
+
     
   }
   .bottom-content{

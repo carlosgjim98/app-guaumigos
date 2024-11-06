@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-
+import { ComponentsModule } from 'src/app/components/components.module';
 import { SeguimientoDePaseoPageRoutingModule } from './seguimiento-de-paseo-routing.module';
 
 import { SeguimientoDePaseoPage } from './seguimiento-de-paseo.page';
@@ -13,7 +13,8 @@ import { SeguimientoDePaseoPage } from './seguimiento-de-paseo.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SeguimientoDePaseoPageRoutingModule
+    SeguimientoDePaseoPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [SeguimientoDePaseoPage]
 })

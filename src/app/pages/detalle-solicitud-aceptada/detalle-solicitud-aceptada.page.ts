@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleSolicitudAceptadaPage implements OnInit {
 
+  dynamicHeaderText: string = '';
+  returnLink: string = '/detalle-solicitud-en-curso';
+
   constructor() { }
 
   ngOnInit() {

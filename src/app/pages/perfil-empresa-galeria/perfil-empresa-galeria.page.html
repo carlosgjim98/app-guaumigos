@@ -1,0 +1,88 @@
+<ion-header>
+  <img class="back-header" src="../../../assets/imgs/backgrounds/PATTERN-HEADER.png" alt="">
+
+  <div class="head-buttons">
+
+    <ion-button class="back" slot="start" routerLink="/tabs/servicios">
+      <ion-icon class="arrow-icon" src="../../../assets/icons/union-2.svg"></ion-icon>
+    </ion-button>
+  </div>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="profile-container">
+    <img class="dog" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
+
+    <div>
+      <p class="guau">Peluquería Guau!</p>
+      <div class="location">
+        <img class="location-icon" src="../../../assets/icons/Trazado 47654.png" alt=""><p class="city">Jerez de la Frontera, Cádiz</p>
+      </div>
+      
+      
+      <div class="stars">
+        <img src="../../../assets/imgs/interes/star.png" alt="">
+        <p class="points">4,9 <u class="opinions">1635 opiniones</u></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="texts-container">
+  <p class="texts">¡Hola! Soy Ana, amante de los perros y apasionada <br>
+  por los paseos al aire libre. Tu mejor amigo tendrá <br>
+  una compañera de juegos y aventuras.</p>
+
+  <p class="texts">¡Conmigo, los paseos serán su parte favorita!</p>
+</div>
+
+<!-- <ion-segment mode="md" value="default" class="segment">
+  <ion-segment-button value="default" class="button" >
+    <ion-label>Galería</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="segment" class="button" >
+    <ion-label>Servicios</ion-label>
+  </ion-segment-button>
+</ion-segment> -->
+
+<ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+  <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
+    Galería
+  </ion-segment-button>
+  <ion-segment-button value="option2" [ngClass]="{'active': selectedSegment === 'option2'}">
+    Servicios
+  </ion-segment-button>
+  </ion-segment>
+
+<div class="photos">
+<div class="photos-content-1">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage11@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage14@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage17@3x.png" alt="">
+</div>
+
+<div class="photos-content-1">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage12@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage15@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage18@3x.png" alt="">
+</div>
+
+<div class="photos-content-1">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage13@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage16@3x.png" alt="">
+  <img src="../../../assets/imgs/perros/dog-2/sharedimage19@3x.png" alt="">
+</div>
+
+<ion-button class="send">Enviar solicitud</ion-button>
+
+</div>
+
+
+
+
+
+</ion-content>

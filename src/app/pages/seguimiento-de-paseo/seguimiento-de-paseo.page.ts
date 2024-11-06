@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-seguimiento-de-paseo',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeguimientoDePaseoPage implements OnInit {
 
-  constructor() { }
+  dynamicHeaderText: string = '';
+  returnLink: string = '/detalle-solicitud-aceptada';
+
+  form: FormGroup;
+
+  rangoSeleccionado: number = 5;
+
+  opcionSeleccionadaTamano: string = '';
+  opcionSeleccionadaPeso: string = '';
+
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+  }
+
+  onRangoChange(event: any) {
+    this.rangoSeleccionado = event.target.value;
   }
 
 }

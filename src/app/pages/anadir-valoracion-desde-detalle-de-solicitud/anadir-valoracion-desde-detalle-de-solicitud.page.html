@@ -1,13 +1,26 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>anadir-valoracion-desde-detalle-de-solicitud</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">anadir-valoracion-desde-detalle-de-solicitud</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <div class="container-fotoPerfil">
+      <img src="assets/imgs/usuarios/Rectángulo 19618.png" alt="Foto de perfil">
+    </div>
+
+    <h3>¿Cómo fue el paseo de Ana Velázquez?</h3>
+    <p>Tu valoración ayuda a otros usuarios</p>
+
+    <div class="container-estrellas">
+      <img *ngFor="let star of stars; let i = index"
+          [src]="getStarSrc(i + 1)"
+          alt="Estrella"
+          (click)="setRating(i + 1)"
+          class="estrella"/>
+    </div>
+
+    <div class="container-texto">
+      <p>¿Quieres dejar algún comentario?</p>
+      <textarea placeholder="Describe la experiencia aquí"></textarea>
+    </div>
+    <ion-button type="submit" routerLink="/anadir-valoracion">Enviar</ion-button>
+  </div>
 </ion-content>

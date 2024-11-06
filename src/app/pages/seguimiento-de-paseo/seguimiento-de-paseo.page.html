@@ -1,13 +1,17 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>seguimiento-de-paseo</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">seguimiento-de-paseo</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <img src="../../../assets/imgs/Enmascarar-grupo-3@3x.png" alt="">
+  
+
+  <div>
+    <div class="container-tipo">
+      <h2>Rango de distancia</h2>
+      <div class="container-range">
+        <p>Rango seleccionado: {{ rangoSeleccionado }} km</p>
+        <input type="range" formControlName="paseosDia" min="0" max="10" step="0.1" (input)="onRangoChange($event)" />
+      </div>
+    </div>
+
+  </div>
 </ion-content>
