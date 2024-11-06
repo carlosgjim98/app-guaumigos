@@ -199,20 +199,21 @@ app-app-header{
 .checkboxes{
     display: flex;
   align-items: center;
-  gap: 290px;
+  gap: 280px;
 }
 
 .checkboxes-2{
     display: flex;
   align-items: center;
-  gap: 260px;
+  gap: 250px;
 }
 
-.checkboss{
-    --checkbox-background-checked: transparent;
-    --border-color-checked: black;
-    --checkmark-color: transparent;
-    --border-width-checked: 4px;
+
+
+.button-radio{
+    
+    color: #707070;
+    --color-checked: var(--ion-color, black);
 }
 
 .save-expenses-2{
@@ -234,9 +235,17 @@ app-app-header{
     text-align: center;
 }
 
+.withheld-payment{
+    color: #100F0F;
+    font-size: 14px;
+    font-family: LexendLight;
+}
+
 .pay-continue{
     width: 90%;
     margin-left: 5%;
+    font-family: LexendBold;
+    font-size: 16px;
 }
 
 .last-text{
@@ -253,7 +262,7 @@ app-app-header{
 .cross{
     margin-left: 82%;
     position: absolute;
-    margin-top: 1%;
+    margin-top: 5%;
 }
 
 .person{
@@ -281,26 +290,32 @@ app-app-header{
 
 .last-1{
     font-family: LexendSemibold;
-    font-size: 18pt;
-    margin-top: 0;
+    font-size: 28px;
+    margin-top: -15px;
+    color: #110F0F;
 }
 
 .last-2{
     font-family: LexendRegular;
-    font-size: 14pt;
+    font-size: 20px;
+    color: #141411;
 }
 
 .last-3{
     font-family: LexendLight;
-    font-size: 12pt;
+    font-size: 18px;
+    color: #141411;
 }
 
 .last-4{
     font-family: LexendLight;
-    font-size: 10pt;
+    font-size: 15px;
+    color: #6C6C6C;
 }
 
 .final-button{
     width: 90%;
     margin-left: 5%;
+    font-family: LexendMedium;
+    font-size: 16px;
 }

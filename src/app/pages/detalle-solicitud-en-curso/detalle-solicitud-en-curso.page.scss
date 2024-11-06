@@ -214,7 +214,7 @@
 .cross{
     margin-left: 82%;
     position: absolute;
-    margin-top: -7%;
+    
 }
 
 .modal-text{
@@ -224,28 +224,35 @@
 
 .last-1{
     font-family: LexendSemibold;
-    font-size: 18pt;
+    font-size: 26px;
+    color: #110F0F;
+    margin-top: 10%;
 }
 
 .last-2{
     font-family: LexendRegular;
     color: #141411;
+    font-size: 18px;
 }
 
 .last-3{
     font-family: LexendLight;
     color: #6C6C6C;
-    font-size: 10pt;
+    font-size: 15px;
 }
 
 .last-4{
     font-family: LexendLight;
     color: #141411;
+    font-size: 18px;
 }
 
 .modal-button{
     width: 90%;
     margin-left: 5%;
+    font-family: LexendMedium;
+    font-size: 16px;
+    color: #141411;
 }
 
 .final-modal-button{
@@ -254,4 +261,6 @@
     --background: #110F0F;
     color: white;
     margin-top: 2%;
+    font-size: 16px;
+    font-family: LexendMedium;
 }

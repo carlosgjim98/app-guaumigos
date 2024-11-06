@@ -255,12 +255,24 @@ h2 {
         font-family: LexendMedium;
         font-size: 14px;
         color: #141411;
-        background: white;
+        --background: white;
     }
+
+    // ion-modal::part(content: var(--height);){
+    //   height: 20%;
+    // }
 
     ion-datetime {
         --background: #fff1f2;
+        
     }
+
+    
+  ion-datetime::part(native-button) {
+    // --background: var(--ion-background-color white);
+    --background: white;
+  }
+
 }
 .continue{
     width: 90%;
