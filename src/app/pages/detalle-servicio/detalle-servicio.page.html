@@ -55,7 +55,7 @@
     <ion-button class="button-1" routerLink="/perfil-empresa-galeria">
       Ver perfil
     </ion-button>
-    <ion-button (click)="openModal()" expand="block">
+    <ion-button class="send-button" (click)="openModal()" expand="block">
       Enviar solicitud
     </ion-button>
   </div>
@@ -69,6 +69,8 @@
 
 
 </ion-content>
+
+<!-- PRIMER MODAL -->
 
 <ion-modal trigger="open_modal" #open_modal [initialBreakpoint]="1" [breakpoints]="[0, 1]" class="ion-padding">
   <ng-template>
@@ -125,6 +127,8 @@
 
   </ng-template>
 </ion-modal>
+
+<!-- SEGUNDO MODAL -->
 
 <ion-modal trigger="open_modal_2" #open_modal_2 [initialBreakpoint]="1" [breakpoints]="[0, 1]"  class="ion-padding">
   <ng-template>

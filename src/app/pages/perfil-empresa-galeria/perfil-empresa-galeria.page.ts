@@ -9,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PerfilEmpresaGaleriaPage implements OnInit {
 
-  
+  selectedSegment: string = 'option1';
+
+  segmentChanged(event: any) {
+    console.log('Segment changed:', event.detail.value);
+    this.selectedSegment = event.detail.value;
+  }
 
   
 

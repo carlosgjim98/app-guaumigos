@@ -100,19 +100,54 @@ ion-header{
     margin-bottom: 5%;
   }
 
-  .segment{
-    width: 90%;
-    margin-left: 5%;
-  }
+//   .segment{
+//     width: 90%;
+//     margin-left: 5%;
+//   }
 
-  ion-segment-button{
-    //--indicator-color:red;
-    --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
-    ion-label{
-        font-family: LexendRegular;
-        --color-checked: black !important;
-        text-transform: none !important;
-    }
+//   ion-segment-button{
+//     --indicator-color:#FFCA3C ;
+//     --indicator-box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+//     ion-label{
+//         font-family: LexendRegular;
+//         --color-checked: black !important;
+//         text-transform: none !important;
+//         color: #C1C1C1;
+//     }
+// }
+ion-segment{
+  background: transparent;
+  width: 90%;
+  margin-left: 5%;
+}
+
+ion-segment-button.active {
+  //font-weight: bold;  //Negrita 
+  //--indicator-color: #FFCA3C;  // Color de la barra bajo el botón 
+  font-family: LexendRegular;
+  color: #100F0F;
+  --indicator-box-shadow: 0 5px rgba(255, 202, 60, 1);
+  --border-radius: 0pt;
+  font-size: 9pt;
+}
+
+ion-segment-button {
+  //font-weight: normal;  //Negrita solo cuando el botón esté activo 
+  font-family: LexendRegular;
+  color: #C1C1C1;
+  font-size: 9pt;
+}
+
+// ion-segment-button::after {
+//   content: '';
+//   display: block;
+//   height: 2px;
+//   background-color: transparent;
+//   transition: background-color 0.3s ease;
+// }
+
+ion-segment-button.active::after {
+  background-color: transparent; //Barra colorida
 }
 
   .photos{
@@ -138,6 +173,7 @@ ion-header{
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
+    font-size: 10pt;
   }
 
   /*<ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">

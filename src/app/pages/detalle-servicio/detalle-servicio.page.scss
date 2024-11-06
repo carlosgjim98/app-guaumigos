@@ -138,6 +138,11 @@ ion-button{
     --background: white;
     border: 1px solid;
     border-radius: 10pt;
+    font-size: 12pt;
+}
+
+.send-button{
+  font-size: 12pt;
 }
 
 //MODAL
@@ -324,8 +329,11 @@ ion-modal {
   .dog-selection{
     border: 2px solid;
     border-radius: 8px;
-    margin-left: 3%;
+    margin-left: 5%;
     border-color: #919191;
+    font-family: LexendMedium;
+    padding-left: 3%;
+
     
   }
   .bottom-content{
