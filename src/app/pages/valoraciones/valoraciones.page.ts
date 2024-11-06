@@ -14,10 +14,8 @@ export class ValoracionesPage implements OnInit {
 
   valoraciones: any[] = [];
 
-  constructor( private location: Location) { }
-  goBack() {
-    this.location.back(); // Vuelve a la página anterior en el historial
-  }
+  constructor( ) { }
+ 
 
   ngOnInit() {
     this.cargarValoraciones();

@@ -176,9 +176,9 @@ ion-action-sheet {
 
  // FONDO TRANSPARENTE PARA EL MODAL, CAMBIAR SI ES NECESARIO.
  
- ion-modal::part(backdrop) {
-    background-color: transparent; /* Esto eliminaría el fondo detrás del modal */
-  }
+//  ion-modal::part(backdrop) {
+//     background-color: transparent; /* Esto eliminaría el fondo detrás del modal */
+//   }
 
 
 // ESTILOS PARA ITEMS Y INPUTS
