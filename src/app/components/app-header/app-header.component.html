@@ -3,7 +3,7 @@
     <div class="button-container">
       
       <ion-buttons slot="start">
-        <ion-button class="return-btn" (click)="goBack()">
+        <ion-button class="return-btn" (click)="goBack()"  [routerLink]="returnLink">
           <!-- [routerLink]="returnLink"  AÑADIR AL ION-BUTTON Y QUITAR EL (click)="goBack() SI FALLA EN ALGUNA PAGINA --> 
           <div class="container-icon">
             <ion-icon src="assets/icons/union-2.svg"></ion-icon>
