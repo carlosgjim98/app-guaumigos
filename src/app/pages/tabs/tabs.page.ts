@@ -33,6 +33,12 @@ export class TabsPage implements OnInit {
             name: 'Calendarios',
             icon: 'assets/icons/calendar event.svg'
           };
+        }else if (page.tab === 'servicios') {
+          return {
+            tab: 'solicitudes',
+            name: 'Solicitudes',
+            icon: 'assets/icons/email.svg' // Cambia el ícono por el de solicitudes
+          };
         }
         return page;
       });
