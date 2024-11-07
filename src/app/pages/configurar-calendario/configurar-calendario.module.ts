@@ -8,12 +8,15 @@ import { ConfigurarCalendarioPageRoutingModule } from './configurar-calendario-r
 
 import { ConfigurarCalendarioPage } from './configurar-calendario.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfigurarCalendarioPageRoutingModule
+    ConfigurarCalendarioPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [ConfigurarCalendarioPage]
 })
