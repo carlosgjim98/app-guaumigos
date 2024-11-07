@@ -364,6 +364,10 @@ const routes: Routes = [
     path: 'calendario-paseador',
     loadChildren: () => import('./pages/calendario-paseador/calendario-paseador.module').then( m => m.CalendarioPaseadorPageModule)
   },
+  {
+    path: 'configurar-calendario',
+    loadChildren: () => import('./pages/configurar-calendario/configurar-calendario.module').then( m => m.ConfigurarCalendarioPageModule)
+  },
 
 
 
