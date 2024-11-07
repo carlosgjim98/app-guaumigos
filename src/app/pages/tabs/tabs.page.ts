@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
   styleUrls: ['tabs.page.scss']
 })
-export class TabsPage {
+export class TabsPage implements OnInit {
 
   public pages = [
     { tab: 'listado-paseadores', name: 'Paseadores', icon: 'assets/icons/icon-tabs/tab-paseadores.svg' },
@@ -16,11 +16,31 @@ export class TabsPage {
   ];
 
   public selectedTab: string;
+  private userRole: string; // Guardamos el rol del usuario
 
   constructor() {}
+
+  ngOnInit() {
+    // Obtener el rol del usuario desde sessionStorage
+    this.userRole = sessionStorage.getItem('tipoUsuario'); // 'paseador', 'dueño', 'empresa'
+
+    // Si el rol del usuario es 'paseador', reemplazamos el tab 'listado-paseadores' por 'calendarios'
+    if (this.userRole === 'paseador') {
+      this.pages = this.pages.map(page => {
+        if (page.tab === 'listado-paseadores') {
+          return {
+            tab: 'calendarios',
+            name: 'Calendarios',
+            icon: 'assets/icons/calendar event.svg'
+          };
+        }
+        return page;
+      });
+    }
+  }
 
   tabChange(event: any) {
     this.selectedTab = event.tab;
   }
-  
+
 }
