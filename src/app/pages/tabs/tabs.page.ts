@@ -29,7 +29,7 @@ export class TabsPage implements OnInit {
       this.pages = this.pages.map(page => {
         if (page.tab === 'listado-paseadores') {
           return {
-            tab: 'calendarios',
+            tab: 'calendario-paseador',
             name: 'Calendarios',
             icon: 'assets/icons/calendar event.svg'
           };

@@ -10,6 +10,7 @@ import { FacebookLogin, FacebookLoginResponse } from '@capacitor-community/faceb
 import { GoogleAuth } from '@codetrix-studio/capacitor-google-auth';
 import { TranslateService } from '@ngx-translate/core';
 import { PushNotifications } from '@capacitor/push-notifications';
+import { Router } from '@angular/router';
 
 const FACEBOOK_PERMISSIONS = ['public_profile', 'email'];
 
@@ -37,6 +38,7 @@ export class LoginPage implements OnInit {
     public auth: AuthenticationService,
     public platform: Platform,
     public translate: TranslateService,
+    private router: Router,
   ) { }
 
   focusedInputs: boolean[] = [false, false];
@@ -130,8 +132,22 @@ export class LoginPage implements OnInit {
     });
 
    
+      const userRole = sessionStorage.getItem('tipoUsuario');
 
-  }
+      // Redirigir según el rol del usuario
+      if (userRole === 'paseador') {
+        this.router.navigate(['/tabs/calendario-paseador']); 
+      } else if (userRole === 'dueño') {
+        this.router.navigate(['/tabs/listado-paseadores']);
+      } else if (userRole === 'empresa') {
+        this.router.navigate(['/tabs/puntos-de-interes']);
+      }
+    } 
+  
+
+   
+
+  
 
   backPage(){
     this.errorCode = '';
@@ -228,4 +244,8 @@ export class LoginPage implements OnInit {
 
   }
 
+  
+
 }
+
+
