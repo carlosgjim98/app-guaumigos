@@ -37,7 +37,7 @@ export class TabsPage implements OnInit {
           return {
             tab: 'solicitudes',
             name: 'Solicitudes',
-            icon: 'assets/icons/email.svg' // Cambia el ícono por el de solicitudes
+            icon: 'assets/icons/solicitudes.svg' // Cambia el ícono por el de solicitudes
           };
         }
         return page;
