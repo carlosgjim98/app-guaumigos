@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <div [ngClass]="{'seleccionado': esSeleccionada('paseador')}" class="apartado-eleccion" (click)="seleccionarOpcion('paseador')">
+      <div [ngClass]="{'seleccionado': esSeleccionada('paseador')}" class="apartado-eleccion" (click)="seleccionarOpcion('paseador')" routerLink="/login-usuario-paseador">
         <img [src]="obtenerRutaIcono('paseador')" alt="icono-paseador">
         <p>
           <span class="texto-normal">Quiero acceder<br> como</span>

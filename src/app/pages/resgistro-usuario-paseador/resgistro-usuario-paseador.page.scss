@@ -1,0 +1,79 @@
+ion-content {
+    font-family: Lexend, sans-serif;
+
+    .container-form {
+        top: -57px;
+    }
+    .container-a {
+        display: flex;
+        align-items: center;
+        margin-top: 23px;
+        margin-right: 45px;
+        margin-left: 45px;
+        margin-bottom: 5px;
+    }
+
+    .politicas {
+        font-family: LexendRegular;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 6px;
+        line-height: 1.5;
+        color: #2E2D2E;
+    }
+
+    .politicas-link {
+        color: #2E2D2E;
+        font-size: 14px;
+        font-family: LexendBold;
+        
+    }
+
+    ion-checkbox {
+        --size: 20px;
+        --checkbox-background-checked: #141411;
+        --checkmark-width: 3px;
+        --checkmark-color: white;
+    }
+
+    ion-checkbox::part(container) {
+        border-radius: 1px;
+        border: 1px solid #141411;
+    }
+
+    .container-btn {
+        padding-top: 12px;
+    }
+}
+
+a {
+    font-family: LexendBold;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.custom-p,
+.custom-p2 {
+    font-family: LexendRegular;
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #2E2D2E;
+}
+
+.custom-p2 {
+    color: #919191;
+}
+
+.enlace-registro {
+    color: #141411;
+}
+
+.correo {
+    font-family: LexendSemiBold;
+}

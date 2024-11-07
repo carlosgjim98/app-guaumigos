@@ -340,6 +340,30 @@ const routes: Routes = [
     path: 'perfil-empresa-galeria',
     loadChildren: () => import('./pages/perfil-empresa-galeria/perfil-empresa-galeria.module').then( m => m.PerfilEmpresaGaleriaPageModule)
   },
+  {
+    path: 'login-usuario-paseador',
+    loadChildren: () => import('./pages/login-usuario-paseador/login-usuario-paseador.module').then( m => m.LoginUsuarioPaseadorPageModule)
+  },
+  {
+    path: 'resgistro-usuario-paseador',
+    loadChildren: () => import('./pages/resgistro-usuario-paseador/resgistro-usuario-paseador.module').then( m => m.ResgistroUsuarioPaseadorPageModule)
+  },
+  {
+    path: 'recordar-contrasena-usuario-paseador',
+    loadChildren: () => import('./pages/recordar-contrasena-usuario-paseador/recordar-contrasena-usuario-paseador.module').then( m => m.RecordarContrasenaUsuarioPaseadorPageModule)
+  },
+  {
+    path: 'completar-perfil',
+    loadChildren: () => import('./pages/completar-perfil/completar-perfil.module').then( m => m.CompletarPerfilPageModule)
+  },
+  {
+    path: 'mascotas-aceptadas',
+    loadChildren: () => import('./pages/mascotas-aceptadas/mascotas-aceptadas.module').then( m => m.MascotasAceptadasPageModule)
+  },
+  {
+    path: 'calendario-paseador',
+    loadChildren: () => import('./pages/calendario-paseador/calendario-paseador.module').then( m => m.CalendarioPaseadorPageModule)
+  },
 
 
 

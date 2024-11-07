@@ -1,0 +1,21 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+<ion-content>
+  <div class="container-text">
+    <h2 class="ion-text-center">¿No recuerdas tu contraseña?</h2>
+    <p class="text-expli"> Escribe tu email<br> y te enviaremos una nueva clave</p>
+  </div>
+  <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="container-form">
+      <div [ngClass]="{'container-input-activated': focusedInputs[0], 'container-input': !focusedInputs[0]}">
+        <ion-item>
+          <ion-input clearInput type="text" placeholder="Email" formControlName="email" (ionFocus)="onFocus(0)" (ionBlur)="onBlur(0)">
+            <img slot="start" [src]="focusedInputs[0] ? 'assets/icons/email-negro.svg' : 'assets/icons/email.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="container-btn">
+        <ion-button type="submit" class="btn-custom">{{'FORGOT_PASSWORD.SEND' | translate }}</ion-button>
+      </div>
+    </div>
+  </form>
+</ion-content>
