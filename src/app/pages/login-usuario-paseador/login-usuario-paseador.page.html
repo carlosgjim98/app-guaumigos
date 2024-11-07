@@ -1,0 +1,37 @@
+<ion-content>
+  <div class="fondo-login">
+    <img src="assets/imgs/backgrounds/PATTERN-LOGIN.png" alt="fondo-login">
+  </div>
+
+  <div class="container-form">
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+      <h2 class="title">Login</h2>
+      <div [ngClass]="{'container-input-activated': focusedInputs[0], 'container-input': !focusedInputs[0]}">
+        <ion-item>
+          <ion-input clearInput type="text" placeholder="Email" formControlName="email" class="custom-input" (ionFocus)="onFocus(0)" (ionBlur)="onBlur(0)">
+            <img slot="start" [src]="focusedInputs[0] ? 'assets/icons/email-negro.svg' : 'assets/icons/email.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div [ngClass]="{'container-input-activated': focusedInputs[1], 'container-input': !focusedInputs[1]}">
+        <ion-item>
+          <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}"
+            formControlName="password" class="custom-input" (ionFocus)="onFocus(1)" (ionBlur)="onBlur(1)">
+            <img slot="start" [src]="focusedInputs[1] ? 'assets/icons/password-negro.svg' : 'assets/icons/password.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div class="container-a">
+        <a class="forgot-password" routerLink="/forgot-password"><b>He olvidado mi contraseña</b></a>
+      </div>
+
+      <div class="container-btn">
+        <ion-button type="submit" class="btn-custom" routerLink="/tabs/listado-paseadores" >Entrar</ion-button>
+      </div>
+    </form>
+  </div>
+  <div class="footer-content">
+    <p class="custom-p">¿Aún no tienes una cuenta? <a routerLink="/resgistro-usuario-paseador" class="enlace-registro">Regístrate</a></p>
+    <p class="custom-p2">Contacta con nosotros en <span class="correo">info&#64;guaumigo.com</span></p>
+  </div>
+</ion-content>

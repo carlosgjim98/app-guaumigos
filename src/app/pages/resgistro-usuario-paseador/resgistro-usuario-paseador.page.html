@@ -1,0 +1,62 @@
+<ion-content>
+  <div class="fondo-login">
+    <img src="assets/imgs/backgrounds/PATTERN-REGISTRO.png" alt="fondo-register">
+  </div>
+
+  <div class="container-form">
+    <form *ngIf="form" [formGroup]="form" (ngSubmit)="submitForm()">
+      <p class="title">Registro</p>
+      <div [ngClass]="{'container-input-activated': focusedInputs[0], 'container-input': !focusedInputs[0]}">
+        <ion-item>
+          <ion-input clearInput type="text" placeholder="Nombre" formControlName="email" class="custom-input"
+            (ionFocus)="onFocus(0)" (ionBlur)="onBlur(0)">
+            <img slot="start" [src]="focusedInputs[0] ? 'assets/icons/user-negro.svg' : 'assets/icons/user.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div [ngClass]="{'container-input-activated': focusedInputs[1], 'container-input': !focusedInputs[1]}">
+        <ion-item>
+          <ion-input clearInput type="text" placeholder="Email" formControlName="email" class="custom-input"
+            (ionFocus)="onFocus(1)" (ionBlur)="onBlur(1)">
+            <img slot="start" [src]="focusedInputs[1] ? 'assets/icons/email-negro.svg' : 'assets/icons/email.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div [ngClass]="{'container-input-activated': focusedInputs[2], 'container-input': !focusedInputs[2]}"
+        (ionFocus)="onFocus(2)" (ionBlur)="onBlur(2)">
+        <ion-item>
+          <ion-input clearInput type="password" placeholder="{{'LOGIN.PASSWORD' | translate }}"
+            formControlName="password" class="custom-input" (ionFocus)="onFocus(2)" (ionBlur)="onBlur(2)">
+            <img slot="start" [src]="focusedInputs[2] ? 'assets/icons/password-negro.svg' : 'assets/icons/password.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+      <div [ngClass]="{'container-input-activated': focusedInputs[3], 'container-input': !focusedInputs[3]}">
+        <ion-item>
+          <ion-input clearInput type="password" placeholder="Repetir contraseña" formControlName="password"
+            class="custom-input" (ionFocus)="onFocus(3)" (ionBlur)="onBlur(3)">
+            <img slot="start" [src]="focusedInputs[3] ? 'assets/icons/password-negro.svg' : 'assets/icons/password.svg'" alt="icono-personalizado" class="custom-icon" />
+          </ion-input>
+        </ion-item>
+      </div>
+
+      <div class="container-a">
+        <ion-checkbox></ion-checkbox>
+        <p class="politicas">
+          He leído y acepto
+          <a class="politicas-link" routerLink="/privacy-policy">la Política de Privacidad</a><br>
+          y
+          <a class="politicas-link" routerLink="/condiciones-venta">los Términos y Condiciones de Venta</a>.
+        </p>
+      </div>
+
+      <div class="container-btn">
+        <ion-button type="submit" class="btn-custom" routerLink="/completar-perfil">Registrarme</ion-button>
+      </div>
+    </form>
+  </div>
+  <div class="footer-content">
+    <p class="custom-p">¿Ya tienes una cuenta? <a class="enlace-registro" routerLink="/login-usuario-paseador">Acceder</a></p>
+    <p class="custom-p2">Contacta con nosotros en <span class="correo">info&#64;guaumigo.com</span></p>
+  </div>
+</ion-content>

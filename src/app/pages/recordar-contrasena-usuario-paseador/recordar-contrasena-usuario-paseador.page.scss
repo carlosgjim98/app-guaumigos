@@ -1,0 +1,27 @@
+ion-content {
+
+    .container-text {
+        margin-top: 90px;
+        margin-bottom: 45px;
+        margin-left: 15px;
+        margin-right: 15px;
+        
+        .ion-text-center {
+            font-family: ChewyRegular;
+            font-size: 30px;
+        }
+
+        .text-expli {
+            font-size: 18px;
+            text-align: center;
+            font-family: LexendRegular;
+        }
+    }
+
+    .container-form {
+        .container-btn {
+            padding-top: 12px;
+            padding-bottom: 20px;
+        }
+    }
+}

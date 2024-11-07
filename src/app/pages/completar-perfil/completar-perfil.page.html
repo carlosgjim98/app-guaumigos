@@ -1,0 +1,40 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  <img class="circle" src="../../../assets/imgs/Rectángulo19799@3x.png" alt="">
+  <img class="fingerprint" src="../../../assets/imgs/Grupo11391@3x.png" alt="">
+  
+  <ion-button class="add-image">Añade una imagen</ion-button>
+
+  <p class="name">Nombre</p>
+  <ion-input label="" class="write-here" placeholder="Escribe aquí..."></ion-input>
+
+  <p class="target">Ubicación</p>
+  <ion-input label="" class="write-here-2" placeholder="Escribe aquí..."></ion-input>
+
+  <p class="target">Descripción</p>
+  <ion-input label="" class="write-here-3" placeholder="Escribe aquí..."></ion-input>
+
+  <p class="target">DNI</p>
+  <ion-input label="" class="write-here-2" placeholder="Escribe aquí..."></ion-input>
+
+  <p class="target">Antecedentes penales</p>
+  <ion-button class="pdf-button">
+    <div class="inside">
+    Sube aquí tu PDF
+     <ion-icon name="share-outline" slot="end"></ion-icon>
+    </div>
+    </ion-button>
+
+    <ion-button class="last-button" routerLink="/mascotas-aceptadas">Guardar y continuar</ion-button>
+
+
+
+
+
+
+
+
+</ion-content>

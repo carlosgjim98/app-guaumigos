@@ -1,0 +1,130 @@
+.when-walk{
+    color: #2B2828;
+    font-family: LexendMedium;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.selection{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    gap: 20px;
+}
+
+.checks{
+    --size: 26px;
+    --border-width: 1px;
+    --border-radius: 5px;
+    --background: transparent;
+    --border-color: #919191;
+    width: 26px;
+    height: 26px;
+    --checkmark-color: black;   
+}
+
+.checks [checked]{
+    --background: #FFD954;  
+}
+
+.text-checbox{
+    color: #3E3E3E;
+    font-family: LexendRegular;
+    font-size: 14px;   
+}
+
+.prueba{
+    border: 1px solid #919191;
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    gap: 20px;
+
+}
+
+
+ion-radio::part(container) {
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+    border: 1px solid #919191;
+  }
+  
+  ion-radio::part(mark) {
+    background: none;
+    transition: none;
+    transform: none;
+    border-radius: 0;
+  }
+  
+  ion-radio.radio-checked::part(container) {
+    background: #FFD954;
+    border-color: transparent;
+  }
+  
+  ion-radio.radio-checked::part(mark) {
+    width: 6px;
+    height: 10px;
+  
+    border-width: 0px 2px 2px 0px;
+    border-style: solid;
+    border-color: black;
+  
+    transform: rotate(45deg);
+  }
+
+  .categories{
+    display: flex;
+    //flex-direction: column;
+    gap: 2px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+.button_1{
+    --background:transparent;
+    border: 1px solid;
+    border-radius: 30px;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 14px;
+    width: 85px;
+    //flex: 1;
+    min-width: 85px;
+    border-color: #919191;
+    height: 35px;
+    min-height: 10px;
+    
+    
+}
+.amarillo{
+    background: #FFD954;
+    border: 1px solid #FFD954;
+    color: #100F0F;
+    font-family: LexendRegular;
+    font-size: 14px;
+    width: 85px;
+    //flex: 1;
+    min-width:85px;
+    height: 35px;
+    min-height: 10px;
+    border-radius: 30px;
+
+}
+
+.morning-afternoon{
+    color: #3E3E3E;
+    font-family: LexendRegular;
+    font-size: 16px;
+}
+
+.time{
+    width: 96px;
+    height: 39px;
+    border: 1px solid #919191;
+    
+}
