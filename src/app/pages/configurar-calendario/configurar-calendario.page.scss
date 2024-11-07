@@ -126,5 +126,13 @@ ion-radio::part(container) {
     width: 96px;
     height: 39px;
     border: 1px solid #919191;
+    border-radius: 5px ;
+    align-items: center;
     
+
+}
+
+.from{
+    display: flex;
+    align-items: center;
 }
