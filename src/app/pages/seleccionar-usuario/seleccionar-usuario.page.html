@@ -10,7 +10,7 @@
       <h2>Selecciona el tipo de usuario</h2>
     </div>
 
-    <form id="tipoUsuarioForm">
+    <form id="tipoUsuarioForm" (ngSubmit)="continuar()">
       <div [ngClass]="{'seleccionado': esSeleccionada('dueño')}" class="apartado-eleccion" (click)="seleccionarOpcion('dueño')">
         <img [src]="obtenerRutaIcono('dueño')" alt="icono-cliente">
         <p>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="container-btn">
-        <ion-button class="btn-custom" type="submit" routerLink="/login">Aceptar y continuar</ion-button>
+        <ion-button class="btn-custom" type="submit" [disabled]="!opcionSeleccionada">Aceptar y continuar</ion-button>
       </div>
     </form>
   </div>
