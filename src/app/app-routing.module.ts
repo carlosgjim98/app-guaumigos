@@ -368,6 +368,10 @@ const routes: Routes = [
     path: 'configurar-calendario',
     loadChildren: () => import('./pages/configurar-calendario/configurar-calendario.module').then( m => m.ConfigurarCalendarioPageModule)
   },
+  {
+    path: 'detalle-solicitud-aceptada-iniciar-paseo',
+    loadChildren: () => import('./pages/detalle-solicitud-aceptada-iniciar-paseo/detalle-solicitud-aceptada-iniciar-paseo.module').then( m => m.DetalleSolicitudAceptadaIniciarPaseoPageModule)
+  },
 
 
 

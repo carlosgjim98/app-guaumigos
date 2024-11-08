@@ -73,8 +73,7 @@ export class MascotasAceptadasPage implements OnInit {
     },
     {
       id : 11,
-      text : '',
-      icon : '../../../assets/icons/signo-mas.svg',
+      icon : 'assets/icons/signo-mas.svg',
       checked : false,
     },
   ]

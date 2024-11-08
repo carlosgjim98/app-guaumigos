@@ -57,30 +57,59 @@
     <p class="morning-afternoon">Mañanas</p>
 
     <div class="from">
-      <p>Desde:</p>
-    <div class="time" >
-    <p>8:30</p>
+      <p class="text-from">Desde:</p>
+    <div class="time-yellow" >
+    <p class="hour-yellow">8:30</p>
     </div> 
-    <p>Hasta:</p>
+    <p class="text-from">Hasta:</p>
     <div class="time" >
-    <p>12:30</p>
+    <p class="hour-from">12:30</p>
     </div> 
     </div>
     <p class="morning-afternoon">Tardes</p>
 
     <div class="from">
-      <p>Desde:</p>
+      <p class="text-from">Desde:</p>
     <div class="time" >
-    <p>8:30</p>
+    <p class="hour-from">8:30</p>
     </div> 
-    <p>Hasta:</p>
+    <p class="text-from">Hasta:</p>
     <div class="time" >
-    <p>12:30</p>
+    <p class="hour-from">12:30</p>
     </div> 
     </div>
-    
-  
 
+    <hr>
+
+    <p class="rest-days">Días de descanso</p>
+
+    <p class="remember">Selecciona que días no estarás disponible.</p>
+
+    <p class="remember">Recuerda que sólo podrás escoger los días que no <br>
+    tengas inguna solicitud de paseo previamente <br>
+  aceptada.</p>
+
+  <div class="calendar-content">
+  <ion-datetime display-format="YYYY-MM-DD" [multiple]="true" id="custom-datetime" class="calendar" presentation="date" [firstDayOfWeek]="1"></ion-datetime>
+  </div>
+  <div class="selected-days">
+    <div class="content-chip">
+    <ion-chip class="circle-1"></ion-chip>
+    <p class="circle-text">Trabajo</p>
+  </div>
+  <div class="content-chip">
+    <ion-chip class="circle-2"></ion-chip>
+    <p class="circle-text">Día de descanso</p>
+  </div>
+  <div class="content-chip">
+    <ion-chip class="circle-3"></ion-chip>
+    <p class="circle-text">Día seleccionado</p>
+  </div>
+  </div>
+
+  <ion-button class="last-button">Guardar cambios</ion-button>
+
+  
 
   
 </ion-content>

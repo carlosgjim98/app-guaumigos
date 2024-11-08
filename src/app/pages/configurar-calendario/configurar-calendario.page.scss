@@ -120,19 +120,208 @@ ion-radio::part(container) {
     color: #3E3E3E;
     font-family: LexendRegular;
     font-size: 16px;
+    margin-left: 5%;
 }
+
+.time-yellow{
+    width: 96px;
+    height: 39px;
+    border: 1px solid #FFCA3C;
+    border-radius: 5px ;
+    display: flex;
+    padding-left: 7%;
+    align-items: center;
+}
+
 
 .time{
     width: 96px;
     height: 39px;
     border: 1px solid #919191;
     border-radius: 5px ;
+    display: flex;
+    padding-left: 7%;
     align-items: center;
-    
-
 }
 
 .from{
     display: flex;
     align-items: center;
+    margin-left: 5%;
+    gap: 10px;
+}
+
+.text-from{
+    color: #3E3E3E;
+    font-family: LexendLight;
+    font-size: 15px;
+}
+
+.hour-yellow{
+    color: #3C3A3D;
+    font-family: LexendRegular;
+    font-size: 16px;
+}
+
+.hour-from{
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 16px;
+}
+
+.rest-days{
+    color: #2B2828;
+    font-family: LexendMedium;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.remember{
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+
+// ion-datetime ::part(calendar-day){
+//     font-size: 14px;
+//     color: #2B2828;
+//     font-family: LexemdRegular;
+// }
+    
+
+
+// #custom-datetime .calendar-month-year {
+//     font-size: 14px; /* Tamaño de la fuente del mes y año */
+//     color: #2B2828;
+//     font-family: 'Arial', sans-serif;
+//   }
+
+.calendar-content{
+    width: 90%;
+    margin-left: 5%; 
+
+    .calendar{
+        width: fit-content;
+        max-width: fit-content;
+        background: white;
+
+        ion-datetime {
+            font-family: LexendRegular;
+            --ion-font-size: 15px;
+            color: #2b2828;
+            background-color: transparent;
+            --ion-font-family: "LexendRegular";
+            border-radius: 16px;
+            --today-color: black !important;
+            width: 100%;
+            height: 100%;
+            --ion-color-base: #2B2828!important;
+            
+            
+            
+        }
+        
+
+        ion-datetime::part(calendar-day) {
+            color: #919191;
+          }
+          
+        
+          
+          ion-datetime::part(calendar-day):focus {
+            background-color: #FFD954;
+
+            color: #D59C05;
+            
+          }
+    }
+
+
+}
+
+
+
+// .calendar ::part(calendar-month-year-toggle){
+//     font-size: 14px; /* Tamaño de la fuente del mes y año */
+//     color: #2B2828;
+//     font-family: 'Arial', sans-serif;
+// }
+
+// #custom-datetime .calendar-day[data-day="5"],
+// #custom-datetime .calendar-day[data-day="15"],
+// #custom-datetime .calendar-day[data-day="25"] {
+//   --background-color: #ff5722; /* Cambia el fondo para ciertos días */
+//   color: white;
+//   border-radius: 50%;
+// }
+
+.selected-days{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    gap: 15px;
+}
+
+.content-chip{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.circle-1{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Hace que el chip sea redondo */
+    padding: 0; /* Elimina el espacio interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFD954;
+    min-height: 5px; 
+}
+
+.circle-2{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Hace que el chip sea redondo */
+    padding: 0; /* Elimina el espacio interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E0E0E0;
+    min-height: 5px; 
+}
+
+.circle-3{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; /* Hace que el chip sea redondo */
+    padding: 0; /* Elimina el espacio interno */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    min-height: 5px;
+    border: 0.5px solid #FFD954; 
+}
+
+.circle-text{
+    color: #2B2828;
+    font-size: 14px;
+    font-family: DMSansRegular;
+}
+
+.last-button{
+    width: 90%;
+    height: 58px;
+    margin-left: 5%;
+    color: #141411;
+    font-family: LexendMedium;
+    font-size: 16px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+
 }
