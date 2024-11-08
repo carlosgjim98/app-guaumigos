@@ -414,15 +414,7 @@ const routes: Routes = [
   {
     path: 'detalle-factura',
     loadChildren: () => import('./pages/detalle-factura/detalle-factura.module').then( m => m.DetalleFacturaPageModule)
-  },  {
-    path: 'editar-galeria-paseador',
-    loadChildren: () => import('./pages/editar-galeria-paseador/editar-galeria-paseador.module').then( m => m.EditarGaleriaPaseadorPageModule)
   },
-  {
-    path: 'editar-servicios-paseos',
-    loadChildren: () => import('./pages/editar-servicios-paseos/editar-servicios-paseos.module').then( m => m.EditarServiciosPaseosPageModule)
-  },
-
 
 
 

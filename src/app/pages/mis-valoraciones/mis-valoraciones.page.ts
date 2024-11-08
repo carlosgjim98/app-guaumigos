@@ -8,10 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class MisValoracionesPage implements OnInit {
   dynamicHeaderText: string = 'Mis valoraciones';
   returnLink: string = '/ajustes';
-  
+  paseoNombre: string = '';
+  paseoFecha: string = '';
+  nombrePaseador:string = '';
+  detalleRuta: string;
+  userRole: string = sessionStorage.getItem('tipoUsuario') || '';
+
   constructor() { }
 
   ngOnInit() {
+    this.setUserData();
   }
 
+  setUserData() {
+    if (this.userRole === 'paseador') {
+      this.paseoNombre = 'Paseo de día con';
+      this.nombrePaseador = 'Moka';
+      this.paseoFecha = '18/09/2024';
+      this.detalleRuta = '/detalle-valoracion-paseador';
+    } else if (this.userRole === 'dueño') {
+      this.paseoNombre = 'Paseo de día con Ana Velázquez';
+      this.paseoFecha = '18/09/2024';
+      this.detalleRuta = '/detalle-valoracion';
+    } else if (this.userRole === 'empresa') {
+      this.paseoNombre = 'Servicio de paseo empresarial';
+      this.paseoFecha = '22/09/2024';
+    }
+  }
 }

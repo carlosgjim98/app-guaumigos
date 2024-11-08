@@ -1,0 +1,169 @@
+.title {
+    font-family: LexendMedium;
+    font-size: 18px;
+    color: #110f0f;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.container-datos,
+.container-paseo,
+.container-informacion-pago,
+.container-suscripcion {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.container-datos {
+    display: flex;
+    align-items: stretch;
+
+    .container-fotousuario {
+        width: 45px;
+        height: 45px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .container-info {
+        margin-left: 10px;
+        justify-content: center;
+        color: #110f0f;
+
+        .nombre,
+        .localizacion {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .nombre {
+            font-family: LexendMedium;
+            font-size: 16px;
+        }
+
+        .localizacion {
+            font-family: LexendLight;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+
+            .valoracion {
+                display: flex;
+                align-items: center;
+
+                ion-icon {
+                    font-size: 14px;
+                }
+
+                .nota {
+                    font-family: LexendMedium;
+                    margin-left: 3px;
+                }
+            }
+        }
+    }
+}
+
+.bottom-border {
+    border-bottom: 1px solid #cccccc; /* Ajusta el color según tu preferencia */
+    padding-bottom: 8px; /* Opcional: Espacio debajo del contenido */
+  }
+
+  .valoracion-container{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  .precio {
+    .valoracion {
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        
+
+        ion-icon {
+            font-size: 36px;
+        }
+    }
+}
+
+p{
+
+}
+.comentario{
+
+    font-family: LexendLight;
+            font-size: 16px;
+}
+
+.date{
+
+    color:#919191;
+    font-family: LexendLight;
+            font-size: 14px;
+}
+}
+
+.delete-btn {
+    display: block; 
+    --background: #100F0F;
+    color: white;
+    text-align: center;
+    margin: 37px auto 0; 
+    height: 58px;
+    width:398px; 
+   
+}
+
+.date-time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: LexendLight;
+    height: 10px;
+    margin-bottom: 5%;
+    margin-left: 15px;
+    color: #100F0F;
+
+
+.icons{
+    font-size: 15px;
+    font-family: LexendLight;
+    color:#100F0F
+ 
+}
+
+}
+
+.subtitle{
+    font-family: LexendRegular;
+    font-size: 15px;
+    margin-left: 15px;
+    color: #919191;
+
+}
+
+.description{
+
+    font-family: LexendLight;
+    font-size: 16px;
+    color: #110F0F
+}
+
+.services{
+
+    p{
+
+        font-family: LexendLight;
+        font-size: 15px;
+        margin-left: 15px;
+        color: #100F0F;
+
+    }
+}
