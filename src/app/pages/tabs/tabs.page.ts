@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'; 
 
 @Component({
   selector: 'app-tabs',
@@ -18,7 +19,7 @@ export class TabsPage implements OnInit {
   public selectedTab: string;
   private userRole: string; // Guardamos el rol del usuario
 
-  constructor() {}
+  constructor( private router: Router) {}
 
   ngOnInit() {
     // Obtener el rol del usuario desde sessionStorage
@@ -33,11 +34,17 @@ export class TabsPage implements OnInit {
             name: 'Calendarios',
             icon: 'assets/icons/calendar event.svg'
           };
-        }else if (page.tab === 'servicios') {
+        } else if (page.tab === 'servicios') {
           return {
             tab: 'solicitudes',
             name: 'Solicitudes',
             icon: 'assets/icons/solicitudes.svg' // Cambia el ícono por el de solicitudes
+          };
+        } else if (page.tab === 'perfil') {
+          return {
+            tab: 'mi-perfil-paseador', // Nueva ruta para el perfil del paseador
+            name: 'Mi Perfil',
+            icon: 'assets/icons/icon-tabs/tab-perfil.svg'
           };
         }
         return page;
@@ -47,6 +54,12 @@ export class TabsPage implements OnInit {
 
   tabChange(event: any) {
     this.selectedTab = event.tab;
+
+    // Si la pestaña seleccionada es 'Mi Perfil' y el rol es 'paseador', redirigir
+    if (this.selectedTab === 'perfil' && this.userRole === 'paseador') {
+      this.router.navigate(['/tabs/mi-perfil-paseador']);  // Redirige a la página de perfil del paseador
+    }
   }
+
 
 }

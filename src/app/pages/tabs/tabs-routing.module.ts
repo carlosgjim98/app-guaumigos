@@ -29,6 +29,12 @@ const routes: Routes = [
       },
 
       {
+        path: 'mi-perfil-paseador',
+        loadChildren: () => import('../mi-perfil-paseador/mi-perfil-paseador.module').then(m => m.MiPerfilPaseadorPageModule)
+      },
+
+
+      {
         path: 'calendario-paseador',
         loadChildren: () => import('../calendario-paseador/calendario-paseador.module').then(m => m.CalendarioPaseadorPageModule)
       },

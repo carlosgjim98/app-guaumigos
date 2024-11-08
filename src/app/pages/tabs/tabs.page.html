@@ -1,9 +1,12 @@
 <ion-tabs (ionTabsDidChange)="tabChange($event)">
-  <ion-tab-bar slot="bottom" >
-      <ion-tab-button [tab]="p.tab" *ngFor="let p of pages ; let lastItem = last; let firstItem = first" 
-      [ngClass]="{lastItem : lastItem , firstItem : firstItem, selected: selectedTab === p.tab}">
-          <ion-icon [src]="p.icon"></ion-icon>
-          <ion-label>{{p.name}}</ion-label>
-      </ion-tab-button>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button 
+      *ngFor="let p of pages" 
+      [tab]="p.tab"  
+      [ngClass]="{selected: selectedTab === p.tab}">
+      <ion-icon [src]="p.icon"></ion-icon>
+      <ion-label>{{p.name}}</ion-label>
+    </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>
+
