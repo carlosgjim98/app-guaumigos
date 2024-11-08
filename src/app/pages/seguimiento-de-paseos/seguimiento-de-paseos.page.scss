@@ -2,7 +2,20 @@
 .map{
     height: 70%;
     width: 100%;
-    //filter: grayscale(3);
+    filter: grayscale(3);
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+            
+            
+}
+
+.fingerprint{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 35%;
 }
 
 .container-tipo{

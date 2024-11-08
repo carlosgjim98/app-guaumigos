@@ -1,0 +1,42 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class= "edit-container" >
+  <ion-avatar class="avatar">
+    <img src="assets/imgs/usuarios/Rectángulo19656@3x.png" alt="User Avatar">
+  </ion-avatar>
+  <ion-button> Editar imagen</ion-button>
+</div>
+
+
+<div class="description-container">
+  
+  <h1>Nombre</h1>
+  <ion-item class="nombre" >
+    
+    <ion-input placeholder="Ana Velázquez"></ion-input>
+    
+  </ion-item>
+
+  <h2>Ubicación</h2>
+  <ion-item class="ubicacion">
+    
+    <ion-input placeholder="Jerez de la Frontera, Cádiz"></ion-input>
+    
+  </ion-item>
+
+
+
+  <h2>Descripción</h2>
+  <ion-item class="descripcion">
+    <ion-textarea placeholder="¡Hola! Soy Ana, amante de los perros y apasionada por los paseos al aire libre. Tu mejor amigo tendrá una compañera de juegos y aventuras. ¡Conmigo, los paseos serán su parte favorita!"></ion-textarea>
+    
+  </ion-item>
+  
+</div>
+
+<ion-button class="save-btn" routerLink="/galeria"> Guardar cambios</ion-button>
+
+
+</ion-content>

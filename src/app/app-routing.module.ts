@@ -372,6 +372,30 @@ const routes: Routes = [
     path: 'detalle-solicitud-aceptada-iniciar-paseo',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-iniciar-paseo/detalle-solicitud-aceptada-iniciar-paseo.module').then( m => m.DetalleSolicitudAceptadaIniciarPaseoPageModule)
   },
+  {
+    path: 'mi-perfil-paseador',
+    loadChildren: () => import('./pages/mi-perfil-paseador/mi-perfil-paseador.module').then( m => m.MiPerfilPaseadorPageModule)
+  },
+  {
+    path: 'editar-perfil-paseador',
+    loadChildren: () => import('./pages/editar-perfil-paseador/editar-perfil-paseador.module').then( m => m.EditarPerfilPaseadorPageModule)
+  },
+  {
+    path: 'ajustes-paseador',
+    loadChildren: () => import('./pages/ajustes-paseador/ajustes-paseador.module').then( m => m.AjustesPaseadorPageModule)
+  },
+  {
+    path: 'facturas-paseador',
+    loadChildren: () => import('./pages/facturas-paseador/facturas-paseador.module').then( m => m.FacturasPaseadorPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes-paseador',
+    loadChildren: () => import('./pages/mis-puntos-de-interes-paseador/mis-puntos-de-interes-paseador.module').then( m => m.MisPuntosDeInteresPaseadorPageModule)
+  },
+  {
+    path: 'detalle-factura',
+    loadChildren: () => import('./pages/detalle-factura/detalle-factura.module').then( m => m.DetalleFacturaPageModule)
+  },
 
 
 
