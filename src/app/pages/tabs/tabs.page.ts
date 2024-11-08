@@ -29,9 +29,15 @@ export class TabsPage implements OnInit {
       this.pages = this.pages.map(page => {
         if (page.tab === 'listado-paseadores') {
           return {
-            tab: 'calendarios',
+            tab: 'calendario-paseador',
             name: 'Calendarios',
             icon: 'assets/icons/calendar event.svg'
+          };
+        }else if (page.tab === 'servicios') {
+          return {
+            tab: 'solicitudes',
+            name: 'Solicitudes',
+            icon: 'assets/icons/solicitudes.svg' // Cambia el ícono por el de solicitudes
           };
         }
         return page;

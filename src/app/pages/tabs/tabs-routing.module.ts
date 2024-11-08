@@ -27,6 +27,12 @@ const routes: Routes = [
         path: 'perfil',
         loadChildren: () => import('../perfil/perfil.module').then(m => m.PerfilPageModule)
       },
+
+      {
+        path: 'calendario-paseador',
+        loadChildren: () => import('../calendario-paseador/calendario-paseador.module').then(m => m.CalendarioPaseadorPageModule)
+      },
+
       {
         path: '',
         redirectTo: '/tabs/listado-paseadores',
