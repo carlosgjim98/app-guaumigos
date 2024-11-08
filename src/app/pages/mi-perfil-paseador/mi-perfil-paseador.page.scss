@@ -231,4 +231,210 @@ ion-header {
         font-family: LexendBold;
       }
 
+      .container-informacion {
+        background-image: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 15px;
+        border-radius: 10px;
 
+        h2 {
+            font-family: LexendSemiBold;
+            font-size: 18px;
+            color: #100f0f;
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 13px;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-family: LexendLight;
+                font-size: 13px;
+                color: #110f0f;
+            }
+
+            p {
+                font-family: LexendMedium;
+                font-size: 15px;
+                color: #110f0f;
+
+                span {
+                    font-family: LexendBold;
+                }
+            }
+        }
+    }
+
+//BARRA DE SECCIONES
+ion-segment {
+  --background: none;
+
+  ion-segment-button {
+      font-family: LexendRegular;
+      font-size: 14px;
+      color: #919191;
+      padding-right: 5px;
+      padding-left: 5px;
+
+      &.segment-button-checked {
+          font-family: LexendMedium;
+          color: #100f0f;
+          border-bottom: 2px solid var(--custom-color-2);
+          border-radius: 0;
+      }
+  }
+}
+
+//GALERIA
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  padding: 0;
+
+  .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: none;
+  }
+}
+
+//PASEOS
+.container-paseos {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #cececd;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+
+  .container-fotoperro {
+      width: 100%;
+      height: 110px;
+      overflow: hidden;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+  .container-datos {
+      display: flex;
+      padding: 10px;
+      padding-top: 13px;
+      align-items: center;
+      margin-bottom: 5px;
+      
+      
+      .container-info {
+          margin-left: 10px;
+
+          .nombre,
+          .distancia,
+          .precio {
+              margin-top: 0;
+              margin-bottom: 5px;
+          }
+
+          .nombre {
+              font-family: LexendRegular;
+              font-size: 16px;
+          }
+
+          .distancia {
+              font-family: LexendLight;
+              font-size: 14px;
+              color: #919191;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 242px;
+              display: inline-block;
+          }
+
+          .precio {
+              font-family: LexendLight;
+              font-size: 16px;
+              color: #100f0f;
+              display: flex;
+              align-items: center;
+
+              .valoracion {
+                  display: flex;
+                  align-items: center;
+                  margin-left: 15px;
+
+                  ion-icon {
+                      font-size: 14px;
+                  }
+
+                  .nota {
+                      font-family: LexendRegular;
+                      margin-left: 3px;
+                  }
+              }
+          }
+      }
+
+      .signoDirigir {
+          position: absolute;
+          right: 30px;
+          transform: translateY(-20%) rotate(-90deg);
+          width: 13px;
+          height: 13;
+      }
+  }
+}
+
+//BOTÓN
+.container-btn {
+  width: auto;
+  padding-bottom: 32px;
+  position: sticky; 
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-contenido-section {
+  background-color: #F8F8F8;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title-and-button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-button-galery{
+  width: 72px;
+  height: 27px;
+  min-height: 10px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-family: LexendRegular;
+  position: absolute;
+  margin-left: 300px;
+}

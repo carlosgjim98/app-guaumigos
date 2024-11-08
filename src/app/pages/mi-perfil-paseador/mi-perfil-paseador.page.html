@@ -48,7 +48,7 @@
     </p>
   </div>
 
-  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+  <!-- <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
     <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
       Información
     </ion-segment-button>
@@ -85,8 +85,100 @@
     <p class="pet-data"><span class="span-light">¿Celo?</span><br>
     No</p>
 
-  </div>
+  </div> -->
 
+  <ion-segment [(ngModel)]="segmentValue" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="informacion">
+        <ion-label>Información</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="galeria">
+        <ion-label>Galería</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="paseos">
+        <ion-label>Paseos</ion-label>
+    </ion-segment-button>
+</ion-segment>
+<div class="container-contenido-section">
 
- 
+<ng-container *ngIf="segmentValue === 'informacion'">
+    <div class="container-informacion">
+        <div class="title-and-button">
+        <h2>Mascotas Aceptadas</h2>
+        <ion-button class="edit-button" routerLink="/mascotas-aceptadas"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+        </div>
+        <div class="section">
+            <h3>Razas</h3>
+            <p>
+                {{ mostrarTextoCompleto ? razasConcatenadas : razasConcatenadas | slice: 0: 72 }}
+                <span *ngIf="razasConcatenadas.length > 72 && !mostrarTextoCompleto" (click)="alternarVerMas()"
+                    class="ver-mas">
+                    Ver más
+                </span>
+                <span *ngIf="mostrarTextoCompleto" (click)="alternarVerMas()" class="ver-mas">
+                    Ver menos
+                </span>
+            </p>
+        </div>
+        <div class="section">
+            <h3>Edad</h3>
+            <p>Entre {{ edad[0] }} y {{ edad[1] }} años</p>
+        </div>
+        <div class="section">
+            <h3>Tamaño</h3>
+            <p>{{ tamano[0] }}</p>
+        </div>
+        <div class="section">
+            <h3>Peso</h3>
+            <p>Entre {{ peso[0] }} y {{ peso[1] }} kg</p>
+        </div>
+        <div class="section">
+            <h3>Hembra/Macho</h3>
+            <p>{{ sexo.join(', ') }}</p>
+        </div>
+        <div class="section">
+            <h3>¿Celo?</h3>
+            <p>{{ celo[0] }}</p>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="segmentValue === 'galeria'">
+    <div class="container-galeria">
+      <ion-button class="edit-button-galery" routerLink="/editar-galeria-paseador"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+        <div *ngFor="let foto of galeriaFotos" class="section">
+            <img [src]="foto" alt="Galería de imágenes">
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="segmentValue === 'paseos'">
+  <ion-button class="edit-button-galery" routerLink="/editar-servicios-paseos"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+    <div *ngFor="let paseo of paseos" class="container-paseos">
+      
+        <div class="container-fotoperro">
+            <img [src]="paseo.imgPerro" alt="Imagen del perro de {{ paseo.nombre }}">
+        </div>
+        <div class="container-datos">
+            <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+            <div class="container-info" routerLink="/detalle-paseo">
+
+                <p class="nombre">{{ paseo.nombre }}</p>
+
+                <p class="distancia">{{ paseo.distancia }}</p>
+
+                <p class="precio">
+                    {{ paseo.precio }}/ {{ paseo.duracion }}
+                    <span class="valoracion">
+                        <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+                        <span class="nota">{{ paseo.valoracion }}</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<div class="container-btn">
+    <ion-button type="submit">Enviar solicitud</ion-button>
+</div>
+</div>
 </ion-content>

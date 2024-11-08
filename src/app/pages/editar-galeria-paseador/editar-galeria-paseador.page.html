@@ -1,0 +1,30 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink">
+
+  <ion-buttons class="brush" slot="end">
+    <ion-icon class="brush-icon" src="/assets/icons/Trazado47467.svg"></ion-icon>
+  </ion-buttons>
+
+</app-app-header>
+
+<ion-content [fullscreen]="true" class="body">
+  
+  <div class="container-contenido-section">
+
+  <ng-container *ngIf="segmentValue === 'galeria'">
+    <div class="container-galeria">
+      
+        <div *ngFor="let foto of galeriaFotos" class="section">
+          <!-- <ion-button class="edit-button-galery" routerLink="/editar-galeria-paseador"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button> -->
+          <ion-icon class="edit-button-galery" slot="end" src="../../../assets/icons/Grupo 12183.svg"></ion-icon>  
+          <img [src]="foto" alt="Galería de imágenes">
+            
+        </div>
+        <img src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+    </div>
+</ng-container>
+
+  </div>
+
+  <ion-button class="last-button">Guardar cambios</ion-button>
+
+</ion-content>

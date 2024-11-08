@@ -1,0 +1,61 @@
+.brush-icon{
+    
+    height: 15px;
+    width: 15px;
+
+}
+.brush {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    background: #FFD954;
+    height: 34px;
+    width: 32px;
+    max-width: 32px;
+    max-height: 34px;
+    border-radius: 5px;
+    padding-left: 25%;
+    
+
+  }
+
+  .container-contenido-section {
+    background-color: white;
+    width: 100%;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+    padding: 0;
+  
+    .section img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+  }
+
+  .edit-button-galery{
+    width: 72px;
+    height: 27px;
+    min-height: 10px;
+    border-radius: 25px;
+    position: absolute;
+    margin-left: 67px;
+    margin-top: 5px;
+  }
+
+  .last-button{
+    margin-top: 20%;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+
