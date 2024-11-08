@@ -1,0 +1,66 @@
+<app-app-header [headerText]="dynamicHeaderText" ></app-app-header>
+
+<ion-content [fullscreen]="true">
+  
+    <p class="company">Datos del paseador</p>
+
+    <div class="profile-container">
+      <img class="dog" src="../../../assets/imgs/avatar-marta.png" alt="">
+  
+      <div >
+        <p class="company-name">Marta Rodríguez</p>
+        
+        <div class="stars">
+          <img src="../../../assets/imgs/interes/star.png" alt="">
+          <p class="points">4,8 <span class="opinions">· Jerez de la Frontera, Cádiz</span></p>
+          
+        </div>
+        <p class="profile-details" routerLink="/perfil-cliente"> Ver perfil</p>
+  
+      </div>
+  
+    </div>
+    
+    
+
+    <hr>
+    <div class="services-head">
+    <p class="title">Datos del paseo </p>
+    
+    <div class="date-time">
+    <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+    <p class="icons">18/09/2024</p>
+    </div>
+    <div class="date-time">
+      <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+    <p class="icons">10:00 A.M</p>
+  </div>
+  </div>
+  <p class="pet">Mascota que participará</p>
+  <div class="moka">
+    <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="">
+    <div>
+      <p class="dog-name">Moka</p>
+      <p class="age">Pug· 2 años</p>
+    </div>
+  </div>
+  <p class="extra-service">Servicio extra </p>
+  <p class="medicine">Corrección de malos hábitos</p>
+  
+  
+
+  <div class="button-container">
+<ion-button class=" accept-button" routerLink="/detalle-solicitud-aceptada" >Añadir valoracion</ion-button>
+
+
+
+</div>
+
+
+
+
+
+
+  
+</ion-content>
+

@@ -17,30 +17,29 @@ export class CoverPagePage implements OnInit {
 
 
   ngAfterViewInit() {
-
-
-    
+    // Asegúrate de no tener autoplay configurado aquí.
     this.swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: "bullets",
+      },
+      autoplay: {
+        disableOnInteraction: false,
+        pauseOnMouseEnter: false,
+        reverseDirection:false,
+        stopOnLastSlide:true,
+
+
+    },
       scrollbar: {
         el: ".swiper-scrollbar",
         hide: true,
       },
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false
-      },
       grabCursor: true,
       simulateTouch: true,
-
-    });
-
     
-
-    this.swiper.on('slideChange',  () => {
-     
     });
-
-    
   }
 
 }

@@ -304,7 +304,8 @@ const routes: Routes = [
   {
     path: 'mis-valoraciones',
     loadChildren: () => import('./pages/mis-valoraciones/mis-valoraciones.module').then( m => m.MisValoracionesPageModule)
-  },  {
+  },
+  {
     path: 'detalle-valoracion',
     loadChildren: () => import('./pages/detalle-valoracion/detalle-valoracion.module').then( m => m.DetalleValoracionPageModule)
   },
@@ -373,7 +374,25 @@ const routes: Routes = [
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-iniciar-paseo/detalle-solicitud-aceptada-iniciar-paseo.module').then( m => m.DetalleSolicitudAceptadaIniciarPaseoPageModule)
   },
   {
-    path: 'mi-perfil-paseador',
+    path: 'solicitudes',
+    loadChildren: () => import('./pages/solicitudes/solicitudes.module').then( m => m.SolicitudesPageModule)
+  },
+  {
+    path: 'datos-cliente',
+    loadChildren: () => import('./pages/datos-cliente/datos-cliente.module').then( m => m.DatosClientePageModule)
+  },
+  {
+    path: 'perfil-cliente',
+    loadChildren: () => import('./pages/perfil-cliente/perfil-cliente.module').then( m => m.PerfilClientePageModule)
+  },
+  {
+    path: 'cliente-iniciar-paseo',
+    loadChildren: () => import('./pages/cliente-iniciar-paseo/cliente-iniciar-paseo.module').then( m => m.ClienteIniciarPaseoPageModule)
+  },
+  {
+    path: 'valoracion-paseo',
+    loadChildren: () => import('./pages/valoracion-paseo/valoracion-paseo.module').then( m => m.ValoracionPaseoPageModule) },
+    { path: 'mi-perfil-paseador',
     loadChildren: () => import('./pages/mi-perfil-paseador/mi-perfil-paseador.module').then( m => m.MiPerfilPaseadorPageModule)
   },
   {

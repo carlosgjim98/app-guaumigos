@@ -131,90 +131,31 @@
     margin-top: 0;
 }
 
-.target{
-    background-image: url(../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas-1.png);
-    background-size: cover;
-    width: 90%;
-    margin-left: 5%;
-    border-radius: 10pt;
-    p{
-        margin-left: 5%;
-        padding-top: 5%;
-        margin-bottom: 0;
 
-    }
-    .label-1{
-        margin-left: 3%;
-        font-family: LexendRegular;
-        font-size: 13px;
-    }
-    .label-2{
-        text-align-last: end;
-        font-family: LexendRegular;
-        font-size: 13px;
-    }
-    .label-3{
-        font-family: LexendSemiBold;
-        font-size: 13px;
-        margin-left: 3%;
-    }
-    .label-4{
-        text-align-last: end;
-        font-family: LexendSemiBold;
-        font-size: 13px;
-    }
-    hr{
-        margin-top: 0;
-    margin-bottom: 0;
-    width: 90%;
-    margin-left: 5%;
-    height: 2px;
-    background: #110F0F;
-    
-    }
-    
-    ion-item{
-        --background: transparent;
-    }
-    ion-label{
-        background: transparent;
-    }
-}
+.button-container {
+    position: fixed;
+    bottom: 80px;                 
+    left: 0;
+    width: 100%;                  
+   
+    padding: 0 16px;
+    box-sizing: border-box;      
+  }
+  
+  .accept-button {
+    margin-bottom: 19px;
+   
+  }
+  
+  .cancel-button {
+    --background: black;          
+    color: white;                 
+  }
+  
 
-.final-text{
-    margin-left: 5%;
-}
+.profile-details{
 
-.last-line{
-    margin-top: 5%;
-}
-
-.fingerprint{
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    margin-top: 75%;
-    margin-left: 35%;
-}
-
-.map{
-    height: 60%;
-    border-radius: 10pt;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 3%;
-        filter: grayscale(3);
-    position: relative;
-    z-index: -1;
-    object-fit: cover;
-
-
-}
-
-.last-button{
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 8%;
-    --background: #110F0F;
-    color: white;
+    font-size: 12px;
+    font-family: LexendMedium;
+    text-decoration: underline;
 }

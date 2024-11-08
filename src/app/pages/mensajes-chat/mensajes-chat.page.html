@@ -11,11 +11,11 @@
       
       <ion-item lines="none" class="user-info">
         <ion-avatar slot="start">
-          <img src="assets/imgs/Elipse 304@2x.png" alt="Foto de Marta A.">
+          <img [src]="chatAvatar" alt="Foto de {{ chatName }}">
         </ion-avatar>
         <ion-label class="message-label">
           <div class="name-time-container">
-            <h2>Marta Arias</h2>
+            <h2>{{ chatName }}</h2>
             <p class="time">Conectado</p>
           </div>
         </ion-label>

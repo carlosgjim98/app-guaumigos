@@ -1,0 +1,393 @@
+ion-header {
+    height: 15%;
+
+    
+    
+    ion-toolbar {
+        --background: url(../../../assets/imgs/backgrounds//PATTERN-HEADER.png) no-repeat center / cover;
+        height: 122px;
+        display: flex;
+      
+        ion-buttons { 
+
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+                margin-top:70px;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                }
+            }
+        }
+        
+    
+      
+      }
+        .avatar {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 10;
+            top: -60px;
+      
+            img {
+              border-radius: 50%;
+            }
+      
+            .edit-icon {
+              position: absolute;
+              bottom: 4px;
+              right: 0;
+              left: 5;
+              font-size: 17px;
+              background-color: #ffcc00;
+              color: #fff;
+              border-radius: 50%;
+              padding: 5px;
+            }
+          }
+    }
+
+    ion-content {
+        --background: #fff;
+        display: flex;
+        justify-content: center;
+      
+        .profile-content {
+            margin-top: 30px;
+            text-align: center;
+          
+          
+          }
+      
+          .name {
+            color: #110F0F;
+            font-family: 'LexendSemiBold';
+            font-size: 20px;
+          }
+      
+          .location {
+            font-size: 15px;
+            color: #110F0F;
+            font-family: 'LexendLight';
+
+      
+            ion-icon {
+              margin-right: 1px;
+            }
+          }
+      
+          .ratings {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            color: #110F0F;
+            font-family: 'LexendRegular';
+      
+            ion-icon {
+              font-size: 16px;
+              margin-right: 4px;
+              color: #ffc107;
+            }
+      
+            span {
+              margin-right: 5px;
+              font-size: 16px;
+              font-family: 'LexendMedium';
+            }
+      
+            a {
+              color: #110F0F;
+              text-decoration: underline;
+              font-size: 13px;
+            }
+          }
+      
+          .description {
+            font-size: 16px;
+            color: #100F0F;
+            margin-top: 10px;
+            font-family: 'LexendLight';
+          }
+
+          .header-container{
+
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+
+              color: #EAB21C;
+              font-size: 15px;
+              font-family: 'LexendSemiBold';
+
+            }
+
+            ion-button{
+              min-height: unset;
+              font-family: 'LexendRegular';
+              font-size: 10px ;
+              white-space: nowrap;
+              --border-radius: 25px;
+              height: 23px;
+              width: 76px;
+
+            }
+          }
+
+          .gallery-container {
+            
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            width: 100%;
+            ion-grid{
+              width: 100%;
+            }
+          }
+          .gallery-img {
+            width: 100%;
+            border-radius: 10px;
+          }
+
+          .pets-container {
+         
+            
+            
+            h2{
+
+              color: #EAB21C;
+              font-size: 15px;
+              font-family: 'LexendSemiBold';
+
+            }
+
+          }
+          
+          .pets-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr; 
+            gap: 15px; 
+          }
+          
+          .pet-card{
+             background-image: url('../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png');
+             background-size: cover; 
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+          
+          .pet-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+           margin-top: 15px;
+          }
+          
+          .pet-info h3 {
+            margin: 5px 0;
+            font-size: 26px;
+            color: #110F0F;
+            font-family: 'LexendRegular';
+          }
+          
+          .pet-info p {
+            font-size: 15px;
+            color: #110F0F;
+            font-family: 'LexendRegular';
+            margin-top: 0;
+
+          }
+          
+          .profile-button {
+            background-color: #FFD954;
+            color: #000000;
+            border-radius: 45px !important;
+           height: 40px;
+           width: 136px;
+           min-height: unset;
+           font-family: 'LexendRegular';
+           font-size: 15px;
+            cursor: pointer;
+            margin-top: 0;
+            margin-bottom: 15px;
+
+           
+          }
+          .add-pet-card {
+            background-image: url('../../../assets/imgs/backgrounds/PATTERN-HEADER.png');
+            background-size: cover; 
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            
+          
+        .add-btn{
+
+          margin-top: 70px;
+          --border-radius:50px;
+          height: 32px;
+          width: 32px;
+          --background:#000000 ;
+          margin-bottom: 0px;
+        }
+          
+          .add-icon {
+           height: 18px;
+           width: 18px;
+            color: #FFFFFF;
+            
+          }
+
+          .p{
+
+            
+            font-family: 'LexendRegular';
+            font-size: 15px;
+            
+          }
+
+        }
+        .gallery-container,
+.pets-container {
+  max-width: 100%; 
+  padding: 0 10px;
+  margin: 0 auto; 
+}
+
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+          }
+          
+          .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+          
+          .swiper-pagination-bullet {
+            background-color: #fff; /* Color de los puntos */
+            opacity: 0.5;
+          }
+          
+          .swiper-pagination-bullet-active {
+            background-color: #FF2A32; /* Color del punto activo */
+            opacity: 1;
+          }
+          
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+        .target {
+            background-image: url('../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas-1.png');
+            background-size: cover;
+            padding: 16px;
+            border-radius: 10pt;
+            width: 100%;
+            box-sizing: border-box;
+           
+          
+            .header-info {
+              display: flex;
+              align-items: center;
+              margin-bottom: 16px;
+          
+              .pet-photo {
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+                margin-right: 8px;
+              }
+              h1{
+     
+                font-family: 'LexendSemiBold';
+                font-size: 26px;
+    
+                }
+           
+            }
+          
+            .details {
+              display: grid;
+              grid-template-areas: 
+                "raza edad tamano"
+                "genero celo celo";
+              gap: 8px;
+              
+              .detail-item {
+                p {
+                  font-family: 'LexendLight';
+                  margin: 0;
+                  font-size: 14px;
+                  color: #110F0F;
+                }
+          
+                .detail-value {
+                  font-family: 'LexendMedium';   
+        
+                  font-size: 16px;
+                }
+              }
+          
+              #raza {
+                grid-area: raza;
+              }
+          
+              #edad {
+                grid-area: edad;
+              }
+          
+              #tamano {
+                grid-area: tamano;
+              }
+          
+              #genero {
+                grid-area: genero;
+              }
+          
+              #celo {
+                grid-area: celo;
+              }
+            }
+          }
+          .swiper {
+            position: relative;
+            margin-bottom: 50px; /* Distancia entre el Swiper y los puntos de paginación */
+          }
+
+          .swiper-pagination {
+            position: relative;
+            top: -15px; /* Distancia entre el Swiper y los puntos */
+            text-align: center;
+          }
+          
+          
