@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MisPuntosDeInteresPaseadorPage implements OnInit {
 
+  dynamicHeaderText: string = 'Mis puntos de interés publicados';
+  returnLink: string = '/ajustes-paseador';
+
   constructor() { }
 
   ngOnInit() {

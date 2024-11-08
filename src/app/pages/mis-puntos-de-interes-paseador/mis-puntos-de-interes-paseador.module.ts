@@ -8,12 +8,15 @@ import { MisPuntosDeInteresPaseadorPageRoutingModule } from './mis-puntos-de-int
 
 import { MisPuntosDeInteresPaseadorPage } from './mis-puntos-de-interes-paseador.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MisPuntosDeInteresPaseadorPageRoutingModule
+    MisPuntosDeInteresPaseadorPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [MisPuntosDeInteresPaseadorPage]
 })
