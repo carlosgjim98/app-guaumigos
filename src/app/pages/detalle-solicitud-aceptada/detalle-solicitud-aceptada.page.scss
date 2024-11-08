@@ -189,13 +189,25 @@
     margin-top: 5%;
 }
 
+.fingerprint{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 35%;
+}
+
 .map{
     height: 60%;
     border-radius: 10pt;
     width: 90%;
     margin-left: 5%;
     margin-bottom: 3%;
-    
+        filter: grayscale(3);
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+
 
 }
 

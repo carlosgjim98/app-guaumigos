@@ -304,7 +304,8 @@ const routes: Routes = [
   {
     path: 'mis-valoraciones',
     loadChildren: () => import('./pages/mis-valoraciones/mis-valoraciones.module').then( m => m.MisValoracionesPageModule)
-  },  {
+  },
+  {
     path: 'detalle-valoracion',
     loadChildren: () => import('./pages/detalle-valoracion/detalle-valoracion.module').then( m => m.DetalleValoracionPageModule)
   },
@@ -390,7 +391,29 @@ const routes: Routes = [
   },
   {
     path: 'valoracion-paseo',
-    loadChildren: () => import('./pages/valoracion-paseo/valoracion-paseo.module').then( m => m.ValoracionPaseoPageModule)
+    loadChildren: () => import('./pages/valoracion-paseo/valoracion-paseo.module').then( m => m.ValoracionPaseoPageModule) },
+    { path: 'mi-perfil-paseador',
+    loadChildren: () => import('./pages/mi-perfil-paseador/mi-perfil-paseador.module').then( m => m.MiPerfilPaseadorPageModule)
+  },
+  {
+    path: 'editar-perfil-paseador',
+    loadChildren: () => import('./pages/editar-perfil-paseador/editar-perfil-paseador.module').then( m => m.EditarPerfilPaseadorPageModule)
+  },
+  {
+    path: 'ajustes-paseador',
+    loadChildren: () => import('./pages/ajustes-paseador/ajustes-paseador.module').then( m => m.AjustesPaseadorPageModule)
+  },
+  {
+    path: 'facturas-paseador',
+    loadChildren: () => import('./pages/facturas-paseador/facturas-paseador.module').then( m => m.FacturasPaseadorPageModule)
+  },
+  {
+    path: 'mis-puntos-de-interes-paseador',
+    loadChildren: () => import('./pages/mis-puntos-de-interes-paseador/mis-puntos-de-interes-paseador.module').then( m => m.MisPuntosDeInteresPaseadorPageModule)
+  },
+  {
+    path: 'detalle-factura',
+    loadChildren: () => import('./pages/detalle-factura/detalle-factura.module').then( m => m.DetalleFacturaPageModule)
   },
 
 

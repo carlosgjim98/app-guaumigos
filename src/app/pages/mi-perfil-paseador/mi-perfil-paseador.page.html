@@ -1,0 +1,92 @@
+<ion-header>
+
+  <ion-toolbar>
+    <div class="button-container">
+
+        <ion-button class="notification-btn" slot="end" routerLink="/notificaciones">
+            <ion-icon   slot= "icon-only" class="notification-icon" src="assets/icons/Trazado 48466.svg"></ion-icon>
+            <div class="notification-badge">+99</div>
+        </ion-button>
+
+        <ion-button class="settings-btn"  slot="end" routerLink="/ajustes-paseador">
+          <ion-icon slot= "icon-only" class="settings-icon" src="assets/icons/Trazado 47469.svg"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+  
+  <ion-avatar class="avatar">
+    <img src="assets/imgs/usuarios/Rectángulo19656@3x.png" alt="User Avatar">
+    <ion-icon src="assets/icons/Trazado-47467.svg" class="edit-icon" routerLink="/editar-perfil-paseador"></ion-icon>
+  </ion-avatar>
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="body">
+
+  <div class="profile-content">
+    
+    
+    <h2 class="name">Ana Velázquez</h2>
+    <p class="location">
+      <ion-icon name="location-outline"></ion-icon> Jerez de la Frontera, España
+    </p>
+    
+    <div class="ratings" routerLink="/valoraciones">
+      <ion-icon name="star" color="warning"></ion-icon>
+      <span>4.8</span>
+      <a href="#">1635 valoraciones</a>
+    </div>
+    
+    <p class="description">
+      ¡Hola! Soy Ana, amante de los perros y apasionada por los paseos al aire libre. Tu Mejor amigo tendrá una compañera de juegos y aventuras.
+    </p>
+
+    <p class="description">
+      ¡Conmigo, los paseos serán su parte favorita!
+    </p>
+  </div>
+
+  <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
+      Información
+    </ion-segment-button>
+    <ion-segment-button value="option2" [ngClass]="{'active': selectedSegment === 'option2'}">
+      Galería
+    </ion-segment-button>
+    <ion-segment-button value="option3" [ngClass]="{'active': selectedSegment === 'option3'}">
+      Paseos
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="pet-info">
+    <div class="pet-and-button">
+      <p class="pet-acepted">Mascotas aceptadas</p>
+      <ion-button class="edit-button"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+    </div>
+
+    <p class="pet-data"><span class="span-light">Razas</span><br>
+    Pastor Alemán, Bulldog, Labrador, Beagle,<br>
+  Caniche, Chihuahua, Dachshund, <span class="span-bold">Ver más</span></p>
+
+    <p class="pet-data"><span class="span-light">Edad</span><br>
+    Entre 2 y 11 años</p>
+
+    <p class="pet-data"><span class="span-light">Tamaño</span><br>
+    Menos de 35 cm</p>
+
+    <p class="pet-data"><span class="span-light">Peso</span><br>
+    Entre 10 y 30 kg</p>
+
+    <p class="pet-data"><span class="span-light">Hembra/Macho</span><br>
+    Hembra, Macho</p>
+
+    <p class="pet-data"><span class="span-light">¿Celo?</span><br>
+    No</p>
+
+  </div>
+
+
+ 
+</ion-content>

@@ -123,16 +123,11 @@ ion-radio::part(container) {
     margin-left: 5%;
 }
 
-.time-yellow{
-    width: 96px;
-    height: 39px;
-    border: 1px solid #FFCA3C;
-    border-radius: 5px ;
-    display: flex;
-    padding-left: 7%;
-    align-items: center;
-}
-
+.time:focus-within {
+ 
+    border: 1px solid #FFCA3C; /* Aplica el borde a todos los lados */
+  
+  }
 
 .time{
     width: 96px;
@@ -140,7 +135,7 @@ ion-radio::part(container) {
     border: 1px solid #919191;
     border-radius: 5px ;
     display: flex;
-    padding-left: 7%;
+    padding-left: 5%;
     align-items: center;
 }
 

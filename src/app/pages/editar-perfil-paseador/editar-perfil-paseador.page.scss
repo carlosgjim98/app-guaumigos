@@ -1,0 +1,136 @@
+.edit-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+.avatar {
+    
+    height: 140px ;
+    width: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top:15px;
+   
+    img {
+      border-radius: 50%;
+      
+    }
+}
+
+ion-button{
+
+    border-radius: 25px;
+    height: 29px;
+    width: 114px;
+    min-height: unset;
+    white-space: nowrap;
+    font-size:12px ;
+    
+    
+
+}
+
+}
+
+.description-container{
+
+ion-item{
+    border: 1px solid #919191;
+    border-radius: 10px;
+   margin-top: 20px;
+  
+  }
+
+  ion-input {
+    width: 100%;
+    min-height: 50px; 
+    padding: 10px; 
+    white-space: normal; 
+    
+  }
+
+ion-label{
+    font-family: LexendRegular !important;
+    font-size: 14px !important;
+    text-align: left !important;
+    width: 100% !important;
+   
+    
+
+}
+
+
+h1{
+
+    font-family: LexendRegular !important;
+    font-size: 13px;
+    color: #100F0F !important; 
+    margin-left:20px;
+    margin-bottom: -10px;
+    
+}
+
+h2{
+    font-family: LexendRegular !important;
+    font-size: 13px;
+    color: #919191 !important; 
+    margin-left:20px;
+    margin-bottom: -10px; 
+}
+
+.nombre:focus-within, .ubicacion:focus-within, .descripcion:focus-within {
+ 
+  border: 1px solid #100F0F; /* Aplica el borde a todos los lados */
+
+}
+
+
+    ion-item{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    margin-top: 15px;
+  
+  }
+  
+ 
+  
+  p{
+    font-family: LexendRegular;
+    font-size: 15px;
+    color: #D0D0D0;
+    padding: 5px;
+    
+
+  
+  }
+
+  .descripcion{
+    
+   
+    ion-textarea {
+      width: 100%;
+      min-height: 100px; 
+      height: 178px;
+      padding: 10px;
+      white-space: normal; 
+      overflow-wrap: break-word;
+      font-family: LexendRegular;
+      
+    }
+
+    .text-description{
+        font-size: 15px;
+        color: #919191;
+        font-family: LexendRegular;
+    }
+  }
+
+
+  
+  }
+
+  .save-btn{
+
+    margin-top:35px;
+  }

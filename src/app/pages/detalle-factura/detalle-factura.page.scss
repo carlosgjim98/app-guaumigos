@@ -1,0 +1,31 @@
+.body{
+    --background: #F8F8F8 ;
+}
+
+.content{
+    width: 90%;
+    margin-left: 5%;
+    height: 620px;
+    align-content: center;
+    align-items: center;
+    background: white;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgb(206, 206, 205);
+    border-radius: 10px;
+    margin-top: 5%;
+}
+
+.details{
+    color: #110F0F;
+    font-size: 15px;
+    font-family: LexendLight;
+}
+
+.last-button{
+    color: #110F0F;
+    font-size: 16px;
+    font-family: LexendMedium;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
