@@ -34,6 +34,12 @@ const routes: Routes = [
       },
 
       {
+        path: 'solicitudes',
+        loadChildren: () => import('../solicitudes/solicitudes.module').then(m => m.SolicitudesPageModule)
+      },
+
+
+      {
         path: '',
         redirectTo: '/tabs/listado-paseadores',
         pathMatch: 'full'

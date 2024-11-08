@@ -1,0 +1,150 @@
+
+<ion-header>
+
+  <ion-toolbar>
+  
+    <ion-buttons slot="start">
+      <ion-button class="return-btn" (click)="goBack()" >
+        <!-- [routerLink]="returnLink"  AÑADIR AL ION-BUTTON Y QUITAR EL (click)="goBack() SI FALLA EN ALGUNA PAGINA --> 
+        <div class="container-icon">
+          <ion-icon src="assets/icons/union-2.svg"></ion-icon>
+        </div>
+      </ion-button>
+    </ion-buttons>
+    
+   
+  </ion-toolbar>
+  
+  <ion-avatar class="avatar">
+    <img src="assets/imgs/usuarios/Rectángulo 19665@3x.png" alt="User Avatar">
+    <ion-icon src="assets/icons/Trazado-47467.svg" class="edit-icon" routerLink="/editar-perfil"></ion-icon>
+  </ion-avatar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <div class="profile-content">
+    
+    
+    <h2 class="name">Marta Rodríguez</h2>
+    <p class="location">
+      <ion-icon name="location-outline"></ion-icon> Jerez de la Frontera, España
+    </p>
+    
+    <div class="ratings" routerLink="/valoraciones">
+      <ion-icon name="star" color="warning"></ion-icon>
+      <span>4.8</span>
+      <a href="#">1635 valoraciones</a>
+    </div>
+    
+    <p class="description">
+      Mi perrita Moka lo es todo para mí. Le encanta jugar a la pelota, salir a explorar y hacer nuevos amigos. ¡Solo lo mejor para ella!
+    </p>
+  </div>
+
+  <div class="gallery-container">
+    <div class="header-container">
+    <h2>Galería</h2>
+    <ion-button fill="outline" shape="round" routerLink="/galeria"  >Ver todo</ion-button>
+  </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image1@2x.png" alt="Mascota 1" class="gallery-img"/>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image2@2x.png" alt="Mascota 2" class="gallery-img highlight"/>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/imgs/perros/shared image3@2x.png" alt="Mascota 3" class="gallery-img"/>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="pets-container">
+    <h2>Mascotas (1/1)</h2>
+  
+    <!-- Swiper Container -->
+    <div class="swiper mySwiper">
+      <!-- Swiper Wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Swiper Slide 1 -->
+        <div class="swiper-slide">
+          <div class="target">
+            <div class="header-info">
+              <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="Foto de Moka" class="pet-photo">
+              <h1 class="pet-name">Moka</h1>
+            </div>
+            <div class="details">
+              <div class="detail-item" id="raza">
+                <p>Raza</p>
+                <p class="detail-value">Bulldog</p>
+              </div>
+              <div class="detail-item" id="edad">
+                <p>Edad</p>
+                <p class="detail-value">2 años</p>
+              </div>
+              <div class="detail-item" id="tamano">
+                <p>Tamaño</p>
+                <p class="detail-value">34,5 cm</p>
+              </div>
+              <div class="detail-item" id="genero">
+                <p>Hembra/Macho</p>
+                <p class="detail-value">Hembra</p>
+              </div>
+              <div class="detail-item" id="celo">
+                <p>¿Está en celo?</p>
+                <p class="detail-value">No</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="target">
+            <div class="header-info">
+              <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="Foto de Moka" class="pet-photo">
+              <h1 class="pet-name">Moka</h1>
+            </div>
+            <div class="details">
+              <div class="detail-item" id="raza">
+                <p>Raza</p>
+                <p class="detail-value">Bulldog</p>
+              </div>
+              <div class="detail-item" id="edad">
+                <p>Edad</p>
+                <p class="detail-value">2 años</p>
+              </div>
+              <div class="detail-item" id="tamano">
+                <p>Tamaño</p>
+                <p class="detail-value">34,5 cm</p>
+              </div>
+              <div class="detail-item" id="genero">
+                <p>Hembra/Macho</p>
+                <p class="detail-value">Hembra</p>
+              </div>
+              <div class="detail-item" id="celo">
+                <p>¿Está en celo?</p>
+                <p class="detail-value">No</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Agrega más slides como en tu código... -->
+  
+      </div>
+  
+      <!-- Paginación fuera de las tarjetas -->
+    </div>
+  
+    <!-- Puntos de paginación fuera de la tarjeta -->
+    <div class="swiper-pagination" style="--swiper-pagination-color: #FFD954;"></div>
+  </div>
+  
+  
+  
+  
+</ion-content>

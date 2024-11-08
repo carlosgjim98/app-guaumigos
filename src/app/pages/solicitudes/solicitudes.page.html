@@ -1,0 +1,77 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="barra-busqueda-container">
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="body" [fullscreen]="true">
+  
+  <!-- <div class="button-content">
+    <ion-button class="button_1" *ngFor="let button of buttons" (click)="color(button.id)" [ngClass]="{'amarillo':button.checked}">
+      {{button.text}}
+    </ion-button>
+
+  </div> -->
+
+  <ion-segment value="default">
+    <ion-segment-button value="default">
+      <ion-label>Todas las solicitudes</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="segment">
+      <ion-label>Pendientes</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="content" routerLink="/datos-cliente">
+    <div class="info">
+      <p class="text-1">Paseo durante el día con Jackie</p>
+      <div class="icons">
+        <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+        <p>18/09/2024</p>
+      </div>
+      <div class="icons-2">
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+        <p>16:00 P.M.</p>
+      </div>
+      <p class="text-2">Estado: <span class="span-1">Pendiente</span></p>
+    </div>
+    <ion-icon class="arrow" src="../../../assets/icons/arrowups.svg"></ion-icon>
+  </div>
+  
+  <div class="content">
+    <div class="info">
+      <p class="text-1">Paseo durante el día con Moka</p>
+      <div class="icons">
+        <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+        <p>18/09/2024</p>
+      </div>
+      <div class="icons-2">
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+        <p>11:00 A.M.</p>
+      </div>
+      <p class="text-2">Estado: <span class="span-3">Aceptada</span></p>
+    </div>
+    <ion-icon class="arrow" src="../../../assets/icons/arrowups.svg"></ion-icon>
+  </div>
+
+    <div class="content" >
+    <div class="info">
+      <p class="text-1">Paseo durante el día con Bimbo</p>
+      <div class="icons">
+        <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+        <p>15/09/2024</p>
+      </div>
+      <div class="icons-2">
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+        <p>10:00 A.M.</p>
+      </div>
+      <p class="text-2">Estado: <span class="span-2">Rechazada</span></p>
+    </div>
+    <ion-icon class="arrow" src="../../../assets/icons/arrowups.svg"></ion-icon>
+  </div>
+
+    
+</ion-content>

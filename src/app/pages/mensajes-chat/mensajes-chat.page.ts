@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -9,6 +10,8 @@ import { ModalController } from '@ionic/angular';
 })
 export class MensajesChatPage implements OnInit {
 
+  chatName: string = '';
+  chatAvatar: string = '';
   returnLink: string = '/tabs/mensajes';
 
   isModalOpen: boolean = false;
@@ -24,7 +27,7 @@ export class MensajesChatPage implements OnInit {
   spamChecked = false;
   problemaNoListaChecked = false;
 
-  constructor() {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
   openModal() {
     this.isModalOpen = true;
@@ -75,6 +78,11 @@ export class MensajesChatPage implements OnInit {
   }
 
   ngOnInit() {
+    // Obtener los parámetros de la URL
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.chatName = params['name'];  // Nombre del chat
+      this.chatAvatar = params['avatar'];  // Foto del avatar
+    });
   }
 
 }

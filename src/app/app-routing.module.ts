@@ -372,6 +372,26 @@ const routes: Routes = [
     path: 'detalle-solicitud-aceptada-iniciar-paseo',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-iniciar-paseo/detalle-solicitud-aceptada-iniciar-paseo.module').then( m => m.DetalleSolicitudAceptadaIniciarPaseoPageModule)
   },
+  {
+    path: 'solicitudes',
+    loadChildren: () => import('./pages/solicitudes/solicitudes.module').then( m => m.SolicitudesPageModule)
+  },
+  {
+    path: 'datos-cliente',
+    loadChildren: () => import('./pages/datos-cliente/datos-cliente.module').then( m => m.DatosClientePageModule)
+  },
+  {
+    path: 'perfil-cliente',
+    loadChildren: () => import('./pages/perfil-cliente/perfil-cliente.module').then( m => m.PerfilClientePageModule)
+  },
+  {
+    path: 'cliente-iniciar-paseo',
+    loadChildren: () => import('./pages/cliente-iniciar-paseo/cliente-iniciar-paseo.module').then( m => m.ClienteIniciarPaseoPageModule)
+  },
+  {
+    path: 'valoracion-paseo',
+    loadChildren: () => import('./pages/valoracion-paseo/valoracion-paseo.module').then( m => m.ValoracionPaseoPageModule)
+  },
 
 
 
