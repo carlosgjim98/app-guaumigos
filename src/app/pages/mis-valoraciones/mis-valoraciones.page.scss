@@ -73,8 +73,12 @@ ion-segment-button{
                     font-size: 16px;
                     color: #110f0f;
                     display: flex;
-                    justify-content: space-between;
+                    
                     margin-top: 10px;
+                    .paseador {
+                        font-family: LexendSemiBold;
+                        margin-left: 5px;
+                      }
 
                    
                 }

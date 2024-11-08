@@ -1,0 +1,92 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  <div class="bottom-border">
+    <h2 class="title">Datos del paseo</h2>
+
+    <div class="date-time">
+      <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+      <p class="icons">18/09/2024</p>
+      </div>
+      <div class="date-time">
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+      <p class="icons">10:00 A.M</p>
+    </div>
+   
+
+    <p class="subtitle">Macota que participó</p>
+    <div class="container-datos">
+      <div class="container-fotousuario">
+        <img class="avatar" src="../../../assets/imgs/Rectángulo 19665@3x.png" alt="">
+  
+      </div>
+
+      <div class="container-info" routerLink="/detalle-paseo">
+
+        <p class="nombre">Moka</p>
+
+        <p class="description">
+          Pug · 2 años
+          
+        </p>
+      </div>
+    </div>
+
+
+    <p class="subtitle">Dueño de la mascota</p>
+    <div class="container-datos">
+      <div class="container-fotousuario">
+        <img class="avatar" src="../../../assets/imgs/avatar-marta.png" alt="">
+  
+      </div>
+
+      <div class="container-info" routerLink="/detalle-paseo">
+
+        <p class="nombre">Marta Rodríguez</p>
+
+        <p class="localizacion">
+          <span class="valoracion">
+            <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+            <span class="nota">4,6</span>
+          </span>
+          &nbsp; Jerez de la Frontera, Cádiz
+        </p>
+      </div>
+    </div>
+
+    <p class="subtitle">Servicio extra</p>
+
+    <div class="services">
+
+      <p>Tratamiento antiparasitario</p>
+      <p>Administración de medicamentos</p>
+    </div>
+    
+  </div>
+
+  <div class="valoracion-container">
+  <p> ¿Cómo fue el paseo?</p>
+  <p class="precio">
+    <span class="valoracion">
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+      <ion-icon slot="start" src="assets/icons/star.svg"></ion-icon>
+    </span>
+  </p>
+
+  <p> ¿Quieres dejar algún comentario?</p>
+
+  <p class="comentario">¡Moka es un torbellino de energía! Me encanta su entusiasmo durante los paseos. Además, es una perrita muy cariñosa y siempre está dispuesta a jugar. ¡Gracias por permitirme compartir tiempo con ella, Marta!</p>
+
+  <p class="date">18/09/2024 </p>
+
+
+</div>
+
+<ion-button class=" delete-btn"> Eliminar valoración</ion-button>
+
+</ion-content>

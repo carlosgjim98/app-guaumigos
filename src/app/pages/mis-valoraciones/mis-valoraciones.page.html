@@ -13,7 +13,7 @@
 
   <div  class="container-paseador">
     <div class="container-opinion">
-      <div class="container-datos" routerLink="/detalle-valoracion">
+      <div class="container-datos"  [routerLink]="detalleRuta">
         <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
         <div class="container-info">
           <p class="precio">
@@ -26,8 +26,9 @@
             </span>
           </p>
 
-          <p class="nombre">Paseo de día con Ana Velázquez</p>
-          <p class="tiempo">18/09/2024</p>
+          <p class="nombre">{{ paseoNombre }}<br><span class="paseador">{{ nombrePaseador }}</span></p>
+
+          <p class="tiempo">{{ paseoFecha }}</p>
 
          
         </div>
