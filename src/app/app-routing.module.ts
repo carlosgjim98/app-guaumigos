@@ -448,10 +448,17 @@ const routes: Routes = [
     loadChildren: () => import('./pages/editar-galeria-empresa/editar-galeria-empresa.module').then( m => m.EditarGaleriaEmpresaPageModule)
   },
   {
+    path: 'editar-galeria-paseador',
+    loadChildren: () => import('./pages/editar-galeria-paseador/editar-galeria-paseador.module').then( m => m.EditarGaleriaPaseadorPageModule)
+  },
+  {
     path: 'editar-servicios-paseos',
     loadChildren: () => import('./pages/editar-servicios-paseos/editar-servicios-paseos.module').then( m => m.EditarServiciosPaseosPageModule)
   },
   {
+    path: 'editar-servicios-empresa',
+    loadChildren: () => import('./pages/editar-servicios-empresa/editar-servicios-empresa.module').then( m => m.EditarServiciosEmpresaPageModule)
+  },{
     path: 'anadir-paseo',
     loadChildren: () => import('./pages/anadir-paseo/anadir-paseo.module').then( m => m.AnadirPaseoPageModule)
   },
