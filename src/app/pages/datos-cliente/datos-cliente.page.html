@@ -2,7 +2,7 @@
 
 <ion-content [fullscreen]="true">
   
-    <p class="company">Datos del paseador</p>
+    <p class="company">{{dynamicText}}</p>
 
     <div class="profile-container">
       <img class="dog" src="../../../assets/imgs/avatar-marta.png" alt="">
@@ -25,7 +25,13 @@
 
     <hr>
     <div class="services-head">
-    <p class="title">Datos del paseo </p>
+    <p class="title">{{title}} </p>
+
+   <div class="service-name" *ngIf="userRole === 'empresa'">
+      <p class="name"> Nombre del servicio</p>
+      <p class="type"> Limado de uñas</p>
+      
+      </div>
     
     <div class="date-time">
     <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
@@ -44,8 +50,14 @@
       <p class="age">Pug· 2 años</p>
     </div>
   </div>
-  <p class="extra-service">Servicio extra </p>
-  <p class="medicine">Corrección de malos hábitos</p>
+  <p class="extra-service">Servicio extra</p>
+
+<!-- Mostrar para 'empresa' -->
+<p class="medicine" *ngIf="userRole === 'empresa'">Tratamiento antiparasitario</p>
+<p class="medicine" *ngIf="userRole === 'empresa'">Administración de medicamentos</p>
+
+<!-- Mostrar para cualquier otro rol -->
+<p class="medicine" *ngIf="userRole !== 'empresa'">Corrección de malos hábitos</p>
   
   
   

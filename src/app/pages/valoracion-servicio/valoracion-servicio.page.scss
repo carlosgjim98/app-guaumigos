@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    margin-top: 23px;
+
+    .container-fotoPerfil {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 140px; /* Aumenta el tamaño del contenedor */
+        height: 140px;
+      }
+      
+      .container-fotoPerfil img {
+        width: 100px; /* Tamaño más grande para cada imagen */
+        height: 100px;
+        border-radius: 50%; /* Hace las imágenes circulares */
+        position: absolute;
+        top: 0;
+      }
+      
+      .container-fotoPerfil img:first-child {
+        left: 0px; /* Ajusta la posición de la primera imagen */
+        z-index: 1; /* Asegura que esta imagen esté encima de la otra */
+      }
+      
+      .container-fotoPerfil .foto-perro {
+        right: 0px; /* Ajusta la posición de la segunda imagen */
+      }
+      
+    
+
+    h3 {
+        font-family: LexendSemiBold;
+        font-size: 18px;
+        color: #110f0f;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 0;
+    }
+
+    p {
+        font-family: LexendLight;
+        font-size: 14px;
+        color: #919191;
+        text-align: center;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .container-estrellas {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 45px;
+            height: auto;
+            margin: 0 3px;
+        }
+    }
+
+    .container-texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+
+        p {
+            font-family: LexendLight;
+            font-size: 16px;
+            color: #100F0F;
+            text-align: center;
+            margin-bottom: 25px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 115px;
+            border: 1px solid #919191;
+            border-radius: 10px;
+            padding: 15px;
+            font-family: LexendRegular;
+            font-size: 15px;
+            color: #110f0f;
+            outline: none;
+            
+        }
+
+        textarea::placeholder{
+            color: #919191;
+            font-family: LexendRegular;
+        }
+    }
+}

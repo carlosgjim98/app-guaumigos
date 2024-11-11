@@ -1,0 +1,238 @@
+.client-data{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.person{
+    height: 47px;
+    width: 47px;
+    margin-top: 3%;
+}
+.name{
+    margin-bottom: -4%;
+}
+
+.location{
+    display: flex;
+    align-items: center;
+    width: 153%;
+    margin-bottom: -4%;
+    
+}
+
+.star{
+    width: 16px;
+    height: 16px;
+}
+
+.points{
+    font-family: "LexendMedium";
+    font-size: 16px;
+    color: #110F0F;
+}
+
+.city{
+    font-size: 16px;
+    font-family: "LexendLight";
+    padding-left: 2%;
+    color: #110F0F;
+}
+
+.profile{
+    margin-top: 0%;
+    margin-left: 20%;
+}
+
+.opinions{
+    font-family: "LexendMedium";
+    font-size: 12px;
+    color: #141411;
+    
+    
+}
+
+.walk-data{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.service-name {
+
+   
+ 
+   
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
+    .name{
+
+      color:#100F0F;
+      font-family: LexendMedium;
+      font-size: 14px;
+      margin-bottom: 7px;
+
+
+    }
+
+    .type{
+
+        font-size: 15px;
+        font-family: LexendLight;
+    }
+}
+
+.service-name {
+
+   
+ 
+   
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
+    .name{
+
+      color:#100F0F;
+      font-family: LexendMedium;
+      font-size: 14px;
+      margin-bottom: 7px;
+
+
+    }
+
+    .type{
+
+        font-size: 15px;
+        font-family: LexendLight;
+    }
+}
+
+.date-time{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 10px;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
+
+    p{
+        color: #100F0F;
+        font-size: 15px;
+        font-family: LexendLight;
+    }
+
+}
+
+.grey-text{
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+
+.grey-text-2{
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-bottom: 0%;
+}
+
+.dog-content{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    gap: 15px;
+}
+
+.dog-image{
+    width: 48px;
+    height: 48px;
+}
+
+.moka{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 16px;
+}
+
+.age{
+    color: #110F0F;
+    font-family: LexendLight;
+    font-size: 16px;
+}
+
+.bad-habits{
+    color: #110F0F;
+    font-family: LexendLight;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.last-button-1{
+    width: 90%;
+    margin-left: 5%;
+    height: 58px; 
+    margin-top: 40%;
+}
+
+.last-button-2{
+    --background: #100F0F;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    height: 58px; 
+    margin-top: 3%;
+
+}
+
+.valoracion-container{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  .precio {
+    .valoracion {
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        
+
+        ion-icon {
+            font-size: 36px;
+        }
+    }
+}
+
+.val{
+
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 14px;
+    margin-left: 1%;
+    
+    
+}
+.comentario{
+
+    font-family: LexendLight;
+            font-size: 15px;
+            color: #100F0F;
+}
+
+
+}

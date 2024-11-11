@@ -31,8 +31,10 @@ export class MisValoracionesPage implements OnInit {
       this.paseoFecha = '18/09/2024';
       this.detalleRuta = '/detalle-valoracion';
     } else if (this.userRole === 'empresa') {
-      this.paseoNombre = 'Servicio de paseo empresarial';
-      this.paseoFecha = '22/09/2024';
+      this.paseoNombre = 'Limado de uñas con Manchitas';
+      this.paseoFecha = '18/09/2024';
     }
+    console.log('detalleRuta:', this.detalleRuta);  // Para verificar el valor
   }
+  
 }

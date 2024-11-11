@@ -31,18 +31,18 @@ export class TabsPage implements OnInit {
         if (page.tab === 'listado-paseadores') {
           return {
             tab: 'calendario-paseador',
-            name: 'Calendarios',
+            name: 'Calendario',
             icon: 'assets/icons/calendar event.svg'
           };
         } else if (page.tab === 'servicios') {
           return {
             tab: 'solicitudes',
             name: 'Solicitudes',
-            icon: 'assets/icons/solicitudes.svg' // Cambia el ícono por el de solicitudes
+            icon: 'assets/icons/solicitudes.svg' 
           };
         } else if (page.tab === 'perfil') {
           return {
-            tab: 'mi-perfil-paseador', // Nueva ruta para el perfil del paseador
+            tab: 'mi-perfil-paseador', 
             name: 'Mi Perfil',
             icon: 'assets/icons/icon-tabs/tab-perfil.svg'
           };
@@ -50,6 +50,32 @@ export class TabsPage implements OnInit {
         return page;
       });
     }
+
+    if (this.userRole === 'empresa') {
+      this.pages = this.pages.map(page => {
+        if (page.tab === 'listado-paseadores') {
+          return {
+            tab: 'calendario-empresa',
+            name: 'Calendario',
+            icon: 'assets/icons/calendar event.svg'
+          };
+        } else if (page.tab === 'servicios') {
+          return {
+            tab: 'solicitudes',
+            name: 'Solicitudes',
+            icon: 'assets/icons/solicitudes.svg' 
+          };
+        } else if (page.tab === 'perfil') {
+          return {
+            tab: 'mi-perfil-empresa', 
+            name: 'Mi Perfil',
+            icon: 'assets/icons/icon-tabs/tab-perfil.svg'
+          };
+        }
+        return page;
+      });
+    }
+    
   }
 
   tabChange(event: any) {
@@ -59,6 +85,7 @@ export class TabsPage implements OnInit {
     if (this.selectedTab === 'perfil' && this.userRole === 'paseador') {
       this.router.navigate(['/tabs/mi-perfil-paseador']);  // Redirige a la página de perfil del paseador
     }
+    
   }
 
 

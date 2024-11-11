@@ -140,7 +140,7 @@ export class LoginPage implements OnInit {
       } else if (userRole === 'dueño') {
         this.router.navigate(['/tabs/listado-paseadores']);
       } else if (userRole === 'empresa') {
-        this.router.navigate(['/tabs/puntos-de-interes']);
+        this.router.navigate(['/tabs/calendario-empresa']);
       }
     } 
   

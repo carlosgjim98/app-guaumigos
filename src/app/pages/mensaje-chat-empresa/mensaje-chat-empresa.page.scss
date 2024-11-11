@@ -1,0 +1,391 @@
+ion-header {
+    ion-toolbar {
+        --padding-start: 7px;
+        padding: 30px 0 0;
+
+        .button-container {
+            display: flex;
+            flex-direction: row; 
+            align-items: center;
+            transform: translateY(15px);
+            color: #1B1B1B;
+        }
+
+        ion-buttons { 
+            .return-btn {
+                --box-shadow: none;
+                --outline: none;
+                --background: transparent; 
+                padding: 0;
+
+                .container-icon {
+                    background-color: var(--custom-color);
+                    border-radius: 8px;
+                    padding: 9px; 
+
+                    ion-icon {
+                        width: 14px;
+                        height: 14px; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+.day-container {
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.day {
+  background-color: #FFFFFF; 
+  color: #100F0F;
+  padding: 8px 16px; 
+  border-radius: 20px; 
+  box-shadow: 0 2px 4px #BCBBBB; 
+  font-family: LexendRegular;
+  font-size: 13px; 
+  display: inline-block;
+  text-align: center; 
+}
+
+ion-avatar {
+    height: 46px;
+    width: 46px;
+}
+
+.message-label {
+    display: flex;
+    flex-direction: column; /* Asegura que el nombre y el tiempo estén uno debajo del otro */
+    white-space: nowrap;
+}
+
+.name-time-container {
+    display: flex;
+    flex-direction: column; /* Cambia a columna para que el nombre esté arriba y el tiempo abajo */
+    margin-bottom: 5px; 
+}
+
+h2 {
+    font-family: LexendMedium;
+    font-size: 16px;
+    color: #100F0F;
+}
+
+.time {
+    font-family: LexendLight;
+    font-size: 14px; 
+    color: #919191; 
+}
+
+.end-button{
+    margin-top: 25px;
+}
+
+
+.fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index :-1;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.messages-container {
+    padding: 20px;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    width: 85%;
+    padding: 7px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .contact-message {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;  /* Alinea verticalmente en el centro */
+    background-color: #ffffff;
+    width:248px;
+  }
+
+  .contact-message-img {
+    display: flex;
+    width: 80%;
+    height: 80%; 
+    background-color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .user-message {
+    
+    
+    background-color: #FFCA3C;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 65%;
+  
+  }
+
+  .message-text-user {
+    font-size: 16px;
+    color: #100F0F;
+    font-family: LexendLight;
+   margin-left: 10px;
+   align-self:flex-start;
+  }
+  
+  .message-text {
+    font-size: 16px;
+    color: #100F0F;
+    font-family: LexendLight;
+   margin-left: 10px;
+  }
+
+  
+  
+  .message-time {
+    font-size: 12px;
+    color: #919191;
+    position: absolute;
+    right: 15px;
+    font-family: LexendLight;
+  }
+
+  .message-time-user {
+    font-size: 12px;
+    color: #825F0C;
+    position: relative;
+    font-family: LexendLight;
+    margin-left: 12px;
+  }
+  
+  
+  .message-image {
+ 
+    border-radius: 10px;
+    margin:0;
+    padding: 0;
+    object-fit: cover;
+   
+   
+  }
+
+  .message-time-img {
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-family: LexendLight;
+  }
+  ion-footer{
+
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    height: auto; 
+    
+  }
+
+  .footer-toolbar {
+    --background: #FBFBFB;
+    position: fixed;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+   
+   
+  
+
+  
+   
+  
+    .input-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-right: 0;
+      
+  
+    }
+
+    ion-item{
+
+        --background: #EFEEEE;
+        --border-radius: 40px !important;
+    }
+
+    ion-input{
+
+        color: #919191;
+        font-family: LexendRegular;
+        font-size: 15px;
+        margin-left:15px;
+        width: 100%;
+        height: 55px;
+        flex: 1
+    }
+    .send-button{
+
+      position: absolute;
+      right: 10px;
+      transform: translateY(-50%);
+        height: 35px;
+        width: 20px;
+        --border-radius:50px ;
+        margin-left: auto;
+        transform: translateX(8px);
+        
+       
+      
+        
+    }
+
+    ion-icon{
+        color: #100F0F;
+        height: 18px;
+        width: 18px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2px;
+    }
+  }
+  
+
+  .block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ion-modal {
+    --height: auto;
+    --border-radius: 30px;
+   
+    .options{
+
+      margin-top: 50px;
+      margin-bottom: 90px;
+    }
+
+
+    h1{
+
+      color:#100F0F;
+      font-size:16px;
+      font-family: LexendLight;
+      margin-top:30px;
+      margin-left: 16px;
+     
+
+
+    }
+
+    .separator {
+      border-bottom: 1px solid #EFEEEE; /* Ajusta el color y grosor */
+      margin-top: 30px;
+    }
+
+    ion-button {
+      --padding: 0;
+      --margin: 0;
+      position: absolute;
+      right: 10px; // Ajusta según necesites
+      top: 10px; // Ajusta según necesites
+      color: #000; // Cambia el color según tu diseño
+      width: 40px;
+      height: 40px;
+      --background:transparent;
+    }
+
+    ion-icon{
+
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+.report-modal{
+
+  --border-radius: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+ 
+  
+  
+  
+  .close-button{
+
+    
+  }
+
+  h1{
+
+    color:#141411;
+    font-size:20px;
+    font-family: LexendRegular;
+  
+  }
+
+  p{
+
+    color:#141411;
+    font-size:18px;
+    font-family: LexendMedium;
+  }
+
+  ion-label{
+
+    font-family: LexendLight;
+    font-size:16px;
+    color: #141411;
+  }
+
+  .report-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+  }
+  
+  .report-title h1 {
+    margin: 0; /* Eliminar márgenes para alinear */
+  }
+  
+  .report-container {
+    padding: 16px; /* Agrega un poco de espaciado */
+  }
+  
+  .report-options {
+    margin-top: 16px; /* Espaciado entre las opciones y el botón */
+  }
+  .submit-button{
+
+    margin-top: 15px;
+    border-radius: var(--app-border-radius);
+    height: 48px;
+    text-transform: none;
+    font-size: 16px;
+    font-family: LexendMedium;
+    color: #141411;
+    background: var(--custom-color);
+    box-shadow: none;
+    width: 100%;
+    height: 58px;
+  }
+}

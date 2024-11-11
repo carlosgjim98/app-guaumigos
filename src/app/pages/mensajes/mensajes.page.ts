@@ -30,48 +30,58 @@ export class MensajesPage implements OnInit {
   }
 
   cargarMensajes() {
-    if (this.userRole === 'paseador') {
+    if (this.userRole === 'paseador'|| this.userRole === 'empresa') {
       
       this.mensajes = [
         {
           nombre: 'Luis Z.',
+          nombreCompleto: "Luis Zarzuela",
           foto: 'assets/imgs/usuarios-chat-paseador/img-perfil-usuario@2x.png',
           tiempo: '10 minutos',
           nuevoMensaje: '(3) mensajes nuevos',
           mensaje: '',
-          tieneNuevo: true
+          tieneNuevo: true,
+          ruta: ['/mensajes-chat']
         },
         {
           nombre: 'Marta R.',
+          nombreCompleto: "Marta Rodríguez",
           foto: 'assets/imgs/avatar-marta.png',
           tiempo: 'Hace 2 días',
           nuevoMensaje: '',
           mensaje: 'Tú: has enviado 1 imagen',
-          tieneNuevo: false
+          tieneNuevo: false,
+          ruta: '/mensaje-chat-empresa'
         },
         {
           nombre: 'Juan V.',
+          nombreCompleto: "Juan Vargas",
           foto: 'assets/imgs/usuarios-chat-paseador/Elipse 407@2x.png',
           tiempo: 'Hace 1 semana',
           nuevoMensaje: '',
           mensaje: 'Juan: ¡Hola! ¿Qué tal?',
-          tieneNuevo: false
+          tieneNuevo: false,
+          ruta: ['/mensajes-chat']
         },
         {
           nombre: 'Sandra T.',
+          nombreCompleto: "Sandra Torres",
           foto: 'assets/imgs/usuarios-chat-paseador/Elipse 562@2x.png',
           tiempo: 'Hace 2 semanas',
           nuevoMensaje: '',
           mensaje: 'Tú: has enviado 1 imagen',
-          tieneNuevo: false
+          tieneNuevo: false,
+          ruta: ['/mensajes-chat']
         },
         {
           nombre: 'Carlos G.',
+          nombreCompleto: "Carlos González",
           foto: 'assets/imgs/usuarios-chat-paseador/Elipse 412@2x.png',
           tiempo: 'Hace 2 semanas',
           nuevoMensaje: '',
           mensaje: 'Carlos: ¡Hola! ¿Qué tal?',
-          tieneNuevo: false
+          tieneNuevo: false,
+          ruta: ['/mensajes-chat']
         }
     
       ];
@@ -84,15 +94,18 @@ export class MensajesPage implements OnInit {
         tiempo: '10 minutos',
         nuevoMensaje: '(3) mensajes nuevos',
         mensaje: '',
-        tieneNuevo: true
+        tieneNuevo: true,
+        
       },
       {
         nombre: 'Marta A.',
+        nombreCompleto: "Marta Arias",
         foto: 'assets/imgs/Elipse 304@2x.png',
         tiempo: 'Hace 2 días',
         nuevoMensaje: '',
         mensaje: 'Tú: has enviado 1 imagen',
-        tieneNuevo: false
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
       },
       {
         nombre: 'Mario H.',
@@ -121,6 +134,8 @@ export class MensajesPage implements OnInit {
        
       ];
     }
+
+    
    
   }
 }

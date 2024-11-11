@@ -10,7 +10,7 @@
 
   <ion-list>
     <!-- Iteramos sobre los mensajes -->
-    <ion-item *ngFor="let mensaje of mensajes" [routerLink]="['/mensajes-chat']"  [queryParams]="{ name: mensaje.nombre, avatar: mensaje.foto }">
+    <ion-item *ngFor="let mensaje of mensajes" [routerLink]="mensaje.ruta"  [queryParams]="{ name: mensaje.nombreCompleto, avatar: mensaje.foto }">
       <ion-avatar slot="start">
         <img [src]="mensaje.foto" alt="Foto de {{ mensaje.nombre }}">
       </ion-avatar>

@@ -1,0 +1,104 @@
+<ion-header>
+
+  <ion-toolbar>
+    <div class="button-container">
+
+        <ion-button class="notification-btn" slot="end" routerLink="/notificaciones">
+            <ion-icon   slot= "icon-only" class="notification-icon" src="assets/icons/Trazado 48466.svg"></ion-icon>
+            <div class="notification-badge">+99</div>
+        </ion-button>
+
+        <ion-button class="settings-btn"  slot="end" routerLink="/ajustes-paseador">
+          <ion-icon slot= "icon-only" class="settings-icon" src="assets/icons/Trazado 47469.svg"></ion-icon>
+      </ion-button>
+
+    </div>
+  </ion-toolbar>
+  
+  <ion-avatar class="avatar">
+    <img src="assets/imgs/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="User Avatar">
+    <ion-icon src="assets/icons/Trazado-47467.svg" class="edit-icon" routerLink="/editar-perfil-paseador"></ion-icon>
+  </ion-avatar>
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true" class="body">
+
+  <div class="profile-content">
+    
+    
+    <h2 class="name">Peluquería Guau!</h2>
+    <p class="location">
+      <ion-icon name="location-outline"></ion-icon> Jerez de la Frontera, España
+    </p>
+    
+    <div class="ratings" routerLink="/valoraciones">
+      <ion-icon name="star" color="warning"></ion-icon>
+      <span>4.5</span>
+      <a href="#">1635 valoraciones</a>
+    </div>
+    
+    <p class="description">
+      Somos tu peluquería canina de confianza. Nuestros servicios incluyen baños relajantes, cortes de pelo adaptados a cada raza y corte de uñas. 
+    </p>
+
+    <p class="description">
+      ¡Tu mascota estará feliz y relajada!
+    </p>
+  </div>
+
+ 
+
+  <ion-segment [(ngModel)]="segmentValue" (ionChange)="segmentChanged($event)">
+   
+    <ion-segment-button value="galeria">
+        <ion-label>Galería</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="servicios">
+        <ion-label>Servicios</ion-label>
+    </ion-segment-button>
+</ion-segment>
+<div class="container-contenido-section">
+
+
+<ng-container *ngIf="segmentValue === 'galeria'">
+    <div class="container-galeria">
+      <ion-button class="edit-button-galery" routerLink="/editar-galeria-empresa"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+        <div *ngFor="let foto of galeriaFotos" class="section">
+            <img [src]="foto" alt="Galería de imágenes">
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="segmentValue === 'servicios'">
+  <div class="container-servicios">
+  <ion-button class="edit-button-galery" routerLink="/editar-servicios-empresa"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+    <div *ngFor="let servicios of servicios" class="container-paseos">
+      
+        <div class="container-fotoperro">
+            <img [src]="servicios.imgPerro" alt="Imagen del perro de {{ servicios.nombre }}">
+        </div>
+        <div class="container-datos">
+            <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+            <div class="container-info" routerLink="/detalle-servicios">
+
+                <p class="nombre">{{ servicios.nombre }}</p>
+
+                <p class="distancia">{{ servicios.distancia }}</p>
+
+                <p class="precio">
+                    {{ servicios.precio }}
+                    <span class="valoracion">
+                        
+                        <span class="nota">{{ servicios.valoracion }}</span>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+</ng-container>
+
+</div>
+</ion-content>

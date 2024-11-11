@@ -1,0 +1,446 @@
+ion-header {
+    height: 15%;
+    
+    ion-toolbar {
+        --background: url(../../../assets/imgs/backgrounds//PATTERN-HEADER.png) no-repeat center / cover;
+        height: 100%;
+        display: flex;
+      
+      
+      .button-container{
+
+        justify-content: flex-end;
+        display: flex;
+        margin-right: auto;
+        margin-top:70px;
+
+        .notification-btn{
+          --background:#FFD954;
+          height: 37px;
+          width: 37px;
+          position: relative; 
+
+        }
+
+        .notification-icon{
+          color: #000000;
+          height: 20px;
+          width: 20px;
+        }
+
+        .notification-badge {
+          position: absolute;
+          top: 0px; 
+          right: 1px;
+          background-color: #000000;
+          color: white;
+          font-size: 8px;
+          font-family: 'LexendLight';
+          border-radius: 30px; 
+          width: 17px;
+          height: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+ 
+        .settings-btn {
+          --background:#FFD954;
+          height: 37px;
+          width: 37px;
+          margin-left: 10px;
+       
+        }
+
+        .settings-icon {
+
+          color: #000000;
+          height: 20px;
+          width: 20px;
+        }
+
+      }
+      
+      }
+        .avatar {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            border-radius: 50%;
+            border: 1px solid #fff;
+            z-index: 10;
+            top: -60px;
+      
+            img {
+              border-radius: 50%;
+            }
+      
+            .edit-icon {
+              position: absolute;
+              bottom: 4px;
+              right: 0;
+              left: 5;
+              font-size: 17px;
+              background-color: #ffcc00;
+              color: #fff;
+              border-radius: 50%;
+              padding: 5px;
+            }
+          }
+    }
+
+    .body{
+        background: #F8F8F8 ;
+    }
+
+    .profile-content {
+        margin-top: 12%;
+        text-align: center;
+      
+      
+      }
+  
+      .name {
+        color: #110F0F;
+        font-family: 'LexendSemiBold';
+        font-size: 20px;
+      }
+  
+      .location {
+        font-size: 15px;
+        color: #110F0F;
+        font-family: 'LexendLight';
+
+  
+        ion-icon {
+          margin-right: 1px;
+        }
+      }
+  
+      .ratings {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        color: #110F0F;
+        font-family: 'LexendRegular';
+  
+        ion-icon {
+          font-size: 16px;
+          margin-right: 4px;
+          color: #ffc107;
+        }
+  
+        span {
+          margin-right: 5px;
+          font-size: 16px;
+          font-family: 'LexendMedium';
+        }
+  
+        a {
+          color: #110F0F;
+          text-decoration: underline;
+          font-size: 13px;
+        }
+      }
+  
+      .description {
+        font-size: 16px;
+        color: #100F0F;
+        margin-top: 10px;
+        font-family: 'LexendLight';
+        width: 90%;
+        margin-left: 5%;
+      }
+
+      ion-segment{
+        background: transparent;
+        width: 90%;
+        margin-left: 5%;
+      }
+      
+      ion-segment-button.active {
+        font-family: LexendRegular;
+        color: #100F0F;
+        --indicator-box-shadow: 0 5px rgba(255, 202, 60, 1);
+        --border-radius: 0pt;
+        font-size: 9pt;
+      }
+      
+      ion-segment-button {
+        font-family: LexendRegular;
+        color: #C1C1C1;
+        font-size: 9pt;
+      }
+      
+      ion-segment-button.active::after {
+        background-color: transparent; //Barra colorida
+      }
+
+      .pet-info{
+        width: 90%;
+        margin-left: 5%;
+        background-image: url(../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png);
+        background-size: cover;
+        padding-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 12%;
+      }
+
+      .pet-and-button{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .pet-acepted{
+        color: #100F0F;
+        font-size: 18px;
+        font-family: LexendSemiBold;
+      }
+
+      .edit-button{
+        width: 72px;
+        height: 27px;
+        min-height: 10px;
+        border-radius: 25px;
+        font-size: 11px;
+        font-family: LexendRegular;
+      }
+
+      .pencil{
+        height: 9.5px;
+      }
+
+      .pet-data{
+        color: #110F0F;
+        font-size: 15px;
+        font-family: LexendMedium;
+      }
+
+      .span-light{
+        color: #100F0F;
+        font-size: 13px;
+        font-family:LexendLight ;
+      }
+
+      .span-bold{
+        color: #110F0F;
+        font-size: 15px;
+        font-family: LexendBold;
+      }
+
+      .container-informacion {
+        background-image: url("../../../assets/imgs/backgrounds/pattern-mascotas-aceptadas.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 15px;
+        border-radius: 10px;
+
+        h2 {
+            font-family: LexendSemiBold;
+            font-size: 18px;
+            color: #100f0f;
+            margin: 0;
+        }
+
+        .section {
+            margin-top: 13px;
+
+            h3,
+            p {
+                margin: 0;
+            }
+
+            h3 {
+                font-family: LexendLight;
+                font-size: 13px;
+                color: #110f0f;
+            }
+
+            p {
+                font-family: LexendMedium;
+                font-size: 15px;
+                color: #110f0f;
+
+                span {
+                    font-family: LexendBold;
+                }
+            }
+        }
+    }
+
+//BARRA DE SECCIONES
+ion-segment {
+  --background: none;
+
+  ion-segment-button {
+      font-family: LexendRegular;
+      font-size: 14px;
+      color: #919191;
+      padding-right: 5px;
+      padding-left: 5px;
+
+      &.segment-button-checked {
+          font-family: LexendMedium;
+          color: #100f0f;
+          border-bottom: 2px solid var(--custom-color-2);
+          border-radius: 0;
+      }
+  }
+}
+
+//GALERIA
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+  padding: 0;
+  position: relative;
+
+  .section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: none;
+  }
+}
+.container-servicios {
+
+    position: relative;
+}
+
+//PASEOS
+.container-paseos {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #cececd;
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: hidden;
+  background-color: #FFFFFF;
+
+  .container-fotoperro {
+      width: 100%;
+      height: 110px;
+      overflow: hidden;
+
+      img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+      }
+  }
+
+  .container-datos {
+      display: flex;
+      padding: 10px;
+      padding-top: 13px;
+      align-items: center;
+      margin-bottom: 5px;
+      
+      
+      .container-info {
+          margin-left: 10px;
+
+          .nombre,
+          .distancia,
+          .precio {
+              margin-top: 0;
+              margin-bottom: 5px;
+          }
+
+          .nombre {
+              font-family: LexendRegular;
+              font-size: 16px;
+          }
+
+          .distancia {
+              font-family: LexendLight;
+              font-size: 14px;
+              color: #919191;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              max-width: 242px;
+              display: inline-block;
+          }
+
+          .precio {
+              font-family: LexendLight;
+              font-size: 16px;
+              color: #100f0f;
+              display: flex;
+              align-items: center;
+
+              .valoracion {
+                  display: flex;
+                  align-items: center;
+                  margin-left: 15px;
+
+                  ion-icon {
+                      font-size: 14px;
+                  }
+
+                  .nota {
+                      font-family: LexendRegular;
+                      margin-left: 3px;
+                  }
+              }
+          }
+      }
+
+      .signoDirigir {
+          position: absolute;
+          right: 30px;
+          transform: translateY(-20%) rotate(-90deg);
+          width: 13px;
+          height: 13;
+      }
+  }
+}
+
+//BOTÓN
+.container-btn {
+  width: auto;
+  padding-bottom: 32px;
+  position: sticky; 
+  bottom: 0; 
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 25px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-contenido-section {
+  background-color: #F8F8F8;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title-and-button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-button-galery{
+  width: 72px;
+  height: 27px;
+  min-height: 10px;
+  border-radius: 25px;
+  font-size: 11px;
+  font-family: LexendRegular;
+  position: absolute;
+  right: 0;
+
+}

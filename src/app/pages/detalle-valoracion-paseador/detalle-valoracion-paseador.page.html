@@ -1,7 +1,7 @@
 <app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" >
   
   <div class="bottom-border">
     <h2 class="title">Datos del paseo</h2>
@@ -23,7 +23,7 @@
   
       </div>
 
-      <div class="container-info" routerLink="/detalle-paseo">
+      <div class="container-info" >
 
         <p class="nombre">Moka</p>
 
@@ -87,6 +87,8 @@
 
 </div>
 
-<ion-button class=" delete-btn"> Eliminar valoración</ion-button>
+<div class="button-container">
+  <ion-button class="delete-btn">Eliminar valoración</ion-button>
+</div>
 
 </ion-content>

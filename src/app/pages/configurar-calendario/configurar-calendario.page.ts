@@ -8,8 +8,11 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class ConfigurarCalendarioPage implements OnInit {
 
+
   dynamicHeaderText: string = 'Configurar calendario';
-  returnLink: string = '/calendario-paseador';
+  private userRole: string; 
+  public dynamicText: string;
+  
 
   buttons=[
     {
@@ -49,11 +52,24 @@ export class ConfigurarCalendarioPage implements OnInit {
       checked : false,
     },
   ]
+  
 
   constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
+
+    this.userRole = sessionStorage.getItem('tipoUsuario'); 
+
+    if (this.userRole === 'paseador') {
+      this.dynamicText = '¿Cuándo realizarás los paseos como paseador?';
+    } else if (this.userRole === 'empresa') {
+      this.dynamicText = '¿Cuándo realizarás los servicios?';
+    } else {
+      this.dynamicText = '¿Cuándo realizarás los paseos?'; // Por defecto
+    }
   }
+    
+  
 
   color(id){
     let index = this.buttons.findIndex(item => item.id === id);

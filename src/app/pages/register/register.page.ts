@@ -53,25 +53,36 @@ export class RegisterPage implements OnInit {
     
 
   }
+  
 
   public submitForm(): void {
     this.utilitiesService.showLoading("Registrando usuario...");
-
-    this.apiService.register(this.form.value)
-
-    this.apiService.register(this.form.value).subscribe((user : User) => {
-      
-      this.utilitiesService.dismissLoading();
-
-      this.utilitiesService.showToast('Registro correcto');
-
-      this.navCtrl.navigateRoot('/login');
-
-    }, (error) => {
-      
-      this.utilitiesService.dismissLoading();
-      this.utilitiesService.showToast(codeErrors(error));
-
-    });
+  
+    this.apiService.register(this.form.value).subscribe(
+      (user: User) => {
+        this.utilitiesService.dismissLoading();
+        this.utilitiesService.showToast('Registro correcto');
+  
+        // Intenta obtener el rol del usuario desde sessionStorage
+        const userRole = sessionStorage.getItem('tipoUsuario');
+  
+        if (userRole === 'paseador') {
+          this.navCtrl.navigateRoot('/tabs/calendario-paseador');
+        } else if (userRole === 'dueño') {
+          this.navCtrl.navigateRoot('/tabs/listado-paseadores');
+        } else if (userRole === 'empresa') {
+          this.navCtrl.navigateRoot('/tabs/calendario-paseador');
+        } 
+      },
+      (error) => {
+        this.utilitiesService.dismissLoading();
+        this.utilitiesService.showToast(codeErrors(error));
+        
+      }
+    );
   }
+  
+  
+
+  
 }

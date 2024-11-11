@@ -1,0 +1,41 @@
+<app-app-header [headerText]="dynamicHeaderText">
+
+
+
+</app-app-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  
+    <div class="container-servicios">
+    
+      <div *ngFor="let servicios of servicios" class="container-paseos">
+        
+          <div class="container-fotoperro">
+              <img [src]="servicios.imgPerro" alt="Imagen del perro de {{ servicios.nombre }}">
+          </div>
+          <div class="container-datos">
+              <ion-icon class="signoDirigir" slot="start" src="assets/icons/Trazado 47843.svg"></ion-icon>
+              <div class="container-info" routerLink="/detalle-servicios">
+  
+                  <p class="nombre">{{ servicios.nombre }}</p>
+  
+                  <p class="distancia">{{ servicios.distancia }}</p>
+  
+                  <p class="precio">
+                      {{ servicios.precio }}
+                      <span class="valoracion">
+                          
+                          <span class="nota">{{ servicios.valoracion }}</span>
+                      </span>
+                  </p>
+              </div>
+          </div>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+      <ion-button class="add-button">
+        <ion-icon src="assets/icons/add-outline.svg" class="add-icon"></ion-icon> 
+      </ion-button>
+    </ion-fab>
+  
+</ion-content>

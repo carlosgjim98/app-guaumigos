@@ -31,13 +31,13 @@
     }
 
     .container-info {
-        margin-left: 10px;
+        margin-left: 14px;
         justify-content: center;
         color: #110f0f;
 
         .nombre,
         .localizacion {
-            margin-top: 0;
+            margin-top: -5px;
             margin-bottom: 5px;
         }
 
@@ -108,15 +108,24 @@ p{
             font-size: 14px;
 }
 }
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 48px; 
+  }
+  
 
 .delete-btn {
-    display: block; 
+  display: flex;
+  justify-content: center;
+  text-align: center;
     --background: #100F0F;
     color: white;
-    text-align: center;
-    margin: 37px auto 0; 
+    width: 398px;
     height: 58px;
-    width:398px; 
+    font-family: LexendMedium;
+    font-size: 16px;
+    
    
 }
 
@@ -163,6 +172,7 @@ p{
         font-family: LexendLight;
         font-size: 15px;
         margin-left: 15px;
+        margin-top: -5px;
         color: #100F0F;
 
     }

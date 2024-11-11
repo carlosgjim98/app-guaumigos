@@ -33,10 +33,19 @@ const routes: Routes = [
         loadChildren: () => import('../mi-perfil-paseador/mi-perfil-paseador.module').then(m => m.MiPerfilPaseadorPageModule)
       },
 
+      {
+        path: 'mi-perfil-empresa',
+        loadChildren: () => import('../mi-perfil-empresa/mi-perfil-empresa.module').then(m => m.MiPerfilEmpresaPageModule)
+      },
+
 
       {
         path: 'calendario-paseador',
         loadChildren: () => import('../calendario-paseador/calendario-paseador.module').then(m => m.CalendarioPaseadorPageModule)
+      },
+      {
+        path: 'calendario-empresa',
+        loadChildren: () => import('../calendario-empresa/calendario-empresa.module').then(m => m.CalendarioEmpresaPageModule)
       },
 
       {

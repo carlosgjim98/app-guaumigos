@@ -1,10 +1,10 @@
-<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+<app-app-header [headerText]="dynamicHeaderText"></app-app-header>
 
 
 
 <ion-content [fullscreen]="true">
 
-  <p class="when-walk">¿Cuándo realizarás los paseos?</p>
+  <p class="when-walk">{{ dynamicText }}</p>
   
   <ion-radio-group>
      
