@@ -452,8 +452,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/editar-servicios-paseos/editar-servicios-paseos.module').then( m => m.EditarServiciosPaseosPageModule)
   },
   {
-    path: 'editar-servicios-empresa',
-    loadChildren: () => import('./pages/editar-servicios-empresa/editar-servicios-empresa.module').then( m => m.EditarServiciosEmpresaPageModule)
+    path: 'anadir-paseo',
+    loadChildren: () => import('./pages/anadir-paseo/anadir-paseo.module').then( m => m.AnadirPaseoPageModule)
+  },
+  {
+    path: 'detalle-servicio-paseo',
+    loadChildren: () => import('./pages/detalle-servicio-paseo/detalle-servicio-paseo.module').then( m => m.DetalleServicioPaseoPageModule)
+  },
+  {
+    path: 'editar-paseo',
+    loadChildren: () => import('./pages/editar-paseo/editar-paseo.module').then( m => m.EditarPaseoPageModule)
+  },
+  {
+    path: 'editar-mascotas-aceptadas',
+    loadChildren: () => import('./pages/editar-mascotas-aceptadas/editar-mascotas-aceptadas.module').then( m => m.EditarMascotasAceptadasPageModule)
   },
 
 
