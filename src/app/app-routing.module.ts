@@ -419,6 +419,44 @@ const routes: Routes = [
     path: 'detalle-factura',
     loadChildren: () => import('./pages/detalle-factura/detalle-factura.module').then( m => m.DetalleFacturaPageModule)
   },
+  {
+    path: 'calendario-empresa',
+    loadChildren: () => import('./pages/calendario-empresa/calendario-empresa.module').then( m => m.CalendarioEmpresaPageModule)
+  },
+  {
+    path: 'mi-perfil-empresa',
+    loadChildren: () => import('./pages/mi-perfil-empresa/mi-perfil-empresa.module').then( m => m.MiPerfilEmpresaPageModule)
+  },
+  {
+    path: 'detalles-solicitud-aceptada-servicio',
+    loadChildren: () => import('./pages/detalles-solicitud-aceptada-servicio/detalles-solicitud-aceptada-servicio.module').then( m => m.DetallesSolicitudAceptadaServicioPageModule)
+  },
+  {
+    path: 'valoracion-servicio',
+    loadChildren: () => import('./pages/valoracion-servicio/valoracion-servicio.module').then( m => m.ValoracionServicioPageModule)
+  },
+  {
+    path: 'datos-servicio',
+    loadChildren: () => import('./pages/datos-servicio/datos-servicio.module').then( m => m.DatosServicioPageModule)
+  },
+  {
+    path: 'mensaje-chat-empresa',
+    loadChildren: () => import('./pages/mensaje-chat-empresa/mensaje-chat-empresa.module').then( m => m.MensajeChatEmpresaPageModule)
+  },
+  {
+    path: 'editar-galeria-empresa',
+    loadChildren: () => import('./pages/editar-galeria-empresa/editar-galeria-empresa.module').then( m => m.EditarGaleriaEmpresaPageModule)
+  },
+  {
+    path: 'editar-servicios-paseos',
+    loadChildren: () => import('./pages/editar-servicios-paseos/editar-servicios-paseos.module').then( m => m.EditarServiciosPaseosPageModule)
+  },
+  {
+    path: 'editar-servicios-empresa',
+    loadChildren: () => import('./pages/editar-servicios-empresa/editar-servicios-empresa.module').then( m => m.EditarServiciosEmpresaPageModule)
+  },
+
+
 
 
 
