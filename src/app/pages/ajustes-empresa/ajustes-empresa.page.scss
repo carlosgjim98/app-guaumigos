@@ -1,0 +1,54 @@
+.box{
+
+    margin-top: 10px;
+}
+ion-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    border-bottom: 1px solid #D9D9D9;
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-right: 5px;
+    
+   
+  }
+
+
+.buttons{
+    width: 25pt;
+    height: 25pt;
+    --background: transparent;
+}
+.icon{
+    
+    height: 20px;
+    width: 20px;
+    color: #3F3F3F;
+}
+
+.text-list{
+    color: #2C252B;
+    font-family: LexendRegular;
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    flex-grow: 1;
+    font-size: 15px;
+}
+
+.arrow{
+    
+    color: #2C252B !important;
+    
+}
+
+.contact-info{
+
+    color:#919191;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+}

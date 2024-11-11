@@ -473,7 +473,15 @@ const routes: Routes = [
   {
     path: 'editar-mascotas-aceptadas',
     loadChildren: () => import('./pages/editar-mascotas-aceptadas/editar-mascotas-aceptadas.module').then( m => m.EditarMascotasAceptadasPageModule)
+  },  {
+    path: 'ajustes-empresa',
+    loadChildren: () => import('./pages/ajustes-empresa/ajustes-empresa.module').then( m => m.AjustesEmpresaPageModule)
   },
+  {
+    path: 'mis-valoraciones-paseador',
+    loadChildren: () => import('./pages/mis-valoraciones-paseador/mis-valoraciones-paseador.module').then( m => m.MisValoracionesPaseadorPageModule)
+  },
+
 
 
 
