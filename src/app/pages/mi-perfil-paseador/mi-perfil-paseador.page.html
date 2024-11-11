@@ -48,44 +48,7 @@
     </p>
   </div>
 
-  <!-- <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
-    <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
-      Información
-    </ion-segment-button>
-    <ion-segment-button value="option2" [ngClass]="{'active': selectedSegment === 'option2'}">
-      Galería
-    </ion-segment-button>
-    <ion-segment-button value="option3" [ngClass]="{'active': selectedSegment === 'option3'}">
-      Paseos
-    </ion-segment-button>
-  </ion-segment>
-
-  <div class="pet-info">
-    <div class="pet-and-button">
-      <p class="pet-acepted">Mascotas aceptadas</p>
-      <ion-button class="edit-button"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
-    </div>
-
-    <p class="pet-data"><span class="span-light">Razas</span><br>
-    Pastor Alemán, Bulldog, Labrador, Beagle,<br>
-  Caniche, Chihuahua, Dachshund, <span class="span-bold">Ver más</span></p>
-
-    <p class="pet-data"><span class="span-light">Edad</span><br>
-    Entre 2 y 11 años</p>
-
-    <p class="pet-data"><span class="span-light">Tamaño</span><br>
-    Menos de 35 cm</p>
-
-    <p class="pet-data"><span class="span-light">Peso</span><br>
-    Entre 10 y 30 kg</p>
-
-    <p class="pet-data"><span class="span-light">Hembra/Macho</span><br>
-    Hembra, Macho</p>
-
-    <p class="pet-data"><span class="span-light">¿Celo?</span><br>
-    No</p>
-
-  </div> -->
+  
 
   <ion-segment [(ngModel)]="segmentValue" (ionChange)="segmentChanged($event)">
     <ion-segment-button value="informacion">
@@ -104,7 +67,7 @@
     <div class="container-informacion">
         <div class="title-and-button">
         <h2>Mascotas Aceptadas</h2>
-        <ion-button class="edit-button" routerLink="/mascotas-aceptadas"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
+        <ion-button class="edit-button" routerLink="/editar-mascotas-aceptadas"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
         </div>
         <div class="section">
             <h3>Razas</h3>
@@ -142,6 +105,8 @@
     </div>
 </ng-container>
 
+<!-- GALERIA -->
+
 <ng-container *ngIf="segmentValue === 'galeria'">
     <div class="container-galeria">
       <ion-button class="edit-button-galery" routerLink="/editar-galeria-paseador"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
@@ -150,6 +115,8 @@
         </div>
     </div>
 </ng-container>
+
+<!-- PASEOS -->
 
 <ng-container *ngIf="segmentValue === 'paseos'">
   <ion-button class="edit-button-galery" routerLink="/editar-servicios-paseos"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>

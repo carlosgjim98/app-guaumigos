@@ -1,0 +1,59 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+  
+<p class="add-images">Añade hsta 6 imágenes</p>
+
+<div class="photo-content">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+</div>
+
+<p class="added-images">0/6 imágenes subidas</p>
+
+<p class="walk-type">Tipo de paseo</p>
+<ion-item>
+<ion-input class="walk-day" placeholder="Paseo durante el día"><ion-icon slot="end" src="../../../assets/icons/arrowups.svg"></ion-icon></ion-input>
+</ion-item>
+<p class="walk-type">Duración del paseo</p>
+
+<div class="hours-content">
+  <ion-button class="time-buttons">1 hora</ion-button>
+  <ion-button class="time-buttons">2 horas</ion-button>
+  <ion-button class="time-buttons">3 horas</ion-button>
+  <ion-button class="time-buttons">4 horas</ion-button>
+</div>
+
+<p class="walk-type">Precio por hora</p>
+
+<p class="hour-text">Establece un precio por hora, este se multiplicará por el total <br>
+de hora seleccionadas. Ej: 15€/hora serán 30€/2 horas</p>
+
+<ion-item>
+<ion-input class="prices-input" placeholder="15"><ion-icon slot="end" src="../../../assets/icons/€.svg"></ion-icon></ion-input>
+</ion-item>
+<hr>
+
+
+
+<p class="add-images">Servicios extra</p>
+
+<p class="walk-type">Servicio extra 1</p>
+
+<ion-item>
+<ion-input class="example-input" placeholder="Ej: Visita al veterinario"></ion-input>
+</ion-item>
+<ion-item>
+<ion-input class="prices-input" placeholder="15"><ion-icon slot="end" src="../../../assets/icons/€.svg"></ion-icon></ion-input>
+</ion-item>
+
+<ion-button class="add-extra-service"><ion-icon slot="start" src="../../../assets/icons/add.svg"></ion-icon>Añadir servicio extra</ion-button>
+
+<ion-button class="create-walk">Crear paseo</ion-button>
+
+
+</ion-content>

@@ -1,13 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>editar-servicios-paseos</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">editar-servicios-paseos</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <div class="info-content" routerLink="/detalle-servicio-paseo">
+    <img class="dog-image" src="../../../assets/imgs/perros/shared image.png" alt="">
+    <div class="text-content" routerLink="/detalle-servicio">
+      <div class="texts">
+        <p class="cut-hair">Paseo de día<br>
+        <span class="distance">Jerez de la Frontera, Cádiz</span><br>
+        <span class="price"> 30€/ 2 Horas</span></p>
+        
+      </div>
+      <ion-icon src="../../../assets/icons/arrowups.svg"></ion-icon>
+    </div>
+    
+
+  </div>
+
+  <div class="info-content" routerLink="/">
+    <img class="dog-image" src="../../../assets/imgs/perros/shared image-3.png" alt="">
+    <div class="text-content" routerLink="/detalle-servicio">
+      <div class="texts">
+        <p class="cut-hair">Paseo de noche<br>
+        <span class="distance">Jerez de la Frontera, Cádiz</span><br>
+        <span class="price"> 30€/ 2 Horas</span></p>
+        
+      </div>
+      <ion-icon src="../../../assets/icons/arrowups.svg"></ion-icon>
+    </div>
+    
+
+  </div>
+
+  <ion-button class="last-button" routerLink="/anadir-paseo"><ion-icon class="plus-icon" src="../../../assets/icons/add.svg"></ion-icon></ion-button>
+  
+  
 </ion-content>

@@ -93,7 +93,7 @@ export class MiPerfilPaseadorPage implements OnInit {
       duracion: '1 horas',
     },
     {
-      nombre: 'Paseo de dia',
+      nombre: 'Paseo de noche',
       valoracion: '4,8',
       distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
       imgPerro: 'assets/imgs/perros/shared image-3.png',

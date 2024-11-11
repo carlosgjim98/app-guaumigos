@@ -415,6 +415,31 @@ const routes: Routes = [
     path: 'detalle-factura',
     loadChildren: () => import('./pages/detalle-factura/detalle-factura.module').then( m => m.DetalleFacturaPageModule)
   },
+  {
+    path: 'editar-galeria-paseador',
+    loadChildren: () => import('./pages/editar-galeria-paseador/editar-galeria-paseador.module').then( m => m.EditarGaleriaPaseadorPageModule)
+  },
+  {
+    path: 'editar-servicios-paseos',
+    loadChildren: () => import('./pages/editar-servicios-paseos/editar-servicios-paseos.module').then( m => m.EditarServiciosPaseosPageModule)
+  },  {
+    path: 'anadir-paseo',
+    loadChildren: () => import('./pages/anadir-paseo/anadir-paseo.module').then( m => m.AnadirPaseoPageModule)
+  },
+  {
+    path: 'detalle-servicio-paseo',
+    loadChildren: () => import('./pages/detalle-servicio-paseo/detalle-servicio-paseo.module').then( m => m.DetalleServicioPaseoPageModule)
+  },
+  {
+    path: 'editar-paseo',
+    loadChildren: () => import('./pages/editar-paseo/editar-paseo.module').then( m => m.EditarPaseoPageModule)
+  },
+  {
+    path: 'editar-mascotas-aceptadas',
+    loadChildren: () => import('./pages/editar-mascotas-aceptadas/editar-mascotas-aceptadas.module').then( m => m.EditarMascotasAceptadasPageModule)
+  },
+
+
 
 
 

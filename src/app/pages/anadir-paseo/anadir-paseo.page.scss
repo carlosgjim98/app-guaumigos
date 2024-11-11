@@ -1,0 +1,84 @@
+.add-images{
+    font-size: 16px;
+    font-family: LexendRegular;
+    margin-left: 5%;
+}
+
+.photo-content{
+    display: block;
+    gap: 5px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.photo-content img{
+    margin-left: 5px;
+}
+
+.add-photo{
+    height: 123px;
+    width: 123px;
+}
+
+.added-images{
+    font-size: 13px;
+    font-family: LexendRegular;
+    color: #C9C9C9;
+    margin-left: 5%;
+}
+
+.walk-type{
+    color:#919191 ;
+    font-size: 13px;
+    font-family: LexendRegular;
+    margin-left: 5%;
+}
+
+ion-item{
+    margin-left: 5%;
+    width: 90%;
+    border: 1px solid #919191;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    padding-left: 5%;
+}
+
+
+.hours-content{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.time-buttons{
+    height: 55px;
+    width: 90px;
+    border: 1px solid #919191;
+    border-radius: 10px;
+    --background: transparent;
+    color: #919191;
+    font-size: 15px;
+    font-family: LexendRegular;
+}
+
+.hour-text{
+    color: #919191;
+    font-family: LexendLight;
+    font-size: 12px;
+    margin-left: 5%;
+}
+
+
+.add-extra-service{
+    width: 213px;
+    height: 55px;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.create-walk{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-mascotas-aceptadas',
-  templateUrl: './mascotas-aceptadas.page.html',
-  styleUrls: ['./mascotas-aceptadas.page.scss'],
+  selector: 'app-editar-mascotas-aceptadas',
+  templateUrl: './editar-mascotas-aceptadas.page.html',
+  styleUrls: ['./editar-mascotas-aceptadas.page.scss'],
 })
-export class MascotasAceptadasPage implements OnInit {
+export class EditarMascotasAceptadasPage implements OnInit {
 
   dynamicHeaderText: string = 'Mascotas aceptadas';
   returnLink: string = '/completar-perfil';

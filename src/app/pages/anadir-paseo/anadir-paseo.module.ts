@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { EditarServiciosPaseosPageRoutingModule } from './editar-servicios-paseos-routing.module';
+import { AnadirPaseoPageRoutingModule } from './anadir-paseo-routing.module';
 
-import { EditarServiciosPaseosPage } from './editar-servicios-paseos.page';
+import { AnadirPaseoPage } from './anadir-paseo.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
 
@@ -15,9 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    EditarServiciosPaseosPageRoutingModule,
+    AnadirPaseoPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [EditarServiciosPaseosPage]
+  declarations: [AnadirPaseoPage]
 })
-export class EditarServiciosPaseosPageModule {}
+export class AnadirPaseoPageModule {}
