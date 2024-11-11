@@ -1,0 +1,59 @@
+
+.info-content{
+    width: 90%;
+    margin-left: 5%;
+    height: 225px;
+    margin-top: 5%;
+    box-shadow: 1px 1px 1px 1px rgba(206, 206, 205, 1);
+    background-color: #ffffff;   
+    border-radius: 10px;
+
+}
+
+.dog-image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.text-content{
+    display: flex;
+    align-items: center;
+}
+
+.texts{
+    width: 80%;
+    margin-left: 5%;
+
+}
+.cut-hair{
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 2%;
+    
+}
+
+.distance{
+    font-family: 'LexendLight','Courier New', Courier, monospace;
+    color: rgba(145, 145, 145, 1);
+    font-size: 14px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-family:'LexendLight' ;
+}
+
+.last-button{
+    --border-radius: 50px;
+    height: 94px;
+    width: 94px;
+    margin-left: 73%;
+    margin-top: 30%;
+}
+
+plus-icon{
+    width: 48px;
+    height: 48px;
+}
