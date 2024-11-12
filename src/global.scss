@@ -34,8 +34,8 @@
 
 /*@import "@ionic/angular/css/palettes/dark.always.css";
 @import "@ionic/angular/css/palettes/dark.class.css";*/
-@import "@ionic/angular/css/palettes/dark.system.css";
-
+//@import "@ionic/angular/css/palettes/dark.system.css";
+@import "@ionic/angular/css/palettes/dark.class.css";
 //ESTILOS PARA LOS TIPOS
 
 P {
@@ -309,6 +309,32 @@ full-calendar {
 
 //CALENDARIO IONIC
 
+ion-datetime{
+    --ion-color-base: #100F0F !important;
+    --ion-color-base-rgb: 255, 217, 84 !important;
+    --background: white;
+    --ion-font-family: LexendRegular;
+    //--color: #919191 !important;
+    //--ion-color-contrast: #100F0F !important;
+    --ion-color-primary-rgb: 255, 217, 84 !important;
+    color: #919191 !important;
+
+    .calendar-day.calendar-day-active {
+        background: rgba(var(--ion-color-base-rgb), 1) !important;
+        font-size: min(1.375rem, 35.2px);
+      }
+    
+  }
+
+  .calendar-day.calendar-day-active {
+    background: rgba(var(--ion-color-base-rgb), 1) !important;
+    font-size: min(1.375rem, 35.2px);
+  }
+
+
+  .calendar-day.calendar-day-active {
+    background: red;
+  }
 
 //LINEAS SEPARATORIAS
 
