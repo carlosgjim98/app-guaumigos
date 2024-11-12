@@ -32,7 +32,7 @@ export class EditarServiciosPaseosPage implements OnInit {
     this.paseos = [{
       nombre: 'Paseo de dia',
       valoracion: '4,8',
-      distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
+      distancia: 'A 0,1 km de ti · Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/perros/shared image.png',
       precio: '15€',
       duracion: '1 horas',
@@ -40,7 +40,7 @@ export class EditarServiciosPaseosPage implements OnInit {
     {
       nombre: 'Paseo de noche',
       valoracion: '4,8',
-      distancia: 'A 0,1 km de ti · Jerez de la Frontera sadasdas',
+      distancia: 'A 0,1 km de ti · Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/perros/shared image-3.png',
       precio: '15€',
       duracion: '1 horas',

@@ -45,10 +45,7 @@ ion-header{
     font-family: LexendRegular;
 }
 
-.calendar-content ::part(month-year-button){
-    font-size: 14px;
-    color: red;
-}
+
 
 .button-configure-calendar{
     font-family: LexendRegular;
@@ -74,12 +71,14 @@ ion-header{
     width: 90%;
     margin-left: 5%;
     align-items: center;
-    gap: 115px;
+    justify-content: space-between;
+    position: relative;
 
     .next-dates{
         color: #27333C;
         font-family: LexendMedium;
         font-size: 18px;
+        white-space: nowrap;
     }
 
     .button-comlplet-list{
@@ -89,6 +88,7 @@ ion-header{
         width: 126px;
         height: 32px;
         --border-radius: 16px;
+        margin-left: auto;
     }
 }
 
@@ -138,26 +138,159 @@ ion-header{
 
 }
 
-ion-datetime{
-
-    --ion-font-family: LexendLight;
-    // --ion-color-primary: "color"
-    
 
 
-}
+full-calendar{
 
-
-
-ion-datetime .toggle-wrapper  {
-
-    --ion-font-family: LexendLight !important;
-
+    font-family: LexendRegular !important;
+   
     
 }
-.calendar-month-year-toggle {
 
-    --ion-font-family: LexendLight !important;
+::ng-deep .fc-toolbar-chunk{
+
+   
+    .fc-toolbar-title{
+
+        font-size: 14px !important;  
+        text-transform: capitalize;
+        
+    }
+    .fc-button-group{
+
+        gap: 0 !important;
+        margin: 0 !important; 
+       font-size: 1px!important;
+       
+       
+    }
+    
+   
+        .fc-icon{
+            font-size: 14px !important;   
+            color: #2B2828!important;
+          
+        }
+    
 }
 
+
+::ng-deep.fc-day-today {
+    background-color: transparent !important;  /* Fondo transparente */
+                
+  }
+
+::ng-deep .fc-daygrid-day-number.selected {
+    background-color: transparent !important;  // Fondo transparente
+    border: 2px solid #FFD700 !important;  // Borde de color dorado
+    border-radius: 50% !important;  // Asegura que sea un círculo perfecto
+    color: #FFD700 !important;  // Color del número dentro del círculo
+    width: 30px !important;  // Ajusta el tamaño del círculo
+    height: 30px !important;  // Asegura que sea un círculo perfecto
+     // Alinea el texto verticalmente en el centro
+    text-align: center;  // Alinea el texto horizontalmente
+    font-weight: bold;  // Opcional: hace que el número se vea más claro
+  }
+  
+
+::ng-deep .fc .fc-daygrid-day-number {
+    color: #919191 !important; /* Cambia este color */
+    font-family: LexendRegular !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+   
+    
+  }
+  
+  ::ng-deep .fc .fc-day-today .fc-daygrid-day-number {
+    color: #273c2d !important; /* Cambia el color del día actual */
+    font-family: LexendSemiBold !important;
+    
+  }
+  
+  ::ng-deep .fc .fc-day-sat .fc-daygrid-day-number,
+  ::ng-deep .fc .fc-day-sun .fc-daygrid-day-number {
+    color: #919191  !important; /* Cambia el color de los días de fin de semana */
+    font-family: LexendRegular !important;
+  }
+
+  ::ng-deep .fc-col-header-cell-cushion  {
+    color: #919191!important; 
+    font-family: LexendRegular !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+.fc-event {
+    background-color: #FFD954 !important;
+   
+  }
+
+  
+ion-list{
+
+    background: transparent;
+}
+
+  .custom-event-card {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px; 
+    width: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 2px 5px #CECECD;
+    margin-bottom: 12px;
+    position: relative;
+    overflow: visible;
+  }
+  
+  .custom-event-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background-color: #FFC107; /* Cambia este color por el que necesites */
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  
+  
+  .custom-event-card h2 {
+    font-size: 15px;
+    font-family: LexendSemiBold;
+    color: #27333C;
+    margin: 0;
+    padding-bottom: 8px;
+  }
+  
+  .date-time {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #100F0F;
+    font-family: LexendLight;
+    margin-bottom: 9px;
+  }
+  
+  .date-time ion-icon {
+    margin-right: 6px;
+    font-size: 15px;
+    color: #100F0F;
+  }
+  
+  .date-time p {
+    margin: 0;
+    font-size: 15px;
+    font-family: LexendLight;
+  }
+  .white-background{
+
+    background: #FFFFFF;
+  }
 

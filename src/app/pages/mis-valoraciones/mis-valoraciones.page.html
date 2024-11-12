@@ -2,7 +2,7 @@
 
 <ion-content [fullscreen]="true">
  
-  <ion-segment value="default">
+  <ion-segment *ngIf="userRole !== 'empresa'" value="default">
     <ion-segment-button value="default">
       <ion-label>Paseos</ion-label>
     </ion-segment-button>

@@ -80,11 +80,12 @@ ion-item{
     width: 90%;
     margin-left: 5%;
     margin-top: 5%;
+    margin-bottom: 44px;
 }
 
 .subcategory-container{
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 .category-button {
     display: inline-flex; 
@@ -100,9 +101,22 @@ ion-item{
     gap:0px;
     --padding-start: 8px;
     --padding-end: 8px;
+    font-family: LexendRegular;
+    font-size: 15px;
+
 }
 
 .category-button.selected {
     background-color: #FFD954; 
     color: #100F0F; 
+   
   }
+
+  ion-input{
+
+    ion-icon{
+
+        width:10px ;
+        height:19px ;
+    }
+}

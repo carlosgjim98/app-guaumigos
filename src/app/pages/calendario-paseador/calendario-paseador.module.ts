@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CalendarioPaseadorPageRoutingModule } from './calendario-paseador-routing.module';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 import { CalendarioPaseadorPage } from './calendario-paseador.page';
 
@@ -13,6 +14,7 @@ import { CalendarioPaseadorPage } from './calendario-paseador.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    FullCalendarModule ,
     CalendarioPaseadorPageRoutingModule
   ],
   declarations: [CalendarioPaseadorPage]

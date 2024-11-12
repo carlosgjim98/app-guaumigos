@@ -1,10 +1,10 @@
-<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+<app-app-header [headerText]="dynamicHeaderText"></app-app-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
   <div class= "edit-container" >
   <ion-avatar class="avatar">
-    <img src="assets/imgs/usuarios/Rectángulo19656@3x.png" alt="User Avatar">
+    <img src="assets/imgs/profile-photo-empresa.png" alt="User Avatar">
   </ion-avatar>
   <ion-button> Editar imagen</ion-button>
 </div>
@@ -15,7 +15,7 @@
   <h1>Nombre</h1>
   <ion-item class="nombre" >
     
-    <ion-input placeholder="Ana Velázquez"></ion-input>
+    <ion-input placeholder="Peluquería Guau!"></ion-input>
     
   </ion-item>
 
@@ -30,7 +30,10 @@
 
   <h2>Descripción</h2>
   <ion-item class="descripcion">
-    <ion-textarea placeholder="¡Hola! Soy Ana, amante de los perros y apasionada por los paseos al aire libre. Tu mejor amigo tendrá una compañera de juegos y aventuras. &#10;¡Conmigo, los paseos serán su parte favorita!"></ion-textarea>
+    <ion-textarea rows="4" 
+    placeholder="Somos tu peluquería canina de confianza. Nuestros servicios incluyen baños relajantes, cortes de pelo adaptados a cada raza y corte de uñas.&#10;¡Tu mascota estará feliz y relajada!">
+  </ion-textarea>
+  
     
   </ion-item>
   

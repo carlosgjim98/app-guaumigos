@@ -10,12 +10,18 @@
 
 <ion-content class="body" [fullscreen]="true">
 
-  <div class="div-calendar">
-  <ion-datetime [firstDayOfWeek]="1" [multiple]="true" presentation="date" class="calendar-content"></ion-datetime>
-
-  
-<ion-button class="button-configure-calendar" routerLink="/configurar-calendario">Configurar mi calendario</ion-button>
-<hr>
+  <full-calendar #calendar [options]="calendarOptions">
+    
+    <ng-template #eventContent let-arg>
+      <a class="fc-event fc-event-draggable fc-event-resizable fc-event-start fc-event-end fc-event-future fc-daygrid-event fc-daygrid-dot-event">
+        <div class="fc-daygrid-event-dot" style="border-color: transparent;">
+        </div>
+      </a>
+    </ng-template>
+  </full-calendar>
+<div class="white-background">
+  <ion-button class="button-configure-calendar" routerLink="/configurar-calendario">Configurar mi calendario</ion-button>
+  <hr>
 </div>
 
 
@@ -25,36 +31,30 @@
   <ion-button class="button-comlplet-list">Ver listado completo</ion-button>
 </div>
 <div class="box-content">
-<div class="walk-day" routerLink="/detalles-solicitud-aceptada-servicio">
-  <img src="../../../assets/imgs/backgrounds/Rectángulo19422.png" alt="">
-  <div>
-  <p class="walk-day-dog">Limado de uñas con Manchitas</p>
-  <div class="date-time">
-    <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
-    <p>18/09/2024</p>
-  </div>
-  <div class="date-time">
-    <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
-    <p>11:00 A.M</p>
-  </div>
+  <div class="list-container" mode="md">
+    <ion-list lines="none" mode="md" *ngIf="eventsSelectedDate?.allEvents && eventsSelectedDate.allEvents.length > 0" routerLink="/detalles-solicitud-aceptada-servicio" >
+      <ion-item *ngFor="let event of eventsSelectedDate.allEvents" class="custom-event-card" >
+        <ion-label>
+          <h2>{{ event.title }}</h2>
+          <div class="date-time">
+            <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+            <p>{{ getDate(eventsSelectedDate?.date) }}</p>
+          </div>
+          <div class="date-time">
+            <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+            <p>{{ getTime(event.time) }}</p> 
+          </div>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    
   
-</div>
-</div>
-<div class="walk-day">
-  <img src="../../../assets/imgs/backgrounds/Rectángulo19422.png" alt="">
-  <div>
-  <p class="walk-day-dog">Corte de pelo a tu mascota</p>
-  <div class="date-time">
-    <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
-    <p>20/09/2024</p>
+    <!-- Mensaje cuando no hay eventos para la fecha seleccionada -->
+    <ion-item *ngIf="!eventsSelectedDate?.allEvents || eventsSelectedDate.allEvents.length === 0">
+      <ion-label>No hay eventos para esta fecha</ion-label>
+    </ion-item>
   </div>
-  <div class="date-time">
-    <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
-    <p>10:00 A.M</p>
-  </div>
-  
-</div>
-</div>
+
 <div>
 
 </div>

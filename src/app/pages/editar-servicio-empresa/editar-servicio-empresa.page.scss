@@ -44,6 +44,15 @@ ion-item{
     padding-left: 5%;
 }
 
+ion-input{
+
+    ion-icon{
+
+        width:10px ;
+        height:19px ;
+    }
+}
+
 
 .hours-content{
     display: flex;
@@ -86,9 +95,10 @@ ion-item{
 .delete-btn{
     width: 90%;
     margin-left: 5%;
-    margin-top: 18px;
+    margin-top: 10px;
     --background:#201E14;
     color: white;
+    margin-bottom: 36px;
 }
 
 
@@ -110,11 +120,14 @@ ion-item{
     gap:0px;
     --padding-start: 8px;
     --padding-end: 8px;
+    font-family: LexendRegular;
+    
 }
 
 .category-button.selected {
     background-color: #FFD954; 
     color: #100F0F; 
+    
   }
 
   .edit-button-galery{

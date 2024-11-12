@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { CalendarioEmpresaPageRoutingModule } from './calendario-empresa-routing.module';
-
+import { FullCalendarModule } from '@fullcalendar/angular';
 import { CalendarioEmpresaPage } from './calendario-empresa.page';
 
 @NgModule({
@@ -13,6 +13,7 @@ import { CalendarioEmpresaPage } from './calendario-empresa.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    FullCalendarModule,
     CalendarioEmpresaPageRoutingModule
   ],
   declarations: [CalendarioEmpresaPage]
