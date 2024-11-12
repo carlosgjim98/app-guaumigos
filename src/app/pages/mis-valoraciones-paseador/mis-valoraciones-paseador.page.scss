@@ -1,12 +1,21 @@
 .coments-content{
     display: flex;
     align-items: center;
+    width: 90%;
+    margin-left: 5%;
+    //border: 1px solid #CECECD;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(206, 206, 205);
+    gap: 100px;
+    padding: 5%;
 }
 
 
 .stars-content{
     display: flex;
     align-items: center;
+    width: 80%;
 }
 
 .dog-service{

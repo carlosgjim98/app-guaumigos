@@ -8,12 +8,15 @@ import { MisValoracionesPaseadorPageRoutingModule } from './mis-valoraciones-pas
 
 import { MisValoracionesPaseadorPage } from './mis-valoraciones-paseador.page';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MisValoracionesPaseadorPageRoutingModule
+    MisValoracionesPaseadorPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [MisValoracionesPaseadorPage]
 })
