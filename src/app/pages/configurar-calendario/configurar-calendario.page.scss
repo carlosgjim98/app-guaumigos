@@ -137,7 +137,9 @@ ion-radio::part(container) {
     display: flex;
     padding-left: 5%;
     align-items: center;
+    --background: transparent;
 }
+
 
 .from{
     display: flex;
@@ -177,80 +179,6 @@ ion-radio::part(container) {
     font-size: 15px;
     margin-left: 5%;
 }
-
-
-// ion-datetime ::part(calendar-day){
-//     font-size: 14px;
-//     color: #2B2828;
-//     font-family: LexemdRegular;
-// }
-    
-
-
-// #custom-datetime .calendar-month-year {
-//     font-size: 14px; /* Tamaño de la fuente del mes y año */
-//     color: #2B2828;
-//     font-family: 'Arial', sans-serif;
-//   }
-
-.calendar-content{
-    width: 90%;
-    margin-left: 5%; 
-
-    .calendar{
-        width: fit-content;
-        max-width: fit-content;
-        background: white;
-
-        ion-datetime {
-            font-family: LexendRegular;
-            --ion-font-size: 15px;
-            color: #2b2828;
-            background-color: transparent;
-            --ion-font-family: "LexendRegular";
-            border-radius: 16px;
-            --today-color: black !important;
-            width: 100%;
-            height: 100%;
-            --ion-color-base: #2B2828!important;
-            
-            
-            
-        }
-        
-
-        ion-datetime::part(calendar-day) {
-            color: #919191;
-          }
-          
-        
-          
-          ion-datetime::part(calendar-day):focus {
-            background-color: #FFD954;
-
-            color: #D59C05;
-            
-          }
-    }
-
-
-}
-
-
-
-// .calendar ::part(calendar-month-year-toggle){
-//     font-size: 14px; /* Tamaño de la fuente del mes y año */
-//     color: #2B2828;
-//     font-family: 'Arial', sans-serif;
-// }
-
-// #custom-datetime .calendar-day[data-day="5"],
-// #custom-datetime .calendar-day[data-day="15"],
-// #custom-datetime .calendar-day[data-day="25"] {
-//   --background-color: #ff5722; /* Cambia el fondo para ciertos días */
-//   color: white;
-//   border-radius: 50%;
-// }
 
 .selected-days{
     display: flex;
@@ -320,3 +248,213 @@ ion-radio::part(container) {
     margin-bottom: 10%;
 
 }
+
+////////////////////////CALENDARIO///////////////////////
+
+// ion-item {
+//     margin: 0px;
+//     margin-top: 8px;
+//     margin-bottom: 8px;
+
+//     --border-radius: 6px;
+//     font-size: 15px;
+
+//     --background: #343232;
+
+//     --padding-start: 0px;
+
+//     div{
+//         height: 100%;
+//         width: 64px;
+//         display: flex;
+//         flex-flow: row;
+//         justify-content: center;
+//         align-items: center;
+//         background: #5F5959;
+
+//         &.color1{
+//             background: #B441A5 !important;
+//         }
+    
+//         &.color2{
+//             background: #872FC2 !important;
+//         }
+//     }
+
+//     &.color1{
+//         --background: #88227A !important;
+//     }
+
+//     &.color2{
+//         --background: #51127C !important;
+//     }
+// }
+
+
+// ion-label {
+//     color: white !important;
+//     max-width: 400px;
+//     margin-left: 20px;
+// }
+
+// ion-label p{
+//     margin-bottom: 0% !important;
+//     margin-top: 8px;
+//     color: white !important;
+// }
+
+// ion-icon {
+//     color: rgba(255, 255, 255, 0.806);
+// }
+
+// .icono {
+//     height: 50px;
+//     width: 50px;
+//     margin-right: 5%;
+//     background-color: #ffffff21;
+// }
+
+// img {
+//     display: flex;
+//     text-align: center;
+//     justify-content: center;
+//     align-items: center;
+//     padding-left: 4px !important;
+//     margin: 0;
+//     margin-right: 16px; 
+// }
+
+// .campana{
+//     padding-left: 5px !important;
+// }
+
+// ion-item ion-icon {
+//     font-size: 20px; 
+// }
+
+
+// ion-fab{
+//     bottom: 16px;
+    
+//     ion-fab-list{
+//         display: flex;
+//         gap: 5px;
+//         margin: 88px auto;
+//         flex-flow: column-reverse;
+//         justify-content: center;
+//         align-items: center;
+//         width: 100%;
+//     }
+
+//     ion-fab-button{
+//         height: 78px;
+//         width: 78px;
+        
+//         &.calls{
+//             --background: #B441A5;
+//             --background-activated: #88227A;
+//             height: 54px;
+//             width: 54px;
+//         }
+//         &.dates{
+//             --background: #872FC2;
+//             --background-activated: #51127C;
+//             height: 54px;
+//             width: 54px;
+
+//         }
+//         &.reminders{
+//             --background: #5F5959;
+//             --background-activated: #343232;
+//             height: 54px;
+//             width: 54px;
+
+//         }
+//     }
+// }
+
+full-calendar{
+ 
+    font-family: LexendRegular !important;
+   
+   
+}
+ 
+::ng-deep .fc-toolbar-chunk{
+ 
+   
+    .fc-toolbar-title{
+ 
+        font-size: 14px !important;  
+    }
+    .fc-button-group{
+ 
+        gap: 0 !important;
+        margin: 0 !important;
+       font-size: 1px!important;
+       
+       
+    }
+   
+   
+        .fc-icon{
+            font-size: 14px !important;  
+            color: #2B2828!important;
+         
+        }
+   
+}
+ 
+ 
+ 
+::ng-deep .fc .fc-daygrid-day-number {
+    color: #919191 !important; /* Cambia este color */
+    font-family: LexendRegular !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+  }
+ 
+  ::ng-deep .fc .fc-day-today .fc-daygrid-day-number {
+    color: #273c2d !important; /* Cambia el color del día actual */
+    font-family: LexendSemiBold !important;
+   
+  }
+ 
+  ::ng-deep .fc .fc-day-sat .fc-daygrid-day-number,
+  ::ng-deep .fc .fc-day-sun .fc-daygrid-day-number {
+    color: #919191  !important; /* Cambia el color de los días de fin de semana */
+    font-family: LexendRegular !important;
+  }
+ 
+  ::ng-deep .fc-col-header-cell-cushion  {
+    color: #919191!important;
+    font-family: LexendRegular !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+ 
+.fc-event {
+    background-color: #FFD954 !important;
+   
+  }
+
+  ::ng-deep .fc-event-main{
+    color: #100F0F;
+  }
+
+
+  /*ion-datetime{
+    --ion-color-base: #2B2828 !important;
+    --background: white;
+    --ion-font-family: LexendRegular;
+    --color: #919191 !important;
+    --ion-color-contrast: #100F0F !important;
+    --ion-color-primary-rgb: 255, 217, 84 !important;
+    
+    .calendar-day.calendar-day-active {
+        background: rgba(var(--ion-color-base-rgb), 1);
+        font-size: min(1.375rem, 35.2px);
+      }
+
+    
+  }*/

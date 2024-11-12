@@ -1,13 +1,73 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>detalle-valoracion-empresa</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle-valoracion-empresa</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <p class="data">Datos del cliente</p>
+
+  <div class="client-content">
+    <img class="profile-photo" src="../../../assets/imgs/usuarios/Rectángulo 19812@3x.png" alt="">
+    <div>
+      <p class="name">Abel Soria</p>
+      <div class="city">
+        <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+        <p class="points">4,9 <span class="city-name">· Jerez de la Frontera, Cádiz</span></p>
+      </div>
+    </div>
+  </div>
+
+  <u class="view-profile">Ver perfil</u>
+
+  <hr>
+
+  <p class="data">Datos del servicio</p>
+  <p class="service-name">Nombre del servicio</p>
+  <p class="service">Limado de uñas</p>
+  <div class="dataTime">
+    <ion-icon src="../../../assets/icons/calendar event.svg"></ion-icon>
+    <p class="service">18/09/2024</p>
+  </div>
+  <div class="dataTime">
+    <ion-icon src="../../../assets/icons/time.svg"></ion-icon>
+    <p class="service">10:00 A.M</p>
+  </div>
+
+  <p class="greyText">Mascota que participará</p>
+
+  <div class="client-content">
+    <img class="profile-photo" src="../../../assets/imgs/perros/dalmata.png" alt="">
+    <div>
+      <p class="dogName">Manchitas</p>
+      <p class="city">Dálmata · 4 años</p>
+    </div>
+  </div>
+
+    <p class="greyText">Servicio extra</p>
+
+    <p class="service">No hay</p>
+
+    <p class="greyText">Valoración</p>
+    <div class="stars-content">
+      <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+      <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+      <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+      <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+      <ion-icon src="../../../assets/icons/star.svg"></ion-icon>
+
+    </div>
+
+    <p class="service">Abel y su fiel compañero, Manchitas, son un dúo <br>
+    encantador. Manchitas fue un cliente ejemplar durante <br>
+  su visita, lo que hizo que el limado de uñas fuera una <br>
+experiencia muy agradable. ¡Esperamos volver a verlos <br>
+pronto!</p>
+
+<p class="greyText">18/09/2024</p>
+
+<ion-button class="last-button">Eliminar Valoración</ion-button>
+  
+
+
+
+
+
 </ion-content>

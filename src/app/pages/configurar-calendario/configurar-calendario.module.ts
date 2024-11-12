@@ -10,13 +10,17 @@ import { ConfigurarCalendarioPage } from './configurar-calendario.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
 
+import { FullCalendarModule } from '@fullcalendar/angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     ConfigurarCalendarioPageRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    FullCalendarModule,
+    
   ],
   declarations: [ConfigurarCalendarioPage]
 })

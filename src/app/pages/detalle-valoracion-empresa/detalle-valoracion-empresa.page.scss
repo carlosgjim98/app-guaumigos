@@ -1,0 +1,107 @@
+.data{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 18px;
+    margin-left: 5%;
+}
+
+.client-content{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.profile-photo{
+    height: 47px;
+    width: 47px;
+}
+
+.name{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 16px;
+    margin-bottom: 1.5%;
+}
+
+.points{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 16px;
+    
+}
+
+.city{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: -4%;
+}
+
+.city-name{
+    color: #110F0F;
+    font-family: LexendLight;
+    font-size: 16px;
+}
+
+.view-profile{
+    color: #141411;
+    font-size: 12px;
+    font-family: LexendMedium;
+    margin-left: 20%;
+}
+
+.service-name{
+    color: #110F0F;
+    font-family: LexendMedium;
+    font-size: 13px;
+    margin-left: 5%;
+}
+
+.service{
+    color: #110F0F;
+    font-family: LexendLight;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.dataTime{
+    margin-left: 5%;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    margin-top: -4%;
+}
+
+.greyText{
+    color: #919191;
+    font-size: LexendRegular;
+    font-size: 14px;
+    margin-left: 5%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.dogName{
+    color: #110F0F;
+    font-size: 16px;
+    font-size: LexendMedium;
+}
+
+.stars-content{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    width: 90%;
+}
+
+.last-button{
+    --background:#100F0F ;
+    color: white;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
