@@ -92,6 +92,7 @@ ion-header {
 
     .body{
         background: #F8F8F8 ;
+       
     }
 
     .profile-content {
@@ -166,12 +167,22 @@ ion-header {
         --indicator-box-shadow: 0 5px rgba(255, 202, 60, 1);
         --border-radius: 0pt;
         font-size: 9pt;
+        
+        
+        
       }
       
       ion-segment-button {
         font-family: LexendRegular;
         color: #C1C1C1;
         font-size: 9pt;
+        --border: none !important;
+        --box-shadow: none !important;
+        --indicator-color: transparent !important;
+        --indicator-box-shadow: none !important;
+        --border-width: 0px !important;
+        
+       
       }
       
       ion-segment-button.active::after {
@@ -420,7 +431,7 @@ ion-segment {
 }
 
 .container-contenido-section {
-  background-color: #F8F8F8;
+ 
   width: 100%;
   padding-top: 15px;
   padding-left: 15px;
@@ -442,5 +453,6 @@ ion-segment {
   font-family: LexendRegular;
   position: absolute;
   right: 0;
+  
 
 }

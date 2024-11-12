@@ -473,7 +473,19 @@ const routes: Routes = [
   {
     path: 'editar-mascotas-aceptadas',
     loadChildren: () => import('./pages/editar-mascotas-aceptadas/editar-mascotas-aceptadas.module').then( m => m.EditarMascotasAceptadasPageModule)
+  },  {
+    path: 'anadir-servicios-empresa',
+    loadChildren: () => import('./pages/anadir-servicios-empresa/anadir-servicios-empresa.module').then( m => m.AnadirServiciosEmpresaPageModule)
   },
+  {
+    path: 'editar-servicio-empresa',
+    loadChildren: () => import('./pages/editar-servicio-empresa/editar-servicio-empresa.module').then( m => m.EditarServicioEmpresaPageModule)
+  },
+  {
+    path: 'detalle-servicio-empresa',
+    loadChildren: () => import('./pages/detalle-servicio-empresa/detalle-servicio-empresa.module').then( m => m.DetalleServicioEmpresaPageModule)
+  },
+
 
 
 

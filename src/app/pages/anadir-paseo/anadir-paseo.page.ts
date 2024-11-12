@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnadirPaseoPage implements OnInit {
 
-  dynamicHeaderText: string = 'NUevo paseo';
+  dynamicHeaderText: string = 'Nuevo paseo';
   returnLink: string = '/editar-servicios-paseos';
 
   constructor() { }

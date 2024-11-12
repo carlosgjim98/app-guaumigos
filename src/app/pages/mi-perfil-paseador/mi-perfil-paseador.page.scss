@@ -172,6 +172,13 @@ ion-header {
         font-family: LexendRegular;
         color: #C1C1C1;
         font-size: 9pt;
+        --border: none !important;
+        --box-shadow: none !important;
+        --indicator-color: transparent !important;
+        --indicator-box-shadow: none !important;
+        --border-width: 0px !important;
+        
+       
       }
       
       ion-segment-button.active::after {
@@ -298,6 +305,7 @@ ion-segment {
   grid-template-columns: repeat(3, 1fr);
   gap: 7px;
   padding: 0;
+  position: relative;
 
   .section img {
       width: 100%;
@@ -436,5 +444,9 @@ ion-segment {
   font-size: 11px;
   font-family: LexendRegular;
   position: absolute;
-  margin-left: 300px;
+  right: 0;
+}
+.container{
+
+  position: relative;
 }

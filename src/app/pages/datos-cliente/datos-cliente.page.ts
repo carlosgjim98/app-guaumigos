@@ -10,6 +10,7 @@ export class DatosClientePage implements OnInit {
   dynamicHeaderText: string = '';
   public dynamicText: string;
   public title: string;
+  public service: string;
   public userRole: string; 
   userType: string = '';
 
@@ -23,6 +24,7 @@ export class DatosClientePage implements OnInit {
       this.dynamicText = 'Datos del paseador';
     } else if (this.userRole === 'empresa') {
       this.title = 'Datos del servicio';
+      this.service="Corte de pelo a tu mascota"
       this.dynamicText = 'Datos del cliente';
     } else {
       this.dynamicText = '¿Cuándo realizarás los paseos?'; // Por defecto
