@@ -1,0 +1,81 @@
+// .head-cotent{
+//     text-align: center;
+// }
+
+.dog-photo{
+    height: 140px;
+    width: 140px;
+    margin-left: 33%;
+    margin-top: 10%;
+}
+
+.edit-button{
+    width: 114px;
+    height: 29px;
+    --border-radius: 25px;
+    font-size: 12px;
+    font-family: LexendRegular;
+    margin-top: 5%;
+    margin-left: 35%;
+}
+
+.top-text-input{
+    font-size: 13px;
+    color: #919191;
+    font-size: LexendRegular;
+    margin-left: 5%;
+}
+
+.item-content{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 5%;
+}
+
+.item-content:focus-within{
+    border: 1px solid #100F0F;
+}
+
+.text-input{
+    color: #919191;
+    font-size: 15px;
+    font-family: LexendRegular;
+}
+
+.item-content-big{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    height: 178px;
+    display: block;
+    padding: 5%;
+    
+    
+}
+
+ion-textarea{
+    color: #919191;
+    font-size: 15px;
+    font-family: LexendRegular;
+
+}
+
+.item-content-big:focus-within{
+    border: 1px solid #100F0F;
+    
+    
+}
+
+ion-textarea:focus-within{
+    color: #100F0F;
+}
+
+.last-button{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+}

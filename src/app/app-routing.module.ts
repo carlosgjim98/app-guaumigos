@@ -500,7 +500,11 @@ const routes: Routes = [
   {
     path: 'mis-valoraciones-empresa',
     loadChildren: () => import('./pages/mis-valoraciones-empresa/mis-valoraciones-empresa.module').then( m => m.MisValoracionesEmpresaPageModule)
+  },  {
+    path: 'editar-perfil-empresa',
+    loadChildren: () => import('./pages/editar-perfil-empresa/editar-perfil-empresa.module').then( m => m.EditarPerfilEmpresaPageModule)
   },
+
 
 
 
