@@ -485,6 +485,10 @@ const routes: Routes = [
     path: 'detalle-valoracion-empresa',
     loadChildren: () => import('./pages/detalle-valoracion-empresa/detalle-valoracion-empresa.module').then( m => m.DetalleValoracionEmpresaPageModule)
   },
+  {
+    path: 'mis-valoraciones-empresa',
+    loadChildren: () => import('./pages/mis-valoraciones-empresa/mis-valoraciones-empresa.module').then( m => m.MisValoracionesEmpresaPageModule)
+  },
 
 
 

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DetalleValoracionEmpresaPageRoutingModule } from './detalle-valoracion-empresa-routing.module';
+import { MisValoracionesEmpresaPageRoutingModule } from './mis-valoraciones-empresa-routing.module';
 
-import { DetalleValoracionEmpresaPage } from './detalle-valoracion-empresa.page';
+import { MisValoracionesEmpresaPage } from './mis-valoraciones-empresa.page';
 
 import { ComponentsModule } from 'src/app/components/components.module';
 
@@ -15,9 +15,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    DetalleValoracionEmpresaPageRoutingModule,
+    MisValoracionesEmpresaPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [DetalleValoracionEmpresaPage]
+  declarations: [MisValoracionesEmpresaPage]
 })
-export class DetalleValoracionEmpresaPageModule {}
+export class MisValoracionesEmpresaPageModule {}
