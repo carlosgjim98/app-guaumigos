@@ -20,7 +20,7 @@ export class SolicitudesPage implements OnInit {
       fecha: '18/09/2024',
       hora: '11:00 A.M.',
       estado: 'Aceptada',
-      ruta: '/detalles-solicitud-aceptada-servicio'
+      
     },
     {
       nombre: 'Paseo durante el día con Bimbo',
@@ -47,6 +47,7 @@ export class SolicitudesPage implements OnInit {
           paseo.nombre = 'Corte de pelo a tu mascota con Jackie';
         } else if (paseo.nombre.includes('Moka')) {
           paseo.nombre = 'Limado de uñas con Moka';
+          paseo.ruta= "/detalles-solicitud-aceptada-servicio"
         } else if (paseo.nombre.includes('Bimbo')) {
           paseo.nombre = 'Deslanado con Bimbo';
         }

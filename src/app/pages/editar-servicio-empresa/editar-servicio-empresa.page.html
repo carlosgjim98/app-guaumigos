@@ -1,0 +1,68 @@
+<app-app-header [headerText]="dynamicHeaderText" ></app-app-header>
+
+<ion-content [fullscreen]="true">
+  
+<p class="add-images">Añade hsta 6 imágenes</p>
+
+<div class="photo-content">
+  <ion-icon class="edit-button-galery" slot="end" src="../../../assets/icons/Grupo 12183.svg"></ion-icon>  
+  <img class="add-photo" src="../../../assets/imgs/yorkshire-terrier-haircut@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+  <img class="add-photo" src="../../../assets/imgs/Grupo12182@3x.png" alt="">
+</div>
+<p class="added-images">0/6 imágenes subidas</p>
+
+<p class="walk-type">Tipo de servicio</p>
+<div class="subcategory-container">
+<ion-button class="category-button" 
+(click)="selectSubcategory(subcategory)" 
+[ngClass]="{'selected': selectedSubcategories.includes(subcategory.name)}" 
+*ngFor="let subcategory of subcategories">
+{{ subcategory.name }}
+</ion-button>
+</div>
+
+
+<p class="walk-type">Nombre del servcicio</p>
+<ion-item>
+<ion-input class="prices-input" placeholder="Corte de pelo a tu mascota"></ion-input>
+</ion-item>
+
+<p class="walk-type">Precio del servcicio</p>
+<ion-item>
+<ion-input class="prices-input" placeholder="25"><ion-icon slot="end" src="../../../assets/icons/€.svg"></ion-icon></ion-input>
+</ion-item>
+<hr>
+
+
+
+<p class="add-images">Servicios extra</p>
+
+<p class="walk-type">Servicio extra 1</p>
+
+<ion-item>
+<ion-input class="example-input" placeholder="Visita al veterinario"></ion-input>
+</ion-item>
+<ion-item>
+<ion-input class="prices-input" placeholder=" 25"><ion-icon slot="end" src="../../../assets/icons/€.svg"></ion-icon></ion-input>
+</ion-item>
+
+<p class="walk-type">Servicio extra 1</p>
+
+<ion-item>
+<ion-input class="example-input" placeholder="Administración de medicamentos"></ion-input>
+</ion-item>
+<ion-item>
+<ion-input class="prices-input" placeholder="5"><ion-icon slot="end" src="../../../assets/icons/€.svg"></ion-icon></ion-input>
+</ion-item>
+
+<ion-button class="add-extra-service"><ion-icon slot="start" src="../../../assets/icons/add.svg"></ion-icon>Añadir servicio extra</ion-button>
+
+<ion-button class="create-walk">Guardar cambios</ion-button>
+<ion-button class="delete-btn">Eliminar servicio</ion-button>
+
+
+</ion-content>

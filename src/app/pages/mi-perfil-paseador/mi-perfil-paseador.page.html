@@ -118,7 +118,9 @@
 
 <!-- PASEOS -->
 
+
 <ng-container *ngIf="segmentValue === 'paseos'">
+    <div class="container">
   <ion-button class="edit-button-galery" routerLink="/editar-servicios-paseos"><ion-icon class="pencil" src="../../../assets/icons/Trazado47467.svg"></ion-icon>Editar</ion-button>
     <div *ngFor="let paseo of paseos" class="container-paseos">
       
@@ -143,6 +145,8 @@
             </div>
         </div>
     </div>
+    </div>
+    
 </ng-container>
 <div class="container-btn">
     <ion-button type="submit">Enviar solicitud</ion-button>

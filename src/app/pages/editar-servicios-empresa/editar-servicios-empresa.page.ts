@@ -20,17 +20,17 @@ export class EditarServiciosEmpresaPage implements OnInit {
     this.servicios = [{
       nombre: 'Corte de pelo + limado de uñas',
     
-      distancia: ' Jerez de la Frontera sadasdas',
+      distancia: ' Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/yorkshire-terrier-getting-procedure-groomer-salon-cropped-photo-little-dog-yorkshire-terrier-puppy-getting-haircut@3x.png',
-      precio: '15€',
+      precio: '25€',
     
     },
     {
       nombre: 'Corte de pelo ',
       
-      distancia: ' Jerez de la Frontera sadasdas',
+      distancia: ' Jerez de la Frontera, Cádiz',
       imgPerro: 'assets/imgs/yorkshire2-terrier-getting-procedure-groomer-salon-cropped-photo-little-dog-yorkshire-terrier-puppy-getting-haircut@3x.png',
-      precio: '15€',
+      precio: '18€',
      
     }
     ];
