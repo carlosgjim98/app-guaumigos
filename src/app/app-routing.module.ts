@@ -473,7 +473,8 @@ const routes: Routes = [
   {
     path: 'editar-mascotas-aceptadas',
     loadChildren: () => import('./pages/editar-mascotas-aceptadas/editar-mascotas-aceptadas.module').then( m => m.EditarMascotasAceptadasPageModule)
-  },  {
+  },
+  {
     path: 'anadir-servicios-empresa',
     loadChildren: () => import('./pages/anadir-servicios-empresa/anadir-servicios-empresa.module').then( m => m.AnadirServiciosEmpresaPageModule)
   },
@@ -483,7 +484,18 @@ const routes: Routes = [
   },
   {
     path: 'detalle-servicio-empresa',
-    loadChildren: () => import('./pages/detalle-servicio-empresa/detalle-servicio-empresa.module').then( m => m.DetalleServicioEmpresaPageModule)
+    loadChildren: () => import('./pages/detalle-servicio-empresa/detalle-servicio-empresa.module').then( m => m.DetalleServicioEmpresaPageModule)},
+    {
+    path: 'ajustes-empresa',
+    loadChildren: () => import('./pages/ajustes-empresa/ajustes-empresa.module').then( m => m.AjustesEmpresaPageModule)
+  },
+  {
+    path: 'mis-valoraciones-paseador',
+    loadChildren: () => import('./pages/mis-valoraciones-paseador/mis-valoraciones-paseador.module').then( m => m.MisValoracionesPaseadorPageModule)
+  },
+  {
+    path: 'detalle-valoracion-empresa',
+    loadChildren: () => import('./pages/detalle-valoracion-empresa/detalle-valoracion-empresa.module').then( m => m.DetalleValoracionEmpresaPageModule)
   },
 
 
