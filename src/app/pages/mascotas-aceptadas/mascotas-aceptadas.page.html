@@ -86,38 +86,38 @@ que aceptarás</span> para los paseos</p>
 <p class="titles">Hembra/Macho</p>
 
 <div class="container-tipo">
-  
   <div class="container-tamano-2">
-    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('hembra')}" class="tamano"
-      (click)="seleccionarOpcionPeso('hembra')">
+    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaGenero('hembra')}" class="tamano"
+      (click)="seleccionarOpcionGenero('hembra')">
       <p>Hembra</p>
     </div>
-    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('macho')}" class="tamano"
-      (click)="seleccionarOpcionPeso('macho')">
+    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaGenero('macho')}" class="tamano"
+      (click)="seleccionarOpcionGenero('macho')">
       <p>Macho</p>
     </div>
   </div>
 </div>
+
 
 <hr>
 
 <p class="titles">¿Aceptas mascotas en celo?</p>
 
 <div class="container-tipo">
-  
   <div class="container-tamano-3">
-    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('si')}" class="tamano"
-      (click)="seleccionarOpcionPeso('si')">
+    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaMascotasEnCelo('si')}" class="tamano"
+      (click)="seleccionarOpcionMascotasEnCelo('si')">
       <p>Si</p>
     </div>
-    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaPeso('no')}" class="tamano"
-      (click)="seleccionarOpcionPeso('no')">
+    <div [ngClass]="{'tamano-seleccionado': esSeleccionadaMascotasEnCelo('no')}" class="tamano"
+      (click)="seleccionarOpcionMascotasEnCelo('no')">
       <p>No</p>
     </div>
   </div>
 </div>
 
-<ion-button class="last-button" routerLink="/calendario-paseador">Guardar y continuar</ion-button>
+
+<ion-button class="last-button" routerLink="/tabs/calendario-paseador">Guardar y continuar</ion-button>
 
 
 

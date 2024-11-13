@@ -93,7 +93,8 @@
 
 .inside{
     display: flex;
-    gap: 150px;
+    justify-content: space-between;
+    width: 100%;
     font-size: 15px;
     color: #100F0F;
     font-family: LexendRegular;
@@ -108,4 +109,9 @@
     height: 58px;
     margin-top: 8%;
     margin-bottom: 8%;
+}
+.share-outline{
+    width: 22px;
+    height:22px ;
+    margin-left: auto; 
 }

@@ -33,7 +33,7 @@
 <div class="box-content">
   <div class="list-container" mode="md">
     <ion-list lines="none" mode="md" *ngIf="eventsSelectedDate?.allEvents && eventsSelectedDate.allEvents.length > 0">
-      <ion-item *ngFor="let event of eventsSelectedDate.allEvents" class="custom-event-card">
+      <ion-item *ngFor="let event of eventsSelectedDate.allEvents" class="custom-event-card" routerLink="/detalle-solicitud-aceptada-iniciar-paseo">
         <ion-label>
           <h2>{{ event.title }}</h2>
           <div class="date-time">

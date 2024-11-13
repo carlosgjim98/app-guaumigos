@@ -18,6 +18,8 @@ export class MascotasAceptadasPage implements OnInit {
 
   opcionSeleccionadaTamano: string = '';
   opcionSeleccionadaPeso: string = '';
+  selectedGenero: string;
+  selectedMascotasEnCelo: string;
 
   buttons=[
     {
@@ -107,6 +109,22 @@ export class MascotasAceptadasPage implements OnInit {
 
   esSeleccionadaPeso(opcion: string): boolean {
     return this.opcionSeleccionadaPeso === opcion;
+  }
+
+  seleccionarOpcionGenero(opcion: string) {
+    this.selectedGenero = opcion;
+  }
+  
+  esSeleccionadaGenero(opcion: string) {
+    return this.selectedGenero === opcion;
+  }
+
+  seleccionarOpcionMascotasEnCelo(opcion: string) {
+    this.selectedMascotasEnCelo = opcion;
+  }
+  
+  esSeleccionadaMascotasEnCelo(opcion: string) {
+    return this.selectedMascotasEnCelo === opcion;
   }
 
   submitForm() {
