@@ -53,6 +53,7 @@ ion-header{
   }
   .guau{
       margin-bottom: -4%;
+      font-size: 20px;
   }
   
   .location{
@@ -60,6 +61,7 @@ ion-header{
       align-items: center;
       width: 153%;
       margin-bottom: -4%;
+    
       
   }
   
@@ -67,7 +69,7 @@ ion-header{
       height: 100%;
   }
   .city{
-      font-size: 10px;
+    font-size: 15px ;
       font-family: "LexendLight";
       padding-left: 2%;
   }
@@ -79,12 +81,12 @@ ion-header{
   }
   .points{
      // margin-top: 0%;
-      font-size: 14px;
+      font-size: 16px;
   }
   
   .opinions{
       font-family: "LexendRegular";
-      font-size: 11px;
+      font-size: 13px;
   }
 
   .texts-container{
@@ -95,7 +97,7 @@ ion-header{
   .texts{
     font-family: LexendLight;
     color: #100F0F;
-    font-size: 10pt;
+    font-size: 16px;
     margin-top: 0;
     margin-bottom: 5%;
   }
@@ -128,14 +130,14 @@ ion-segment-button.active {
   color: #100F0F;
   --indicator-box-shadow: 0 5px rgba(255, 202, 60, 1);
   --border-radius: 0pt;
-  font-size: 9pt;
+  font-size:14px;
 }
 
 ion-segment-button {
   //font-weight: normal;  //Negrita solo cuando el botón esté activo 
   font-family: LexendRegular;
   color: #C1C1C1;
-  font-size: 9pt;
+  font-size:14px;
 }
 
 // ion-segment-button::after {

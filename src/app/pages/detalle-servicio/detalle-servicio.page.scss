@@ -40,6 +40,8 @@ img{
   font-size: 18pt;
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 20px;
+  font-family: LexendBold;
 }
 
 .profile-container{
@@ -53,6 +55,9 @@ img{
 }
 .guau{
     margin-bottom: -4%;
+    font-family: LexendSemiBold;
+    font-size: 18px;
+
 }
 
 .location{
@@ -60,6 +65,7 @@ img{
     align-items: center;
     width: 153%;
     margin-bottom: -4%;
+
     
 }
 
@@ -67,7 +73,7 @@ img{
     height: 100%;
 }
 .city{
-    font-size: 10px;
+   font-size: 15px;
     font-family: "LexendLight";
     padding-left: 2%;
 }
@@ -79,18 +85,18 @@ img{
 }
 .points{
    // margin-top: 0%;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .opinions{
     font-family: "LexendRegular";
-    font-size: 11px;
+    font-size: 13px;
 }
 
 .service{
     color: #919191;
     font-family: "LexendLight";
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .point{
@@ -101,7 +107,8 @@ img{
     display: flex;
     align-items: center;
     font-family: "LexendLight";
-    font-size: 14px;
+    font-size: 16px;
+    
 }
 hr{
     width: 110%;
@@ -166,9 +173,9 @@ ion-modal {
   }
 
   .title-modal{
-    //margin-left: 5%;
-    font-size: 18px;
-    //margin-top: 5%;
+    margin-left: 5%;
+    font-size: 19px;
+    margin-top: 5%;
   }
   .modal-container{
     margin-left: 5%;
@@ -184,6 +191,8 @@ ion-modal {
   }
   .guau-modal{
     margin-bottom: -7%;
+    font-size: 18px;
+    font-family: LexendMedium;
   }
   .stars-modal{
     display: flex;
@@ -192,12 +201,12 @@ ion-modal {
 
   }
   .points-modal{
-    font-size: 14px;
+    font-size: 16px;
 
   }
   .opinions-modal{
     font-family: "LexendLight";
-    font-size: 14px;
+    font-size: 16px;
   }
 
   //CALENDARIO
@@ -219,11 +228,15 @@ ion-modal {
         width: 100%;
         height: 100%;
         --ion-color-base: #2B2828!important;
+        
+     
     }
 
+
+
     ion-datetime::part(calendar-day):focus {
-        background-color: #110f0f;
-        box-shadow: none;
+        background-color: #110f0f !important;
+        box-shadow: none !important;
         color: #ffffff;
     }
 
@@ -238,8 +251,6 @@ ion-modal {
         color: #919191;
     }
 }
-
-
 
 //FECHAS DISPONIBLES
 
