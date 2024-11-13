@@ -74,13 +74,14 @@
 
 <ion-modal trigger="open_modal" #open_modal [initialBreakpoint]="1" [breakpoints]="[0, 1]" class="ion-padding">
   <ng-template>
-    <div class="title-icon-modal">
+    <div class="content-modal-x">
+    <div class="title-icon-modal-1">
       
       <p class="title-modal">Solicitud de servicio </p>
       <img src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal(0)">
     </div>
     
-    <hr class="hr-1">
+    <hr>
     <div class="modal-container">
       <img class="dog-modal" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
 
@@ -96,7 +97,7 @@
       </div>
 
     </div>
-    <hr class="hr-2">
+    <hr>
     <div class="calendario-custom">
     <ion-datetime presentation="date"></ion-datetime>
   </div>
@@ -124,14 +125,16 @@
     </div>
 
     
-
+  </div>
   </ng-template>
+
 </ion-modal>
 
 <!-- SEGUNDO MODAL -->
 
 <ion-modal trigger="open_modal_2" #open_modal_2 [initialBreakpoint]="1" [breakpoints]="[0, 1]"  class="ion-padding">
   <ng-template>
+    <div class="content-modal-x">
     <div class="title-icon-modal">
       
       <p class="title-modal">Solicitud de servicio </p>
@@ -194,7 +197,7 @@
       
       <ion-button class="continue-button" routerLink="/resumen-pago-servicio" (click)="closeModal(1)">Continuar</ion-button>
 
-    
+    </div>
     </ng-template>
 
     

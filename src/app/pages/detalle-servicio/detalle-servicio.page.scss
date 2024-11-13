@@ -152,16 +152,31 @@ ion-modal {
     --border-radius: 20pt;
 
   }
+
+  .content-modal-x{
+    height: 100%;
+  }
+
+  .title-icon-modal-1{
+    width: 90%;
+    //margin-left: 5%;
+    gap: 125px;
+    display: flex;
+    align-items: center;
+  }
+
   .title-modal{
-    margin-left: 5%;
-    font-size: 19px;
-    margin-top: 5%;
+    //margin-left: 5%;
+    font-size: 18px;
+    //margin-top: 5%;
   }
   .modal-container{
     margin-left: 5%;
     display: flex;
     align-items: center;
     gap: 10px;
+    // margin-top: 5%;
+    // margin-bottom: 5%;
 
   }
   .dog-modal{
@@ -191,7 +206,7 @@ ion-modal {
     justify-content: center;
     width: 100%;
     margin-bottom: 0;
-    margin-left: 8%;
+    height: 40%;
 
     ion-datetime {
         font-family: LexendRegular;
@@ -223,6 +238,8 @@ ion-modal {
         color: #919191;
     }
 }
+
+
 
 //FECHAS DISPONIBLES
 
@@ -277,7 +294,7 @@ h2 {
 .continue{
     width: 90%;
     margin-left: 5%;
-    margin-bottom: 5%;
+    //margin-bottom: 10%;
 }
 
 //MODAL 2
@@ -302,10 +319,10 @@ ion-modal {
     margin-top: 5%;
   }
 
-  .hr-1{
-    margin-bottom: -5%;
-    margin-top: -5%;
-  }
+  // .hr-1{
+  //   margin-bottom: -5%;
+  //   margin-top: -5%;
+  // }
   .modal-container{
     margin-left: 5%;
     display: flex;
@@ -334,9 +351,9 @@ ion-modal {
     font-family: "LexendLight";
     font-size: 14px;
   }
-  .hr-2{
-    margin-top: -5%;
-  }
+  // .hr-2{
+  //   margin-top: -5%;
+  // }
 
   .dog-selection{
     border: 2px solid;
