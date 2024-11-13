@@ -110,14 +110,16 @@
   </div>
 </div>
 
+
 <div class="description-container">
   <h2>Descripción</h2>
-  <ion-item>
-    
-    <ion-textarea placeholder="Escribe aquí..." maxlength="1000" [(ngModel)]="description"></ion-textarea>
-    <p>{{ description?.length || 0 }}/1000 caracteres</p>
-  </ion-item>
+  <div class="textarea-wrapper">
+    <textarea id="description" maxlength="1000" placeholder="Moka y yo acabamos de vivir una aventura increíble en el hotel GUAU HOTEL! Desde el momento en que llegamos, nos sentimos como en casa. La habitación era súper cómoda y tenían todo lo necesario para que mi peludo estuviera feliz: cama blandita, juguetes y hasta un bebedero…"></textarea>
+    <div class="char-counter">0/1000 caracteres</div>
+  </div>
 </div>
+
+    
 
 <div class="submit-button-container">
 
