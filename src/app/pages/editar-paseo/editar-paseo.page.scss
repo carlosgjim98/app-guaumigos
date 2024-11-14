@@ -5,10 +5,12 @@
 }
 
 .photo-content{
-    display: block;
-    gap: 5px;
+    // display: block;
+    // gap: 3px;
     width: 90%;
     margin-left: 5%;
+    display: table-cell;
+    padding-left: 2.5%;
 }
 
 .photo-content img{

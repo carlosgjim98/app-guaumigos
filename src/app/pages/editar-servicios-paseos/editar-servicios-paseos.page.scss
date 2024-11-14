@@ -1,3 +1,6 @@
+ion-content{
+    --background: #F8F8F8;
+}
 
 .info-content{
     width: 90%;
@@ -18,6 +21,7 @@
 .text-content{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .texts{
@@ -43,6 +47,10 @@
     gap: 4px;
     font-size: 16px;
     font-family:'LexendLight' ;
+}
+
+.right-arrow{
+    transform: translateY(-20%) rotate(-90deg);
 }
 
 .add-button{

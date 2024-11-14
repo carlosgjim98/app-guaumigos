@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarGaleriaPaseadorPage implements OnInit {
 
-  dynamicHeaderText: string = 'Filtros';
+  dynamicHeaderText: string = 'Galería';
   returnLink: string = '/tabs/puntos-de-interes';
   selectedSegment: string = 'option1';
   esEspecial: boolean = true;

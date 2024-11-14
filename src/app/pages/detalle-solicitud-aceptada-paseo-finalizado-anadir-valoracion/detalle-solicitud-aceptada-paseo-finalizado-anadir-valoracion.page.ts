@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DetalleSolicitudAceptadaPaseoFinalizadoAnadirValoracionPage implements OnInit {
 
   dynamicHeaderText: string = '';
-  returnLink: string = '/cliente-iniciar-paseo';
+  returnLink: string = '/detalle-solicitud-aceptada-paseo-en-curso';
 
   constructor() { }
 

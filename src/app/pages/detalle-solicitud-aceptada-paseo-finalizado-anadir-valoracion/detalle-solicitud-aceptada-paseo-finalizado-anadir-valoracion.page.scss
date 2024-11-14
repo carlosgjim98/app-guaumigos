@@ -113,9 +113,9 @@
     font-family: LexendRegular;
     font-size: 12px;
     margin-bottom: 1%;
-    margin-top: 2%;
-    
+    margin-top: 2%;   
 }
+
 .medicine{
     margin-left: 5%;
     font-family: LexendLight;
@@ -123,14 +123,6 @@
     margin-bottom: 1%;
     margin-top: 1%;
 }
-.medicine-1{
-    margin-left: 5%;
-    font-family: LexendLight;
-    font-size: 13px;
-    margin-bottom: 5%;
-    margin-top: 0;
-}
-
 
 .final-text{
     margin-left: 5%;
@@ -140,32 +132,9 @@
     margin-top: 5%;
 }
 
-.fingerprint{
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    margin-top: 75%;
-    margin-left: 35%;
-}
-
-.map{
-    height: 60%;
-    border-radius: 10pt;
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 3%;
-        filter: grayscale(3);
-    position: relative;
-    z-index: -1;
-    object-fit: cover;
-
-
-}
-
 .last-button{
     width: 90%;
     margin-left: 5%;
     margin-bottom: 8%;
-    --background: #110F0F;
-    color: white;
+    margin-top: 30%;   
 }
