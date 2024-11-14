@@ -10,7 +10,7 @@ export class ValoracionesPage implements OnInit {
 
 
   dynamicHeaderText: string = 'Valoraciones';
- 
+  tipoUsuario: string;
 
   valoraciones: any[] = [];
 
@@ -19,6 +19,7 @@ export class ValoracionesPage implements OnInit {
 
   ngOnInit() {
     this.cargarValoraciones();
+    this.tipoUsuario = sessionStorage.getItem('tipoUsuario');
   }
 
   cargarValoraciones() {
