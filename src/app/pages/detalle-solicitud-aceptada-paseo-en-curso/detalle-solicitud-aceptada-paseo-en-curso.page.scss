@@ -1,0 +1,171 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 5%;
+
+}
+
+.company{
+    color: #110F0F;
+    font-family: "LexendMedium";
+    font-size: 12pt;
+    margin-left: 5%;
+    margin-bottom: 0;
+}
+
+.dog{
+    height: 50px;
+}
+.company-name{
+    margin-bottom: 4.5%;
+}
+
+.stars{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 20px;
+    margin-bottom: 5%;
+    margin-top: 1.5%;
+}
+.points{
+    font-size: 14px;
+    
+}
+
+.opinions{
+    font-family: LexendLight;
+    font-size: 14px;
+}
+
+.little-button{
+    margin-left: 20%;
+    width: 137px;
+  height: 29px;
+  min-height: 0;
+  font-size: 11px;
+  border-radius: 2px;
+  margin-top: 0%;
+}
+
+
+.services-head{
+    margin-left: 5%;
+    .title{
+        font-family: LexendMedium;
+    }
+    .service-name{
+        font-size: 12px;
+        margin-bottom: 1.5%;
+
+    }
+    .hair-cut{
+        font-size: 13px;
+        font-family: LexendLight;
+        margin-top: 1.5%;
+    }
+    .date-time{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-family: LexendLight;
+        height: 10px;
+        margin-bottom: 5%;
+
+    }
+    .icons{
+        font-size: 13px;
+        font-family: LexendLight;
+    }
+
+}
+
+.pet{
+    margin-left: 5%;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 12px;
+}
+
+.moka{
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+    gap: 15px;
+
+    img{
+        height: 50px;
+    }
+    .dog-name{
+        margin-bottom: 5%;
+    }
+    .age{
+        font-family: LexendLight;
+        margin-top: 5%;
+    }
+
+}
+.extra-service{
+    margin-left: 5%;
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 12px;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    
+}
+.medicine{
+    margin-left: 5%;
+    font-family: LexendLight;
+    font-size: 13px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.medicine-1{
+    margin-left: 5%;
+    font-family: LexendLight;
+    font-size: 13px;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+
+.final-text{
+    margin-left: 5%;
+}
+
+.last-line{
+    margin-top: 5%;
+}
+
+.fingerprint{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 75%;
+    margin-left: 35%;
+}
+
+.map{
+    height: 60%;
+    border-radius: 10pt;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 3%;
+        filter: grayscale(3);
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+
+
+}
+
+.last-button{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 8%;
+    --background: #110F0F;
+    color: white;
+}

@@ -500,7 +500,15 @@ const routes: Routes = [
   {
     path: 'editar-perfil-empresa',
     loadChildren: () => import('./pages/editar-perfil-empresa/editar-perfil-empresa.module').then( m => m.EditarPerfilEmpresaPageModule)
+  },  {
+    path: 'detalle-solicitud-aceptada-paseo-en-curso',
+    loadChildren: () => import('./pages/detalle-solicitud-aceptada-paseo-en-curso/detalle-solicitud-aceptada-paseo-en-curso.module').then( m => m.DetalleSolicitudAceptadaPaseoEnCursoPageModule)
   },
+  {
+    path: 'detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion',
+    loadChildren: () => import('./pages/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion.module').then( m => m.DetalleSolicitudAceptadaPaseoFinalizadoAnadirValoracionPageModule)
+  },
+
 
 
 

@@ -1,0 +1,58 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+
+  <p class="company">Datos del cliente</p>
+
+  <div class="profile-container">
+    <img class="dog" src="../../../assets/imgs/avatar-marta.png" alt="">
+
+    <div >
+      <p class="company-name">Marta Rodríguez</p>
+      
+      <div class="stars">
+        <img src="../../../assets/imgs/interes/star.png" alt="">
+        <p class="points">4,6 <span class="opinions">· Jerez de la Frontera, Cádiz</span></p>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <ion-button class="little-button" routerLink="/anadir-valoracion-desde-detalle-de-solicitud">Añadir valoración</ion-button>
+
+  <hr>
+  <div class="services-head">
+  <p class="title">Datos del paseo </p>
+  
+  <div class="date-time">
+  <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon>
+  <p class="icons">18/09/2024</p>
+  </div>
+  <div class="date-time">
+    <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon>
+  <p class="icons">11:00 A.M</p>
+</div>
+</div>
+<p class="pet">Mascota que participará</p>
+<div class="moka">
+  <img src="../../../assets/imgs/perros/Rectángulo19665.png" alt="">
+  <div>
+    <p class="dog-name">Moka</p>
+    <p class="age">Pug· 2 años</p>
+  </div>
+</div>
+<p class="extra-service">Servicio extra </p>
+<p class="medicine">Corrección de malos hábitos</p>
+
+
+  <hr class="last-line">
+  <p class="final-text">Seguimiento de paseos</p>
+  
+  
+  <ion-button class="last-button" >Añadir valoración</ion-button>
+
+</ion-content>
+
+
