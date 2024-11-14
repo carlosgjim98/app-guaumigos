@@ -52,10 +52,15 @@ ion-header {
     }
 }
 
+ion-list{
+
+  margin-top: 24px;
+
+}
 
 ion-item{
 
-    margin-top: 35px;   
+    margin-top: 5px;
     border-bottom: 1px solid #D9D9D9 ; 
     width: 100%;
 }

@@ -10,11 +10,11 @@
 
   <ion-list>
     <!-- Iteramos sobre los mensajes -->
-    <ion-item *ngFor="let mensaje of mensajes" [routerLink]="mensaje.ruta"  [queryParams]="{ name: mensaje.nombreCompleto, avatar: mensaje.foto }">
+    <ion-item *ngFor="let mensaje of mensajes">
       <ion-avatar slot="start">
         <img [src]="mensaje.foto" alt="Foto de {{ mensaje.nombre }}">
       </ion-avatar>
-      <ion-label class="message-label">
+      <ion-label class="message-label"  [routerLink]="mensaje.ruta"  [queryParams]="{ name: mensaje.nombreCompleto, avatar: mensaje.foto }">
         <div class="name-time-container">
           <h2>{{ mensaje.nombre }}</h2>
           <p class="time">{{ mensaje.tiempo }}</p>

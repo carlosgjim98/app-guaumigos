@@ -29,6 +29,9 @@
     </div>
   </div>
   <div class="container-btn">
-    <ion-button type="submit" routerLink="/anadir-valoracion">Añadir valoración</ion-button>
+    
+    <ion-button *ngIf="tipoUsuario !== 'paseador'" type="submit" routerLink="/anadir-valoracion">
+      Añadir valoración
+    </ion-button>
   </div>
 </ion-content>
