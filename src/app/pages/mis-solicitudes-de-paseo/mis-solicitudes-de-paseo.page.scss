@@ -2,40 +2,6 @@
     --background: #F8F8F8;
 }
 
-// .button-content{
-//     display: flex;
-//     width: 90%;
-//     gap: 5px;
-//     margin-left: 5%;
-//     margin-top: 3%;
-// }
-
-// .button_1{
-//     --background:white;
-//     //border: 2px solid;
-//     border-radius: 10px;
-//     color: #919191;
-//     font-family: LexendRegular;
-//     font-size: 14px;
-//     width: max-content;
-//     flex: 1;
-//     min-width: max-content;
-//     border-color: #919191;
-    
-    
-// }
-
-// .amarillo{
-//     --background: #FFD954;
-//     border: none;
-//     color: black;
-//     font-family: LexendRegular;
-//     font-size: 14px;
-//     width: max-content;
-//     //flex: 1;
-//     min-width: max-content;
-// }
-
 ion-segment{
     display: flex;
     justify-content: center; 
@@ -72,7 +38,7 @@ ion-segment-button{
     display: flex;
     width: 90%;
     margin-left: 5%;
-    //border: 2px solid#CECECD;
+    box-shadow: 1px 1px 1px 1px rgba(206, 206, 205, 1);
     border-radius: 10pt;
     align-items: center;
     gap: 200px;
@@ -81,6 +47,11 @@ ion-segment-button{
     padding-left: 3%;
 
 }
+
+.right-arrow{
+    transform: translateY(-20%) rotate(-90deg);
+}
+
 .icons{
     display: flex;
     align-items: center;

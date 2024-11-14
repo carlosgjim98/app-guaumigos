@@ -11,23 +11,38 @@
     display: flex;
     width: 90%;
     margin-left: 5%;
-    gap: 145px;
+    gap: 135px;
 }
 .first-button{
     
-    font-size: 10pt;
-    width: max-content;
-    min-height: 10px;
-    height: 35px;
-    border-radius: 20px;
+    font-size: 14px;
+    border-radius: 29px;
     margin-top: 6px;
+    width: 144px;
+    height: 32px;
+    min-height: 32px;
+    min-width: 143px;
 }
 .onion-2{
     display: flex;
     width: 90%;
     margin-left: 5%;
-    gap: 80px;
+    gap: 78px;
+    align-items: center;
 }
+
+.anual-suscription{
+    font-size: 18px;
+    color: #27323C;
+    font-family: LexendRegular;
+}
+
+.anual-price{
+    font-size: 14px;
+    color: #27323C;
+    font-family: LexendMedium;
+}
+
 hr{
     width: 90%;
     margin-left: 5%;
@@ -36,7 +51,15 @@ hr{
 
 .next{
     margin-left: 5%;
+    color: #27323C;
+    font-family: LexendRegular ;
+    font-size: 15px;
+
+    span{
+        font-family: LexendSemiBold;
+    }
 }
+
 
 .second{
     border-radius: 10pt;
@@ -50,6 +73,8 @@ hr{
 .next-2{
     margin-bottom: 2%;
     margin-left: 5%;
+    font-family: LexendSemiBold;
+    font-size: 15px;
 }
 .onion-3{
     display: flex;
@@ -57,6 +82,11 @@ hr{
     width: 90%;
     margin-left: 5%;
     gap: 15px;
+}
+
+.save-expenses{
+    font-size: 16px;
+    font-family: LexendLight;
 }
 
 .onion-4{
@@ -81,17 +111,40 @@ hr{
     display: flex;
     width: 90%;
     margin-left: 5%;
+    gap: 130px;
+    align-items: center;
 }
+
+.pay-method{
+    font-size: 15px;
+    font-family: LexendSemiBold;
+}
+
+
 .edit{
-    width: auto;
-    min-height: 10px;
-    height: 30px;
-    border-radius: 20px;
-    font-size: 12pt;
+    width: 76px;
+    height: 32px;
+    max-height: 32px;
+    border-radius: 29px;
+    font-size: 14px;
+    font-family: LexendRegular ;
+    min-height: 32px;
+
 }
 
 .onion-6{
     display: flex;
     width: 90%;
     margin-left: 5%;
+    gap: 135px;
+}
+
+.visa{
+    font-family: LexendRegular ;
+    font-size: 18px;
+}
+
+.visa-number{
+    font-family: LexendLight;
+    font-size: 18px;
 }

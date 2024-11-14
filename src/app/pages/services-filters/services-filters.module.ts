@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ServicesFiltersPageRoutingModule } from './services-filters-routing.module';
 
 import { ServicesFiltersPage } from './services-filters.page';
-// import { ComponentsModule } from 'src/app/components/components.module';
+import { ComponentsModule } from 'src/app/components/components.module';
 // import { FullCalendarModule } from '@fullcalendar/angular';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { ServicesFiltersPage } from './services-filters.page';
     FormsModule,
     IonicModule,
     ServicesFiltersPageRoutingModule,
-    // ComponentsModule,
+    ComponentsModule,
     ReactiveFormsModule,
     // FullCalendarModule
   ],

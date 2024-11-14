@@ -46,6 +46,11 @@ ion-segment-button{
     padding-left: 3%;
 
 }
+
+.right-arrow{
+    transform: translateY(-20%) rotate(-90deg);
+}
+
 .icons{
     display: flex;
     align-items: center;

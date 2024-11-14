@@ -64,7 +64,7 @@ ion-header {
 }
 
 ion-content{
-    background-color: #F8F8F8;
+    --background: #F8F8F8;
 }
 .info-content{
     width: 90%;
@@ -81,6 +81,7 @@ ion-content{
 .text-content{
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 
 .texts{
@@ -114,6 +115,10 @@ ion-content{
     font-family: 'LexendLight';
     font-size: 11pt;
     margin-top: -2%;
+}
+
+.right-arrow{
+    transform: translateY(-20%) rotate(-90deg);
 }
 
 .stars{

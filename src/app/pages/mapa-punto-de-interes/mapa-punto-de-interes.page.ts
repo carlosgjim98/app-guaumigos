@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class MapaPuntoDeInteresPage implements OnInit {
 
   dynamicHeaderText: string = 'Mapa';
-  returnLink: string="/puntos-de-interes"
+  returnLink: string="/tabs/puntos-de-interes"
   @Input() headerText: string = '';
   @Input() esEspecial: boolean = false;
   

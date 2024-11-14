@@ -81,6 +81,7 @@ app-app-header{
     color: #919191;
     font-family: LexendRegular;
     font-size: 12px;
+    margin-bottom: 0;
 }
 
 .moka{
@@ -107,7 +108,7 @@ app-app-header{
     font-family: LexendRegular;
     font-size: 12px;
     margin-bottom: 1%;
-    margin-top: 2%;
+    margin-top: 0;
     
 }
 .medicine{
@@ -199,13 +200,13 @@ app-app-header{
 .checkboxes{
     display: flex;
   align-items: center;
-  gap: 220px;
+  gap: 280px;
 }
 
 .checkboxes-2{
     display: flex;
   align-items: center;
-  gap: 190px;
+  gap: 250px;
 }
 
 
@@ -246,6 +247,7 @@ app-app-header{
     margin-left: 5%;
     font-family: LexendBold;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 .last-text{
@@ -253,16 +255,16 @@ app-app-header{
 }
 
 
-///////////MODAL/////////////////////////////////////
+///////////////////    MODAL     /////////////////////////////////////
 
 .modal-content{
     --background: transparent;
 }
 
 .cross{
-    margin-left: 82%;
+    margin-left: 80%;
     position: absolute;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .person{

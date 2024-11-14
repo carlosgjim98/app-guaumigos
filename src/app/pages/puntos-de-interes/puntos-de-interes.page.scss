@@ -83,9 +83,13 @@ ion-header {
 }
 
 ion-content {
+    --background: #F8F8F8;
+
+
     .container-contenido {
         padding: 15px;
         position: relative;
+        
 
         .anadir-interes-icon {
             position: fixed;

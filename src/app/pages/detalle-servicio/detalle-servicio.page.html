@@ -81,7 +81,7 @@
       <img src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal(0)">
     </div>
     
-    <hr>
+    <hr class="first-hr">
     <div class="modal-container">
       <img class="dog-modal" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
 
@@ -97,7 +97,7 @@
       </div>
 
     </div>
-    <hr>
+    <hr class="second-hr">
     <div class="calendario-custom">
     <ion-datetime presentation="date"></ion-datetime>
   </div>
@@ -140,7 +140,7 @@
       <p class="title-modal">Solicitud de servicio </p>
       <img src="../../../assets/imgs/Trazado47885.png" alt="" (click)="closeModal(1)">
     </div>
-    <hr class="hr-1">
+    <hr class="first-hr">
     <div class="modal-container">
       <img class="dog-modal" src="../../../assets/imgs/perros/haircuting-process-small-dog-sits-table-dog-with-professional@3x.png" alt="">
 
@@ -157,14 +157,14 @@
       
 
     </div>
-    <hr class="hr-1">
+    <hr class="second-hr">
     
       <p class="titles-selection">¿Qué mascota participará?</p>
       
-      <ion-item>
+      <ion-item class="dog-selection-content">
         <ion-select
           class="dog-selection"
-          toggleIcon="chevron-down-outline"
+          toggleIcon="none"
           interface="popover"
           placeholder="Selecciona  una mascota"
 
@@ -173,6 +173,7 @@
           <ion-select-option value="mika">Mika</ion-select-option>
           <ion-select-option value="nuka">Nuka</ion-select-option>
         </ion-select>
+        <ion-icon slot="end" name="chevron-down" class="arrow-chevron-down"></ion-icon>
       </ion-item>
 
       <hr>
@@ -180,17 +181,17 @@
       <p class="titles-selection-2">Selecciona un servicio extra (No obligatorio)</p>
       
       <div class="checkbox_1">
-      <p>Limado y cortado de uñas <span>(+8€)</span></p>
+      <p class="dog-treatment">Limado y cortado de uñas <span>(+8€)</span></p>
       <ion-checkbox></ion-checkbox>
       </div>
 
       <div class="checkbox_2">
-        <p>Tratamiento antiparasitorio <span>(+18€)</span></p>
+        <p class="dog-treatment">Tratamiento antiparasitorio <span>(+18€)</span></p>
         <ion-checkbox></ion-checkbox>
       </div>
 
       <div class="checkbox_3">
-        <p>Administración de medicamentos <span>(+5€)</span></p>
+        <p class="dog-treatment">Administración de medicamentos <span>(+5€)</span></p>
         <ion-checkbox slot="end"></ion-checkbox>
       </div>
     </div>

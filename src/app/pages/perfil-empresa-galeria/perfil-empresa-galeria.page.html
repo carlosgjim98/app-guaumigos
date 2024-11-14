@@ -40,15 +40,6 @@
   <p class="texts">¡Conmigo, los paseos serán su parte favorita!</p>
 </div>
 
-<!-- <ion-segment mode="md" value="default" class="segment">
-  <ion-segment-button value="default" class="button" >
-    <ion-label>Galería</ion-label>
-  </ion-segment-button>
-  <ion-segment-button value="segment" class="button" >
-    <ion-label>Servicios</ion-label>
-  </ion-segment-button>
-</ion-segment> -->
-
 <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
   <ion-segment-button value="option1" [ngClass]="{'active': selectedSegment === 'option1'}">
     Galería

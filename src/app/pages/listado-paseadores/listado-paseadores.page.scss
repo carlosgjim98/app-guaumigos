@@ -78,6 +78,8 @@ ion-header {
 }
 
 ion-content {
+    --background: #F8F8F8;
+
     .container-paseador {
         display: flex;
         flex-direction: column;

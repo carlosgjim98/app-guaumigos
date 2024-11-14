@@ -84,7 +84,6 @@ img{
     gap: 2px;
 }
 .points{
-   // margin-top: 0%;
     font-size: 16px;
 }
 
@@ -129,12 +128,6 @@ box-shadow: 0 -2px 5px #f4f0f0;
 
 .bottom{
     display: flex;
-    //box-shadow: 0 -2px 5px #f4f0f0;
-    //margin-top: 40%;
-    //width: 100%;
-    //background: #F4F0F0;
-
-    
 }
 
 ion-button{
@@ -152,7 +145,7 @@ ion-button{
   font-size: 12pt;
 }
 
-//MODAL
+///////////////////PRIMER MODAL/////////////////////
 
 ion-modal {
     --height: 90%;
@@ -165,9 +158,7 @@ ion-modal {
   }
 
   .title-icon-modal-1{
-    width: 90%;
-    //margin-left: 5%;
-    gap: 125px;
+    gap: 170px;
     display: flex;
     align-items: center;
   }
@@ -182,8 +173,6 @@ ion-modal {
     display: flex;
     align-items: center;
     gap: 10px;
-    // margin-top: 5%;
-    // margin-bottom: 5%;
 
   }
   .dog-modal{
@@ -209,13 +198,22 @@ ion-modal {
     font-size: 16px;
   }
 
+  .first-hr{
+    margin-bottom: 0;
+  }
+
+  .second-hr{
+    margin-top: 0;
+  }
+
   //CALENDARIO
    
   .calendario-custom {
     justify-content: center;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     height: 40%;
+    margin-left: 8%;
 
     ion-datetime {
         font-family: LexendRegular;
@@ -257,7 +255,7 @@ ion-modal {
 h2 {
     font-family: LexendRegular;
     font-size: 14px;
-    margin-top: 7px;
+    margin-top: 20px;
     color: #919191;
     margin-left: 5%;
 }
@@ -286,10 +284,6 @@ h2 {
         --background: white;
     }
 
-    // ion-modal::part(content: var(--height);){
-    //   height: 20%;
-    // }
-
     ion-datetime {
         --background: #fff1f2;
         
@@ -297,7 +291,6 @@ h2 {
 
     
   ion-datetime::part(native-button) {
-    // --background: var(--ion-background-color white);
     --background: white;
   }
 
@@ -305,10 +298,10 @@ h2 {
 .continue{
     width: 90%;
     margin-left: 5%;
-    //margin-bottom: 10%;
+    margin-top: 30px;
 }
 
-//MODAL 2
+////////////////MODAL 2///////////////////////////////
 
 
 
@@ -330,10 +323,7 @@ ion-modal {
     margin-top: 5%;
   }
 
-  // .hr-1{
-  //   margin-bottom: -5%;
-  //   margin-top: -5%;
-  // }
+  
   .modal-container{
     margin-left: 5%;
     display: flex;
@@ -344,10 +334,12 @@ ion-modal {
   .dog-modal{
     height: 40px;
   }
+
   .guau-modal{
     margin-bottom: -7%;
     font-family: 10px;
   }
+
   .stars-modal{
     display: flex;
     align-items: center;
@@ -362,31 +354,22 @@ ion-modal {
     font-family: "LexendLight";
     font-size: 14px;
   }
-  // .hr-2{
-  //   margin-top: -5%;
-  // }
-
-  .dog-selection{
-    border: 2px solid;
-    border-radius: 8px;
-    margin-left: 5%;
-    border-color: #919191;
+ 
+  .dog-selection{ 
     font-family: LexendMedium;
-    padding-left: 3%;
-
-    
   }
+
   .bottom-content{
-    margin-bottom: 50%;
+    margin-bottom: 40%;
+    margin-top: 25px;
   }
   
-
 .checkbox_1{
     border: 2px solid;
     border-radius: 8pt;
     display: flex;
     align-items: center;
-    gap: 140px;
+    gap: 121px;
     width: 90%;
     padding: 2%;
     margin-left: 5%;
@@ -400,7 +383,7 @@ ion-modal {
     border-radius: 8pt;
     display: flex;
     align-items: center;
-    gap: 125px;
+    gap: 105px;
     width: 90%;
     padding: 2%;
     margin-left: 5%;
@@ -414,7 +397,7 @@ ion-modal {
     border-radius: 8pt;
     display: flex;
     align-items: center;
-    gap: 98px;
+    gap: 72px;
     width: 90%;
     padding: 2%;
     margin-left: 5%;
@@ -425,28 +408,45 @@ ion-modal {
 .titles-selection{
     color: #919191;
     margin-left: 5%;
-    margin-bottom: -3%;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-.dog-selection{
-    margin-left: 5%;
+.dog-selection-content{
+  margin-bottom: 25px;
+  margin-bottom: 25px;
+  border: 2px solid #919191;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 10px;
+}
+
+.arrow-chevron-down{
+  color: #919191;
 }
 
 .titles-selection-2{
     color: #919191;
     margin-left: 5%;
+    font-size: 14px;
     
 }
-p{
-    font-size: 12px;
+
+.dog-treatment{
+  font-family: LexendRegular;
+  color: #141411;
+  font-size: 14px;
 }
+
 span{
     color: #919191;
 }
+
 ion-checkbox{
     --border-radius: 5pt;
     --checkmark-color: black;
 }
+
 .continue-button{
     width: 90%;
     margin-left: 5%;

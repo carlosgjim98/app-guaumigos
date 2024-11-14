@@ -1,19 +1,10 @@
-<ion-header >
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink">
 
-  <div class="head-buttons">
+  <ion-buttons class="brush" slot="end">
+    <ion-icon class="brush-icon" src="/assets/icons/brush2.svg"></ion-icon>
+  </ion-buttons>
 
-    <ion-button class="back" slot="start" routerLink="/tabs/servicios">
-      <ion-icon class="arrow-icon" src="../../../assets/icons/union-2.svg"></ion-icon>
-      
-    </ion-button>
-    <p class="filters">Filtros</p>
-    <ion-button class="brush" >
-      <ion-icon class="brush-icon" src="../../../assets/icons/brush2.svg"></ion-icon>
-    </ion-button>
-
-  </div>
- 
-</ion-header>
+</app-app-header>
 
 
 <ion-content [fullscreen]="true" class="ion-padding">

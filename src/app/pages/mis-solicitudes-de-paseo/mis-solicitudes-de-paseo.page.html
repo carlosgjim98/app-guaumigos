@@ -1,13 +1,6 @@
 <app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
 
 <ion-content class="body" [fullscreen]="true">
-  
-  <!-- <div class="button-content">
-    <ion-button class="button_1" *ngFor="let button of buttons" (click)="color(button.id)" [ngClass]="{'amarillo':button.checked}">
-      {{button.text}}
-    </ion-button>
-
-  </div> -->
 
   <ion-segment value="default">
     <ion-segment-button value="default">
@@ -29,7 +22,7 @@
         </div>
       <p class="text-2">Estado: <span class="span-1">Aceptada</span></p>
   </div>
-  <ion-icon src="../../../assets/icons/arrowups.svg"></ion-icon>
+  <ion-icon class="right-arrow" src="../../../assets/icons/Trazado 47843.svg"></ion-icon>
   </div>
 
   <div class="content" routerLink="/seguimiento-de-paseos">
@@ -43,10 +36,22 @@
         </div>
       <p class="text-2">Estado: <span class="span-2">Rechazada</span></p>
   </div>
-  <ion-icon src="../../../assets/icons/arrowups.svg"></ion-icon>
+  <ion-icon class="right-arrow" src="../../../assets/icons/Trazado 47843.svg"></ion-icon>
   </div>
 
-
+  <div class="content" routerLink="/detalle-solicitud-aceptada">
+    <div>
+      <p class="text-1">Paseo durante el día</p>
+      <div class="icons">
+      <ion-icon slot="start" src="../../../assets/icons/calendar event.svg"></ion-icon><p>18/09/2024</p>
+      </div>
+      <div class="icons-2">
+        <ion-icon slot="start" src="../../../assets/icons/time.svg"></ion-icon><p>10:00 A.M.</p>
+        </div>
+      <p class="text-2">Estado: <span class="span-1">Aceptada</span></p>
+  </div>
+  <ion-icon class="right-arrow" src="../../../assets/icons/Trazado 47843.svg"></ion-icon>
+  </div>
 
 
 

@@ -22,10 +22,15 @@
 
   <h2>Raza</h2>
   <ion-item class="raza" lines="none" >
-    <ion-select class=" text-select "  toggleIcon="none"label="Pug" >
-      <ion-icon slot="end" name="chevron-down"></ion-icon>
+    <ion-select class=" text-select "  toggleIcon="none" interface="popover"
+    placeholder="Selecciona  una mascota" >
+    
+    <ion-select-option value="moka">Pug</ion-select-option>
+    <ion-select-option value="mika">Beagle</ion-select-option>
+    <ion-select-option value="nuka">Caniche</ion-select-option>
+      
     </ion-select>
-   
+    <ion-icon slot="end" name="chevron-down" class="arrow-icon"></ion-icon>
   </ion-item>
 
 
@@ -51,20 +56,30 @@
 
 
 
-<h2>Hembra/macho</h2>
-  <ion-item class="raza" lines="none" >
-    <ion-select class=" text-select "  toggleIcon="none"label="Hembra" >
-      <ion-icon slot="end" name="chevron-down"></ion-icon>
-    </ion-select>
-   
-  </ion-item>
+<h2>Hembra/Macho</h2>
+<ion-item class="raza" lines="none" >
+  <ion-select class=" text-select "  toggleIcon="none" interface="popover"
+  placeholder="Selecciona el sexo" >
+  
+  <ion-select-option value="moka">Macho</ion-select-option>
+  <ion-select-option value="mika">Hembra</ion-select-option>
+  
+    
+  </ion-select>
+  <ion-icon slot="end" name="chevron-down" class="arrow-icon"></ion-icon>
+</ion-item>
 
   <h2>¿Está en celo?</h2>
   <ion-item class="raza" lines="none" >
-    <ion-select class=" text-select "  toggleIcon="none"label="No" >
-      <ion-icon slot="end" name="chevron-down"></ion-icon>
+    <ion-select class=" text-select "  toggleIcon="none" interface="popover"
+    placeholder="No" >
+    
+    <ion-select-option value="moka">Si</ion-select-option>
+    <ion-select-option value="mika">No</ion-select-option>
+    
+      
     </ion-select>
-   
+    <ion-icon slot="end" name="chevron-down" class="arrow-icon"></ion-icon>
   </ion-item>
 
 </div>
