@@ -1,0 +1,68 @@
+ion-content{
+    --background: #F8F8F8;
+}
+
+.head-content{
+    width: 100%;
+    padding-left: 5%;
+    background: white;
+    padding-top: 5%;
+    height: 132px;
+}
+
+.title-dates{
+    font-family: LexendRegular;
+    color: #110F0F;
+    font-size: 15px;
+    margin-top: 0;
+}
+
+.options-content{
+    display: flex;
+    width: 100%;
+    // margin-left: 5%;
+    background: white;
+    gap: 10px;
+}
+
+.box{
+    border: 1px solid #919191;
+    height: 55px;
+    width: 180px;
+    border-radius: 10px;
+    align-content: center;
+    padding-left: 3%;
+}
+
+.post-card{
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 1px 1px 1px 1px rgba(206, 206, 205, 1);
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    border-radius: 10px;
+    padding-left: 5%;
+    gap: 110px;
+    background: white;
+    
+}
+
+.dates{
+    color: #5F5C5C;
+    font-family: LexendLight;
+    font-size: 13px;
+}
+
+.total-profit{
+    color: #110F0F;
+    font-family: LexendRegular;
+    font-size: 15px;
+}
+
+.profit-number{
+    color: #080807;
+    font-family: LexendRegular;
+    font-size: 18px;
+}
+

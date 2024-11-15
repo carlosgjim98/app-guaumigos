@@ -1,0 +1,35 @@
+<app-app-header [headerText]="dynamicHeaderText" [returnLink]="returnLink"></app-app-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="head-content">
+    <p class="title-dates">Filtra tus ganancias por fechas</p>
+
+    <div class="options-content">
+      <ion-item class="box">
+        <ion-input placeholder="Desde">
+            <ion-icon slot="end" src="../../../assets/icons/Unión3.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-item class="box">
+        <ion-input placeholder="Hasta">
+          <ion-icon slot="end" src="../../../assets/icons/Unión3.svg"></ion-icon>
+        </ion-input>
+      </ion-item>
+    </div>
+
+
+  </div>
+
+  <div class="post-card">
+    <div>
+      <p class="dates">18/09/2024 - 12-12-2024</p>
+      <p class="total-profit">Total ganancias</p>
+    </div>
+
+    <p class="profit-number">+ 2.786 €</p>
+
+  </div>
+  
+</ion-content>

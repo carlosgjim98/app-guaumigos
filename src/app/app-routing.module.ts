@@ -500,13 +500,34 @@ const routes: Routes = [
   {
     path: 'editar-perfil-empresa',
     loadChildren: () => import('./pages/editar-perfil-empresa/editar-perfil-empresa.module').then( m => m.EditarPerfilEmpresaPageModule)
-  },  {
+  },
+  {
     path: 'detalle-solicitud-aceptada-paseo-en-curso',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-paseo-en-curso/detalle-solicitud-aceptada-paseo-en-curso.module').then( m => m.DetalleSolicitudAceptadaPaseoEnCursoPageModule)
   },
   {
     path: 'detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion.module').then( m => m.DetalleSolicitudAceptadaPaseoFinalizadoAnadirValoracionPageModule)
+  },
+  {
+    path: 'historico-ganancias-paseador',
+    loadChildren: () => import('./pages/historico-ganancias-paseador/historico-ganancias-paseador.module').then( m => m.HistoricoGananciasPaseadorPageModule)
+  },
+  {
+    path: 'configurar-mis-datos-paseador',
+    loadChildren: () => import('./pages/configurar-mis-datos-paseador/configurar-mis-datos-paseador.module').then( m => m.ConfigurarMisDatosPaseadorPageModule)
+  },
+  {
+    path: 'configurar-mis-datos-empresa',
+    loadChildren: () => import('./pages/configurar-mis-datos-empresa/configurar-mis-datos-empresa.module').then( m => m.ConfigurarMisDatosEmpresaPageModule)
+  },
+  {
+    path: 'historico-ganancias-empresa',
+    loadChildren: () => import('./pages/historico-ganancias-empresa/historico-ganancias-empresa.module').then( m => m.HistoricoGananciasEmpresaPageModule)
+  },
+  {
+    path: 'mis-valoraciones-empresa',
+    loadChildren: () => import('./pages/mis-valoraciones-empresa/mis-valoraciones-empresa.module').then( m => m.MisValoracionesEmpresaPageModule)
   },
 
 

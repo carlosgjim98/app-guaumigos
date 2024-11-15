@@ -1,0 +1,86 @@
+ion-content{
+    --background: white;
+}
+
+.title-item-content{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.tittle-item{
+    color: #919191;
+    font-family: LexendRegular;
+    font-size: 13px;
+    margin-left: 3%;
+    
+}
+
+.all-boxes{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    padding-left: 3%;
+}
+
+.all-boxes:focus-within {
+    border: 1px solid #100F0F; /* Aplica el borde a todos los lados */
+  }
+
+.content-images{
+    margin-left: 5%;
+    display: grid;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    grid-auto-flow: column;
+    gap: 1rem;
+}
+
+.close-point{
+    position: absolute;
+    margin-left: 225px;
+    margin-top: 10px;
+    height: 32px;
+    width: 32px;
+
+}
+
+.image-card{
+    height: 193px;
+    width: 268px;
+    min-width: 268px;
+    border-radius: 10px;
+}
+
+.content-title-pen{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.image-pen{
+    height: 213px;
+    width: 398px;
+    border-radius: 10px;
+}
+
+.close-point-2{
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 10px;
+    height: 32px;
+    width: 32px;
+}
+
+.yellow-button{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.black-button{
+    width: 90%;
+    margin-left: 5%;
+    --background:#100F0F ;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}

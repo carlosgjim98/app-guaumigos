@@ -7,7 +7,7 @@
     margin-top: 5%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(206, 206, 205);
-    gap: 150px;
+    gap: 100px;
     padding: 5%;
 }
 
@@ -25,10 +25,16 @@
     color: #100F0F;
     font-family: LexendRegular;
     font-size: 15px;
+    width: max-content;
 }
 
 .date{
     color: #919191;
     font-family: LexendLight;
     font-size: 13px;
+}
+
+.arrow{
+    color: #2C252B !important;
+    height: 13px;
 }
