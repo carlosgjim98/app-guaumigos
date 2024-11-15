@@ -26,6 +26,25 @@
     
   </ion-item>
 
+  <h2>Fecha de nacimiento (No se mostrará publicamente)</h2>
+  <ion-item lines="none" class="date-input-item">
+    <ion-icon src="assets/icons/Unión 3.svg" slot="start" class="calendar-icon"></ion-icon>
+    <ion-input  
+      placeholder="12/11/1993"
+      readonly
+      (click)="openDatePicker()"
+      [value]="selectedDate | date: 'dd/MM/yyyy'">
+    </ion-input>
+  </ion-item>
+  
+  <!-- Componente de ion-datetime, que solo se muestra cuando se hace clic en el input -->
+  <ion-datetime
+    *ngIf="showDatePicker"
+    presentation="date"
+    [preferWheel]="true"
+    (ionChange)="onDateSelected($event)">
+  </ion-datetime>
+
 
 
   <h2>Descripción</h2>
@@ -36,7 +55,7 @@
   
 </div>
 
-<ion-button class="save-btn" routerLink="/galeria"> Guardar cambios</ion-button>
+<ion-button class="save-btn"> Guardar cambios</ion-button>
 
 
 </ion-content>
