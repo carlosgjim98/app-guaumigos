@@ -1,0 +1,139 @@
+
+
+.target{
+    font-size: 13px;
+    font-family: LexendRegular;
+    margin-left: 10%;
+    color: #919191;
+    margin-bottom: 2%;
+}
+
+.write-here-2{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    color: #100F0F;
+    font-size: 15px;    
+    height: 55px;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+.write-here-3{
+    border: 1px solid #919191;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    color: #100F0F;
+    font-size: 15px;    
+    height: 89px;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+.pdf-button{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 15px;
+    color: #100F0F;
+    font-family: LexendRegular;
+    gap: 190px;
+    height: 55px;
+
+}
+
+
+
+.target {
+    font-size: 14px;
+    color: #919191;
+    margin-bottom: 8px;
+  }
+
+  
+  /* Estilos para la sección de subir documento */
+  .upload-section {
+    display: flex;
+    gap: 0px; 
+    margin-top: 8px;
+    overflow-x: auto;
+    margin-left: 5%;
+    width: 90%;
+    
+  }
+  .upload-section::-webkit-scrollbar {
+    display: none;
+  
+    
+  }
+  
+  .upload-card {
+    min-width: 268px;
+    height: 190px;
+    border: 1px solid #FFCA3C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:  10px;
+    text-align: center;
+    padding: 8px;
+    box-shadow: none;
+    ion-label{
+
+        color: #1B1B1B;
+        font-family: LexendRegular;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+  }
+  
+  .upload-icon {
+    height: 46px;
+    width: 46px;
+    color: #FFCA3C;
+    margin-bottom: 8px;
+  }
+  .last-button{
+    color: #141411;
+    font-family: LexendMedium;
+    font-size:16px ;
+    width: 90%;
+    margin-left: 5%;
+    height: 58px;
+    
+    margin-bottom: 8%;
+}
+  
+
+  .upload-card2 {
+   width: 90%;
+    height: 230px;
+    border: 1px solid #FFCA3C;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    text-align: center;
+    padding: 8px;
+    box-shadow: none;
+    margin-top: 0;
+    .upload-label,
+.document-label {
+  color: #1B1B1B;
+  font-family: LexendRegular;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.upload-label {
+  margin-bottom: 5px; /* Adjust space between lines */
+  margin-top: 10px;
+}
+
+
+  }

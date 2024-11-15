@@ -508,6 +508,18 @@ const routes: Routes = [
     path: 'detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion/detalle-solicitud-aceptada-paseo-finalizado-anadir-valoracion.module').then( m => m.DetalleSolicitudAceptadaPaseoFinalizadoAnadirValoracionPageModule)
   },
+  {
+    path: 'completar-perfil-2',
+    loadChildren: () => import('./pages/completar-perfil-2/completar-perfil-2.module').then( m => m.CompletarPerfil2PageModule)
+  },
+  {
+    path: 'completar-perfil-empresa',
+    loadChildren: () => import('./pages/completar-perfil-empresa/completar-perfil-empresa.module').then( m => m.CompletarPerfilEmpresaPageModule)
+  },
+  {
+    path: 'completar-perfil-empresa-2',
+    loadChildren: () => import('./pages/completar-perfil-empresa-2/completar-perfil-empresa-2.module').then( m => m.CompletarPerfilEmpresa2PageModule)
+  },
 
 
 

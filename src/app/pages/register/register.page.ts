@@ -15,6 +15,7 @@ import { codeErrors, confirmPassword } from 'src/app/utils/utils';
 export class RegisterPage implements OnInit {
 
   form: FormGroup;
+  tipoUsuario: string;
 
   constructor(
     private apiService: ApiService,
@@ -35,6 +36,8 @@ export class RegisterPage implements OnInit {
 
   public ngOnInit(): void {
 
+    this.tipoUsuario = sessionStorage.getItem('tipoUsuario');
+
 
     this.form = new FormGroup({
       name: new FormControl('', 
@@ -53,6 +56,17 @@ export class RegisterPage implements OnInit {
     
 
   }
+  getRegistroLink(): string {
+    if (this.tipoUsuario === 'paseador') {
+      return '/completar-perfil';
+    } else if (this.tipoUsuario === 'empresa') {
+      return '/completar-perfil-empresa';
+    } else {
+      // Por defecto o para otros tipos de usuario
+      return '/completar-perfil';
+    }
+  }
+  
   
 
   public submitForm(): void {
