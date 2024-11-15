@@ -73,29 +73,30 @@ ion-item{
     --color: #919191 !important; /* Personaliza el color del texto, si es necesario */
     width: 100% !important;
     
-    
-  
 }
 
-ion-label{
-    font-family: LexendRegular !important;
-    font-size: 14px !important;
-    text-align: left !important;
-    width: 100% !important;
+// ion-label{
+//     font-family: LexendRegular !important;
+//     font-size: 14px !important;
+//     text-align: left !important;
+//     width: 100% !important;
    
     
 
+// }
+
+.custom-item{
+  border: 1px solid #919191; /* Borde de la caja */
+    border-radius: 8px;       /* Bordes redondeados */
+    height: 55px;    
+    width: 100%;         /* Altura de la caja */
+    margin-left: 2%;
 }
-
-
 
 .custom-input {
     --padding-start: 10px;   /* Espaciado interno */
     --padding-end: 10px;
-    border: 1px solid #919191; /* Borde de la caja */
-    border-radius: 8px;       /* Bordes redondeados */
-    height: 55px;    
-    width: 100%;         /* Altura de la caja */
+    
     font-family: LexendRegular !important;
 }
 
