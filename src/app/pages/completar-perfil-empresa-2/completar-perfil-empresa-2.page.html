@@ -1,0 +1,35 @@
+<app-app-header [headerText]="dynamicHeaderText" ></app-app-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Campo de DNI/NIF/NIE -->
+  <p class="target">DNI/ NIF/ NIE</p>
+  <ion-input label="" class="write-here-2" placeholder="Escribe aquí..."></ion-input>
+
+  <!-- Sección para subir documento -->
+  <p class="target">Sube tu documento</p>
+  <div class="upload-section">
+    <ion-card class="upload-card">
+      <ion-icon src="/assets/icons/Grupo 11646.svg" class="upload-icon"></ion-icon>
+      <ion-label>Sube la parte delantera de tu documento</ion-label>
+    </ion-card>
+    <ion-card class="upload-card">
+      <ion-icon src="/assets/icons/Grupo 11646.svg" class="upload-icon"></ion-icon>
+      <ion-label>Sube la parte trasera de tu documento</ion-label>
+    </ion-card>
+  </div>
+
+  <!-- Dirección de facturación -->
+  <p class="target">Dirección de facturación</p>
+  <ion-input label="" class="write-here-2" placeholder="Escribe aquí..."></ion-input>
+
+  <!-- Número de IVA -->
+  <p class="target">Número de IVA (Sólo si aplica)</p>
+  <ion-input label="" class="write-here-2" placeholder="Escribe aquí..."></ion-input>
+ 
+
+  
+
+
+  <!-- Botón de guardar cambios -->
+  <ion-button  class="last-button" routerLink="/tabs/calendario-empresa">Continuar</ion-button>
+</ion-content>
