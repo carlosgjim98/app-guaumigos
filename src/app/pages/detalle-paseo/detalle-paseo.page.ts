@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-detalle-paseo',
@@ -26,11 +27,14 @@ export class DetallePaseoPage implements OnInit {
     { nombre: 'Socialización', precio: '(+5€)' }
   ];
 
-  constructor(private modalCtrl: ModalController) {}
+  constructor(private modalCtrl: ModalController, private navCtrl: NavController) {}
 
   ngOnInit() {
     this.cargarPaseadores();
     this.mostrarTextoCompleto = new Array(this.mascotasAcepta.length).fill(false);
+  }
+  goBack() {
+    this.navCtrl.back(); // Usando Ionic NavController para hacer "go back"
   }
 
   cargarPaseadores() {

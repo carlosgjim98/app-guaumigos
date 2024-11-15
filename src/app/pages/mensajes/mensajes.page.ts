@@ -30,7 +30,7 @@ export class MensajesPage implements OnInit {
   }
 
   cargarMensajes() {
-    if (this.userRole === 'paseador'|| this.userRole === 'empresa') {
+    if ( this.userRole === 'empresa') {
       
       this.mensajes = [
         {
@@ -134,6 +134,60 @@ export class MensajesPage implements OnInit {
        
       ];
     }
+
+    else if (this.userRole === 'paseador') this.mensajes = [
+      {
+        nombre: 'Luis Z.',
+        nombreCompleto: "Luis Zarzuela",
+        foto: 'assets/imgs/usuarios-chat-paseador/img-perfil-usuario@2x.png',
+        tiempo: '10 minutos',
+        nuevoMensaje: '(3) mensajes nuevos',
+        mensaje: '',
+        tieneNuevo: true,
+        ruta: ['/mensajes-chat']
+      },
+      {
+        nombre: 'Marta R.',
+        nombreCompleto: "Marta Rodríguez",
+        foto: 'assets/imgs/avatar-marta.png',
+        tiempo: 'Hace 2 días',
+        nuevoMensaje: '',
+        mensaje: 'Tú: has enviado 1 imagen',
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
+      },
+      {
+        nombre: 'Juan V.',
+        nombreCompleto: "Juan Vargas",
+        foto: 'assets/imgs/usuarios-chat-paseador/Elipse 407@2x.png',
+        tiempo: 'Hace 1 semana',
+        nuevoMensaje: '',
+        mensaje: 'Juan: ¡Hola! ¿Qué tal?',
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
+      },
+      {
+        nombre: 'Sandra T.',
+        nombreCompleto: "Sandra Torres",
+        foto: 'assets/imgs/usuarios-chat-paseador/Elipse 562@2x.png',
+        tiempo: 'Hace 2 semanas',
+        nuevoMensaje: '',
+        mensaje: 'Tú: has enviado 1 imagen',
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
+      },
+      {
+        nombre: 'Carlos G.',
+        nombreCompleto: "Carlos González",
+        foto: 'assets/imgs/usuarios-chat-paseador/Elipse 412@2x.png',
+        tiempo: 'Hace 2 semanas',
+        nuevoMensaje: '',
+        mensaje: 'Carlos: ¡Hola! ¿Qué tal?',
+        tieneNuevo: false,
+        ruta: ['/mensajes-chat']
+      }
+  
+    ];
 
     
    

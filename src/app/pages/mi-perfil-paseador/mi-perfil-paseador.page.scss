@@ -160,6 +160,13 @@ ion-header {
         background: transparent;
         width: 90%;
         margin-left: 5%;
+        white-space: nowrap;
+        ion-label{
+
+          white-space: nowrap; /* Evita saltos de línea */
+          overflow: hidden;    /* Oculta el texto que sobrepasa el contenedor */
+          text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es demasiado largo */
+        }
       }
       
       ion-segment-button.active {

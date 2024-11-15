@@ -28,7 +28,7 @@ export class ResumenPagoPaseoPage implements OnInit {
         localizacion: 'Jerez de la Frontera, España',
         opiniones: '1635',
         valoracion: '4,8',
-        imagenes: ['assets/imgs/perros/shared image-full.png', 'assets/imgs/perros/shared image-full.png', 'assets/imgs/perros/shared image-full.png', 'assets/imgs/perros/shared image-full.png'],
+        imagenes: 'assets/imgs/perros/shared image-6@3x.png', 
         imgUsuario: 'assets/imgs/usuarios/Rectángulo 19618.png',
         precio: '15€',
         duracion: '1 horas',
