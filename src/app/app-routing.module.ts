@@ -273,10 +273,7 @@ const routes: Routes = [
     path: 'detalle-resrva-de-servicio',
     loadChildren: () => import('./pages/detalle-resrva-de-servicio/detalle-resrva-de-servicio.module').then( m => m.DetalleResrvaDeServicioPageModule)
   },
-  {
-    path: 'seguimiento-de-paseo',
-    loadChildren: () => import('./pages/seguimiento-de-paseo/seguimiento-de-paseo.module').then( m => m.SeguimientoDePaseoPageModule)
-  },
+ 
   {
     path: 'detalle-solicitud-aceptada',
     loadChildren: () => import('./pages/detalle-solicitud-aceptada/detalle-solicitud-aceptada.module').then( m => m.DetalleSolicitudAceptadaPageModule)
